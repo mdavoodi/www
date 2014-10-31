@@ -11,13 +11,9 @@ Lithium Technologies provides a complete social platform to some of the world’
 ##### The challenges of service discovery and load balancing in a hybrid-cloud environment
 Lithium operates a hybrid-cloud infrastructure consisting of private clouds in private datacenters and public cloud providers. Inbound requests are load balanced across the cloud environments. For Lithium the major challenges of scaling a hybrid-cloud infrastructure were:
 
-*Automated service discovery in a dynamic environment*
+- **Automated service discovery in a dynamic environment** - As nodes came up and down across the Lithium infrastructure, internally managing DNS became infeasible. 
 
-As nodes came up and down across the Lithium infrastructure, internally managing DNS became infeasible. 
-
-*Load balancing and health monitoring across cloud environments*
-
-HAProxy load balancing relies on an up-to-date registry of healthy nodes. Without a cross-cloud perspective tied with health monitoring, data could be lost if routed to an unhealthy node. 
+- **Load balancing and health monitoring across cloud environments** - HAProxy load balancing relies on an up-to-date registry of healthy nodes. Without a cross-cloud perspective tied with health monitoring, data could be lost if routed to an unhealthy node. 
 
 READMORE
 
@@ -28,11 +24,9 @@ There are existing solutions for Lithium’s challenges, but they rely on stitch
 
 > We run lean, smart, and nimble. We take advantage of whatever we can find that will help us reduce potential errors and failure points and be efficient. Consul fit our use case very well. 
 
-*Service discovery, service registry, and health monitoring*
-A Consul agent runs on each node and communicates with one or more Consul servers per cloud environment. The Consul agent reports to the Consul server the service running on the node, the status of the service, and the status of the node itself. The end result is an up-to-date service registry held on the Consul server. When a new node comes up, the registry is automatically queried to discover any healthy service in the infrastructure. 
+- **Service discovery, service registry, and health monitoring** - A Consul agent runs on each node and communicates with one or more Consul servers per cloud environment. The Consul agent reports to the Consul server the service running on the node, the status of the service, and the status of the node itself. The end result is an up-to-date service registry held on the Consul server. When a new node comes up, the registry is automatically queried to discover any healthy service in the infrastructure. 
 
-*Cross-cloud service discovery*
-Since Consul is provider-agnostic, it can be configured to run on public clouds like AWS, private clouds running on OpenStack, or physical servers. When a cross-cloud service discovery or configuration request is made, the local Consul servers forward the request to the remote cloud and return the result. 
+- **Cross-cloud service discovery** - Since Consul is provider-agnostic, it can be configured to run on public clouds like AWS, private clouds running on OpenStack, or physical servers. When a cross-cloud service discovery or configuration request is made, the local Consul servers forward the request to the remote cloud and return the result. 
 
 Consul allows Lithium to have an up-to-date view of the health of each node across all clouds. All of the URIs, service registry, and service discovery in coordination with load balancing are automatically and dynamically handled by Consul. 
 
