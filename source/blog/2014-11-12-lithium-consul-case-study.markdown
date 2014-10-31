@@ -1,6 +1,7 @@
 ---
 page_title: "How Lithium Technologies Uses Consul in a Hybrid-Cloud Infrastructure"
 title: "How Lithium Technologies Uses Consul in a Hybrid-Cloud Infrastructure"
+list_image_url: /images/blog/lithium-consul-case-study/Lithium-and-Consul.jpg
 author: Kevin Fishner
 tags: consul, case study
 ---
@@ -17,7 +18,7 @@ Lithium operates a hybrid-cloud infrastructure consisting of private clouds in p
 
 READMORE
 
-[BEFORE/AFTER IMAGE]
+![Lithium Before and After](/images/blog/lithium-consul-case-study/Lithium-Before-After.jpg)
 
 ##### Consul enables automated service discovery and hybrid-cloud load balancing 
 There are existing solutions for Lithium’s challenges, but they rely on stitching together disparate services that are prone to drifting away from each other. It requires customization per service and per infrastructure provider. The complexity around integrating many services into many infrastructures quickly multiplies to become an unmanageable project. Lithium required a solution that could perform across datacenters and clouds (public and private) without extensive custom tooling. Justin Franks, Lead Operations Engineer explains what Lithium was looking for:
@@ -37,6 +38,6 @@ The integration process for Consul took the Lithium team one day. Justin Franks 
 
 With automated service discovery, DNS, and load balancing in place, Consul has saved hundreds of hours of manual tasks. Additionally by eliminating provider-specific load balancers and instead optimizing load across the entire infrastructure, Lithium was able to remove internal HAProxy and other services which reduced the server fleet by approximately 15%. Most of all, Consul provides peace of mind that new nodes will properly enter the fleet, and that data won’t be lost to unhealthy nodes. 
 
-[BENEFITS IMAGE]
+![Lithium Costs and Benefits](/images/blog/lithium-consul-case-study/Lithium-Cost-Benefit.jpg)
 
 In the end Consul simplified Lithium code, removed single points of failure, greatly reduced the total number of required servers, and cut out hardcoded configuration files to make scaling Lithium’s hybrid-cloud deployment manageable.
