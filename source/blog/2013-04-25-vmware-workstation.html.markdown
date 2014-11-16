@@ -23,7 +23,7 @@ environments.
 
 READMORE
 
-You can see the provider in action on Windows in the screenshow below:
+You can see the provider in action on Windows in the screenshot below:
 
 <div class="align-center">
 <a href="http://www.vagrantup.com/vmware" title="Vagrant + VMware">

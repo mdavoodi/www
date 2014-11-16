@@ -109,7 +109,7 @@ typical Varnish configuration file might look like:
           set req.backend_hint = bar.backend();
       }
 
-  Just like our HAProxy example, Consul Template makes it trival to dynamically
+  Just like our HAProxy example, Consul Template makes it trivial to dynamically
   populate and manage Varnish backends:
 
       import directors;

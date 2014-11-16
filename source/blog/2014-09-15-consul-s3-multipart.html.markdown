@@ -10,7 +10,7 @@ tags: consul
 by HashiCorp, and powers a number of features for Vagrant that
 cannot be done without a server component. One of it's paid features
 is box hosting, allowing Vagrant boxes to be hosted and managed
-in Vagrant Cloud. We had received serveral reports that uploading
+in Vagrant Cloud. We had received several reports that uploading
 very large Vagrant boxes would fail reliably, and we spend part of last
 week resolving this issue. We use S3 as one of our backing stores, and
 eventually it was discovered that S3 limits the size of a single upload
@@ -186,7 +186,7 @@ of an error, so the flow is simply:
 3. Fetch each part sequentially.
 
 Within StorageLocker, we make use of an `Engine` interface, where
-each concrete implementation is used for a particlar backend. For example
+each concrete implementation is used for a particular backend. For example
 the `S3Engine` stores data in S3. By implementing
 the `WALEngine` we can compose it with any other engine, enabling
 all of our backends to transparently support multi-part uploads without

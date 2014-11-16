@@ -34,7 +34,7 @@ and VMware. An important distinction between Packer and `vagrant package`
 is that Packer began targeting production environments, as well.
 
 Packer was rapidly adopted to streamline the workflow we were starting
-to learn – build an immutable machine image for a specifc environment and
+to learn – build an immutable machine image for a specific environment and
 distribute it a team working in development, or even to staging and production.
 
 There was still challenges in the workflow, though. The process of

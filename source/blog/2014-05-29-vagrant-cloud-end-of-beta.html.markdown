@@ -94,7 +94,7 @@ If anything is unclear please email us at [sales@hashicorp.com](mailto:sales@has
 ### Private Cloud
 
 These features (box hosting, custom shares, organizations and ACLs) are
-also all avaiable in Vagrant Private Cloud, which interested organizations
+also all available in Vagrant Private Cloud, which interested organizations
 have been testing during the beta period.
 
 Vagrant Private Cloud shares the same codebase as what is running publicly

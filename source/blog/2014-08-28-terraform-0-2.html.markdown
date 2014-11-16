@@ -47,7 +47,7 @@ by the framework.
 If you're interested in adding support to Terraform for another service,
 or you want to write a provider for your own private cloud, then
 check out the
-[updated documenation on writing a provider](http://www.terraform.io/docs/plugins/provider.html),
+[updated documentation on writing a provider](http://www.terraform.io/docs/plugins/provider.html),
 which guides you through the process.
 
 ## New Provider: Google Cloud
@@ -93,7 +93,7 @@ service. Having this provider allows you to setup email services for your
 application all within your single Terraform file.
 
 An example of what this looks like is shown below. For full documentation, see
-the [Mailgun provider documenation](http://www.terraform.io/docs/providers/mailgun/index.html).
+the [Mailgun provider documentation](http://www.terraform.io/docs/providers/mailgun/index.html).
 
 <pre class="prettyprint">
 resource "mailgun_domain" "foobar" {

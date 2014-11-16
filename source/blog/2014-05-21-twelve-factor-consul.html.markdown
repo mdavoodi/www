@@ -55,7 +55,7 @@ maintain as an operations engineer.
 
 Consul is able to
 [store key/value data](http://www.consul.io/intro/getting-started/kv.html).
-To set and retrive key/value data, Consul has a simple API
+To set and retrieve key/value data, Consul has a simple API
 as well as a beautiful and intuitive
 [web UI](http://www.consul.io/intro/getting-started/ui.html).
 It is perfect for storing configuration data.

@@ -15,7 +15,7 @@ Using [consul-haproxy](https://github.com/hashicorp/consul-haproxy)
 makes it incredibly simple to provide a configuration template for
 HAProxy and have it dynamically populated based on service information
 from Consul. This allows HAProxy to be updated seamlessly with zero downtime.
-While this approach requires a priori configuration, it also reduces
+While this approach requires a prior configuration, it also reduces
 the per-request overhead of service discovery.
 
 READMORE
