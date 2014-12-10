@@ -157,6 +157,17 @@ h a s h i c o r p
     background-size: 41px 40px;
   }
 }
+.atlas-icon {
+  background: url(/images/nav-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/nav-atlas.png");
+  background-size: 41px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .atlas-icon {
+    background-image: url("/images/nav-atlas@2x.png");
+    background-size: 41px 40px;
+  }
+}
 .serf-icon {
   background: url(/images/nav-serf.png) 0 0 no-repeat;
   background-image: url("/images/nav-serf.png");
@@ -1347,6 +1358,22 @@ body.page-sub #header .main-links.nav > li > a:focus {
     background-size: 165px 178px;
   }
 }
+#jumbotron #jumbotron-content .jumbo-logo .hero-atlas {
+  position: absolute;
+  top: 99px;
+  left: 87px;
+  width: 66px;
+  height: 65px;
+  background: url(/images/atlas-hero-logo.png) 0 0 no-repeat;
+  background-image: url("/images/atlas-hero-logo.png");
+  background-size: 66px 65px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #jumbotron #jumbotron-content .jumbo-logo .hero-atlas {
+    background-image: url("/images/atlas-hero-logo@2x.png");
+    background-size: 66px 65px;
+  }
+}
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos {
   position: absolute;
   top: 392px;
@@ -1419,6 +1446,19 @@ body.page-sub #header .main-links.nav > li > a:focus {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vagrant {
     background-image: url("/images/hero-vagrant@2x.png");
+    background-size: 47px 43px;
+  }
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
+  width: 47px;
+  height: 43px;
+  background: url(/images/hero-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/hero-atlas.png");
+  background-size: 47px 43px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
+    background-image: url("/images/hero-atlas@2x.png");
     background-size: 47px 43px;
   }
 }
@@ -1682,6 +1722,9 @@ div.align-center {
   background-size: 8px 13px;
   background-position: 0 1px;
 }
+#products.atlas {
+  background-color: #48b4fb;
+}
 #products.vagrant {
   background-color: #2f88f7;
 }
@@ -1767,6 +1810,28 @@ div.align-center {
   margin: 0 auto;
   margin-bottom: 10px;
   overflow: hidden;
+}
+#products #products-nav li.atlas a {
+  background: url(/images/nav-atlas-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-atlas-active.png");
+  background-size: 41px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.atlas a {
+    background-image: url("/images/nav-atlas-active@2x.png");
+    background-size: 41px 40px;
+  }
+}
+#products #products-nav li.atlas a i {
+  background: url(/images/nav-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/nav-atlas.png");
+  background-size: 41px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.atlas a i {
+    background-image: url("/images/nav-atlas@2x.png");
+    background-size: 41px 40px;
+  }
 }
 #products #products-nav li.consul a {
   background: url(/images/nav-consul-active.png) center -80px no-repeat;
@@ -1905,6 +1970,9 @@ div.align-center {
 #products #products-display.terraform {
   background-color: #822ff7;
 }
+#products #products-display.atlas {
+  background-color: #48b4fb;
+}
 #products #products-display .consul .product-logo {
   background: url(/images/product-consul.png) 0 0 no-repeat;
   background-image: url("/images/product-consul.png");
@@ -1926,6 +1994,31 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .consul .black-caret-right {
+    background-image: url("/images/consul-caret-right@2x.png");
+    background-size: 6px 9px;
+  }
+}
+#products #products-display .atlas .product-logo {
+  background: url(/images/product-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/product-atlas.png");
+  background-size: 208px 202px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-display .atlas .product-logo {
+    background-image: url("/images/product-atlas@2x.png");
+    background-size: 208px 202px;
+  }
+}
+#products #products-display .atlas .fill-btn {
+  color: #48b4fb;
+}
+#products #products-display .atlas .black-caret-right {
+  background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/vagrant-caret-right.png");
+  background-size: 6px 9px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-display .atlas .black-caret-right {
     background-image: url("/images/consul-caret-right@2x.png");
     background-size: 6px 9px;
   }
