@@ -2647,6 +2647,10 @@ body.about .team .row.team-2,
 body.about .team .row.team-3 {
   margin-top: 40px;
 }
+body.press .press img{
+  margin: 0px auto;
+  display: block;
+}
 body.about .quotes .quotes .quote i {
   margin-bottom: 10px;
 }
