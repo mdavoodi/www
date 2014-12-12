@@ -2,6 +2,7 @@
 page_title: "How Lithium Technologies Uses Consul in a Hybrid-Cloud Infrastructure"
 title: "How Lithium Technologies Uses Consul in a Hybrid-Cloud Infrastructure"
 list_image_url: /images/blog/lithium-consul-case-study/Lithium-and-Consul.jpg
+post_image_url: /images/blog/lithium-consul-case-study/lithium-consul-horizontal.png
 author: Kevin Fishner
 tags: consul, case study
 ---
