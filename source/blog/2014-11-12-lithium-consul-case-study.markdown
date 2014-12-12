@@ -5,22 +5,20 @@ list_image_url: /images/blog/lithium-consul-case-study/Lithium-and-Consul.jpg
 author: Kevin Fishner
 tags: consul, case study
 ---
+Lithium Technologies provides a complete social platform to some of the world’s most well-known brands across tech, consumer electronics, financial services, retail, and other industries. These brands rely on the Lithium Social Platform to power customer communities, respond to social media conversations, and drive social analytics. The Lithium infrastructure manages complex real-time data ingestion and processing. To meet the needs of customers and plan for long-term growth, Lithium decided to build out a hybrid-cloud infrastructure. Consul enables automated service discovery and load balancing in Lithium's hybrid-cloud environment, saving hundreds of thousands of dollars and significant development time. 
 
-##### Lithium processes streams of social data to power enterprise social platforms
-Lithium Technologies provides a complete social platform to some of the world’s most well-known brands across tech, consumer electronics, financial services, retail, and other industries. These brands rely on the Lithium Social Platform to power customer communities, respond to social media conversations, and drive social analytics. The Lithium infrastructure manages complex real-time data ingestion and processing. To meet the needs of customers and plan for long-term growth, Lithium decided to build out a hybrid-cloud infrastructure.
+READMORE
 
-##### The challenges of service discovery and load balancing in a hybrid-cloud environment
+## The challenges of service discovery and load balancing in a hybrid-cloud environment
 Lithium operates a hybrid-cloud infrastructure consisting of private clouds in private datacenters and public cloud providers. Inbound requests are load balanced across the cloud environments. For Lithium the major challenges of scaling a hybrid-cloud infrastructure were:
 
 - **Automated service discovery in a dynamic environment** - As nodes came up and down across the Lithium infrastructure, internally managing DNS became infeasible. 
 
 - **Load balancing and health monitoring across cloud environments** - HAProxy load balancing relies on an up-to-date registry of healthy nodes. Without a cross-cloud perspective tied with health monitoring, data could be lost if routed to an unhealthy node. 
 
-READMORE
-
 ![Lithium Before and After](/images/blog/lithium-consul-case-study/Lithium-Before-After.jpg)
 
-##### Consul enables automated service discovery and hybrid-cloud load balancing 
+## Consul enables automated service discovery and hybrid-cloud load balancing 
 There are existing solutions for Lithium’s challenges, but they rely on stitching together disparate services that are prone to drifting away from each other. It requires customization per service and per infrastructure provider. The complexity around integrating many services into many infrastructures quickly multiplies to become an unmanageable project. Lithium required a solution that could perform across datacenters and clouds (public and private) without extensive custom tooling. Justin Franks, Lead Operations Engineer explains what Lithium was looking for:
 
 > We run lean, smart, and nimble. We take advantage of whatever we can find that will help us reduce potential errors and failure points and be efficient. Consul fit our use case very well. 
@@ -31,7 +29,7 @@ There are existing solutions for Lithium’s challenges, but they rely on stitch
 
 Consul allows Lithium to have an up-to-date view of the health of each node across all clouds. All of the URIs, service registry, and service discovery in coordination with load balancing are automatically and dynamically handled by Consul. 
 
-##### Scalable management of infrastructure with Consul
+## Scalable management of infrastructure with Consul
 The integration process for Consul took the Lithium team one day. Justin Franks describes the process:
 
 > Consul is not complicated to put in place. You can bolt it right on to your existing BIND servers in addition to installing the agent on nodes, which is what we did. Using Chef, It took us less than a day get Consul agents on all the servers and to roll out the Consul server clusters. The research process for Consul took a few months, but ninety-nine percent of the time was spent on vetting Consul and other options like Zookeeper+BIND+HAProxy. Last but not least, it took time to champion and evangelize Consul within our organization. Honestly, that part was easy because our engineers picked up on the problems it was solving right away. But since our infrastructure spans the globe and is quite complex, we had a good amount of homework to allow the implementation to be done in less than a day without issue. 
