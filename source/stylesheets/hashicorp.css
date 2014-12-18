@@ -289,6 +289,17 @@ h a s h i c o r p
     background-size: 51px 57px;
   }
 }
+.timeline-atlas {
+  background: url(/images/time-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/time-atlas.png");
+  background-size: 51px 57px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-atlas {
+    background-image: url("/images/time-atlas@2x.png");
+    background-size: 51px 57px;
+  }
+}
 .twitter-about {
   background: url(/images/twitter-about.png) 0 0 no-repeat;
   background-image: url("/images/twitter-about.png");
@@ -818,8 +829,8 @@ blockquote {
   margin: 60px;
 }
 blockquote p {
-  font-size: 18px;
-  line-height: 2em;
+  font-size: 36px;
+  line-height: 3.1em;
   font-style: italic;
 }
 strong {
@@ -2647,10 +2658,6 @@ body.about .team .row.team-2,
 body.about .team .row.team-3 {
   margin-top: 40px;
 }
-body.press .press img{
-  margin: 0px auto;
-  display: block;
-}
 body.about .quotes .quotes .quote i {
   margin-bottom: 10px;
 }
@@ -3096,7 +3103,7 @@ body.jobs #chat p {
 }
 #timeline #points {
   position: absolute;
-  width: 2338px;
+  width: 2638px;
   left: 30px;
   top: 0;
   margin: 120px 0 ;
@@ -3208,6 +3215,17 @@ body.jobs #chat p {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #timeline #points .point .body i.terraform {
     background-image: url("/images/time-terraform@2x.png");
+    background-size: 51px 57px;
+  }
+}
+#timeline #points .point .body i.atlas {
+  background: url(/images/time-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/time-atlas.png");
+  background-size: 51px 57px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #timeline #points .point .body i.atlas {
+    background-image: url("/images/time-atlas@2x.png");
     background-size: 51px 57px;
   }
 }
