@@ -6,11 +6,11 @@ post_image_url: /images/blog/atlas/atlas-horizontal-logo.png
 author: Mitchell Hashimoto
 ---
 
-We're pleased to announce [Atlas](https://atlas.hashicop.com), HashiCorp's first commercial product which unifies our open source projects into one solution to move applications from development to production on any infrastructure.
+We're pleased to announce [Atlas](https://atlas.hashicorp.com), HashiCorp's first commercial product which unifies our open source projects into one solution to move applications from development to production on any infrastructure.
 
 Atlas is available today as a **free tech preview**. We'll complete all the major features and begin charging for Atlas in early 2015. There will be a generous free tier to make sure hobbyists and small companies can get the most out of Atlas for free. More details on billing will emerge in 2015.
 
-This announcement clearly defines HashiCorp's business model as Atlas. We are not building our business on top of support & services. And we are not going to risk fragmenting our community with [open core](#).
+This announcement clearly defines HashiCorp's business model as Atlas. We are not building our business on top of support & services. And we are not going to risk fragmenting our community with open core.
  
 Read on to learn about how Atlas uses our open source products, the vision for Atlas, concrete examples of how Atlas can be used, and what this means for our open source projects going forward.
 
