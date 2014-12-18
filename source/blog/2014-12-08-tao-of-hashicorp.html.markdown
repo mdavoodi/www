@@ -16,7 +16,7 @@ Product design starts with an envisioned workflow to achieve a set goal. We then
 ## Simple, Modular, Composable
 The Unix philosophy is widely known for preaching the virtues of software that is simple, modular and composable. This approach prefers many smaller components with well defined scopes that can be used together. The alternative approach is monolithic, in which a single tool has a nebulous scope that expands to encompass new features and capabilities. We like to think of the components as blocks that are functional on their own, and can be combined in new and innovative ways.
 
-The simple, modular, composable approach allows us to build products at a higher level of abstraction. Rather than solving the the holistic problem, we break it down into constituent parts, and solve those. We build the best possible solution for the scope of each problem, and then combine the blocks to form a solid, full solution.
+The simple, modular, composable approach allows us to build products at a higher level of abstraction. Rather than solving the holistic problem, we break it down into constituent parts, and solve those. We build the best possible solution for the scope of each problem, and then combine the blocks to form a solid, full solution.
 
 ## Communicating Sequential Processes
 Given our belief in simple, modular, composable software, we have several tenets for combining those pieces into a connected system. Communicating Sequential Processes (CSP) is a model of computation wherein autonomous processes connected via a network are able to communicate. We believe that the CSP approach is necessary for managing complexity and building robust scalable systems in a Service Oriented Architecture. Each service should be treated as an individual process that then communicates with other services via an API.
@@ -38,8 +38,8 @@ System administration typically requires an operator to manually make changes to
 
 While there are many approaches to automation, we promote codification. Codification allows for knowledge to be executed by machines, but still readable by operators. Automated tooling allows operators to increase their productivity, move quicker, and reduce human error.  Machines can automatically detect, triage and resolve issues.
 
-## Anti-fragile systems
-Anti-fragile systems are built to withstand unexpected inputs and outputs. To accomplish this, the system must have a desired state, a method to collect information on the current state, and a mechanism to automatically adjust the current state to return to the desired state.
+## Resilient systems
+Resilient systems are built to withstand unexpected inputs and outputs. To accomplish this, the system must have a desired state, a method to collect information on the current state, and a mechanism to automatically adjust the current state to return to the desired state.
 
 We believe that applying this sort of systems rigor to infrastructure is critical to achieve the highest levels of reliability. HashiCorp products will always recognize a desired state through codified knowledge. They will collect real-time information through functionally independent components. And they will provide the tooling to self-heal and auto-recover.
 

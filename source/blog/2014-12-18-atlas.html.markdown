@@ -1,0 +1,79 @@
+---
+page_title: Atlas
+title: Atlas
+list_image_url: /images/blog/atlas/atlas-logo.png
+post_image_url: /images/blog/atlas/atlas-horizontal-logo.png
+author: Mitchell Hashimoto
+---
+
+We're pleased to announce [Atlas](https://atlas.hashicop.com), HashiCorp's first commercial product which unifies our open source projects into one solution to move applications from development to production on any infrastructure.
+
+Atlas is available today as a **free tech preview**. We'll complete all the major features and begin charging for Atlas in early 2015. There will be a generous free tier to make sure hobbyists and small companies can get the most out of Atlas for free. More details on billing will emerge in 2015.
+
+This announcement clearly defines HashiCorp's business model as Atlas. We are not building our business on top of support & services. And we are not going to risk fragmenting our community with [open core](#).
+ 
+Read on to learn about how Atlas uses our open source products, the vision for Atlas, concrete examples of how Atlas can be used, and what this means for our open source projects going forward.
+
+READMORE
+ 
+## Application Delivery, Simplified
+
+Atlas breaks down application delivery into five steps. The diagram below shows these steps, along with how data flows between them.
+
+![Application Delivery, Simplified](/images/blog/atlas/how-it-works.png)
+
+In line with the [Tao of HashiCorp](/blog/tao-of-hashicorp.html), we've approached application delivery at the workflow level, independent of the technologies underneath. For example, it doesn't matter what language the application you're developing is, it doesn't matter if you use VMs or containers in production, it doesn't matter if you use public or private cloud; the steps for Atlas are the same.
+
+## Features
+
+At a high-level, Atlas is focused on application delivery. To go into greater detail, here are the different steps broken down from the above diagram – from development all the way to deployment:
+
+* Create, version, distribute Vagrant boxes within your development team, forming the base development environment for your application
+* Share access to your running development environment with [Vagrant Share](https://docs.vagrantup.com/v2/share/index.html) to aid collaboration for in-progress features
+* Push [Packer](http://packer.io) configurations to automatically build artifacts containing your application and configuration. Atlas today supports building AMIs, but support for other artifact
+types is coming very shortly, and will eventually support almost all
+builders that Packer supports.
+* Store and distribute artifacts with the Artifact Registry. Artifacts such as AMIs, ISOs, Vagrant boxes, containers, and more can be either manually uploaded or automatically stored in the Registry from Packer builds. The Registry exposes an API for Atlas or other third-party systems to query for artifacts.
+* Use the [Atlas Terraform provider](https://terraform.io/docs/providers/atlas/index.html) to query for artifacts stored in the Artifact Registry. This feature enables users to write Terraform configurations and deploy infrastructure using the latest, proper versions of deployable  artifacts stored in the Artifact Registry.
+
+The features available today result in the following workflow — Developers `vagrant push` to upload an application version to Atlas and trigger a Packer build,  resulting in an artifact containing the application for Terraform to deploy.
+
+Each of these steps is connected with a public API, so users who have parts of the application delivery pipeline already built can use pieces of Atlas without requiring full lock-in.
+
+In the coming weeks and months, we'll be shipping more features to make the application delivery process simpler. Additionally, we will close the loop with all of our open source products and bring Consul functionality into Atlas. This will allow users to see the servers launched by Terraform and their real-time monitoring status. The Consul + Terraform integration exposes some interesting functionality, including auto-scaling and self-recovery. Consul can identify unhealthy nodes or insufficient computing resources, and Terraform can take action to remedy those issues. 
+
+## Open Source, Unified
+
+The major functionality of Atlas is powered by our open source projects.
+
+[Vagrant](http://vagrantup.com) runs development environments, [Packer](http://packer.io) builds artifacts, [Terraform](http://terraform.io) deploys infrastructure and artifacts, and [Consul](http://consul.io) monitors and maintains services in real-time. 
+
+Because of this design Atlas is not black box software. The major internals of Atlas can be well understood, and if you as a user have adopted Atlas and realize it isn't for you, you can export the configurations Atlas uses and run the tools on your own, for free.
+
+## Continued improvements to open source tooling
+
+As a result of Atlas’s design around our open source projects, more resources than ever before will be dedicated to improving our projects. As features and integrations arrive in our open source tools, they'll be improving Atlas at the same time.
+
+Because Atlas focuses on the integration of our open source tools, project-specific features will be brought into the open source itself, rather than kept proprietary in Atlas. As an example, Terraform will be able to orchestrate rolling deploys. Since Atlas is using Terraform under the hood, providing our commercial customers with this feature in turn makes it available it for the open source community.
+
+In addition to simply improving our existing open source, we have a handful of new open source projects on the way for 2015 which will bring more critical features to the HashiCorp product line.
+
+We couldn't be happier with the interaction of Atlas and our open source. After working in the open source ecosystem for years, we’ve arrived at this strategy because it allows us to improve both lines in tandem, without worry that one group will lose feature functionality that it currently depends on. 
+
+## Vagrant Cloud
+
+Vagrant Cloud was a platform to host and discover Vagrant boxes, and millions of Vagrant users have discovered and downloaded boxes since it was announced. The features of Vagrant Cloud are now part of Atlas, and Atlas has replaced Vagrant Cloud. All Vagrant Cloud data is retained and visible in the Atlas UI. 
+
+Existing Vagrant Cloud URLs will continue to function for the foreseeable future, redirecting to the proper location in Atlas. While all the features of Vagrant Cloud have migrated to Atlas, we’re still working to properly expose all of them. If you see a missing feature from Vagrant Cloud, please don’t hesitate to contact us.
+
+All paid features of Vagrant Cloud are free during the tech preview of Atlas. All previously free features of Vagrant Cloud will remain free in Atlas, and it’s possible that previously paid features will become free. We will communicate any pricing changes and give ample time to respond to these changes before starting any payments.
+
+## A Vision for the Future
+ 
+When we started HashiCorp, Armon and I shared a vision for a simpler, more enjoyable solution to application delivery and datacenter management.
+
+We developed our open source projects as highly focused and specialized solutions to specific problems, each incredibly useful as a standalone component, but we always had a unified experience in mind.
+
+Atlas is that unified experience, and is the first major step towards our ultimate vision.
+
+With the tech preview of Atlas we hope the community around our tools can see a more complete picture of our goals as a company. We look forward to bringing you some exciting improvements in both Atlas and our open source ecosystem in 2015!
