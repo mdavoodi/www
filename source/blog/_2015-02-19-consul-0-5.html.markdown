@@ -17,10 +17,10 @@ The last major release of Consul was several months ago and it's incredible
 stability has allowed us to focus on adding major new features, improving
 the user experience, and fixing bugs.
 
-Consul 0.5 brings many new features including Atlas integration,
-enhanced ACLs, simple N+1 deploys, node and service maintenance modes,
-native HTTP health checks, ephemeral keys, session TTLs, and key rotation
-among many others.
+Consul 0.5 brings many new features including automated clustering,
+seamless UI integration via Atlas, enhanced ACLs, simple N+1 deploys,
+node and service maintenance modes, native HTTP health checks, ephemeral keys,
+session TTLs, and key rotation among many others.
 
 You can [download Consul 0.5 here](http://www.consul.io/downloads.html) or
 view the [changelog](https://github.com/hashicorp/consul/blob/v0.5.0/CHANGELOG.md)
@@ -29,18 +29,18 @@ Read on to learn more about the major new features in 0.5.
 
 READMORE
 
-## Atlas Integration
-
-Consul 0.5 is the first release that integrates with [Atlas](https://atlas.hashicorp.com),
-a commercial platform offering by HashiCorp. Atlas provides a single platform
-to deploy any application to any infrastructure. Integration with Atlas is entirely optional,
-but it provides new functionality that is supported by Atlas.
+## Automated Clustering
 
 Bootstrapping a Consul cluster has always required providing a well-known IP
-or DNS address so that an agent can join an existing cluster. This can be solved
-in a number of ways, but Atlas now provides an auto-join mechanism. Using Atlas
-auto-join is extremely easy, and removes the burden of maintaining a well-known
-address.
+or DNS address so that an agent can join an existing cluster. This provides
+a chicken and egg problem for Consul. While this can be solved in a number
+of ways, Consul 0.5 supports an auto-join mechanism to automatically discover
+and cluster your Consul agents on any network. This removes the burden
+of maintaining a well-known address, and simplifies configuration management
+automation for installing Consul.
+
+This feature in Consul is called "auto-join" and is enabled via a free
+[Atlas](https://atlas.hashicorp.com) account.
 
 Using Atlas auto-join is simple and requires a free Atlas account along with
 an API token. The `-atlas` CLI flag is used to specify the cluster name, and the
@@ -68,14 +68,31 @@ an API token. The `-atlas` CLI flag is used to specify the cluster name, and the
 The auto-join feature can be used both to join clients together within a datacenter,
 as well as linking server to server together over the WAN in a global cluster.
 
-In addition to providing an auto-join feature, linking a Consul cluster to Atlas
-allows cluster state to be displayed in the Atlas UI:
+Auto join will always be a free feature of Atlas.
+
+## Atlas Integration
+
+Consul 0.5 is the first release that integrates with
+[Atlas](https://atlas.hashicorp.com), a commercial platform offering by
+HashiCorp. Atlas provides a single platform to deploy any application
+on any infrastructure. Integration with Atlas is entirely optional, but it
+provides new functionality to Consul.
+
+In addition to auto-join being brokered by Atlas, specifying the `-atlas`
+flag will enable a beautiful Consul UI for you automatically.
 
 ![Atlas Consul UI](/images/blog/consul/atlas-consul-ui.png)
 
-These features are included with every Atlas account, and are available now.
-Future versions of the Atlas UI will integrate Consul health checks with
-alerting so that you can notify PagerDuty, send an email, or receive an SMS message.
+The Consul UI is available for free with an Atlas account today.
+The number of nodes/services supported by the UI may be limited by
+a paid subscription in the future, but the open source
+[Consul UI project](https://consul.io/intro/getting-started/ui.html)
+will always be maintained as a free official alternative, though with a
+smaller scope of features.
+
+Future versions of the Atlas Consul integration will enable alerting
+based on health checks so you can notify PagerDuty, email, SMS, etc. out of
+the box. This is just a single example of what Atlas integration will bring.
 
 More information can be found in the [Consul documentation](https://consul.io/)
 about enabling Atlas integration with Consul.
