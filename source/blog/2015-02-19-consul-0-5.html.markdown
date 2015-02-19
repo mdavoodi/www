@@ -81,7 +81,7 @@ provides new functionality to Consul.
 In addition to auto-join being brokered by Atlas, specifying the `-atlas`
 flag will enable a beautiful Consul UI for you automatically.
 
-![Atlas Consul UI](/images/blog/consul/atlas-consul-ui.png)
+![Atlas Consul UI](/images/blog/consul-0-5/atlas-consul-ui.png)
 
 The Consul UI is available for free with an Atlas account today.
 The number of nodes/services supported by the UI may be limited by
