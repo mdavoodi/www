@@ -828,8 +828,8 @@ blockquote {
   margin: 60px;
 }
 blockquote p {
-  font-size: 36px;
-  line-height: 3.1em;
+  font-size: 18px;
+  line-height: 2em;
   font-style: italic;
 }
 strong {
