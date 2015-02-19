@@ -1,0 +1,305 @@
+---
+page_title: "Consul 0.5"
+title: "Consul 0.5"
+list_image_url: "/images/blog/consul/logo-gradient.png"
+post_image_url: "/images/blog/consul/header.png"
+tags: consul
+author: Armon Dadgar
+---
+
+We are proud to release [Consul 0.5](http://www.consul.io). Consul is a
+datacenter runtime, providing many of the capabilities needed to run
+a modern datacenter: service discovery, configuration, and orchestration.
+It's designed to be distributed and highly available and proven to scale
+to thousands of nodes and services across multiple datacenters.
+
+The last major release of Consul was several months ago and it's incredible
+stability has allowed us to focus on adding major new features, improving
+the user experience and fixing bugs.
+
+This release brings many new features including Atlas integration,
+enhanced ACLs, simple N+1 deploys, node and service maintanence modes,
+native HTTP health checks, ephemeral keys, session TTLs, and key rotation
+amoung many others.
+
+Consul 0.5 can be [downloaded here](http://www.consul.io/downloads.html),
+and the full changelog can be [viewed here](https://github.com/hashicorp/consul/blob/v0.5.0/CHANGELOG.md).
+
+Read on to learn more about the major new features in 0.5.
+
+READMORE
+
+## Atlas Integration
+
+Consul 0.5 is the first release that integrates with [Atlas](https://atlas.hashicorp.com),
+which is a commerical offering by HashiCorp. Atlas provides a single platform
+to deploy any application to any infrastructure. Integration with Atlas is optional,
+and provides new functionality that is supported by Atlas.
+
+Bootstrapping a Consul cluster has always required providing a well-known IP
+or DNS address so that an agent can join an existing cluster. This can be solved
+in a number of ways, but Atlas now provides an auto-join mechanism. Using Atlas
+auto-join is extremely easy, and removes the burden of maintaining a well known
+address.
+
+Using Atlas auto-join is simple and requires a free Atlas account along with
+an API token. The `-atlas` CLI flag is used to specify the cluster name, and the
+`-atlas-join` flag enables auto-join:
+
+    $ export ATLAS_TOKEN=...
+    $ consul agent -atlas armon/test -atlas-join
+    ==> Consul agent running!
+         Node name: 'foo'
+        Datacenter: 'dc1'
+            Server: false (bootstrap: false)
+       Client Addr: 127.0.0.2 (HTTP: 8500, HTTPS: -1, DNS: 8600, RPC: 8400)
+      Cluster Addr: 127.0.0.2 (LAN: 8301, WAN: 8302)
+    Gossip encrypt: false, RPC-TLS: false, TLS-Incoming: false
+             Atlas: (Infrastructure: 'armon/test' Join: true)
+
+    ==> Log data will now stream in as it occurs:
+
+    [INFO] serf: EventMemberJoin: foo 127.0.0.2
+    [INFO] scada-client: connect requested (capability: http)
+    [INFO] scada-client: auto-joining LAN with [127.0.0.1]
+    [INFO] agent: (LAN) joining: [127.0.0.1]
+    [INFO] serf: EventMemberJoin: Armons-MacBook-Air.local 127.0.0.1
+
+The auto-join feature can be used both to join clients together within a datacenter,
+as well as to link server together over the WAN in a global cluster.
+
+In addition to providing an auto-join feature, linking a Consul cluster to Atlas
+allows cluster state to be displayed in the Atlas UI:
+
+![Atlas Consul UI](/images/blog/consul/atlas-consul-ui.png)
+
+These features of Atlas are free, and do not require a paid account and are available
+now. Future versions of the Atlas UI will integrate Consul health checks with
+alerting so that you can notify PagerDuty, send an email or receive an SMS message.
+
+More information can be found in the [Consul documentation](https://consul.io/)
+about enabling Atlas integration with Consul.
+
+## Enhanced ACLs
+
+Consul 0.4 was the first version to introduce ACL support. Initially, ACLs
+were able to enforce access to the Key/Value store, but with Consul 0.5
+initial support is now available for protecting service discovery and
+registration.
+
+Policy is set per ACL token, using either [HCL](http://github.com/hashicorp/hcl)
+or JSON. The policy language has now been extended to support the `service`
+keyword:
+
+    # Default deny all service registrations
+    service "" {
+        policy = "read"
+    }
+
+    # Allow registering the web service
+    service "web" {
+        policy = "write"
+    }
+
+With Consul 0.5, the policy language supports specify read level
+privileges, but the enforcement is limited to service registration.
+This means only agents with `write` level privileges are allowed to
+register a service, any any level of privilege can be used for discovery.
+
+Future versions of Consul will extend the enforcement to service discovery
+as well, allowing fine-grained control of visibility of services.
+
+## Distributed Locking and N+1 Deploys
+
+One of the benefits of Consul is it's support for [Sessions](https://consul.io/docs/internals/sessions.html)
+and the ability to use them for [client-side leader election](https://consul.io/docs/guides/leader-election.html).
+However, integrating applications to be Consul-aware and to implement leader election
+can be difficult and error prone.
+
+To simplify this, Consul 0.5 adds a new sub-command `lock`, which handles leader election
+transparently for an application. Suppose we want to have a highly available service `foo`
+we want to deploy it on at least 2 machines, but ensure no more than one instance is running.
+
+Using Consul `lock` makes this trivial:
+
+    (node1) $ consul lock service/foo/lock ./foo.py
+    service foo running
+
+    (node2) $ consul lock service/foo/lock ./foo.py
+
+We can run this same command on `N` machines, and Consul will ensure only a single
+instance is running. However, we may actually want to have more than one instance
+of `foo` running at a time. This is done by specifying the limit of running instances:
+
+    (node1) $ consul lock -n=3 service/foo/lock ./foo.py
+    service foo running
+
+    (node2) $ consul lock -n=3 service/foo/lock ./foo.py
+    service foo running
+
+    (node3) $ consul lock -n=3 service/foo/lock ./foo.py
+    service foo running
+
+    (node4) $ consul lock -n=3 service/foo/lock ./foo.py
+
+By providing the `-n` flag we switch the behavior from a distributed lock
+to a distributed semaphore. For any service that requires `N` instances of availability,
+using Consul `lock` makes it trivial to do an N+1 style deployment, allowing Consul to
+manage the complexity so that applications can be unaware.
+
+More details are available in the documentation for the [`lock` documentation](https://consul.io/docs/commands/lock.html).
+
+## Maintanence Modes
+
+A common request with Consul has been the ability to put a node or service
+into a maintanence mode. This can be used to decommision a node, or to
+avert traffic from a service to prepare for an upgrade.
+
+Consul 0.5 simplifies this by making it a first-class operation. The API has
+now supports both node and service level checks, but to make it simpler, there
+is now a `maint` sub-command.
+
+As an example, to toggle node maintanence mode:
+
+    $ consul maint -enable -reason Testing
+    Node maintenance is now enabled
+
+    $ consul maint
+    Node:
+      Name:   Armons-MacBook-Air.local
+      Reason: Testing
+
+    $ consul maint -disable
+    Node maintenance is now disabled
+
+This can be embedded as part of an application deploy process, or for
+infrastructure automation when setting up or tearing down servers.
+
+More details are available in the documentation for the [`maint` documentation](https://consul.io/docs/commands/maint.html).
+
+## HTTP Health Checks
+
+Consul previously supported a script based and TTL based health checking
+mechanisms. The script based checks were drop-in compatible with nagios
+checks, while the TTL checks provided a simple way for Consul-aware applications
+to integrate.
+
+With Consul 0.5, there is now native HTTP health checks. Doing REST based
+micro-services is a very common pattern, and using HTTP health checks
+can simplify Consul integration for those applications.
+
+Using an HTTP health check is very simple and just requires an `http`
+key in the check definition of a service:
+
+    {
+        "name": "foo",
+        "port": 8000,
+        "checks": [{
+            "http": "http://localhost:8000/health"
+        }]
+    }
+
+In addition, Consul 0.5 also allows for multiple checks per service,
+so that HTTP checks can be added to existing checks.
+
+More details are available in the [checks documentation](https://consul.io/docs/agent/checks.html).
+
+## Ephemeral Keys
+
+The initial design of [Sessions](https://consul.io/docs/internals/sessions.html) in Consul
+targeted the use case of client side locks in the Key/Value store. A session could be associated
+with various locks in the Key/Value store, and Consul would automatically release those
+locks when the session was invalidated.
+
+A frequent request was to support ephemeral keys similar to how ZooKeeper functions.
+To support this, Sessions in Consul have been extended to support a configurable `Behavior`.
+The default behavior is "release" which causes any locks held in a session to be released
+when the session was invalided. This is backwards compatible behavior. With Consul 0.5,
+the behavior can now be set to "delete", causing any held keys to be deleted when the
+session is invalidated.
+
+Here is an example of the new behavior:
+
+    $ curl -X PUT -d '{"behavior":"delete"}' localhost:8500/v1/session/create
+    {"ID":"acf52e93-6b45-6297-6425-bb97a340b144"}
+
+    $ curl -X PUT localhost:8500/v1/kv/test?acquire=acf52e93-6b45-6297-6425-bb97a340b144
+    true
+
+    $ curl -X PUT localhost:8500/v1/session/destroy/acf52e93-6b45-6297-6425-bb97a340b144
+    true
+
+    $ curl localhost:8500/v1/kv/test
+
+The new behavior of Sessions is [documented here](https://consul.io/docs/internals/sessions.html).
+
+## Session TTLs
+
+One of the key design decisions of Consul was to make use of the gossip protocol
+as a failure detector for Sessions instead of a heartbeat or TTL based approach.
+This overcomes some fundamental scalability issues associated with those methods,
+but increases the complexity of using Consul in cases where the gossip mechanism
+is not available.
+
+To enable sessions to be used in a broader range of applications, Consul 0.5 now
+adds support for TTLs on Sessions. These are modeled on Google Chubby and can
+act as an alternative to other health checks. Clients create a sessions with a TTL
+and are responsible for renewing the session before the TTL expires to keep the
+session valid.
+
+The new behavior of Sessions is [documented here](https://consul.io/docs/internals/sessions.html).
+
+## Key Rotation
+
+Consul has supported encryption for the gossip protocol but there was way to
+support multiple keys or key rotation. Inspired by the equivalent in Serf,
+Consul 0.5 adds the `keyring` sub-command. This can be used to install new
+keys, view the installed keys, and remove keys from use.
+
+These new features can be used to easily rotate the encryption key:
+
+    $ NEW=`consul keygen`
+    $ consul keyring -install=$NEW
+    ==> Installing new gossip encryption key...
+    ==> Done!
+
+    $ consul keyring -use=$NEW
+    ==> Changing primary gossip encryption key...
+    ==> Done!
+
+    $ consul keyring -remove=$OLD
+    ==> Removing gossip encryption key...
+    ==> Done!
+
+More details are available in the documentation for the [`keyring` documentation](https://consul.io/docs/commands/keyring.html).
+
+## Upgrade Details
+
+Consul 0.5 introduces some new internal commands that are not backwards compatible
+with previous versions. This means that a Consul 0.5 server node that is the leader
+cannot be mixed with older versions of servers. Consul 0.5 servers can be run with
+older clients however.
+
+There is a 15 minute window where a Consul 0.5 leader server can be run without
+issues providing an opportunity to do a rolling upgrade without issue. Alternatively,
+if the follower nodes are upgraded first and the leader last, the upgrade will
+be seamless.
+
+Additionally, any users with the `acl_default_policy` set to "deny" must update
+their policies to handle the service enforcement prior to upgrade. Otherwise,
+service registration will be denied by ACLs.
+
+We strive to provide the highest level of backwards compatibility possible while
+adding new features, but regretfully some releases will have more complex upgrade
+conditions.
+
+## Roadmap
+
+Consul 0.5 is a huge release that adds lots of new features, improvements,
+stability and bug fixes. As a result, we expect that there will be some new
+issues which will be address in point released following.
+
+Following that, Consul 0.6 will be focused on improving performance, improving
+fidelity of blocking queries, and moving to pure Go. Until then, we hope you
+enjoy Consul 0.5 as much as we do!
+
