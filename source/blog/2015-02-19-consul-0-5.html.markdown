@@ -279,10 +279,7 @@ with previous versions. This means that a Consul 0.5 server node that is the lea
 cannot be mixed with older versions of servers. Consul 0.5 servers can be run with
 older clients however.
 
-There is a 15 minute window where a Consul 0.5 leader server can be run without
-issues providing an opportunity to do a rolling upgrade without issue. Alternatively,
-if the follower nodes are upgraded first and the leader last, the upgrade will
-be seamless.
+More details are available on the [upgrade process here](https://consul.io/docs/guides/upgrading.html).
 
 Additionally, any users with the `acl_default_policy` set to "deny" must update
 their policies to handle the service enforcement prior to upgrade. Otherwise,
