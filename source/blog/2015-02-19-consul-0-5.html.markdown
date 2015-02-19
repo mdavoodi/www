@@ -205,13 +205,14 @@ micro-services is a common pattern, and HTTP health checks
 can simplify Consul integration for those applications.
 
 Using an HTTP health check is very simple and just requires an `http`
-key in the check definition of a service:
+check path and `interval` in the check definition of a service:
 
     {
         "name": "foo",
         "port": 8000,
         "checks": [{
-            "http": "http://localhost:8000/health"
+            "http": "http://localhost:8000/health",
+            "interval": "10s"
         }]
     }
 
