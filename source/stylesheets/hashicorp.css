@@ -811,6 +811,7 @@ p a:hover {
 }
 a,
 ul.unstyled a {
+  color: inherit;
   text-decoration: none;
   border-bottom: none;
 }
@@ -828,8 +829,8 @@ blockquote {
   margin: 60px;
 }
 blockquote p {
-  font-size: 18px;
-  line-height: 2em;
+  font-size: 36px;
+  line-height: 3.1em;
   font-style: italic;
 }
 strong {
@@ -2824,16 +2825,10 @@ body.jobs #location #map #pins .pinpoint.p1 {
   animation-delay: 2s;
 }
 body.jobs #location #map #pins .pinpoint.p2 {
-  top: 94px;
-  left: 762px;
+  top: 237px;
+  left: 402px;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-}
-body.jobs #location #map #pins .pinpoint.p3 {
-  top: 202px;
-  left: 1172px;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
 }
 body.jobs #location #map #pins .pinpoint.bounce {
   -webkit-animation-name: bounce;
