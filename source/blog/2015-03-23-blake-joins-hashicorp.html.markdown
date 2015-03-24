@@ -12,7 +12,7 @@ HashiCorp!
 
 Blake is joining as a front-end engineer, the first full-time front-end
 engineer at HashiCorp. We've worked very hard to ensure that Blake is coming
-into a well thought out and well engineered foundation, but having someone
+into a well thought out and well engineered foundation, having someone
 come on board to focus on front-end full time will result in a huge improvement
 across Atlas and our other projects.
 
