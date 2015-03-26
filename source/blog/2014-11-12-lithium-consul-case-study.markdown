@@ -4,7 +4,7 @@ title: "How Lithium Technologies Uses Consul in a Hybrid-Cloud Infrastructure"
 list_image_url: /images/blog/lithium-consul-case-study/Lithium-and-Consul.jpg
 post_image_url: /images/blog/lithium-consul-case-study/lithium-consul-horizontal.png
 author: Kevin Fishner
-tags: consul, case study
+tags: consul, case-study
 ---
 Lithium Technologies provides a complete social platform to some of the world’s most well-known brands across tech, consumer electronics, financial services, retail, and other industries. These brands rely on the Lithium Social Platform to power customer communities, respond to social media conversations, and drive social analytics. The Lithium infrastructure manages complex real-time data ingestion and processing. To meet the needs of customers and plan for long-term growth, Lithium decided to build out a hybrid-cloud infrastructure. Consul enables automated service discovery and load balancing in Lithium's hybrid-cloud environment, saving hundreds of thousands of dollars and significant development time. 
 
