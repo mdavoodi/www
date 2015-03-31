@@ -44,6 +44,6 @@ Resilient systems are built to withstand unexpected inputs and outputs. To accom
 We believe that applying this sort of systems rigor to infrastructure is critical to achieve the highest levels of reliability. HashiCorp products will always recognize a desired state through codified knowledge. They will collect real-time information through functionally independent components. And they will provide the tooling to self-heal and auto-recover.
 
 ## Pragmatism
-We strongly believe in the value of pragmatism when approaching any problem. Many of the principals we believe in like immutability, codification, automation, and CSP are ideals which we aspire towards and not requirements that we dogmatically impose. There are many situations in which the practical solution requires reevaluating our ideals.
+We strongly believe in the value of pragmatism when approaching any problem. Many of the principles we believe in like immutability, codification, automation, and CSP are ideals which we aspire towards and not requirements that we dogmatically impose. There are many situations in which the practical solution requires reevaluating our ideals.
 
 Pragmatism allows us to assess new ideas, approaches, and technologies and how they may be adopted to improve HashiCorp’s best practices. It would be a mistake to view this as a compromise of first principles, but rather open-mindedness and humility to accept that we may be wrong. The ability to adapt is critical to innovation and one we take pride in.
