@@ -108,7 +108,7 @@ What we've released today is just the beginning of infrastructure collaboration.
 
 Within the month, we'll be integrated with GitHub so that your Terraform
 configuration changes pushed to GitHub automatically are sent/triggered
-in Atlas. And going further than that, we have excited features planned
+in Atlas. And going further than that, we have exciting features planned
 to make Atlas the best tool for deploying and managing infrastructure
 and applications.
 
