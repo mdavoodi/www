@@ -8,7 +8,7 @@ author: Mitchell Hashimoto
 ---
 
 Today we announce [Terraform](http://www.terraform.io) integration
-with [Atlas](https://atlas.hashicorp.com/?utm_source=Terraform+Atlas). Build infrastructure,
+with [Atlas](https://atlas.hashicorp.com/?utm_source=Terraform-Atlas). Build infrastructure,
 collaborate on infrastructure changes, and safely make changes to
 existing infrastructure all from a web interface.
 
@@ -99,7 +99,7 @@ You can get started with Atlas and Terraform right now. We've created
 an interactive tutorial to guide you every step of the way. You don't even
 need an Atlas account to begin!
 
-Visit the [interactive tutorial](https://atlas.hashicorp.com/tutorial/terraform?utm_source=Terraform+Atlas)
+Visit the [interactive tutorial](https://atlas.hashicorp.com/tutorial/terraform?utm_source=Terraform-Atlas)
 to get started today.
 
 ## The Future
