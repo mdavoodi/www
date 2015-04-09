@@ -85,7 +85,7 @@ your Terraform configuration and state and work on your own with the
 Terraform project manually.
 
 Terraform on its own is a standalone command-line application that runs
-from an user's computer. Terraform in a team environment is difficult
+from a user's computer. Terraform in a team environment is difficult
 with this model. Atlas is the collaboration platform for Terraform, making
 it _fun_ to work on infrastructure with a team.
 
