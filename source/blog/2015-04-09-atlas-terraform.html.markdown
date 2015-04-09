@@ -1,8 +1,8 @@
 ---
 page_title: "Terraform in Atlas: Collaborate and Build Infrastructure in the Cloud"
 title: "Terraform in Atlas: Collaborate and Build Infrastructure in the Cloud"
-list_image_url: "/images/blog/terraform/small.png"
-post_image_url: "/images/blog/terraform/big.png"
+list_image_url: /images/blog/atlas/atlas-logo.png
+post_image_url: /images/blog/atlas-terraform/activity_header.png
 tags: terraform
 author: Mitchell Hashimoto
 ---
