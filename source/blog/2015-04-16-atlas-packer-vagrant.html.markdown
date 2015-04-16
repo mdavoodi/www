@@ -72,16 +72,14 @@ either with a `vagrant init` or `vagrant box outdated`.
 Building and storing Vagrant boxes is just one feature of Packer in Atlas.
 We currently have support for the following Packer builders:
 
-```
-amazon-chroot
-amazon-ebs
-amazon-instance
-digitalocean
-docker
-qemu
-virtualbox-iso
-vmware-iso
-```
+    amazon-chroot
+    amazon-ebs
+    amazon-instance
+    digitalocean
+    docker
+    qemu
+    virtualbox-iso
+    vmware-iso
 
 Within the month, Atlas will integrate with GitHub so that when a Packer
 template changes in GitHub, it automatically triggers a new Packer build in
