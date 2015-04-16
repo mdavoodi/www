@@ -1,13 +1,13 @@
 ---
-page_title: "Packer in Atlas: Automate the Build and Management of Vagrant Boxes and Machine Images"
-title: "Packer in Atlas: Automate the Build and Management of Vagrant Boxes and Machine Images""
+page_title: "Packer in Atlas: Automate the Building and Managing of Vagrant Boxes and Machine Images"
+title: "Packer in Atlas: Automate the Building and Managing of Vagrant Boxes and Machine Images"
 list_image_url: /images/blog/atlas/atlas-logo.png
 post_image_url: /images/blog/atlas-packer/build_header.png
 tags: atlas, packer, vagrant
 author: Jack Pearkes
 ---
 
-Today we announce [Packer](https://packer.io) integration
+Today we are announcing [Packer](https://packer.io) integration
 with [Atlas](https://atlas.hashicorp.com/?utm_source=Packer-Atlas).
 Automate remotely running Packer builds,
 store and version artifacts, and quickly distribute
@@ -37,7 +37,7 @@ also build and store AMIs, Docker containers, DigitalOcean images, and more.
 
 Visit the [interactive tutorial](https://atlas.hashicorp.com/tutorial/packer-vagrant?utm_source=Packer-Atlas)
 to get started today, or read below for more details on Packer and
-it's integration with Atlas.
+its integration with Atlas.
 
 ## Vagrant box Creation and Management
 
@@ -69,7 +69,7 @@ either with a `vagrant init` or `vagrant box outdated`.
 
 ## The Future
 
-Building and storing Vagrant boxes is just one part of Packer in Atlas.
+Building and storing Vagrant boxes is just one feature of Packer in Atlas.
 We currently have support for the following Packer builders:
 
 ```
@@ -83,7 +83,7 @@ virtualbox-iso
 vmware-iso
 ```
 
-Within the month, Atlas will be integrated with GitHub so that when a Packer
+Within the month, Atlas will integrate with GitHub so that when a Packer
 template changes in GitHub, it automatically triggers a new Packer build in
 Atlas. Combining automated Packer builds with automated Terraform runs based
 on artifact changes lays the foundation for automating and managing
