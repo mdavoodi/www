@@ -80,8 +80,6 @@ amazon-instance
 digitalocean
 docker
 openstack
-parallels-iso
-parallels-pvm
 qemu
 virtualbox-iso
 vmware-iso
