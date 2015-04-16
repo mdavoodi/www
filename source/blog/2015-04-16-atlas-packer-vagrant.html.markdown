@@ -7,12 +7,13 @@ tags: atlas, packer, vagrant
 author: Jack Pearkes
 ---
 
-Today we announce [Packer](https://packer.io) integration
-with [Atlas](https://atlas.hashicorp.com/?utm_source=Packer-Atlas). Run packer
-builds, store artifacts and automatically version and distribute
-Vagrant Boxes. All without running the Packer build process on your machine.
+Today we are announcing [Packer](https://packer.io) integration
+with [Atlas](https://atlas.hashicorp.com/?utm_source=Packer-Atlas). With
+Atlas + Packer integration, you can automate the remote running of Packer builds,
+store and version artifacts automatically, and quickly distribute
+Vagrant boxes to your team or the community.
 
-Packer is our open source project for building golden images.
+Packer is an open source project by HashiCorp for building machine images.
 It can build AMIs, Virtualbox images, Docker images, Vagrant boxes and
 more, with a broad range of support for both machine and cloud provider images.
 
@@ -30,7 +31,8 @@ READMORE
 
 ## Vagrant Box Creation and Management
 
-Following a `packer push` of your template and associated configuration,
+Following a [`packer push`](https://www.packer.io/docs/command-line/push.html)
+of your template and associated configuration,
 Atlas will automatically run your Packer build and provisioning, as well
 as any post-processors, including uploading Vagrant boxes.
 
@@ -48,7 +50,7 @@ and saved.
 
 When a build completes, any artifacts created will be automatically uploaded
 to Atlas, including boxes. Boxes that don't exist will be automatically
-created, and boxes will automitically release and become available to
+created, and boxes will automatically release and become available to
 your users.
 
 ![Uploaded Box](/images/blog/atlas-packer/uploaded_box.png)
