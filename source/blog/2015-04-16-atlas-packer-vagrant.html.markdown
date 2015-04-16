@@ -79,7 +79,6 @@ amazon-ebs
 amazon-instance
 digitalocean
 docker
-openstack
 qemu
 virtualbox-iso
 vmware-iso
