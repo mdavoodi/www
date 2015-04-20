@@ -20,7 +20,7 @@ Infrastructure management done responsibly is a versioned, auditable, repeatable
 
 * Configuration, such as installing packages or creating users, should be done in the build phase, not at runtime. This gives rise to immutable infrastructure, the notion that changes should never be made to a live production server. Instead, create a new server with the proper configuration, and tear down the old server. This reduces the risk of an unhealthy server receiving production traffic due to a runtime configuration failure, and creates a linear history of changes.
 * Service and infrastructure configurations should be represented as code. This allows the configurations to be versioned, audited, and shared with your team. 
-* There should never be hard-coded IP addresses or stale values in a service configuration. Instead systems should leverage service discovery for dynamic values. The rapid rate of change in the modern datacenter, combined with build-time configuration, necessitate dynamic configurations using service discovery. 
+* Static configuration should never be used to represent dynamic values. There should never be hard-coded IP addresses or stale values in a service configuration. Instead systems should leverage service discovery for dynamic values. The rapid rate of change in the modern datacenter, combined with build-time configuration, necessitate dynamic configurations using service discovery. 
 
 ## HashiCorp Product Development
 The above beliefs about responsible infrastructure management lay the foundation for our product development:
@@ -33,4 +33,4 @@ Atlas’s workflow for turning code into a running application is shown below. T
 
 ![Atlas Mindset](images/blog/atlas-mindset/atlas-workflow.png)
 
-Each open source project is designed to solve a specific problem in application delivery, but is purposefully unaware of the other steps. While the individual open source projects are narrow in scope, Atlas unifies them to provide a repeatable, versioned, auditable, and collaborative workflow for turning code into a running application. We are focused on providing an elegant, responsible workflow for managing infrastructure so organizations can focus on building innovative technology, not deploying it. 
+Each open source project is designed to solve a specific problem in application delivery, and each is purposefully unaware of the other steps. While the individual open source projects are narrow in scope, Atlas unifies them to provide a repeatable, versioned, auditable, and collaborative workflow for turning code into a running application. We are focused on providing an elegant, responsible workflow for managing infrastructure so organizations can focus on building innovative technology, not deploying it.
