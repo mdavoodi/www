@@ -4,3 +4,4 @@
 /.sass-cache
 /.vagrant/
 /node_modules/
+/vendor/ruby
