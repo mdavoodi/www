@@ -803,7 +803,8 @@ ol {
   line-height: 1.55em;
   margin-bottom: 20px;
 }
-p a {
+p a,
+li a {
   color: #48b4fb;
 }
 p a:hover {
