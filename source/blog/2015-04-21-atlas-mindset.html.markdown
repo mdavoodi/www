@@ -6,7 +6,7 @@ tags: atlas
 author: Kevin Fishner
 ---
 
-HashiCorp is the creator of the open source projects [Packer](https://packer.io), [Vagrant](https://www.vagrantup.com), [Terraform](https://terraform.io), [Serf](https://serfdom.io), and [Consul](https://consul.io), as well as the commercial product [Atlas](https://atlas.hashicorp.com). At HashiCop, we are committed to building tools that provide visibility into operator workflows and allow for responsible changes to infrastructure. Our product development is driven by the qualities of the modern datacenter and qualities of responsible infrastructure management. This post explains our process.
+HashiCorp is the creator of the open source projects [Packer](https://packer.io/?utm_source=blog&utm_campaign=AtlasMindset), [Vagrant](https://www.vagrantup.com/?utm_source=blog&utm_campaign=AtlasMindset), [Terraform](https://terraform.io/?utm_source=blog&utm_campaign=AtlasMindset), [Serf](https://serfdom.io/?utm_source=blog&utm_campaign=AtlasMindset), and [Consul](https://consul.io/?utm_source=blog&utm_campaign=AtlasMindset), as well as the commercial product [Atlas](https://atlas.hashicorp.com/?utm_source=blog&utm_campaign=AtlasMindset). At HashiCorp, we are committed to building tools that provide visibility into operator workflows and allow for responsible changes to infrastructure. Our product development is driven by the qualities of the modern datacenter and qualities of responsible infrastructure management. This post explains our process.
 
 READMORE
 
@@ -23,7 +23,7 @@ Infrastructure management done responsibly is a versioned, auditable, repeatable
 * There should never be hard-coded IP addresses or stale values in a service configuration. Instead systems should leverage service discovery for dynamic values. The rapid rate of change in the modern datacenter, combined with build-time configuration, necessitate dynamic configurations using service discovery. 
 
 ## HashiCorp Product Development
-The above beliefs on responsible infrastructure management lay the foundation for our product development:
+The above beliefs about responsible infrastructure management lay the foundation for our product development:
 
 * Packer enables simple, repeatable, and automated build-time configuration
 * Packer and Terraform enable service and infrastructure configuration to be represented as code and shared with teams for collaboration. 
