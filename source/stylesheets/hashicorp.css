@@ -2559,7 +2559,9 @@ article.blog-post pre,
 article.support pre {
   margin: 40px 0;
 }
-article.blog-post p img,
+article.blog-post p img {
+  padding: 0px;
+}
 article.support p img {
   padding: 30px;
 }
