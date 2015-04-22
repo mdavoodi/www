@@ -139,7 +139,7 @@ Remote modules are accessed as a standard Terraform resource. An example
 is shown below:
 
 <pre class="prettyprint">
-resource "terraform_state" "vpc" {
+resource "terraform_remote_state" "vpc" {
     backend = "atlas"
     config {
         path = "hashicorp/vpc-prod"
