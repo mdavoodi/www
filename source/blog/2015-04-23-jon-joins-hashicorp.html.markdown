@@ -23,6 +23,10 @@ of these users who have legacy concerns that want to adopt new technologies.
 If you reach out to us about working with our tooling, you might just get
 a response from Jon!
 
+In addition to working with our users, Jon is starting to get acquainted
+with the internals of our tools. This is both to continue helping users
+on a deeper level, but also to contribute back.
+
 Prior to HashiCorp, Jon did a variety of things. He started out network
 administrator and software developer, then got into product management,
 then sales and account management, and then finally winded his way back to
