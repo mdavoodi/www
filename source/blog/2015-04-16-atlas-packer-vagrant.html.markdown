@@ -46,7 +46,7 @@ of your template and associated configuration files,
 Atlas will automatically run Packer to build and provision the Vagrant box, and then
 post-process the resulting box to store it in Atlas.
 
-![Packer push](images/blog/atlas-packer/packer_push.png)
+![Packer push](/images/blog/atlas-packer/packer_push.png)
 
 Packer push allows users – in a single step – to modify base configuration
 and provisiong scripts to make new Vagrant box versions. Vagrant boxes can be
