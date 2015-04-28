@@ -143,6 +143,9 @@ div {
     &.terraform{
         background-color: @terraform-color;
     }
+    &.vault{
+        background-color: @vault-color;
+    }
 
     #products-header{
         position: relative;
@@ -260,6 +263,19 @@ div {
                 }
             }
 
+
+            &.vault{
+                a{
+                    background: url(/images/nav-vault-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-vault-active.png", "/images/nav-vault-active@2x.png", 36px, 40px);
+
+                    i{
+                        width: 36px;
+                        .vault-icon();
+                    }
+                }
+            }
+
             &.serf{
                 a{
                     background: url(/images/nav-serf-active.png) center -80px no-repeat;
@@ -308,6 +324,9 @@ div {
         &.terraform{
             background-color: @terraform-color;
         }
+        &.vault{
+            background-color: @vault-color;
+        }
         &.atlas {
             background-color: @atlas-color;
         }
@@ -337,8 +356,8 @@ div {
                 color: @atlas-color;
             }
             .black-caret-right{
-                background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/vagrant-caret-right.png", "/images/consul-caret-right@2x.png", 6px, 9px);
+                background: url(/images/atlas-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/atlas-caret-right.png", "/images/atlas-caret-right@2x.png", 6px, 9px);
             }
         }
 
@@ -364,10 +383,25 @@ div {
             .fill-btn{
                 color: @terraform-color;
             }
-            /*.black-caret-right{
+            .black-caret-right{
                 background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
                 .img-retina("/images/terraform-caret-right.png", "/images/terraform-caret-right@2x.png", 6px, 9px);
-            } */
+            }
+        }
+
+
+        .vault{
+            .product-logo{
+                background: url(/images/product-vault.png) 0 0 no-repeat;
+                .img-retina("/images/product-vault.png", "/images/product-vault@2x.png", 208px, 202px);
+            }
+            .fill-btn{
+                color: @vault-color;
+            }
+            .black-caret-right{
+                background: url(/images/vault-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/vault-caret-right.png", "/images/vault-caret-right@2x.png", 6px, 9px);
+            }
         }
 
         .serf{
