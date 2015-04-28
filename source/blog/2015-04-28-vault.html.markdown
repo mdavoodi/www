@@ -1,0 +1,282 @@
+---
+page_title: "Vault"
+title: "Vault"
+list_image_url: "/images/blog/vault/list.png"
+post_image_url: "/images/blog/vault/header.png"
+tags: vault
+author: Mitchell Hashimoto
+---
+
+Today we announce [Vault](http://www.vaultproject.io) &mdash; a tool for securely
+managing secrets and encrypting data in-transit. From storing credentials and API
+keys to encrypting passwords for user signups, Vault is meant to be a solution
+for all secret management needs.
+
+A modern system requires access to a multitude of secrets: credentials for databases,
+API keys for external services, credentials for service-oriented architecture
+communication, etc. Understanding who is accessing what secrets is already very
+difficult and often platform-specific. Adding on key rolling, secure storage, and
+detailed audit logs is almost impossible without a custom solution. Vault
+solves all of these problems.
+
+Vault is already being deployed in very large infrastructures. We are
+excited for the future of Vault, and what we have for you today is just
+the beginning of what we believe is an incredible tool.
+
+Read on to learn more.
+
+READMORE
+
+<hr>
+
+<blockquote>
+<p>Vault is one giant leap forward for practical security in a cloud environment.</p>
+<cite>Rob Witoff, Director at Coinbase</cite>
+</blockquote>
+
+<hr>
+
+## Features
+
+Vault is the most feature-rich initial release of any of our open
+source projects. Vault has basic features you'd expect from a secret
+manager, but also has some novel features that we believe will modernize
+the space and extend the boundary for operational excellence.
+
+We'll go into detail about some of the major features later
+in this post, but first we'll enumerate all the major features of Vault:
+
+* **Secure secret storage**: Arbitrary key/value secrets can be stored in
+Vault. These secrets are encrypted prior to being written to persistent storage,
+so gaining access to the raw storage isn't enough to access your secrets.
+Vault can write to disk, [Consul](http://www.consul.io), and more.
+
+* **Dynamic secrets**: Vault can generate secrets on-demand for some systems,
+such as AWS or SQL databases. For example, when an application needs to access
+an S3 bucket, it asks Vault for credentials, and Vault will generate an AWS
+keypair with valid permissions on demand. After creating these dynamic secrets,
+Vault will also automatically revoke them after the lease is up.
+
+* **Leasing and renewal**: All secrets in Vault have a lease associated with it.
+At the end of the lease, Vault will automatically revoke that secret. Clients
+are able to renew leases via built-in APIs.
+
+* **Revocation**: Vault has built-in support for secret revocation. Vault can
+revoke not only single secrets, but also a tree of secrets. For example, Vault
+can revoke all secrets read by a specific user or all secrets of a specific
+type. Revocation assists in key rolling as well as locking down systems in the
+case of an intrusion. This also allows for organizations to plan and train
+for various "break glass" procedures.
+
+* **Data encryption**: Vault can encrypt and decrypt data without storing it.
+This allows security teams to define encryption parameters and developers to
+store encrypted data in a location such as a SQL database without having to design
+their own encryption methods.
+
+* **Auditing**: All access to Vault can be sent to multiple audit backends.
+This includes _any_ request to Vault: successes, failures, configuration,
+data access, etc. Audit logs can be sent to syslog, files, and more.
+Multiple audit backends can be enabled to have redundant copies of audit
+logs.
+
+* **Access control policies**: ACLs can be created to restrict or grant
+fine-grained access to any feature of Vault. This is a critical feature for
+a secret management system.
+
+* **Multiple authentication methods**: Vault includes multiple methods
+for authentication (each enabled individually) so you can choose what works
+best with your organization. For 0.1, Vault supports tokens, username/password,
+GitHub, certificates, and more. In the future, many more will be added.
+
+## Secrets
+
+The goal of Vault is to manage secrets. At the most fundamental level,
+this includes reading/writing arbitrary secrets to Vault securely. Vault
+makes this very easy:
+
+    $ vault write secret/foo value=bar
+    Success! Data written to: secret/foo
+
+    $ vault read secret/foo
+    Key               Value
+    lease_id          secret/foo/9c5f3cf1-1239-0160-4311-d6544fd1018c
+    lease_duration    2592000
+    value             bar
+
+    $ vault delete secret/foo
+    Success! Deleted 'secret/foo'
+
+**Note**: This and all other features of Vault are also possible through the
+[complete HTTP API](http://vaultproject.io/docs/http/index.html) as well.
+
+When you read a secret, Vault returns the data you wrote along with leasing
+information. Leasing is a core, critical part of Vault. Every secret in
+Vault _must_ have a lease. The lease tells a consumer of a secret that
+the secret is guaranteed to remain valid for that lease period, but past
+the lease period, there is no guarantee the secret will still function. This
+forces clients to renew the lease periodically, where Vault can record this
+in the audit log and can use this opportunity to potentially deny lease renewal
+as well.
+
+When writing secrets manually, revocation of secrets past the leasing period
+is also manual. However, Vault also supports _dynamic secrets_ that have
+automatic revocation and are covered next.
+
+## Dynamic Secrets
+
+In the modern world of API-driven everything, many systems also support
+programmatic creation of access credentials. Vault takes advantage of this
+support through a feature called _dynamic secrets_: secrets that are
+generated on-demand, and also support automatic revocation.
+
+For Vault 0.1, Vault supports dynamically generating AWS, SQL, and Consul
+credentials.
+
+The power of this feature is immense: credentials to access these systems
+no longer ever need to be written to disk. They can be accessed from Vault,
+stored in-memory, and automatically revoked when they're no longer used.
+If a specific application instance is compromised, that single key can be
+revoked, rather than some more global set of credentials.
+
+The most revolutionary place we're seeing this feature used already is
+for SQL credentials. With dynamic SQL credentials, every application that
+needs database access is generated a _new SQL user_. For systems such
+as PostgreSQL, Vault even sets the
+[VALID UNTIL](http://www.postgresql.org/docs/9.4/static/sql-createrole.html)
+field so PostgreSQL itself will revoke the user automatically.
+
+Here is what reading a dynamic secret looks like:
+
+    $ vault read postgresql/creds/production
+    Key             Value
+    lease_id        postgresql/creds/production/8ade2cde-5081-e3b7-af1a-3b9fb070df66
+    lease_duration  3600
+    password        56b43bc3-b285-4803-abdf-662d6a105bd0
+    username        vault-root-1430141210-1847
+
+It looks just like reading a normal secret! The difference is that the
+returned username and password didn't exist prior to reading it, and
+in 3600 seconds (the lease duration shown), Vault will automatically
+delete that SQL user unless the lease is renewed.
+
+Remember, all of this can be done from the
+[API](http://vaultproject.io/docs/http/index.html) as well, and in
+the case of an application it probably would use the API so that the secret
+never has to be written to disk or copied anywhere else.
+
+## Security
+
+You can see from above that reading and writing secrets from Vault is easy
+and even enjoyable. But more important than this usability is ensuring
+that these secrets are secure. We took security very seriously and
+use industry best practices to secure Vault.
+
+The data stored with Vault is encrypted using 256-bit AES in GCM mode
+with a randomly generated nonce. This encryption happens in-memory prior
+to ever being sent to the backend storage driver. This way the storage
+never sees the unencrypted value.
+
+The key used to encrypt the data is also encrypted using 256-bit AES
+in GCM mode. This is known as the _master key_. The encrypted encryption
+key is stored in the backend storage. The master key is then split
+using [Shamir's Secret Sharing](http://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing).
+Shamir's Secret Sharing ensures that no single person (including Vault) has
+the ability to decrypt the data. To decrypt the data, a threshold number
+of keys (by default three, but configurable) are required to _unseal_
+the Vault. These three keys are expected to be with three different
+individuals.
+
+With the Vault unsealed, all API calls are done with HTTP over TLS.
+While it is possible to disable TLS, it requires explicitly opting into it
+both on the server as well as all clients.
+
+All API calls to Vault require an identity obtained through authentication.
+This identity is mapped to various metadata. The identity and metadata are
+logged with every audit log entry. For example, if you use GitHub for
+authentication, the GitHub username and organization of the user is in
+the audit logs. If you use certificate authentication, the fingerprint
+of the client certificate is logged.
+
+Within Vault, data is split into multiple backends. For example, when
+you write data to `secret/foo`, it is communicating with a different
+secret backend than when you read a PostgreSQL credential from
+`postgresql/creds`. Each backend is given a restricted view to the backend
+data. The backend at `secret/foo` can _never_ access the data at
+`postgresql/creds`, for example. This isn't just an ACL; the backends
+themselves simply do not have a way to address data from other backends.
+This ensures that even within Vault there is protection against malicious
+activity.
+
+In addition to all of the above, Vault was in closed beta for over 6 weeks
+with over 50 individuals and corporations. We reached out specifically to
+security teams at companies as well as individuals with an interest/background
+in security to help review Vault prior to release. We've gotten basic approval
+from multiple companies and are confident that Vault has a strong foundation
+as we move forward.
+
+This is just a brief overview of the security of Vault. For a full explanation,
+see the pages on the
+[Vault security model](http://vaultproject.io/docs/internals/security.html)
+and
+[Vault architecture](http://vaultproject.io/docs/internals/architecture.html).
+
+## HashiCorp Built
+
+At HashiCorp, we build solutions to DevOps problems that are technically
+sound and are a joy to use. We don't take shortcuts with the technologies
+we choose, and just as importantly we don't take shortcuts in the experience
+of using and operating our tools. As a result, HashiCorp-made tools are
+stable, scalable, and easy to use and operate.
+
+Vault is the sixth such tool we've built. We've also built
+[Vagrant](http://www.vagrantup.com),
+[Packer](http://www.packer.io),
+[Serf](http://www.serfdom.io),
+[Consul](http://www.consul.io),
+and [Terraform](http://www.terraform.io).
+Vault works great with these other tools, but doesn't require any of them.
+We have plans to integrate Vault more closely into some of our other tools
+as well, such as automatically retrieving AWS credentials for Packer via
+Vault.
+
+We're proud of Vault and are excited to see folks learn more about it and
+even begin to use it. As a disclaimer, Vault is a very important piece of
+your infrastructure, and security is paramount. For 0.1, we can't recommend
+production usage, but many companies are already deploying Vault into
+production and we're working hard to ensure we can stand by that right away.
+
+<hr>
+<blockquote>
+<p>Operationally, Vault promises to significantly simplify and enhance the security against internal threats and other service lifecycle management challenges. Based on our diligence and initial testing, HashiCorp has released another solid product that the industry can benefit from.</p>
+<cite>Sean Chittenden, Operations Architect at Groupon</cite>
+</blockquote>
+<hr>
+
+## Learn More
+
+To learn more about Vault, please visit the
+[Vault website](http://vaultproject.io). From the home page, you can click
+"Launch Interactive Tutorial" and use _all_ of Vault directly from your
+browser!
+
+The following pages in particular are good next steps:
+
+* [Intro](http://vaultproject.io/intro/index.html) -
+  The intro section explains in more detail what Vault is, how it works,
+  what use cases it has, and includes a brief getting started guide
+  so you can start experimenting with Vault and learn about all of its
+  features.
+
+* [Internals](http://vaultproject.io/docs/internals/index.html) -
+  The internals section is an advanced topic but covers details about
+  the internals of Vault. It isn't required to start using Vault, but it is
+  recommended reading if you want to deploy Vault.
+
+* [Comparison to other software](http://vaultproject.io/intro/vs/index.html) -
+  If you'd like to know how Vault is different from other options out
+  there, take a look at this page and we go into detail on the differences.
+
+* [GitHub](https://github.com/hashicorp/vault) -
+  The source code for Vault is hosted on GitHub if you want to dive right in.
+  We recommend reading the documentation first, since an understanding of
+  how Vault works will help greatly in understanding the implementation.

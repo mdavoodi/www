@@ -803,8 +803,7 @@ ol {
   line-height: 1.55em;
   margin-bottom: 20px;
 }
-p a,
-li a {
+p a {
   color: #48b4fb;
 }
 p a:hover {
@@ -827,12 +826,21 @@ ul.unstyled a:hover {
 }
 blockquote {
   border: none;
-  margin: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 blockquote p {
-  font-size: 36px;
-  line-height: 3.1em;
+  font-size: 19px;
   font-style: italic;
+}
+blockquote cite {
+  font-size: 19px;
+  font-style: italic;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
 }
 strong {
   font-family: "Lato", helvetica, arial, sans-serif;
@@ -2559,9 +2567,7 @@ article.blog-post pre,
 article.support pre {
   margin: 40px 0;
 }
-article.blog-post p img {
-  padding: 0px;
-}
+article.blog-post p img,
 article.support p img {
   padding: 30px;
 }

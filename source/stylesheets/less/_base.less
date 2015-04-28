@@ -116,13 +116,24 @@ a, ul.unstyled a {
 
 blockquote {
 	border: none;
-    margin: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 
-  p {
-    font-size: @base-font-size * 2;
-    line-height: @base-line-height * 2;
-    font-style: italic;
-  }
+    p {
+        font-size: 19px;
+        font-style: italic;
+    }
+
+    cite {
+        font-size: 19px;
+        font-style: italic;
+
+        &:before {
+            content: "\2014 \2009";
+        }
+    }
 }
 
 strong {
