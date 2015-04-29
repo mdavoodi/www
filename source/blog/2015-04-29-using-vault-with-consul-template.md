@@ -3,7 +3,7 @@ page_title: "Using Vault with Consul Template"
 title: "Using Vault with Consul Template"
 list_image_url: "/images/blog/using-vault-with-consul-template/ct-vault.png"
 post_image_url: "/images/blog/using-vault-with-consul-template/ct-vault.png"
-tags: vault, consul-template
+tags: vault
 author: Seth Vargo
 ---
 
