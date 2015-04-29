@@ -190,6 +190,17 @@ h a s h i c o r p
     background-size: 36px 40px;
   }
 }
+.vault-icon {
+  background: url(/images/nav-vault.png) 0 0 no-repeat;
+  background-image: url("/images/nav-vault.png");
+  background-size: 36px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .vault-icon {
+    background-image: url("/images/nav-vault@2x.png");
+    background-size: 36px 40px;
+  }
+}
 .packer-icon {
   background: url(/images/nav-packer.png) 0 0 no-repeat;
   background-image: url("/images/nav-packer.png");
@@ -1378,28 +1389,12 @@ body.page-sub #header .main-links.nav > li > a:focus {
     background-size: 165px 178px;
   }
 }
-#jumbotron #jumbotron-content .jumbo-logo .hero-atlas {
-  position: absolute;
-  top: 99px;
-  left: 87px;
-  width: 66px;
-  height: 65px;
-  background: url(/images/atlas-hero-logo.png) 0 0 no-repeat;
-  background-image: url("/images/atlas-hero-logo.png");
-  background-size: 66px 65px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #jumbotron #jumbotron-content .jumbo-logo .hero-atlas {
-    background-image: url("/images/atlas-hero-logo@2x.png");
-    background-size: 66px 65px;
-  }
-}
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos {
   position: absolute;
-  top: 392px;
-  left: -34px;
+  top: 372px;
+  left: -50px;
   width: 44px;
-  height: 43px;
+  height: 53px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod {
   position: absolute;
@@ -1440,6 +1435,19 @@ body.page-sub #header .main-links.nav > li > a:focus {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.terraform {
     background-image: url("/images/hero-terraform@2x.png");
+    background-size: 39px 43px;
+  }
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vault {
+  width: 39px;
+  height: 43px;
+  background: url(/images/hero-vault.png) 0 0 no-repeat;
+  background-image: url("/images/hero-vault.png");
+  background-size: 39px 43px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vault {
+    background-image: url("/images/hero-vault@2x.png");
     background-size: 39px 43px;
   }
 }
@@ -1487,20 +1495,24 @@ body.page-sub #header .main-links.nav > li > a:focus {
   left: 0;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p2 {
-  top: 34px;
-  left: 72px;
+  top: 60px;
+  left: 57px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p3 {
-  top: 64px;
-  left: 137px;
+  top: 98px;
+  left: 128px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p4 {
-  top: 34px;
-  left: 210px;
+  top: 97px;
+  left: 193px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p5 {
+  top: 60px;
+  left: 263px;
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p6 {
   top: 0;
-  left: 267px;
+  left: 312px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hexagons {
   position: relative;
@@ -1579,29 +1591,33 @@ body.page-sub #header .main-links.nav > li > a:focus {
     width: auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   #jumbotron #jumbotron-content .jumbo-logo {
-    margin: -40px auto 0 auto;
+    margin: -30px auto 0 auto;
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p1 {
     top: 0;
-    left: 15px;
+    left: 0px;
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p2 {
     top: 34px;
     left: 82px;
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p3 {
-    top: 64px;
+    top: 98px;
     left: 137px;
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p4 {
-    top: 34px;
-    left: 200px;
+    top: 98px;
+    left: 180px;
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p5 {
-    top: 0;
+    top: 34px;
     left: 252px;
+  }
+  #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p6 {
+    top: 0;
+    left: 300px;
   }
 }
 article p {
@@ -1759,6 +1775,9 @@ div.align-center {
 }
 #products.terraform {
   background-color: #822ff7;
+}
+#products.vault {
+  background-color: #00bfe0;
 }
 #products #products-header {
   position: relative;
@@ -1921,6 +1940,29 @@ div.align-center {
     background-size: 36px 40px;
   }
 }
+#products #products-nav li.vault a {
+  background: url(/images/nav-vault-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-vault-active.png");
+  background-size: 36px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.vault a {
+    background-image: url("/images/nav-vault-active@2x.png");
+    background-size: 36px 40px;
+  }
+}
+#products #products-nav li.vault a i {
+  width: 36px;
+  background: url(/images/nav-vault.png) 0 0 no-repeat;
+  background-image: url("/images/nav-vault.png");
+  background-size: 36px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.vault a i {
+    background-image: url("/images/nav-vault@2x.png");
+    background-size: 36px 40px;
+  }
+}
 #products #products-nav li.serf a {
   background: url(/images/nav-serf-active.png) center -80px no-repeat;
   background-image: url("/images/nav-serf-active.png");
@@ -1990,6 +2032,9 @@ div.align-center {
 #products #products-display.terraform {
   background-color: #822ff7;
 }
+#products #products-display.vault {
+  background-color: #00bfe0;
+}
 #products #products-display.atlas {
   background-color: #48b4fb;
 }
@@ -2033,13 +2078,13 @@ div.align-center {
   color: #48b4fb;
 }
 #products #products-display .atlas .black-caret-right {
-  background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/vagrant-caret-right.png");
+  background: url(/images/atlas-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/atlas-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .atlas .black-caret-right {
-    background-image: url("/images/consul-caret-right@2x.png");
+    background-image: url("/images/atlas-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2068,12 +2113,6 @@ div.align-center {
     background-size: 6px 9px;
   }
 }
-#products #products-display .terraform {
-  /*.black-caret-right{
-                background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/terraform-caret-right.png", "/images/terraform-caret-right@2x.png", 6px, 9px);
-            } */
-}
 #products #products-display .terraform .product-logo {
   background: url(/images/product-terraform.png) 0 0 no-repeat;
   background-image: url("/images/product-terraform.png");
@@ -2087,6 +2126,42 @@ div.align-center {
 }
 #products #products-display .terraform .fill-btn {
   color: #822ff7;
+}
+#products #products-display .terraform .black-caret-right {
+  background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/terraform-caret-right.png");
+  background-size: 6px 9px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-display .terraform .black-caret-right {
+    background-image: url("/images/terraform-caret-right@2x.png");
+    background-size: 6px 9px;
+  }
+}
+#products #products-display .vault .product-logo {
+  background: url(/images/product-vault.png) 0 0 no-repeat;
+  background-image: url("/images/product-vault.png");
+  background-size: 208px 202px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-display .vault .product-logo {
+    background-image: url("/images/product-vault@2x.png");
+    background-size: 208px 202px;
+  }
+}
+#products #products-display .vault .fill-btn {
+  color: #00bfe0;
+}
+#products #products-display .vault .black-caret-right {
+  background: url(/images/vault-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/vault-caret-right.png");
+  background-size: 6px 9px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-display .vault .black-caret-right {
+    background-image: url("/images/vault-caret-right@2x.png");
+    background-size: 6px 9px;
+  }
 }
 #products #products-display .serf .product-logo {
   background: url(/images/product-serf.png) 0 0 no-repeat;

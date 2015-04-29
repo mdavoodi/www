@@ -34,23 +34,15 @@
       startAnimation: function(){
         var _this = this;
         setTimeout(_this.showHeroLogo, 100);
-     
-        /*for(var i = 1; i < 5; i++) {
-          (function(index) {
-              setTimeout(function() { 
-                $('.hexagons .hex'+index).addClass('in'); 
-              }, 400 + (i*300));
-          })(i);
-        }*/        
 
-        for(var i = 1; i < 6; i++) {
+        for(var i = 1; i < 7; i++) {
           (function(index) {
-              setTimeout(function() { 
-                $('.hero-prod-logos .prod.p'+index).addClass('in'); 
+              setTimeout(function() {
+                $('.hero-prod-logos .prod.p'+index).addClass('in');
               }, 700 + (i*300));
           })(i);
         }
-     
+
       },
 
       showHeroLogo: function(){
@@ -58,7 +50,7 @@
       },
 
     }
-  }());  
+  }());
 
   HSHC.Slider = (function () {
     return {
@@ -91,7 +83,7 @@
         })
 
         if(HSHC.Utils.isMobile)
-          return;        
+          return;
         /*_this.ui.$doc.scroll(function() {
           var top = _this.ui.$doc.scrollTop(),
               speedAdj = (top*0.6),
@@ -104,7 +96,7 @@
 
       initSlider: function(){
         var _this = this;
-        
+
         this.ui.$slider.owlCarousel({
           //autoPlay : 3000,
           stopOnHover : true,
@@ -120,7 +112,7 @@
           afterAction : function(elem, num){
             _this.handleSliderUpdate(this.currentItem);
           }
-        });      
+        });
       },
 
       handleSliderUpdate: function(num){
@@ -186,7 +178,7 @@
       }
 
     }
-  }());  
+  }());
 
   $( document ).ready(function() {
     if($('.index').length > 0){

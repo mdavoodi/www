@@ -46,22 +46,12 @@
                 .img-retina("/images/hero-logo.png", "/images/hero-logo@2x.png", 165px, 178px);
             }
 
-            .hero-atlas {
-                position: absolute;
-                top: 99px;
-                left: 87px;
-                width: 66px;
-                height: 65px;
-                background: url(/images/atlas-hero-logo.png) 0 0 no-repeat;
-                .img-retina("/images/atlas-hero-logo.png", "/images/atlas-hero-logo@2x.png", 66px, 65px);
-            }
-
             .hero-prod-logos {
                 position: absolute;
-                top: 392px;
-                left: -34px;
+                top: 372px;
+                left: -50px;
                 width: 44px;
-                height: 43px;
+                height: 53px;
                 .prod {
                     position: absolute;
                     &.consul {
@@ -81,6 +71,12 @@
                         height: 43px;
                         background: url(/images/hero-terraform.png) 0 0 no-repeat;
                         .img-retina("/images/hero-terraform.png", "/images/hero-terraform@2x.png", 39px, 43px);
+                    }
+                    &.vault {
+                        width: 39px;
+                        height: 43px;
+                        background: url(/images/hero-vault.png) 0 0 no-repeat;
+                        .img-retina("/images/hero-vault.png", "/images/hero-vault@2x.png", 39px, 43px);
                     }
                     &.serf {
                         width: 30px;
@@ -105,20 +101,24 @@
                         left: 0;
                     }
                     &.p2 {
-                        top: 34px;
-                        left: 72px;
+                        top: 60px;
+                        left: 57px;
                     }
                     &.p3 {
-                        top: 64px;
-                        left: 137px;
+                        top: 98px;
+                        left: 128px;
                     }
                     &.p4 {
-                        top: 34px;
-                        left: 210px;
+                        top: 97px;
+                        left: 193px;
                     }
                     &.p5 {
+                        top: 60px;
+                        left: 263px;
+                    }
+                    &.p6 {
                         top: 0;
-                        left: 267px;
+                        left: 312px;
                     }
                 }
             }
@@ -209,32 +209,36 @@
         }
     }
 }
-@media (max-width:320px) {
+@media (max-width:340px) {
     #jumbotron {
         #jumbotron-content {
             .jumbo-logo {
-                margin: -40px auto 0 auto;
+                margin: -30px auto 0 auto;
                 .hero-prod-logos {
                     .prod {
                         &.p1 {
                             top: 0;
-                            left: 15px;
+                            left: 0px;
                         }
                         &.p2 {
                             top: 34px;
                             left: 82px;
                         }
                         &.p3 {
-                            top: 64px;
+                            top: 98px;
                             left: 137px;
                         }
                         &.p4 {
-                            top: 34px;
-                            left: 200px;
+                            top: 98px;
+                            left: 180px;
                         }
                         &.p5 {
-                            top: 0;
+                            top: 34px;
                             left: 252px;
+                        }
+                        &.p6 {
+                            top: 0;
+                            left: 300px;
                         }
                     }
                 }
