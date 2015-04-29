@@ -7,11 +7,13 @@ tags: vault, consul-template
 author: Seth Vargo
 ---
 
-Last October we [announced Consul Template](https://www.hashicorp.com/blog/introducing-consul-template.html), a standalone application that renders data from Consul onto the file system. Since then, Consul Template has grown to new scales and is one of our most popular Consul tools. Today we are excited to bring an amazing new feature to Consul Template - first class support for [Vault](https://vaultproject.io?utm_source=Consul+Template).
-
-[Announced yesterday](**link_to_post**), Vault is HashiCorp's newest open source tool that provides a unified solution for secure key and secret management complete with in-transit encryption, key rolling, key revocation, and detailed audit logs. We believe that Vault is going to change the way organizations think about and manage their secret data. As such, we are building first-class support for Vault in Consul Template.
+Today we announce first-class support for Vault in Consul Template. Consul Template has become a key tool for generating configurations and managing infrastructure, and we believe that Vault is going to change the way organizations think about and manage their secret data. As such, we are building first-class support for Vault in Consul Template. This allows users to seemless integrate secret data into the configurations.
 
 READMORE
+
+Last October we [announced Consul Template](https://www.hashicorp.com/blog/introducing-consul-template.html), a standalone application that renders data from Consul onto the file system. Since then, Consul Template has grown to new scales and is one of our most popular Consul tools. Today we are excited to bring an amazing new feature to Consul Template - first class support for [Vault](https://vaultproject.io?utm_source=Consul+Template).
+
+[Announced yesterday](**link_to_post**), Vault is HashiCorp's newest open source tool that provides a unified solution for secure key and secret management complete with in-transit encryption, key rolling, key revocation, and detailed audit logs.
 
 ## Demo
 
