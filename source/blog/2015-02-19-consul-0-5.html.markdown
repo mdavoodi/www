@@ -68,8 +68,6 @@ an API token. The `-atlas` CLI flag is used to specify the cluster name, and the
 The auto-join feature can be used both to join clients together within a datacenter,
 as well as linking server to server together over the WAN in a global cluster.
 
-Auto join will always be a free feature of Atlas.
-
 ## Atlas Integration
 
 Consul 0.5 is the first release that integrates with
