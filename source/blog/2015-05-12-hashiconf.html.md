@@ -42,7 +42,7 @@ tools necessary to develop applications today.
 On the second day, the first track will be "Operations." This track
 will focus on operator tasks that don't necessarilly maintain the uptime
 of production. This includes Packer and Terraform, as well as topics such
-as cotinuous integration, deployment.
+as continuous integration, deployment.
 
 We're incredibly excited about this format. We'll focus on the full
 problem of going from development to production, but will go into detail
