@@ -7,7 +7,7 @@ tags: atlas, consul
 author: Jack Pearkes
 ---
 
-Today we are proud to announce another feature powered by Consul and Atlas — infrastructure alerts. Operators can receive alerts in Slack, email, and PagerDuty when there is a status change in a node or service in their infrastructure. Atlas also provides a complete history of alerts, so the state of a cluster through time can be easily visualized.
+Today we are proud to announce another feature powered by Consul and Atlas — infrastructure alerts. Operators can receive alerts in Slack, email, PagerDuty, and custom webhooks when there is a status change in a node or service in their infrastructure. Atlas also provides a complete history of alerts, so the state of a cluster through time can be easily visualized.
 
 [Consul](https://consul.io) is a solution for service discovery, health checks, and runtime orchestration for the modern datacenter. It is distributed, highly available, and scalable to thousands of nodes and services across multiple datacenters. Consul’s health checks are configurable at both the service and node level. A health check can be as simple as measuring disk utility or as complex as a custom service-level test. Since health checks can use Nagios plugins or native HTTP checks, they are easy to integrate into an existing infrastructure.
 
