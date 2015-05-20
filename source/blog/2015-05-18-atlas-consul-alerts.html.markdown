@@ -7,101 +7,48 @@ tags: atlas, consul
 author: Jack Pearkes
 ---
 
-Today we announce [Consul](https://consul.io) integration
-with [Atlas](https://atlas.hashicorp.com/?utm_source=Consul-Atlas). Atlas harnesses
-the system-level and application-level health checks monitored by Consul
-to automatically show a monitoring UI and alert system. Alerts can
-be sent to Slack, email and Pagerduty.
+Today we are proud to announce another feature powered by Consul and Atlas — infrastructure alerts. Operators can receive alerts in Slack, email, and PagerDuty when there is a status change in a node or service in their infrastructure. Atlas also provides a complete history of alerts, so the state of a cluster through time can be easily visualized.
 
-Consul is a solution for service discovery, configuration, and orchestration.
-Consul is completely distributed, highly available, and scales to thousands of
-nodes and services across multiple datacenters.
+[Consul](https://consul.io) is a solution for service discovery, health checks, and runtime orchestration for the modern datacenter. It is distributed, highly available, and scalable to thousands of nodes and services across multiple datacenters. Consul’s health checks are configurable at both the service and node level. A health check can be as simple as measuring disk utility or as complex as a custom service-level test. Since health checks can use Nagios plugins or native HTTP checks, they are easy to integrate into an existing infrastructure.
 
-Read on to learn more and see screenshots of this in action.
+Read on to learn more about Consul alerts and see screenshots of the features in action.
 
 READMORE
 
-## Alert Integrations
+## Alert Channel Integrations
 
-When a health check in Consul becomes warning, critical or a new node
-joins, alerts can automatically be sent to Slack, email and pagerduty.
+Alerts can be sent to Slack, email, and PagerDuty when a Consul health check enters a warning or critical state, or if a new node joins the cluster.
 
-This allows you further insight into cluster health and to highlight important
-changes to your infrastructure. Integrating into chat and email broadcasts
-the alert to members of your organization.
-
-In this example, alerts were sent to Slack when a new node joined
-and a service experienced a warning level health check for it's HTTP server:
+The alert integration options enable organizations to close the feedback loop between infrastructure monitoring and the operators that support the infrastructure. In this example alerts are sent to Slack when a new node joins the cluster or when a service experiences a warning level health check:
 
 ![Slack Alerts](/images/blog/atlas-consul/slack.png)
 
-Alerts are sent to notification channels based on thresholds you
-set. Node joins, graceful leaves and check recoveries are all handled
-to help remove noise and add clarity to diagnosis.
+## Alert History in Atlas
 
-## Alert UI
-
-Atlas also provides a UI for alert history and in-depth check information alongside
-real-time infastructure status and changes made via Terraform.
+The mission of Atlas is to provide operators a system of version control for infrastructure. All infrastructure changes are versioned, auditable, and collaborative. Staying true to this goal, Atlas keeps a history of all alerts. Operators can use this history to understand the current status of the managed infrastructure and the relevant history of alerts that brought it to the current state.
 
 ![Alert Index UI](/images/blog/atlas-consul/alert-index-ui.png)
 
-From this view you can see the entire history of alerts for your infrastructure
-and drill down to specific alerts to view health check information. It shows
-the health check name, status and node the alert it occurred on. Service
-checks show the service in question.
-
-When viewing a single alert, any health check output is shown, as well
-as further details about the alert. The UI also pulls the latest
-health information about the node or service and shows the real-time
-status to aid in debugging.
+This view displays the entire history of alerts for the infrastructure
+and drill-down information on specific alerts and their corresponding health checks. It shows
+the health check name, current status, and node the alert occurred on.
 
 ![Single Alert UI](/images/blog/atlas-consul/alert-show-ui.png)
 
-
-## Consul and Health Checks
-
-Atlas alerts based on health check status recorded by [Consul](https://consul.io). To
-start using Consul alerts, you'll need to [connect Consul to Atlas](https://consul.io/docs/guides/atlas.html).
-
-Consul health checks can be configured to run against a node
-or Consul service. This provides node health checks like disk space,
-load average and others, as well as application-level such as HTTP checks.
-
-Many infrastructures already using Consul to monitor the health of their
-application can immediately activate alerting by using Atlas.
-
 ## Getting Started
 
-You can get started with Atlas and Consul right now. If you already
-have Consul connected to Atlas, head over the integrations tab and
-modify your alert settings:
+If your infrastructure is already using Consul and Atlas to monitor node and service health, you can immediately activate alerts in the [“Integrations” tab of the environment in your Atlas account](atlas.hashicorp.com/environments)
 
 ![Alert settings](/images/blog/atlas-consul/alert-settings.png)
 
-If you haven't connected Consul yet, follow the [Atlas integration guide](https://consul.io/docs/guides/atlas.html)
-on the Consul website now.
+If you haven't connected Consul to Atlas yet, follow the [integration guide](https://consul.io/docs/guides/atlas.html) in the Consul documentation. Note that using Consul alerts does not require using all features of Atlas.
+
+If you aren’t using Consul for service discovery, health checks, and runtime orchestration, you can [learn more about Consul](https://consul.io) and [configuring Consul health checks](https://consul.io/docs/agent/checks.html).
 
 ## The Future
 
-What we've released today follows recent improvements to Atlas
-to enable infrastructure collaboration and responsible deployment
-using components of the HashiCorp toolset.
+The announcement today follows recent Atlas improvements to enable operators to responsibly deploy applications and make changes to infrastructure. Real-time alerting is a key feature for infrastructure management, and we’re excited to bring this functionality to Atlas.
 
-As always, the Consul Alerts integration can be used in isolation
-without Terraform, Packer or other aspects of Atlas.
+As we extend support for notifications in Atlas, both Packer builds and Terraform runs will be able to trigger notifications upon completion and/or failure.
 
-Soon, Packer build and Terraform changes will trigger alert notifications
-upon completion and failure to continue providing insight into the build
-pipeline for your infrastructure.
-
-But with what we've launched today, we're excited to provide drop-in
-alerting for your infrastructure managed by Consul.
-
-Atlas is our commercial product currently in tech preview. We will be
-announcing pricing soon. When Atlas pricing is announced, there will be
-a generous free tier, so you don't need to worry about being charged for
-playing with Atlas. If you're using Atlas at a larger scale and have concerns,
-email us at
-<a href="mailto:hello@hashicorp.com">hello@hashicorp.com</a> and we'd
-be happy to talk with you.
+Atlas is our commercial product currently in tech preview. We will be announcing pricing soon. When Atlas pricing is announced, there will be a generous free tier, so you don't need to worry about being charged for playing with Atlas. If you're using Atlas at a larger scale and have concerns, email us at <a href="mailto:hello@hashicorp.com">hello@hashicorp.com</a> and we'd be happy to talk with you.
