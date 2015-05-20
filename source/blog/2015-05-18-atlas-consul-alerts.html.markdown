@@ -37,7 +37,7 @@ the health check name, current status, and node the alert occurred on.
 
 ## Getting Started
 
-If your infrastructure is already using Consul and Atlas to monitor node and service health, you can immediately activate alerts in the [“Integrations” tab of the environment in your Atlas account](atlas.hashicorp.com/environments)
+If your infrastructure is already using Consul and Atlas to monitor node and service health, you can immediately activate alerts in the "Integrations" tab of the environment in your Atlas account.
 
 ![Alert settings](/images/blog/atlas-consul/alert-settings.png)
 
