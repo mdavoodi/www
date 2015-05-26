@@ -41,7 +41,7 @@ to confirm and apply changes.
 ## Pull Requests
 
 Combined with [pull requests](https://help.github.com/articles/using-pull-requests/),
-it is possible to preview changes made in during normal
+it is possible to preview changes made during normal
 GitHub collaboration. This gives an opportunity to review and approve
 infrastructure changes, as well as show a deterministic view of those changes.
 
