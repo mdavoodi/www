@@ -26,6 +26,31 @@ and Atlas in action.
 
 READMORE
 
+## Managing Terraform with GitHub
+
+Atlas will automatically pull changes made in a GitHub repostitory
+and run a Terraform plan that can be subsequently applied.
+
+The Atlas UI displays information about the changes made, as well as
+the status and log output of Terraform running both the `plan` and `apply`
+steps. Upon a succesful plan, Terraform requires confirmation
+to confirm and apply changes.
+
+![Tutorial Plan](/images/blog/atlas-terraform-github/tutorial-plan.png)
+
+## Pull Requests
+
+Combined with [pull requests](https://help.github.com/articles/using-pull-requests/),
+it is possible to preview changes made in during normal
+GitHub collaboration. This gives an opportunity to review and approve
+infrastructure changes, as well as show a deterministic view of those changes.
+
+Any pull request will automatically run a plan in Atlas, marking the pull
+request as ready to merge upon successful completion. If a plan fails,
+the pull request will be marked accordingly.
+
+![GitHub flow](/images/blog/atlas-terraform-github/github-flow.png)
+
 ## Getting Started
 
 You can get started with the Atlas + GitHub integration right now
@@ -68,19 +93,6 @@ Authentication information is encrypted securely by
 [transit backend](https://www.vaultproject.io/docs/secrets/transit/index.html) (AES-GCM-256).
 We will be publishing a more detailed blog post on how we integrated Vault into Atlas
 soon.
-
-## Using the GitHub Flow
-
-Combined with [the GitHub Flow](https://help.github.com/articles/github-flow-in-the-browser/),
-it is possible to preview changes made in pull requests during normal
-GitHub collaboration. This gives an opportunity to review and approve
-infrastructure changes, as well as show a deterministic view of those changes.
-
-Any pull request will automatically run a plan in Atlas, marking the pull
-request as ready to merge upon successful completion. If a plan fails,
-the pull request will be marked accordingly.
-
-![GitHub flow](/images/blog/atlas-terraform-github/github-flow.png)
 
 ## The Future
 
