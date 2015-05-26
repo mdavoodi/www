@@ -88,7 +88,7 @@ visiting the integrations tab of the environment:
 ![Integrations Tab](/images/blog/atlas-terraform-github/integrations.png)
 
 Authentication information is encrypted securely by
-[Vault](https://vaultproject.io) using it’s
+[Vault](https://vaultproject.io) using its
 [transit backend](https://www.vaultproject.io/docs/secrets/transit/index.html) (AES-GCM-256).
 We will be publishing a more detailed blog post on how we integrated Vault into Atlas
 soon.
