@@ -9,7 +9,7 @@ author: Seth Vargo
 
 We are very excited to announce Atlas integration with GitHub to
 automatically turn Terraform configuration stored in GitHub repositories into
-Terraform managed infrastructure, without the need to install Terraform locally.
+managed infrastructure, without the need to install Terraform locally.
 With the new GitHub integration, Terraform configurations can be changed
 in GitHub and applied via Atlas with rich history, auditability and
 collaboration.
