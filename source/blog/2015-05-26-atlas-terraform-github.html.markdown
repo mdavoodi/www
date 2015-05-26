@@ -34,6 +34,8 @@ and Atlas in action.
 
 READMORE
 
+## Getting Started
+
 You can get started with the Atlas + GitHub integration right now
 through our [interactive tutorial](https://atlas.hashicorp.com/tutorial/terraform-github).
 
