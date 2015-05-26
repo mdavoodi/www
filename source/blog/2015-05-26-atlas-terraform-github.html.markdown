@@ -8,8 +8,10 @@ author: Seth Vargo
 ---
 
 We are very excited to announce Atlas integration with GitHub to
-automatically turn Terraform configuration stored in GitHub repositories into
-managed infrastructure, without the need to install Terraform locally.
+automatically turn Terraform configuration stored in GitHub repositories
+into Terraform managed infrastructure. This eliminates
+the need to install Terraform locally across your team of operators.
+
 With the new GitHub integration, Terraform configurations can be changed
 in GitHub and applied via Atlas with rich history, auditability and
 collaboration.
@@ -33,8 +35,7 @@ and run a Terraform plan that can be subsequently applied.
 
 The Atlas UI displays information about the changes made, as well as
 the status and log output of Terraform running both the `plan` and `apply`
-steps. Upon a succesful plan, Terraform requires confirmation
-to confirm and apply changes.
+steps. Terraform requires confirmation to apply changes.
 
 ![Tutorial Plan](/images/blog/atlas-terraform-github/tutorial-plan.png)
 
@@ -46,7 +47,7 @@ GitHub collaboration. This gives an opportunity to review and approve
 infrastructure changes, as well as show a deterministic view of those changes.
 
 Any pull request will automatically run a plan in Atlas, marking the pull
-request as ready to merge upon successful completion. If a plan fails,
+request as ready to merge upon successful Terraform plan completion. If a plan fails,
 the pull request will be marked accordingly.
 
 ![GitHub flow](/images/blog/atlas-terraform-github/github-flow.png)
@@ -62,14 +63,12 @@ To learn more about each step of the Atlas GitHub integration, read below.
 
 Atlas uses [Terraform](https://terraform.io) to manage infrastructure. This means that
 Atlas can manage anything Terraform can manage: AWS, Google, OpenStack,
-Docker, etc. This means that improvements to Terraform for Atlas, and
-improvements by the community, will improve both the commerical and open
- source aspects of the integration.
+Docker, etc. Improvements to Terraform by the community will improve both the commerical and open
+ source aspects of the Atlas and Terraform.
 
 Terraform is completely [open source](https://github.com/hashicorp/terraform).
-One powerful advantadge of this is that you can take your Terraform configuration
-and state and work on your own with the Terraform project manually; there is no vendor lock-in.
-
+One powerful advantage of this is that you can take your Terraform configuration
+and state and work on your own with the Terraform project manually.
 
 Atlas is the collaboration platform for Terraform, making it safe and fun to
 work on infrastructure with a team. Just as version control for application
@@ -79,12 +78,12 @@ helps reduce the risk of making infrastructure changes.
 ## Authenticating with GitHub
 
 Atlas uses OAuth to authenticate and link with GitHub. Simply visit your
-settings page in Atlas and click on the "Connections" tab.  Atlas requires
+user settings page in Atlas and click on the "Connections" tab.  Atlas requires
 read permissions for repositories to pull configuration and write permission
 to configure and manage webhooks.
 
 You can link an existing Terraform configuration to GitHub by
-visiting the integrations tab:
+visiting the integrations tab of the environment:
 
 ![Integrations Tab](/images/blog/atlas-terraform-github/integrations.png)
 
@@ -99,9 +98,7 @@ soon.
 The HashiCorp product line for managing infrastructure puts emphasis on
 representing all aspects of infrastructure as code. This allows for
 intuitive infrastructure versioning, auditability, repeatability, and
-collaboration. Developers on your team don’t need to learn a new command
-line tool and can start managing infrastructure right away.
-
+collaboration.
 
 Over the next few weeks, we will be releasing GitHub integration across the various
 components of Atlas including Packer builds. This integration brings us one step closer to
