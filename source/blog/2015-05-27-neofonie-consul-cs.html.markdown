@@ -6,7 +6,7 @@ tags: case-study
 author: Kevin Fishner
 ---
 
-Neofonie GmbH is a German software company with offices in Berlin and Hamburg. The firm is a solution and full-service provider specializing on portals, search, social media, e-publishing and mobile applications. With a range of clients and services, Neofonie works in highly complex, fast-changing environments. Neofonie uses a three-stage continuous delivery pipeline which uses Consul as a foundation to safetly move applications between environments. 
+Neofonie GmbH is a German software company with offices in Berlin and Hamburg. The firm is a solution and full-service provider specializing on portals, search, social media, e-publishing and mobile applications. With a range of clients and services, Neofonie works in highly complex, fast-changing environments. Neofonie uses a three-stage continuous delivery pipeline which uses Consul as a foundation to safely move applications between environments.
 
 READMORE
 
@@ -14,7 +14,7 @@ _You can find an excerpt of the German version of this post on [Neofonie's blog]
 
 ## The problem: promoting software across environments is error-prone
 
-Responsible software release cycles usually require promoting software across testing, staging, and production environments. This process while enabling safety can be error prone and difficult. For example, you can start multiple services in a local environment, but the IPs must be changed so services can properly discover each other in this environment. Then when the software is deployed to a different environment, the IPs need to change again. Doing this for dozens of interconnected services, becomes unmanageable and error-prone. 
+Responsible software release cycles usually require promoting software across testing, staging, and production environments. This process, while enabling safety, can be error prone and difficult. For example, you can start multiple services in a local environment, but the IPs must be changed so services can properly discover each other in this environment. Then when the software is deployed to a different environment, the IPs need to change again. Doing this for dozens of interconnected services, becomes unmanageable and error-prone. 
 
 One of the biggest projects at Neofonie uses a three-stage continuous delivery pipeline. Previously to move an application between stages, each stage had its own property file with appropriate IPs for that specific stage. For example, the development stage required you to connect to a MySQL instance on your localhost, which needed to be manually configured.
 
