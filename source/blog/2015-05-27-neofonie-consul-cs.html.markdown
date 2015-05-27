@@ -1,6 +1,6 @@
 ---
-page_title: "Consul in a Microservices Environment at Neofonie GmBH"
-title: "Consul in a Microservices Environment at Neofonie GmBH"
+page_title: "Consul in a Microservices Environment at Neofonie GmbH"
+title: "Consul in a Microservices Environment at Neofonie GmbH"
 list_image_url: "/images/blog/consul/logo-gradient.png"
 tags: case-study
 author: Kevin Fishner
