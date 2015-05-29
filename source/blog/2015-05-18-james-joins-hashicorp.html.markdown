@@ -22,7 +22,7 @@ backend systems.
 Prior to HashiCorp, James developed fault-tolerant avionics software at
 SpaceX and got to be the operator saying "flight software is go" during
 the first missions to the ISS. Before that, he oscillated between web
-and embedded work, such as helping better serve cat videos and
+and embedded work, such as helping better share cat videos and
 building systems to test radars.
 
 Welcome James! Follow him on [Twitter](https://twitter.com/slackpad).
