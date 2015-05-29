@@ -19,7 +19,7 @@ members of the HashiCorp team in the LA area.
 
 READMORE
 
-At HashiCorp. Chris will be working across open source projects like
+At HashiCorp, Chris will be working across open source projects like
 Terraform and Packer as well as backend systems for Atlas. He has added
 support for AWS Lambda in Terraform that will be shipping within weeks.
 
