@@ -10,7 +10,7 @@ tags: hiring
 [James Phillips](https://github.com/slackpad) is now an employee of
 HashiCorp!
 
-James is joining as a systems engineer. He has worked on a wide range of
+James is joining as an engineer. He has worked on a wide range of
 projects from large scale web sites to real-time embedded systems, and
 has a particular passion for distributed systems.
 
@@ -21,8 +21,8 @@ backend systems.
 
 Prior to HashiCorp, James developed fault-tolerant avionics software at
 SpaceX and got to be the operator saying "flight software is go" during
-the first Dragon missions to ISS. Prior to that, he oscillated between web
-and embedded work, such as helping push more cat videos at YouTube and
-building systems to help test radar systems.
+the first missions to the ISS. Before that, he oscillated between web
+and embedded work, such as helping better serve cat videos and
+building systems to test radars.
 
 Welcome James! Follow him on [Twitter](https://twitter.com/slackpad).
