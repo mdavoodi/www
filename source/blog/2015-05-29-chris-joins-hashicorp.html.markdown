@@ -10,7 +10,7 @@ tags: hiring
 [Chris Bednarski](https://github.com/cbednarski)
 is now an employee at HashiCorp!
 
-Chris is joining an engineer. Chris brings a rich set of experience
+Chris is joining as an engineer. Chris brings a rich set of experience
 running high scale infrastructure from working at Riot Games
 where tens of millions of players interact online daily.
 
