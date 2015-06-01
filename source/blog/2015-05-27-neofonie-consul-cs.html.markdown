@@ -36,7 +36,7 @@ Now, by querying the Consul API, services can easily find each other. On some pa
 
 Earlier it was mentioned that the Consul registry confines the boundaries of a service-topology per se. This requires a little more explanation and is shown graphically in Figure 2 above. Often the stages in a continuous delivery pipeline are bounded by the virtual machines in each stage. Testing has a set of machines used for testing and staging has a separate set. The advantage here is that environments are separated from each other on the VM level. But there is also a downside; the virtual machines sit idle for most of the time.
 
-By using Consul to define the boundaries of the service-topology, it is possible to express encapsulation on the service discovery level. Each node in the CoreOS cluster (provided by GiantSwarm) runs a Consul Registry which form a quorum. Services can then be deployed anywhere in the cluster and they will, via Consul, understand which ‘stage’ they are in. This in effect achieves pipeline ‘stages’ that are agnostic of the underlying virtual machines.
+By using Consul to define the boundaries of the service-topology, it is possible to express encapsulation on the service discovery level. Each node in the CoreOS cluster (provided by Giant Swarm) runs a Consul Registry which form a quorum. Services can then be deployed anywhere in the cluster and they will, via Consul, understand which ‘stage’ they are in. This in effect achieves pipeline ‘stages’ that are agnostic of the underlying virtual machines.
 
 Apart from the Service Registry and the DNS functionality, Consul offers even more neat and interesting features. For example, besides being a key-value store, it also does health and heartbeat checks.
 
