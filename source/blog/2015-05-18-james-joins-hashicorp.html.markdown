@@ -20,10 +20,10 @@ At HashiCorp, James will be focusing on Consul and Serf as well as our
 backend systems.
 
 Prior to HashiCorp, James developed fault-tolerant avionics software at
-SpaceX and got to be the operator saying "flight software is go" during
+SpaceX and called out "flight software is go" during
 the first missions to the ISS. Before that, he oscillated between web
-and embedded work, such as helping better share cat videos and
+and embedded work, helping people share cat videos and
 building systems to test radars. He lives with his family in Manhattan
-Beach, adding to HashiCorp's growing group of folks in Los Angeles.
+Beach, adding to HashiCorp's Los Angeles peeps.
 
 Welcome James! Follow him on [Twitter](https://twitter.com/slackpad).
