@@ -16,7 +16,7 @@ has a particular passion for distributed systems.
 
 READMORE
 
-At HashiCorp, James will be focusing on Consul and Serf as well as our
+At HashiCorp, James will be focusing on Consul and Serf, as well as our
 backend systems.
 
 Prior to HashiCorp, James developed fault-tolerant avionics software at
