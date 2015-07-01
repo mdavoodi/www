@@ -17,11 +17,10 @@ Fortune 100 firms.
 
 READMORE
 
-At HashiCorp, Ben will be working both with ecosystem partners and customers
-to streamline our internal processes and to make it easier for organizations
-to adopt our technology. Ben is chartered with making it easy to be successful
-with our products, whether you are a sole developer, Global 2000 company, non-profit,
-or ecosystem partner.
+At HashiCorp, Ben will be working both with ecosystem partners and customers. He will 
+also help to streamline our internal processes. In other words, Ben is chartered with 
+making it easy to be successful with our products, whether you are a sole developer, 
+Global 2000 company, non-profit, or ecosystem partner.
 
 Before HashiCorp, Ben held executive positions at Joyent, MongoLab, and Linqto. Ben has
 a passion for startups, advising and investing in them. He was a Product Manager at IBM,
