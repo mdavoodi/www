@@ -19,7 +19,7 @@ READMORE
 
 At HashiCorp, Ben will be working both with ecosystem partners and customers
 to streamline our internal processes and to make it easier for organizations
-to adaopt our technology. Ben is chartered with making it easy to be successful
+to adopt our technology. Ben is chartered with making it easy to be successful
 with our products, whether you are a sole developer, Global 2000 company, non-profit,
 or ecosystem partner.
 
