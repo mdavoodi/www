@@ -12,6 +12,8 @@ In our previous setup a configuration update would take 15 to 20 minutes before 
 
 READMORE
 
+_This post was originally published by bol.com on [their official blog](https://banen.bol.com/nieuws/using-consul-bol-com/). We're republishing it on the HashiCorp blog so future readers can easily find posts about the usage of our tools in real-world environments._
+
 ## The Problem - Static service discovery just can’t cut it at scale
 Last year we built and went online with an infrastructure management system whereby all services had logical names in each environment and developers configured their services to talk to each other. The entire system was, however, completely static. Everything was derived from a single source of truth (a CMDB) which engineers had to edit by hand. Editing was very easy and Puppet-based automation took care of the rest, but the fact that it was not dynamic turned out to be a bottleneck as our software landscape grew.
 
