@@ -9,7 +9,7 @@ tags: atlas
 
 We are excited to announce that [Atlas](https://atlas.hashicorp.com) is now generally available. Atlas builds upon and unites our popular open source tooling to create a version control system for infrastructure. Automate, audit, and collaborate on infrastructure changes across any infrastructure provider.
 
-We have had seven incredibly productive months since Atlas's launch in December 2014.  Over these months and with an amazing effort from our team, the product has become a polished, intuitive experience. Nodes under management have doubled each month Atlas has been live. We have partners that provide excellent feedback: Mozilla, Cisco, and Capgemini to name a few.
+We have had seven incredibly productive months since Atlas's launch in December 2014. Over these months and with an amazing effort from our team, the product has become a polished, intuitive experience. Nodes under management have doubled each month Atlas has been live. We have partners that provide excellent feedback: Mozilla, Cisco, and Capgemini to name a few.
 
 HashiCorp is now entering a new chapter. We have always been and will continue to be firmly committed to improving and supporting our open source projects; they are the foundation of our company and Atlas. Alongside our technological developments and community building, we are committed to building a scalable and customer-friendly business.
 
@@ -65,7 +65,7 @@ To learn more about Consul features and instructions for using them, [read the d
  
 ## General Availability Details
 
-The biggest change with Atlas general availability is that it is no longer a free product. The first ten managed nodes are free, and each additional [managed node](https://atlas.hashicorp.com/help/glossary#managed-node) is $40 per month.  Vagrant and Packer features - including Vagrant share, private boxes, and unlimited builders - are completely free. We may restrict certain Packer builds to paying customers in the future (long running builds, parallelism, etc.) If this uncertainty concerns you, please email <a href="mailto:support@hashicorp.com">support@hashicorp.com</a> and we’ll discuss plans with you. Basic email support is included for all customers. 
+The biggest change with Atlas general availability is that it is no longer a free product. The first ten managed nodes are free, and each additional [managed node](https://atlas.hashicorp.com/help/glossary#managed-node) is $40 per month. Vagrant and Packer features - including Vagrant share, private boxes, and unlimited builders - are completely free. We may restrict certain Packer builds to paying customers in the future (long running builds, parallelism, etc.) If this uncertainty concerns you, please email <a href="mailto:support@hashicorp.com">support@hashicorp.com</a> and we’ll discuss plans with you. Basic email support is included for all customers. 
 
 If your account is in the paid tier, you will be contacted before the first billing cycle in August. If your team has any questions about general availability or requires priority support, SLAs, or an on-premises installation, please contact us at <a href="mailto:support@hashicorp.com">support@hashicorp.com</a>.
  
