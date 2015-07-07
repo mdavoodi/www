@@ -17,13 +17,13 @@ READMORE
 
 ## Journey from Tech Preview to General Availability
 
-When Atlas launched into tech preview, it could only host Vagrant boxes and run Packer builds that produced AMIs. Today, just seven months later, Atlas deeply integrates all of HashiCorp’s open source products: Vagrant, Packer, Terraform, Consul, and Vault. Atlas hosts Vagrant boxes and adds extra features on top of Vagrant. Atlas can run Packer builds resulting in any output format: VMware, AWS, Docker, VirtualBox, and more. Atlas plans and builds infrastructure with Terraform. Atlas monitors and configures launched hosts and services with Consul. 
+When Atlas launched into tech preview, it could only host Vagrant boxes and run Packer builds that produced AMIs. Today, just seven months later, Atlas deeply integrates all of HashiCorp's open source products: Vagrant, Packer, Terraform, Consul, and Vault. Atlas hosts Vagrant boxes and adds extra features on top of Vagrant. Atlas can run Packer builds resulting in any output format: VMware, AWS, Docker, VirtualBox, and more. Atlas plans and builds infrastructure with Terraform. Atlas monitors and configures launched hosts and services with Consul. 
 
 These features come together to form a Version Control System for Infrastructure (VCI). 
 
-It is hard to imagine starting a new development project without a version control system such as Git (with GitHub). But that application is often deployed to unversioned, opaque, and fragile infrastructure. With Atlas we want to provide developers and operators an elegant, productivity-boosting tool and collaboration platform to be able to deploy and maintain applications. Once a team starts using Atlas, it’s tough to imagine a future without a version control system for infrastructure.
+It is hard to imagine starting a new development project without a version control system such as Git (with GitHub). But that application is often deployed to unversioned, opaque, and fragile infrastructure. With Atlas we want to provide developers and operators an elegant, productivity-boosting tool and collaboration platform to be able to deploy and maintain applications. Once a team starts using Atlas, it's tough to imagine a future without a version control system for infrastructure.
 
-Read on to learn more about the specific features we’ve brought to Atlas as they relate to our open source projects, and how they unite to form Atlas.
+Read on to learn more about the specific features we've brought to Atlas as they relate to our open source projects, and how they unite to form Atlas.
 
 ## Packer features in Atlas
 
@@ -43,7 +43,7 @@ Terraform is our command-line tool for automating infrastructure provisioning. A
 
 ![Terraform in Atlas screenshot](/images/blog/atlas/terraform-screenshot.png)
 
-  * **Terraform state storage** - Atlas stores Terraform state and ensures are all operations work from the same state. This ensures that the state isn’t modified in parallel and that Terraform always has a consistent view of your infrastructure.
+  * **Terraform state storage** - Atlas stores Terraform state and ensures are all operations work from the same state. This ensures that the state isn't modified in parallel and that Terraform always has a consistent view of your infrastructure.
   * **Terraform plan and apply** - Atlas runs Terraform to generate a plan of what changes will happen to your infrastructure. If the plan is approved, Atlas will run Terraform and apply those changes. The logs of all of this are stored and are viewable in Atlas.
   * **Infrastructure changelog** - The complete history of Terraform plans and applies (both successes and failures) are stored and viewable. This is very similar to the “commit view” for Git; you can see the changes to your infrastructure over time, who proposed the change, who accepted the change, and what the result of that change was. 
   * **Link GitHub and Terraform** - Terraform encourages infrastructure as code: define your infrastructure in versionable text files. GitHub is the best place to store and version the text files themselves. You can link GitHub to Atlas and Atlas will automatically run Terraform plans as part of pull reviews. This lets you see the effect of a code change on your infrastructure!
@@ -65,13 +65,13 @@ To learn more about Consul features and instructions for using them, [read the d
  
 ## General Availability Details
 
-The biggest change with Atlas general availability is that it is no longer a free product. The first ten managed nodes are free, and each additional [managed node](https://atlas.hashicorp.com/help/glossary#managed-node) is $40 per month. Vagrant and Packer features - including Vagrant share, private boxes, and unlimited builders - are completely free. We may restrict certain Packer builds to paying customers in the future (long running builds, parallelism, etc.) If this uncertainty concerns you, please email <a href="mailto:support@hashicorp.com">support@hashicorp.com</a> and we’ll discuss plans with you. Basic email support is included for all customers. 
+The biggest change with Atlas general availability is that it is no longer a free product. The first ten managed nodes are free, and each additional [managed node](https://atlas.hashicorp.com/help/glossary#managed-node) is $40 per month. Vagrant and Packer features - including Vagrant share, private boxes, and unlimited builders - are completely free. We may restrict certain Packer builds to paying customers in the future (long running builds, parallelism, etc.) If this uncertainty concerns you, please email <a href="mailto:support@hashicorp.com">support@hashicorp.com</a> and we'll discuss plans with you. Basic email support is included for all customers. 
 
 If your account is in the paid tier, you will be contacted before the first billing cycle in August. If your team has any questions about general availability or requires priority support, SLAs, or an on-premises installation, please contact us at <a href="mailto:support@hashicorp.com">support@hashicorp.com</a>.
  
 ## Atlas Roadmap
 
-In the past seven months we’ve shipped all the above features while delivering more industry-leading open source projects. In the coming months Atlas will continue to gain tremendous improvements. Below are some exciting features on the roadmap:
+In the past seven months we've shipped all the above features while delivering more industry-leading open source projects. In the coming months Atlas will continue to gain tremendous improvements. Below are some exciting features on the roadmap:
 
   * **GitHub integration across all features** - Packer, Terraform, and Consul (key/value) configurations on GitHub can be configured to automatically trigger infrastructure updates in Atlas when changed.
   * **Remove redundancy between configurations** - Across Packer, Terraform, and Consul there is a fair amount of redundancy. We have plans to simplify configurations when all tools are in use together.
