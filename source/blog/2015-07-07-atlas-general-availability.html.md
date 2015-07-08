@@ -73,6 +73,6 @@ If your account is in the paid tier, you will be contacted before the first bill
 
 In the past seven months we've shipped all the above features while delivering more industry-leading open source projects. In the coming months Atlas will continue to gain tremendous improvements. Below are some exciting features on the roadmap:
 
-  * **GitHub integration across all features** - Packer, Terraform, and Consul (key/value) configurations on GitHub can be configured to automatically trigger infrastructure updates in Atlas when changed.
+  * **GitHub integration across all features** - As with Terraform, Packer and Consul (key/value) configurations on GitHub can be configured to automatically trigger infrastructure updates in Atlas when changed.
   * **Remove redundancy between configurations** - Across Packer, Terraform, and Consul there is a fair amount of redundancy. We have plans to simplify configurations when all tools are in use together.
   * **Vault integration** - Atlas will integrate and add features above Vault similar to our other tools.
