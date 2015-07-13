@@ -17,9 +17,9 @@ _This post was originally published by bol.com on [their official blog](https://
 ## The Problem - Static service discovery just can’t cut it at scale
 Last year we built and went online with an infrastructure management system whereby all services had logical names in each environment and developers configured their services to talk to each other. The entire system was, however, completely static. Everything was derived from a single source of truth (a CMDB) which engineers had to edit by hand. Editing was very easy and Puppet-based automation took care of the rest, but the fact that it was not dynamic turned out to be a bottleneck as our software landscape grew.
 
-Want to add another instance of service X to the load balancer? Fire up the CMDB app. Want to change the hostname for a particular service? Well, that means re-provisioning a bunch of VM's from scratch and changing all the properties that reference the old hostname across the testing, acceptance, staging and production environments.
+Want to add another instance of service X to the load balancer? Fire up the CMDB app. Want to change the hostname for a particular service? Well, that means re-provisioning a bunch of VM's from scratch and changing all the properties that reference the old hostname across the testing, acceptance, staging and production environments. Static service registration served its purpose, but bol.com needed a dynamic solution.
 
-Static service registration served its purpose, but bol.com needed a dynamic solution.
+![Static service discovery](/images/blog/consul-bol/staticserviceregistration.png)
 
 It just wasn’t dynamic enough. What we really wanted was for services to be able to find each other on the fly, irrespective of what hosts the services were running on. In short, we needed service discovery.
 
@@ -39,8 +39,9 @@ We are currently using Consul for service discovery within Mayfly, our user-stor
 
 We've built an extension to Backspin, our in-house web services framework, that lets services register themselves with Consul and then find each other in a completely dynamic way.
 
+![Static service discovery](/images/blog/consul-bol/backspin.png)
 
-bol.com services use the in-house Backspin service framework to communicate. We built a Consul adapter for Backspin that allows a service to register itself with the service registry, discover other services and pull values from the KV store. The adapter also polls Consul periodically to check if any service instances it has discovered are still up and, if they’re not, reinitializing the connection pool with other instances.
+Bol.com services use the in-house Backspin service framework to communicate. We built a Consul adapter for Backspin that allows a service to register itself with the service registry, discover other services and pull values from the KV store. The adapter also polls Consul periodically to check if any service instances it has discovered are still up and, if they’re not, reinitializing the connection pool with other instances.
 
 The only thing required to discover a service is its immutable three-letter identifier (which we assign to a service when it’s conceived) and the required version. The current implementation is simple and has allowed us to discard countless lines of configuration. Now that Consul has proven itself on the Mayfly platform, we are investigating how to roll it out across the entire bol.com service landscape. One of the challenges we face is how to expose the old-style, Puppet-configured services to the Consul-enabled ones. We'll need to setup a bidirectional information flow between these two separate configuration realms. We could, for instance, use the Consul-Hiera Puppet module to make Hiera values are available to Consul-enabled services, and a tool like Consul Template can be used to provide regular config files to services that don’t yet know how to talk to service discovery. A setup such as this allows us to progressively move services to Consul and avoid the need for any kind of big-bang migration.
 
