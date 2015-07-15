@@ -2,12 +2,12 @@
 page_title: Blog
 title: Blog
 layout: blog
+pageable: true
 ---
 
 <div class="container">
 	<div class="col-md-11">
-		<% blog.articles.each_index do |i| %>
-		<% article = blog.articles[i] %>
+		<% page_articles.each do |article| %>
 		<article class="right-aligned">
 			<div class="row">
 				<!-- post summary content -->
@@ -23,6 +23,15 @@ layout: blog
 				</div>	<!-- span -->
 			</div>	<!-- row -->
 		</article>
+		<% end %>
+	</div>
+
+	<div class="col-md-11" style="padding: 3em 0; text-align: center;">
+		<% if prev_page %>
+			<%= link_to "Previous Page", prev_page.url, class: "hbtn outline-btn black small" %>
+		<% end %>
+		<% if next_page %>
+			<%= link_to "Next Page", next_page.url, class: "hbtn outline-btn black small" %>
 		<% end %>
 	</div>
 </div> <!-- container -->

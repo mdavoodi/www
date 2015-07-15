@@ -14,6 +14,9 @@ activate :blog do |blog|
   blog.permalink = ":title.html"
   blog.prefix = "blog"
   blog.tag_template = "tag_template.html"
+
+  blog.paginate = true
+  blog.per_page = 5
 end
 
 # Build-specific configuration
