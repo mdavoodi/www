@@ -66,7 +66,7 @@ image in a reproducible way. That looks something like this:
           "type": "amazon-ebs",
           ...
         }
-    ]
+    ],
     "provisioners": [
         {
           "type": "puppet-masterless",
