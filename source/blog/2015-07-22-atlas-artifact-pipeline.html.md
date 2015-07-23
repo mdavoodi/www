@@ -177,7 +177,7 @@ including notifications to Slack, Email, and HipChat at each stage of
 builds and deployment.
 
 _Note: There is currently a beta feature that further automates this
-pipeline. This feature removes the plan step and automatically deploys
+pipeline. This feature removes the plan confirmation step and automatically deploys
 instances using the newly created images without the need for explicit
 operator confirmation. This is experimental, and detailed
 [here](https://atlas.hashicorp.com/help/terraform/runs/automatic-applies)._
