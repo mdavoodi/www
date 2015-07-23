@@ -94,7 +94,7 @@ below.
 
 ![Packer building logstream in the Atlas UI](/images/blog/atlas-artifacts/build-artifact.png)
 
-Packer is an popular open source project made by HashiCorp that handles
+Packer is a popular open source project made by HashiCorp that handles
 all image creation in Atlas – the same configuration format used when
 building in Atlas can be used locally, and is fully portable between
 environments.
@@ -167,7 +167,7 @@ organization.
 ### Getting Started
 
 There are a number of places to start building out a pipeline similar to
-this. Because of Packer and Terraform are agnostic to specific tools or
+this. Because Packer and Terraform are agnostic to specific tools or
 technologies, you can begin implementing with existing configuration
 management, cloud providers or containers.
 
