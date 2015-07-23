@@ -39,6 +39,8 @@ artifact registry and deploys new instances using this AMI. When the
 Logstream AMI is updated, the process starts again – continuous delivery
 for immutable infrastructure.
 
+![How Atlas works](/images/blog/atlas-artifacts/how-it-works.png)
+
 ### Creating the Image
 
 Packer is used with Puppet to create the Logstream AMI. Packer
