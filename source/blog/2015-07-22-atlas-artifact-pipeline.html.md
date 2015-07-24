@@ -10,7 +10,7 @@ author: Jack Pearkes
 In this post, we will highlight an [Atlas](https://atlas.hashicorp.com)
 feature that connects [Packer](https://packer.io)
 with [Terraform](https://terraform.io) to automate and track image deployments across
-infrastruture providers like AWS, Openstack, Azure and DigitalOcean.
+infrastructure providers like AWS, Openstack, Azure and DigitalOcean.
 
 Atlas builds upon and unites HashiCorp's open source tooling to
 _automate and audit infrastructure changes across providers_. Vagrant,
