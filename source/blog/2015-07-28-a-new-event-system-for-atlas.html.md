@@ -9,8 +9,9 @@ author: Seth Vargo
 
 A few weeks ago we started distributing a brand new event-tracking and auditing
 system in Atlas. Today we are excited to announce that the new Atlas event and
-auditing system is available to all Atlas users. Read on to learn more about the
-new event functionality in Atlas.
+auditing system is available to all Atlas users. Read on to learn more about how
+we redesigned events to be easily consumable by operators and valuable for teams
+who want to understand infrastructure changes over time.
 
 READMORE
 
