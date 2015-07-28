@@ -34,7 +34,7 @@ experience.
 
 In the new system, each event is a human-friendly format with the important
 components in bold and linked if possible. Below you can see the old event
-system (top) and the new event system (bottom) for a quick comparison.
+system (bottom) and the new event system (top) for a quick comparison.
 
 ![New Human-Readable Atlas Events](/images/blog/a-new-event-system-for-atlas/new-events-human.png)
 
