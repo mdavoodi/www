@@ -83,6 +83,17 @@ you will need to have "admin" permissions on the resource and then visit the
 
 ![Atlas New Events](/images/blog/a-new-event-system-for-atlas/new-events.png)
 
+In addition to viewing your own personal event log, you can view all events in
+a particular organization provided you are an owner of that organization. Simply
+click on your organization in the account settings page and visit the
+"Event log" for that organization.
+
+Lastly, each resource also has its own event log. While the organizational view
+of all events may be helpful, a more granular event log is available
+per-resource. If you have admin permissions for a resource, you can click the
+"Event log" item in the sidebar to view all events which correspond directly to
+that resource (such as an environment or build configuration).
+
 ### Thank You
 
 We would like to extend a special thank you to all the customers who helped us
