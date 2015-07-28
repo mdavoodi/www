@@ -9,7 +9,7 @@ tags: hiring
 
 [Jay Wallace](https://twitter.com/mootpt) is now an employee of HashiCorp!
 
-Jay is the latest memeber of the HashiCorp family and is joining our growing
+Jay is the latest member of the HashiCorp family and is joining our growing
 team of solution engineers. He will be working along side customers to ensure a
 smooth onboarding process for [Atlas](https://atlas.hashicorp.com) and the rest
 of the HashiCorp open source portfolio of tools.
