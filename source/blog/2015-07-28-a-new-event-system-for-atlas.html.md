@@ -2,7 +2,7 @@
 page_title: "A New Event System for Atlas"
 title: "A New Event System for Atlas"
 list_image_url: /images/blog/atlas/atlas-logo.png
-post_image_url: /images/blog/a-new-event-system-for-atlas/new-events-header.jpg
+post_image_url: /images/blog/a-new-event-system-for-atlas/new-events-header.png
 tags: atlas
 author: Seth Vargo
 ---
@@ -20,7 +20,7 @@ READMORE
 If you previously used the event logging in Atlas the following screenshot
 should seem familiar:
 
-![Old Atlas Events](/images/blog/a-new-event-system-for-atlas/old-events.jpg)
+![Old Atlas Events](/images/blog/a-new-event-system-for-atlas/old-events.png)
 
 There were a number of challenges in implementing our first event system, and we
 have taken those challenges as learning opportunities in this new system.
@@ -36,7 +36,7 @@ In the new system, each event is a human-friendly format with the important
 components in bold and linked if possible. Below you can see the old event
 system (top) and the new event system (bottom) for a quick comparison.
 
-![New Human-Readable Atlas Events](/images/blog/a-new-event-system-for-atlas/new-events-human.jpg)
+![New Human-Readable Atlas Events](/images/blog/a-new-event-system-for-atlas/new-events-human.png)
 
 In the future, we are going to extend the functionality to export to CSV and
 other machine-parsable formats, but we wanted the user interface for the new
@@ -56,6 +56,12 @@ only the most important events to users and display them in the logs. As part of
 this transition, we are able to capture even more information (such as attribute
 diffs) that was not previously possible.
 
+![Event for a deleted resource](/images/blog/a-new-event-system-for-atlas/new-events-deleted.png)
+
+The new event system also intelligently tracks deleted resources. Even after
+you have deleted something, there is still an audit trail with its original name
+and metadata information stored as an event.
+
 ### Attribute Diffs
 
 In addition to capturing more information about the user, browser, and IP
@@ -63,7 +69,7 @@ address, the new event system calculates attribute diffs when possible. For
 example, if you update a variable, rename a resource, or update a description,
 you will see a diff or all the updated attributes:
 
-![Atlas Event Attribute Diffs](/images/blog/a-new-event-system-for-atlas/new-events-diff.jpg)
+![Atlas Event Attribute Diffs](/images/blog/a-new-event-system-for-atlas/new-events-diff.png)
 
 This allows administrators to see and track changes, even after changes have
 been applied. All resource diffs are
@@ -76,7 +82,7 @@ The new event system is currently live for all users. To view the event system,
 you will need to have "admin" permissions on the resource and then visit the
 "Event log" from the resource page.
 
-![Atlas New Events](/images/blog/a-new-event-system-for-atlas/new-events.jpg)
+![Atlas New Events](/images/blog/a-new-event-system-for-atlas/new-events.png)
 
 ### Thank You
 
