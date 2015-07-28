@@ -25,7 +25,7 @@ should seem familiar:
 There were a number of challenges in implementing our first event system, and we
 have taken those challenges as learning opportunities in this new system.
 
-### Humans First
+### Human-friendly Format
 
 One common feedback item about the previous event system was that it was very
 difficult to scan and parse as a human. We designed the previous event system
@@ -43,13 +43,12 @@ other machine-parsable formats, but we wanted the user interface for the new
 event system to be human-first. If you need CSV or other machine-parsable
 format of your event log, please contact support.
 
-### Less Enables More
+### Improved Information Display
 
 Another common feedback item was that the prior event system displayed too much
-information. It was difficult to filter through the mounds of information; they
-were suffering from information overload. Even moderate Atlas use would result
-in hundreds of events, making it very difficult to distinguish important events
-from traditional "logs".
+information. For some users, this hid important events from view. Even moderate
+Atlas use would result in hundreds of events, making it very difficult to
+distinguish important events from traditional "logs".
 
 One of the biggest changes in the new event system is that we carefully capture
 only the most important events to users and display them in the logs. As part of
