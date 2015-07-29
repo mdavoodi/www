@@ -19,13 +19,13 @@ READMORE
 
 Atlas can start Packer builds via a `packer push`, from a change on a configured GitHub repository, or when a [linked application](https://atlas.hashicorp.com/help/packer/builds/linked-applications) is updated.
 
-Notifications can be sent when a build starts, finishes, errors, or is canceled, and each of these is configurable for a build configuration. Learn more about using Packer in Atlas.
+Notifications can be sent when a build starts, finishes, errors, or is canceled, and each of these is configurable for a build configuration. Learn more about [using Packer in Atlas](https://atlas.hashicorp.com/help/packer/features) in our help documentation.
 
 ![Screenshot of Packer build notification settings in Atlas](/images/blog/atlas-build-run-notifications/build-notification-settings.png)
 
 ## Terraform Run Notifications
 
-Atlas can plan and apply your Terraform configuration, enabling automatic and safe changes to your infrastructure. Learn more about using Terraform in Atlas.
+Atlas can plan and apply your Terraform configuration, enabling automatic and safe changes to your infrastructure. Learn more about [using Terraform in Atlas](https://atlas.hashicorp.com/help/terraform/features) in our help documentation.
 
 Notifications can be sent when a plan fails, needs confirmation, or is discarded, or when an apply starts, finishes, or encounters an error.
 
