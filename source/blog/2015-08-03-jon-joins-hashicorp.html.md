@@ -11,10 +11,9 @@ tags: hiring
 HashiCorp!
 
 Jon is joining as our first designer. He is the oldest employee of
-HashiCorp, predating the founding of the company, by creating the
-identity for [Packer](http://packer.io). He has since been responsible
-for the identity of all the open source projects, our commercial
-Atlas product and now is working on [HashiConf](http://hashiconf.com).
+HashiCorp, by creating the identity for [Serf](https://serfdom.io).
+He has since been responsible for the identity of all the open source projects,
+our commercial Atlas product and now is working on [HashiConf](http://hashiconf.com).
 
 READMORE
 
