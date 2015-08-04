@@ -1,6 +1,6 @@
 ---
 page_title: "Cameron Stokes Joins HashiCorp"
-title: "Comeron Stokes Joins HashiCorp"
+title: "Cameron Stokes Joins HashiCorp"
 list_image_url: /images/blog/cameron-joins-hashicorp/list.jpg
 post_image_url: /images/blog/cameron-joins-hashicorp/post.jpg
 author: Mitchell Hashimoto
