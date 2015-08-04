@@ -15,8 +15,8 @@ his experience in enterprise environments to help customers execute
 proof of concepts and to smoothly onboard [Atlas](https://atlas.hashicorp.com)
 and the portfolio of open source HashiCorp tools.
 
-Cameron is located in Seattle, WA where he lives with his wife
-and two dogs, Einstein and Ada. If you are in the Emerald City
+Cameron is located in Seattle, WA where he lives with his wife, Rhonda, 
+and their two dogs, Einstein and Ada. If you are in the Emerald City
 send him a tweet to chat about all things HashiCorp.
 
 READMORE
