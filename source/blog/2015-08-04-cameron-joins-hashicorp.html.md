@@ -10,7 +10,7 @@ tags: hiring
 [Cameron Stokes](https://github.com/clstokes) is now an employee of
 HashiCorp!
 
-Cameron is the joining our team of solutions engineers. He is bringing
+Cameron is joining our team of solutions engineers. He is bringing
 his experience in enterprise environments to help customers execute
 proof of concepts and to smoothly onboard [Atlas](https://atlas.hashicorp.com)
 and the portfolio of open source HashiCorp tools.
