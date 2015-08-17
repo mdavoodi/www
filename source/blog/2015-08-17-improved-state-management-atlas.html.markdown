@@ -8,7 +8,7 @@ author: Jack Pearkes
 ---
 
 Terraform remote state enables teams to collaborate when using Terraform,
-saving the state your infrastructure as changes are made and resources
+saving the state of your infrastructure as changes are made and resources
 are added and removed. It stores infrastructure identifiers, dependency
 information and attributes referenced across configuration.
 
