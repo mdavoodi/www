@@ -23,19 +23,21 @@ READMORE
 
 ### Plain Text Difference
 
-Changes made to state between versions are highlighted and shown
+Stage changes between versions are highlighted and shown
 in a diff format.
 
 ![Terraform state diff](/images/blog/atlas-remote-state/state-diff.png)
 
-You can easily navigate through the history of changes made to state
+You can easily navigate through the history of changes made to Terraform state
 to understand how Terraform is operating on your infrastructure over
 time.
 
 ### State Rollbacks and Raw State
 
-Rollback to a specific version of state, reverting changes made after
-that point. This requires confirmation of the state version number.
+This features enables an environment to rollback to a specific version of state,
+reverting changes made after that point. This requires confirmation
+of the state version number. This can be helpful when recovering state
+changes or overwrites.
 
 ![Terraform remote state rollback](/images/blog/atlas-remote-state/rollback.png)
 
