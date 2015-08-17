@@ -41,3 +41,7 @@ that point. This requires confirmation of the state version number.
 
 Additionally, you can download the raw state in order to inspect it
 locally.
+
+Learn more about [Terraform remote state](https://terraform.io/docs/state/remote.html),
+or [follow a tutorial](https://atlas.hashicorp.com/tutorial/terraform)
+to start using it with Atlas.
