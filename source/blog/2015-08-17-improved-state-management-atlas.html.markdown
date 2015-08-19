@@ -16,8 +16,9 @@ Atlas provides a remote state API to store this state, and allows
 teams to modify infrastructure from Atlas or operator machines while
 sharing changes made.
 
-We've made some improvements to remote state management in Atlas. Read
-on to learn more.
+We've made some major improvements to remote state management in Atlas,
+making it clearer what is changing and how to rollback to previous versions. Read
+on to learn more!
 
 READMORE
 
