@@ -15,9 +15,8 @@ of the projects in the HashiCorp suite previously, and is now focused
 on driving the Vault project and supporting its growing ecosystem.
 
 READMORE
-
-Prior to HashiCorp, Jeff was an architect at Akamai working on the
-core CDN platform before then working on their microservices framework.
+Prior to HashiCorp, Jeff started out as an engineer at Akamai working on
+their core CDN platform and finished as an architect working on their microservices needs.
 Jeff contributed to HashiCorp tools to ensure they fit the Akamai use
 case, and now is able to help support our broader community of users.
 Prior to Akamai, Jeff was at the MIT Lincoln Laboratory working
