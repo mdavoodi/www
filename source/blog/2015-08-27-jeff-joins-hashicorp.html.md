@@ -12,7 +12,8 @@ HashiCorp!
 
 Jeff is joining as an engineer. He has been a contributor to many
 of the projects in the HashiCorp suite previously, and is now focused
-on driving the Vault project and supporting its growing ecosystem.
+on driving the [Vault](https://vaultproject.io) project and supporting
+its growing ecosystem.
 
 READMORE
 Prior to HashiCorp, Jeff started out as an engineer at Akamai working on
