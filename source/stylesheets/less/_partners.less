@@ -1,0 +1,244 @@
+// partners
+
+// Media breakpoints (using BS 3.2 nomenclature)
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+
+.partners {
+	.hashipart {
+		background-color: #f7f7f9;
+		text-align: center;
+
+		h1 {
+			color: @black;
+		}
+
+		.panel {
+			.panel-heading {
+				background-color: @gray;
+			}
+
+			h2 {
+				text-align: center;
+				margin-bottom: 0px;
+				color: @white;
+				.lato-light();
+			}
+			
+			img {
+				padding: 5px;
+			}
+
+			p {
+				color: @black;
+			}
+
+			a.mailto {
+				color: @gray;
+			}
+
+			// To lock in panel sizes for a clean grid layout. 
+			@media (max-width: @screen-xs-max) { // mobile, single column, let it flow
+				h2.pname {
+					}
+				img.plogo {
+					}
+				p.ptagline {
+					}
+				p.plocations {
+					}
+				p.pldesc {
+				}
+			}
+
+			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { // tablet
+				h2.pname {
+					min-height: 34px;
+					max-height: 34px;
+					overflow: hidden;
+					}
+				img.plogo {
+					min-height: 200px;
+					max-height: 200px;
+					overflow: hidden;
+					}
+				p.ptagline {
+					min-height: 54px;
+					max-height: 54px;
+					overflow: hidden;
+					}
+				p.plocations {
+					min-height: 27px;
+					max-height: 27px;
+					overflow: hidden;
+					}
+				p.pldesc {
+					min-height:260px;
+					max-height:260px;
+					overflow:hidden;
+				}
+			}
+
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { // desktop
+				h2.pname {
+					min-height: 34px;
+					max-height: 34px;
+					overflow: hidden;
+					}
+				img.plogo {
+					min-height: 160px;
+					max-height: 160px;
+					overflow: hidden;
+					}
+				p.ptagline {
+					min-height: 54px;
+					max-height: 54px;
+					overflow: hidden;
+					}
+				p.plocations {
+					min-height: 27px;
+					max-height: 27px;
+					overflow: hidden;
+					}
+				p.pldesc {
+					min-height:300px;
+					max-height:300px;
+					overflow:hidden;
+				}
+			}
+
+			@media (min-width: @screen-lg-min) { // large desktop
+				h2.pname {
+					min-height: 34px;
+					max-height: 34px;
+					overflow: hidden;
+					}
+				img.plogo {
+					min-height: 160px;
+					max-height: 160px;
+					overflow: hidden;
+					}
+				p.ptagline {
+					min-height: 54px;
+					max-height: 54px;
+					overflow: hidden;
+					}
+				p.plocations {
+					min-height: 27px;
+					max-height: 27px;
+					overflow: hidden;
+					}
+				p.pldesc {
+					min-height:250px;
+					max-height:250px;
+					overflow:hidden;
+				}
+			}
+		}
+	}
+
+    article {
+        padding: 80px 0;
+
+        &:first-child {
+            padding: 40px 0 80px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+    }
+
+    h1 {
+        padding: 0 0 60px 0;
+        color: @black;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        .lato-bold;
+        font-size: 35px;
+        line-height: 42px;
+		text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .meta-wrap{
+        position: relative;
+
+        a{
+            &:hover{
+                text-decoration: underline;
+                color: @blue;
+            }
+        }
+
+        .meta{
+            position: relative;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-right: 18px;
+            color: @light-gray-text;
+
+            &.meta-tag {
+                margin-right: 0px;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: -12px;
+                width: 3px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: @lightgray;
+            }
+
+            &.last{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    pre {
+        margin-top: @base-line-height;
+    }
+
+    .big-background {
+        background-color: @black !important;
+        color: @white;
+
+        .date {
+            color: @white;
+        }
+
+        img {
+            opacity: .7;
+            background: @black;
+        }
+    }
+
+    a.read-more {
+        margin-top: 20px;
+    }
+	
+	.techpart {
+		background-color: @white;
+	}
+}
+
+
+
+

@@ -2834,6 +2834,189 @@ body.about .press .kit {
     margin-top: 60px;
   }
 }
+.partners .hashipart {
+  background-color: #f7f7f9;
+  text-align: center;
+}
+.partners .hashipart h1 {
+  color: #151515;
+}
+.partners .hashipart .panel .panel-heading {
+  background-color: #868686;
+}
+.partners .hashipart .panel h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.partners .hashipart .panel img {
+  padding: 5px;
+}
+.partners .hashipart .panel p {
+  color: #151515;
+}
+.partners .hashipart .panel a.mailto {
+  color: #868686;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .partners .hashipart .panel h2.pname {
+    min-height: 34px;
+    max-height: 34px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel img.plogo {
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.ptagline {
+    min-height: 54px;
+    max-height: 54px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.plocations {
+    min-height: 27px;
+    max-height: 27px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.pldesc {
+    min-height: 260px;
+    max-height: 260px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .partners .hashipart .panel h2.pname {
+    min-height: 34px;
+    max-height: 34px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel img.plogo {
+    min-height: 160px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.ptagline {
+    min-height: 54px;
+    max-height: 54px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.plocations {
+    min-height: 27px;
+    max-height: 27px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.pldesc {
+    min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  .partners .hashipart .panel h2.pname {
+    min-height: 34px;
+    max-height: 34px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel img.plogo {
+    min-height: 160px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.ptagline {
+    min-height: 54px;
+    max-height: 54px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.plocations {
+    min-height: 27px;
+    max-height: 27px;
+    overflow: hidden;
+  }
+  .partners .hashipart .panel p.pldesc {
+    min-height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+  }
+}
+.partners article {
+  padding: 80px 0;
+}
+.partners article:first-child {
+  padding: 40px 0 80px;
+}
+.partners article h2 {
+  font-size: 28px;
+}
+.partners h1 {
+  padding: 0 0 60px 0;
+  color: #151515;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+}
+.partners img {
+  max-width: 100%;
+  height: auto;
+}
+.partners .meta-wrap {
+  position: relative;
+}
+.partners .meta-wrap a:hover {
+  text-decoration: underline;
+  color: #48b4fb;
+}
+.partners .meta-wrap .meta {
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 18px;
+  color: #959595;
+}
+.partners .meta-wrap .meta.meta-tag {
+  margin-right: 0px;
+}
+.partners .meta-wrap .meta::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -12px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #6b6b6b;
+}
+.partners .meta-wrap .meta.last::after {
+  display: none;
+}
+.partners pre {
+  margin-top: 1.55em;
+}
+.partners .big-background {
+  background-color: #151515 !important;
+  color: #ffffff;
+}
+.partners .big-background .date {
+  color: #ffffff;
+}
+.partners .big-background img {
+  opacity: .7;
+  background: #151515;
+}
+.partners a.read-more {
+  margin-top: 20px;
+}
+.partners .techpart {
+  background-color: #ffffff;
+}
 body.jobs article {
   padding: 120px 0;
 }

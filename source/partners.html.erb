@@ -1,0 +1,135 @@
+---
+title: Partners
+page_title: Partners
+---
+
+<section class="page inner-page">
+	<!-- page title -->
+
+	<div class="inner-page-header" id="subheader">
+		<div class="container">
+			<div class="row">
+				<h1 class="headline">Partners</h1>
+			</div>
+		</div>
+	</div>
+	<!-- page contents -->
+
+	<% 
+		 myPartnersJSON = File.read("source/hashipart.json");
+		 
+		 myPartners = JSON.parse(myPartnersJSON)
+		 %>
+
+	<article class="partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h2>HashiPartners</h2>
+					<p> Our <a href="#hashipart">HashiPartners</a> program recognizes
+						companies who are leaders, practitioners, and educators of our
+						workflow and techniques. They have each exemplified a deep command of
+						our toolset.  They are our trusted partners in teaching and
+						implementing the HashiCorp way.  HashiPartners are found around the
+						world.
+					</p>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<h2>Technology Partners</h2>
+					<p> Our strategic <a href="#techpart">Technology Partners</a> are public
+						cloud companies and fundamental technology providers with whom we've
+						aligned. We are honored to build the future of massively scalable
+						application delivery with them.
+					</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</article><!-- partners -->
+
+	<article class="partners hashipart" id="hashipart">
+		<div class="container">
+			<div class="row">
+				<div class="customers-content col-xs-12">
+					<h1> HashiPartners </h1>
+				</div> <!-- FIXME customers-content -->
+			</div> <!-- row -->
+			<div class="row">
+
+				<% myPartners.each_with_index { |val, index| %>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 class="pname"><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
+						</div> <!-- panel-heading -->
+						<div class="panel-body">
+							<img class="plogo" src=<%= val["logo"] %> >
+							<p class="ptagline"> <%= val["tagline"] %> </p>
+							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
+							<p class="pldesc"> <%= val["ldesc"] %>
+								<span class="small">
+									<% if val["prettyurl"] != "" %>
+									    <br>web: <a href=<%= val["url"] %>> <%= val["prettyurl"] %> </a>
+									<% end %>
+									<% if val["contact"] != "" %>
+									    <br>email: <a class="mailto" href="mailto:<%= val["contact"] %>?subject=HashiPartner request&body=Hello,%0a%0dI'm interested in your HashiCorp capabilities.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> <%= val["contact"] %> </a>
+									<% end %>
+								</span>
+							</p> 
+						</div> <!-- panel-body -->
+					</div>	   <!-- panel -->
+				</div>		  
+
+				<% if (index + 1) % 2 == 0 %>
+				    <div class="clearfix visible-sm-block"></div> <!-- add at multiples of 2 (sm) -->
+				<% end %>
+
+				<% if (index + 1) % 3 == 0 %>
+				    <div class="clearfix visible-md-block visible-lg-block"></div> <!-- add at multiples of 3 (md & lg) -->
+				<% end %>
+
+				<% } %>
+
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<p > If your organization is interested in
+						becoming a HashiPartner, we welcome you to
+						learn more.  Please email us
+						at <a href="mailto:partner-request@hashicorp.com?subject=Interested in HashiPartner Program&body=I'd like to learn more about the HashiPartner Program.%0a%0DThank you.">partner-request@hashicorp.com</a>
+					</p>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</article> <!-- hashipart -->
+
+	<article class="customers techpart" id="techpart">
+		<div class="container">
+			<div class="row">
+				<div class="customers-content col-xs-12">
+					<h1>
+						Technology Partners
+						<span>(these are Placeholder Logos)</span>
+					</h1>					
+				</div> <!-- customers-content -->
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="customer-logos unstyled">
+						<li class="cust c1"></li>
+						<li class="cust c2"></li>
+						<li class="cust c3"></li>
+						<li class="cust c4"></li>
+						<li class="cust c5"></li>
+						<li class="cust c6"></li>
+						<li class="cust c7"></li>
+						<li class="cust c8"></li>
+						<li class="cust c9"></li>
+						<li class="cust c10"></li>
+						<li class="cust c11"></li>
+						<li class="cust c12"></li>
+					</ul> <!-- customer logos -->
+				</div> <!-- row -->
+		</div> <!-- container -->
+	</article> <!-- techpart -->
+
