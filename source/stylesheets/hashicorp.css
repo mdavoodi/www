@@ -1357,14 +1357,24 @@ body.page-sub #header .main-links.nav > li > a:focus {
   overflow: hidden;
 }
 #jumbotron #jumbotron-content .hero-headline h1 {
-  margin-top: 202px;
+  margin-top: 180px;
   color: #ffffff;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 34px;
+  line-height: 37px;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   opacity: .9;
+}
+#jumbotron #jumbotron-content .hero-headline h2 {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  opacity: .8;
 }
 #jumbotron #jumbotron-content .hero-headline .outline-btn {
   margin-top: 20px;
@@ -1391,13 +1401,31 @@ body.page-sub #header .main-links.nav > li > a:focus {
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos {
   position: absolute;
-  top: 372px;
-  left: -50px;
-  width: 44px;
+  top: 150px;
+  left: 0px;
+  width: 60px;
   height: 53px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod {
+  width: 200px;
+  display: block;
+  background-position: center !important;
   position: absolute;
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod .name {
+  bottom: -15px;
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  text-align: center;
+  line-height: 9px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.consul {
   width: 43px;
@@ -1425,8 +1453,11 @@ body.page-sub #header .main-links.nav > li > a:focus {
     background-size: 30px 43px;
   }
 }
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.packer .name {
+  left: -6px;
+}
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.terraform {
-  width: 39px;
+  width: 60px;
   height: 43px;
   background: url(/images/hero-terraform.png) 0 0 no-repeat;
   background-image: url("/images/hero-terraform.png");
@@ -1450,6 +1481,9 @@ body.page-sub #header .main-links.nav > li > a:focus {
     background-image: url("/images/hero-vault@2x.png");
     background-size: 39px 43px;
   }
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vault .name {
+  left: 4px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.serf {
   width: 30px;
@@ -1480,39 +1514,46 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
   width: 47px;
   height: 43px;
-  background: url(/images/hero-atlas.png) 0 0 no-repeat;
-  background-image: url("/images/hero-atlas.png");
+  background: url(/images/nav-atlas.png) 0 0 no-repeat;
+  background-image: url("/images/nav-atlas.png");
   background-size: 47px 43px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
-    background-image: url("/images/hero-atlas@2x.png");
+    background-image: url("/images/nav-atlas@2x.png");
     background-size: 47px 43px;
   }
 }
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas .name {
+  left: 7px;
+}
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p1 {
   top: 0;
-  left: 0;
+  left: -20px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p2 {
-  top: 60px;
-  left: 57px;
+  top: 120px;
+  left: -70px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p3 {
-  top: 98px;
-  left: 128px;
+  top: 240px;
+  left: -20px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p4 {
-  top: 97px;
-  left: 193px;
+  top: 300px;
+  left: 100px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p5 {
-  top: 60px;
-  left: 263px;
+  top: 242px;
+  left: 240px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p6 {
-  top: 0;
-  left: 312px;
+  top: 120px;
+  left: 300px;
+}
+#jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p7 {
+  top: 4px;
+  left: 230px;
 }
 #jumbotron #jumbotron-content .jumbo-logo .hexagons {
   position: relative;
@@ -1595,6 +1636,10 @@ body.page-sub #header .main-links.nav > li > a:focus {
   #jumbotron #jumbotron-content .jumbo-logo {
     margin: -30px auto 0 auto;
   }
+  #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod {
+    background-position: center;
+    position: absolute;
+  }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p1 {
     top: 0;
     left: 0px;
@@ -1617,6 +1662,10 @@ body.page-sub #header .main-links.nav > li > a:focus {
   }
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p6 {
     top: 0;
+    left: 300px;
+  }
+  #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.p7 {
+    top: 60px;
     left: 300px;
   }
 }
@@ -1648,6 +1697,20 @@ div.align-center {
 #news .r50 {
   float: left;
   width: 50%;
+}
+#news .hashiconf-logo {
+  display: block;
+  margin-bottom: 15px;
+  height: 44px;
+  background: url(/images/hashiconf-logo.png) center center no-repeat;
+  background-size: 270px;
+}
+#news .hashiconf-earth {
+  display: block;
+  height: 200px;
+  background: url(/images/hashiconf-earth.jpg) center center no-repeat;
+  background-size: 400px;
+  background-position-y: 40px;
 }
 #news .blog-entry {
   padding-top: 120px;
@@ -1803,6 +1866,7 @@ div.align-center {
   text-align: center;
   list-style-type: none;
   margin-bottom: 0;
+  margin-top: 30px;
 }
 #products #products-nav li {
   display: inline-block;
@@ -2423,7 +2487,6 @@ div.align-center {
     margin-bottom: 50px;
     color: #151515;
     font-size: 44px;
-    line-height: px;
   }
   .customers h1 {
     font-size: 44px;
