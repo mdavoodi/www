@@ -80,7 +80,7 @@ For this Spark infrastructure automation project, Packer was used to build AMIs 
 
 ### Terraform for Deployment Automation
 
-The next step in taking an application from a deployable artifact to a live environment is deployment automation. Historically, in the physical world, deploying new infrastructure as been time-consuming, costly, and error prone. With the advent of cloud computing, the time and cost to provision new infrastructure has been greatly reduced, but infrastructure environments are more complex than ever and managing these by hand or even with rudimentary automation is still error-prone with little traceability of changes.
+The next step in taking an application from a deployable artifact to a live environment is deployment automation. Historically, in the physical world, deploying new infrastructure has been time-consuming, costly, and error prone. With the advent of cloud computing, the time and cost to provision new infrastructure has been greatly reduced, but infrastructure environments are more complex than ever and managing these by hand or even with rudimentary automation is still error-prone with little traceability of changes.
 
 Just as teams version control their application code, Terraform brings these same capabilities to version infrastructure. Teams can collaborate in a common configuration language that defines each component of their infrastructure - to each distinct configuration property, to dependencies between resources, to parameterizing different environments. Terraform enables developers and operators to see an execution plan of changes before applying them,  allowing them to proceed with confidence or revert and adjust configurations - a peace of mind assurance moment.
 
