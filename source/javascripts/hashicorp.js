@@ -35,7 +35,7 @@
         var _this = this;
         setTimeout(_this.showHeroLogo, 100);
 
-        for(var i = 1; i < 7; i++) {
+        for(var i = 1; i < 8; i++) {
           (function(index) {
               setTimeout(function() {
                 $('.hero-prod-logos .prod.p'+index).addClass('in');
