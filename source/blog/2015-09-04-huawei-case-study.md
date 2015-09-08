@@ -1,6 +1,6 @@
 ---
-page_title: "Huawei builds an Apache Spark Software Appliance with HashiCorp Atlas"
-title: "Huawei builds an Apache Spark Software Appliance with HashiCorp Atlas"
+page_title: "Huawei builds an Apache Spark Software Appliance with Atlas"
+title: "Huawei builds an Apache Spark Software Appliance with Atlas"
 list_image_url: "/images/blog/huawei-case-study/huawei-logo.jpg"
 tags: case-study
 author: Shuo Yang (Huawei)
