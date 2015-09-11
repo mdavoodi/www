@@ -63,7 +63,7 @@ To learn more about each step of the Atlas GitHub integration, read below.
 
 Atlas uses [Terraform](https://terraform.io) to manage infrastructure. This means that
 Atlas can manage anything Terraform can manage: AWS, Google, OpenStack,
-Docker, etc. Improvements to Terraform by the community will improve both the commerical and open
+Docker, etc. Improvements to Terraform by the community will improve both the commercial and open
  source aspects of the Atlas and Terraform.
 
 Terraform is completely [open source](https://github.com/hashicorp/terraform).
