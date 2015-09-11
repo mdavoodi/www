@@ -18,7 +18,7 @@ In the era of _'Infrastructure as Code'_, as a large engineering organization, H
 
 Some other questions we were looking to get answers to were if we could simply change some parameters to customize some environments while keeping the remaining complex infrastructure automation code untouched. Could we give ourselves the peace of mind that our testing infrastructure, which exercised extensive test suites, did get reflected into our customer's infrastructure deployment? Moreover, to avoid the accidental misconfiguration errors we wanted to pre-validate the plan and deploy the infrastructure solution in an immutable way across the testing, staging and production environments. This was the **_quality and safety_** aspect of providing an infrastructure solution we were looking to validate.
 
-If our infrastructure automation code from artifacts release to production deployment met the above two requirements then we could confidentally provide our customers with a high quality infrastructure product in a nimble and responsive manner.
+If our infrastructure automation code from artifacts release to production deployment met the above two requirements then we could confidentially provide our customers with a high quality infrastructure product in a nimble and responsive manner.
 
 ## Project Scope
 With _Infrastructure as Code_ as a guiding principle for the engagement, Huawei and HashiCorp built a project that enabled automated and repeatable deployment of a Spark cluster to Amazon Web Services.

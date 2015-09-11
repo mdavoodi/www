@@ -110,7 +110,7 @@ available and durable by replicating it to multiple nodes. From a client
 perspective, we can write to it and be confident that we won't lose data during
 a node failure.
 
-To guard against loosing the node running StorageLocker and the WAL with it,
+To guard against losing the node running StorageLocker and the WAL with it,
 we simply store the WAL in Consul. Now if the StorageLocker instance handling
 an upload fails, the WAL is available via Consul to any other instance.
 Recovery is done by fetching all the expired WALs and deleting all the parts

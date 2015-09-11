@@ -91,7 +91,7 @@ it simple to interact with Consul in real time without writing code.
 ## Event System
 
 Consul is built on top of [Serf](http://www.serfdom.io) which provides a mechanism
-for reliably propogating events to a cluster. This feature is finally now available
+for reliably propagating events to a cluster. This feature is finally now available
 in Consul as well using the [event command](http://www.consul.io/docs/commands/event.html).
 
 By using the peer-to-peer gossip layer, events can quickly be propogated to
