@@ -42,3 +42,17 @@ $ npm install -g grunt-cli
 $ npm install
 $ grunt
 ```
+
+## Heroku
+
+To trigger `middleman` static builds on a `git push`, we use this
+buildpack: 
+[https://github.com/hashicorp/heroku-buildpack-middleman](https://github.com/hashicorp/heroku-buildpack-middleman), in addition to the standard Ruby buildback.  Note the example below pushes your local
+branch as remote master to trigger build.  To run this on Heroku, 
+enable multiple buildpacks this way:
+
+```
+heroku create
+heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
+git push heroku <branch>:master
+```
