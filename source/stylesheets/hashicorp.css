@@ -2834,17 +2834,17 @@ body.about .press .kit {
     margin-top: 60px;
   }
 }
-.partners .hashipart {
-  background-color: #f7f7f9;
+.partners .sipart {
+  background-color: #ffffff;
   text-align: center;
 }
-.partners .hashipart h1 {
+.partners .sipart h1 {
   color: #151515;
 }
-.partners .hashipart .panel .panel-heading {
+.partners .sipart .panel .panel-heading {
   background-color: #868686;
 }
-.partners .hashipart .panel h2 {
+.partners .sipart .panel h2 {
   text-align: center;
   margin-bottom: 0px;
   color: #ffffff;
@@ -2852,91 +2852,91 @@ body.about .press .kit {
   font-style: normal;
   font-weight: 300;
 }
-.partners .hashipart .panel img {
+.partners .sipart .panel img {
   padding: 5px;
 }
-.partners .hashipart .panel p {
+.partners .sipart .panel p {
   color: #151515;
 }
-.partners .hashipart .panel a.mailto {
+.partners .sipart .panel a.mailto {
   color: #868686;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .partners .hashipart .panel h2.pname {
+  .partners .sipart .panel h2.pname {
     min-height: 34px;
     max-height: 34px;
     overflow: hidden;
   }
-  .partners .hashipart .panel img.plogo {
+  .partners .sipart .panel img.plogo {
     min-height: 200px;
     max-height: 200px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.ptagline {
+  .partners .sipart .panel p.ptagline {
     min-height: 54px;
     max-height: 54px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.plocations {
+  .partners .sipart .panel p.plocations {
     min-height: 27px;
     max-height: 27px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.pldesc {
+  .partners .sipart .panel p.pldesc {
     min-height: 260px;
     max-height: 260px;
     overflow: hidden;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .partners .hashipart .panel h2.pname {
+  .partners .sipart .panel h2.pname {
     min-height: 34px;
     max-height: 34px;
     overflow: hidden;
   }
-  .partners .hashipart .panel img.plogo {
+  .partners .sipart .panel img.plogo {
     min-height: 160px;
     max-height: 160px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.ptagline {
+  .partners .sipart .panel p.ptagline {
     min-height: 54px;
     max-height: 54px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.plocations {
+  .partners .sipart .panel p.plocations {
     min-height: 27px;
     max-height: 27px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.pldesc {
+  .partners .sipart .panel p.pldesc {
     min-height: 300px;
     max-height: 300px;
     overflow: hidden;
   }
 }
 @media (min-width: 1200px) {
-  .partners .hashipart .panel h2.pname {
+  .partners .sipart .panel h2.pname {
     min-height: 34px;
     max-height: 34px;
     overflow: hidden;
   }
-  .partners .hashipart .panel img.plogo {
+  .partners .sipart .panel img.plogo {
     min-height: 160px;
     max-height: 160px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.ptagline {
+  .partners .sipart .panel p.ptagline {
     min-height: 54px;
     max-height: 54px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.plocations {
+  .partners .sipart .panel p.plocations {
     min-height: 27px;
     max-height: 27px;
     overflow: hidden;
   }
-  .partners .hashipart .panel p.pldesc {
+  .partners .sipart .panel p.pldesc {
     min-height: 250px;
     max-height: 250px;
     overflow: hidden;
@@ -3015,7 +3015,7 @@ body.about .press .kit {
   margin-top: 20px;
 }
 .partners .techpart {
-  background-color: #ffffff;
+  background-color: #f7f7f9;
 }
 body.jobs article {
   padding: 120px 0;
