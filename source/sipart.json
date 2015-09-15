@@ -44,19 +44,19 @@
 	  "logo": "images/partner_mustwin.png",
 	  "tagline": "All Star Strategic Design & Engineering",
 	  "locations": "San Francisco, New York, US",
-	  "ldesc": "Must Win is a full-service software solutions provider based in the heart of Silicon Valley. We work on technical challenges ranging from optimizing hardware utilization, security compliance, instituting dev/ops automation and developing entirely new lines of business from concept to launch.",
+	  "ldesc": "Must Win is a full-service software solutions provider based in the heart of Silicon Valley. We work on technical challenges: optimizing hardware utilization, security compliance, dev/ops automation and developing entirely new lines of business from concept to launch.",
 	  "prettyurl": "mustwin.com",
 	  "contact": "we@mustwin.com"
 	},
 
 	{ "name": "Open Credo", 
-	  "url": "http://example.com",
+	  "url": "https://www.opencredo.com",
 	  "logo": "images/partner_opencredo.png",
-	  "tagline": "This is a pithy tagline.",
-	  "locations": "USA",
-	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
-	  "prettyurl": "example.com",
-	  "contact": "hello@example.com"
+	  "tagline": "Delivering business outcomes by applying emerging technology.",
+	  "locations": "UK, Europe, US",
+	  "ldesc": "OpenCredo is a pragmatic software and DevOps consultancy with a wealth of experience in open source. Since 2009, we have been helping clients align technical and business strategy, delivering solutions in software & programmable infrastructure.",
+	  "prettyurl": "opencredo.com",
+	  "contact": "info@opencredo.com"
 	},
 
 	{ "name": "Opex Software", 
@@ -71,10 +71,10 @@
 
 	{ "name": "REAN", 
 	  "url": "http://reancloud.com",
-	  "logo": "images/partner_placeholder_logo.jpg",
+	  "logo": "images/partner_rean.jpg",
 	  "tagline": "REAN Cloud is a one-stop shop for all of your cloud services needs.",
 	  "locations": "USA",
-	  "ldesc": "From figuring it out to getting it done, REAN Cloud is your full-service Cloud IT solutions provider. REAN Cloud, an Advanced AWS Consulting Partner, is a cloud-native firm with deep experience supporting enterprise IT infrastructures and DevOps continuous integration and continuous delivery implementations.",
+	  "ldesc": "From figuring it out to getting it done, REAN Cloud is your full-service Cloud IT solutions provider. REAN Cloud, an Advanced AWS Consulting Partner, is a cloud-native firm with deep experience supporting enterprise IT infrastructures and DevOps CD/CI implementations.",
 	  "prettyurl": "reancloud.com",
 	  "contact": "info@reancloud.com"
 	},

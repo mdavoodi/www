@@ -2946,8 +2946,8 @@ body.about .press .kit {
     overflow: hidden;
   }
   .partners .sipart .panel p.pldesc {
-    min-height: 260px;
-    max-height: 260px;
+    min-height: 310px;
+    max-height: 310px;
     overflow: hidden;
   }
 }
@@ -2973,8 +2973,8 @@ body.about .press .kit {
     overflow: hidden;
   }
   .partners .sipart .panel p.pldesc {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 320px;
+    max-height: 320px;
     overflow: hidden;
   }
 }
