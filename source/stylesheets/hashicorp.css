@@ -647,6 +647,12 @@ h a s h i c o r p
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.outline-btn.buttongray {
+  color: #666666;
+  border: 3px solid #666666;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .outline-btn:hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
@@ -2921,8 +2927,16 @@ body.about .press .kit {
 .partners .sipart .panel p {
   color: #151515;
 }
-.partners .sipart .panel a.mailto {
-  color: #868686;
+.partners .sipart .panel .atbottom {
+  vertical-align: bottom;
+}
+.partners .sipart .panel a.contactus {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .partners .sipart .panel p.pldesc {
+    color: #666666;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .partners .sipart .panel h2.pname {
@@ -2946,9 +2960,10 @@ body.about .press .kit {
     overflow: hidden;
   }
   .partners .sipart .panel p.pldesc {
-    min-height: 310px;
-    max-height: 310px;
+    min-height: 200px;
+    max-height: 200px;
     overflow: hidden;
+    color: #666666;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2973,9 +2988,10 @@ body.about .press .kit {
     overflow: hidden;
   }
   .partners .sipart .panel p.pldesc {
-    min-height: 320px;
-    max-height: 320px;
+    min-height: 250px;
+    max-height: 250px;
     overflow: hidden;
+    color: #666666;
   }
 }
 @media (min-width: 1200px) {
@@ -3000,9 +3016,10 @@ body.about .press .kit {
     overflow: hidden;
   }
   .partners .sipart .panel p.pldesc {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 200px;
+    max-height: 200px;
     overflow: hidden;
+    color: #666666;
   }
 }
 .partners article {
