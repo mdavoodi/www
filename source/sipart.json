@@ -21,10 +21,10 @@
 
 	{ "name": "Container Solutions", 
 	  "url": "http://example.com",
-	  "logo": "images/partner_placeholder_logo2.jpg",
+	  "logo": "images/partner_contsoln.png",
 	  "tagline": "This is a pithy tagline.",
 	  "locations": "USA",
-	  "ldesc": "(verbal approval, awaiting signed letter.) Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
+	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
 	  "prettyurl": "example.com",
 	  "contact": "hello@example.com"
 	},
@@ -90,23 +90,23 @@
 	},
 
 	{ "name": "unif.io", 
-	  "url": "http://example.com",
+	  "url": "http://unif.io",
 	  "logo": "images/partner_unifio.png",
-	  "tagline": "This is a pithy tagline.",
-	  "locations": "USA",
-	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
-	  "prettyurl": "example.com",
-	  "contact": "hello@example.com"
+	  "tagline": "Unifying Development & Operations",
+	  "locations": "USA, Japan, UK",
+	  "ldesc": "Unif.io is a consulting services organization which uses a full-stack, holistic approach to solution design and automation. Unif.io’s deep partnership with their clients guides the achievement of business goals. The How changes quickly so Unif.io values the Why.",
+	  "prettyurl": "unif.io",
+	  "contact": "info@unif.io"
 	},
 
 	{ "name": "Vibrato", 
 	  "url": "http://vibrato.com.au",
 	  "logo": "images/partner_placeholder_logo2.jpg",
-	  "tagline": "",
-	  "locations": "Melborne, Australia",
-	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
+	  "tagline": "Modern application automation and delivery, done well",
+	  "locations": "Australia, Asia",
+	  "ldesc": "Vibrato helps organisations to make sense of the modern automation landscape. We help to reduce application delivery times while also increasing the reliability and stability of the application infrastructure.  We work to provide pragmatic solutions for your business.",
 	  "prettyurl": "vibrato.com.au",
-	  "contact": "hello@example.com"
+	  "contact": "info@vibrato.com.au"
 	},
 
 	{ "name": "Xebia", 
@@ -114,7 +114,7 @@
 	  "logo": "images/partner_xebia.png",
 	  "tagline": "Accelerating businesses with New IT",
 	  "locations": "Netherlands, France, India, USA",
-	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 550 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
+	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 600 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
 	  "prettyurl": "xebia.com",
 	  "contact": "info@xebia.com"
 	}

@@ -2903,8 +2903,11 @@ body.about .press .kit {
     margin-top: 60px;
   }
 }
+.partners .intropart {
+  background-color: #f7f7f9;
+}
 .partners .sipart {
-  background-color: #ffffff;
+  background-color: #f7f7f9;
   text-align: center;
 }
 .partners .sipart h1 {
@@ -3091,11 +3094,81 @@ body.about .press .kit {
   opacity: .7;
   background: #151515;
 }
-.partners a.read-more {
-  margin-top: 20px;
+.partners .techparts {
+  color: #ffffff;
+  background-color: #ffffff;
+  text-align: center;
 }
-.partners .techpart {
-  background-color: #f7f7f9;
+.partners .techparts ul.techpart-logos {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.partners .techparts ul.techpart-logos:before,
+.partners .techparts ul.techpart-logos:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.partners .techparts ul.techpart-logos:after {
+  clear: both;
+}
+.partners .techparts ul.techpart-logos li {
+  float: left;
+  width: 33.3333%;
+  height: 128px;
+  overflow: hidden;
+}
+.partners .techparts ul.techpart-logos li.tpart {
+  background: url(/images/techpart-sprite.png) 0 0 no-repeat;
+  background-image: url("/images/techpart-sprite.png");
+  background-size: 1130px 256px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .techparts ul.techpart-logos li.tpart {
+    background-image: url("/images/techpart-sprite@2x.png");
+    background-size: 1130px 256px;
+  }
+}
+.partners .techparts ul.techpart-logos li.tp1 {
+  background-position: 0px 0;
+}
+.partners .techparts ul.techpart-logos li.tp2 {
+  background-position: -380px 0;
+}
+.partners .techparts ul.techpart-logos li.tp3 {
+  background-position: -760px 0;
+}
+.partners .techparts ul.techpart-logos li.tp4 {
+  background-position: 0px -128px;
+}
+.partners .techparts ul.techpart-logos li.tp5 {
+  background-position: -380px -128px;
+}
+.partners .techparts ul.techpart-logos li.tp6 {
+  background-position: -760px -128px;
+}
+@media (max-width: 1200px) {
+  .partners .techparts ul.techpart-logos li {
+    width: 33.3333%;
+  }
+}
+@media (min-width: 721px) and (max-width: 992px) {
+  .partners .techparts ul.techpart-logos li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  .partners .techparts ul.techpart-logos li {
+    background-position: 0 0;
+    width: 380px;
+    float:left;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
 }
 body.jobs article {
   padding: 120px 0;

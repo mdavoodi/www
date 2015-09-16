@@ -11,8 +11,12 @@
 
 
 .partners {
+	.intropart {
+		background-color: #f7f7f9;
+	}
+	
 	.sipart {
-		background-color: @white;
+		background-color: #f7f7f9;
 		text-align: center;
 
 		h1 {
@@ -238,11 +242,89 @@
         }
     }
 
-    a.read-more {
-        margin-top: 20px;
-    }
-	
-	.techpart {
-		background-color: #f7f7f9;
+	.techparts {
+		color: @white;
+		background-color: @white;
+		text-align: center;
+
+		ul.techpart-logos {
+			position: relative;
+			width: 100%;
+			.clearfix;
+			padding: 0;
+
+			li {
+				float: left;
+				width: 33.3333%;
+				height: 128px;
+				overflow: hidden;
+
+				&.tpart{
+					background: url(/images/techpart-sprite.png) 0 0 no-repeat;
+					.img-retina("/images/techpart-sprite.png", "/images/techpart-sprite@2x.png", 1130px, 256px);
+				}
+
+				&.tp1 {
+					background-position: 0px 0;
+				}
+				&.tp2 {
+					background-position: -380px 0;
+				}
+				&.tp3 {
+					background-position: -760px 0;
+				}
+				&.tp4 {
+					background-position: 0px -128px;
+				}
+				&.tp5 {
+					background-position: -380px -128px;
+				}
+				&.tp6 {
+					background-position: -760px -128px;
+				}
+			} // li
+		} //ul
 	}
+
+	@media (max-width: 1200px) {
+		.techparts {
+			ul.techpart-logos {
+				li {
+					width: 33.3333%;
+				}
+			}
+		}
+	}
+
+
+	@media (min-width: 721px) and (max-width: 992px) {
+		.techparts ul.techpart-logos li{
+			width: 50%;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.techparts ul.techpart-logos li{
+			width: 50%;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.techparts ul.techpart-logos li{
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 320px) {
+		.techparts ul.techpart-logos li{
+			background-position: 0 0;
+			width: 100%;
+			/* float:left; */
+			margin: 0 auto;
+			display: block;
+			float:  none
+		}
+	}
+
 }
+
