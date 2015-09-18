@@ -311,6 +311,17 @@ h a s h i c o r p
     background-size: 51px 57px;
   }
 }
+.timeline-vault {
+  background: url(/images/time-vault.png) 0 0 no-repeat;
+  background-image: url("/images/time-vault.png");
+  background-size: 55px 55px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-vault {
+    background-image: url("/images/time-vault@2x.png");
+    background-size: 55px 55px;
+  }
+}
 .twitter-about {
   background: url(/images/twitter-about.png) 0 0 no-repeat;
   background-image: url("/images/twitter-about.png");
@@ -3244,7 +3255,7 @@ body.jobs #chat p {
 }
 #timeline #points {
   position: absolute;
-  width: 2638px;
+  width: 2938px;
   left: 30px;
   top: 0;
   margin: 120px 0 ;
@@ -3401,6 +3412,17 @@ body.jobs #chat p {
   #timeline #points .point .body i.cloud {
     background-image: url("/images/time-cloud@2x.png");
     background-size: 58px 41px;
+  }
+}
+#timeline #points .point .body i.vault {
+  background: url(/images/time-vault.png) 0 0 no-repeat;
+  background-image: url("/images/time-vault.png");
+  background-size: 55px 55px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #timeline #points .point .body i.vault {
+    background-image: url("/images/time-vault@2x.png");
+    background-size: 55px 55px;
   }
 }
 #timeline #points .point .body .line {
