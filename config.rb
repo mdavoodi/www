@@ -19,6 +19,8 @@ activate :blog do |blog|
   blog.per_page = 5
 end
 
+sprockets.append_path 'files/'
+
 # Build-specific configuration
 configure :build do
   activate :asset_hash, ignore: [
