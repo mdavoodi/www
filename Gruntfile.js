@@ -9,8 +9,9 @@ module.exports = function(grunt) {
         },
 		options: {
 		  sourceMap: true,
-		  sourceMapFilename: "hashicorp.css.map",
-		  sourceMapBasepath: "less"
+		  sourceMapFilename: "source/stylesheets/hashicorp.css.map",
+		  sourceMapURL: "hashicorp.css.map",
+		  sourceMapBasepath: "source/stylesheets"
 		}
 	  }
     },
