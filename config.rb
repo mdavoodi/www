@@ -42,3 +42,8 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+configure :development do
+  set :debug_assets, true
+  sprockets.append_path 'stylesheets/less/'
+end

@@ -88,8 +88,8 @@
 					overflow: hidden;
 					}
 				p.pldesc {
-					min-height:200px;
-					max-height:200px;
+					min-height:220px;
+					max-height:220px;
 					overflow:hidden;
 					color: @medium-gray-text;
 				}
@@ -297,21 +297,30 @@
 	}
 
 
-	@media (min-width: 721px) and (max-width: 992px) {
+	@media (min-width: 671px) and (max-width: 992px) {
 		.techparts ul.techpart-logos li{
 			width: 50%;
 		}
 	}
 
-	@media (max-width: 720px) {
+	@media (max-width: 670px) {
 		.techparts ul.techpart-logos li{
-			width: 50%;
+			width: 60%;
+			margin: auto 20%;
+		}
+	}
+
+	@media (max-width: 620px) {
+		.techparts ul.techpart-logos li{
+			width: 380px;
+			margin: auto 10%;
 		}
 	}
 
 	@media (max-width: 480px) {
 		.techparts ul.techpart-logos li{
-			width: 100%;
+			width: 380px;
+			margin: auto 5%;
 		}
 	}
 
@@ -319,10 +328,9 @@
 		.techparts ul.techpart-logos li{
 			background-position: 0 0;
 			width: 100%;
-			/* float:left; */
+			float: center;
 			margin: 0 auto;
 			display: block;
-			float:  none
 		}
 	}
 

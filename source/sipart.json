@@ -29,14 +29,24 @@
 	  "contact": "hello@example.com"
 	},
 
-	{ "name": "CreationLine", 
+	{ "name": "Creationline", 
 	  "url": "http://creationline.com",
 	  "logo": "images/partner_creationline.png",
-	  "tagline": "needs tagline",
+	  "tagline": "Open Source solutions specialists for the Enterprise",
 	  "locations": "Tokyo, Japan",
 	  "ldesc": "We are a global system integrator specialized in Open Source solutions. Based in Tokyo, Japan, we provide DevOps, Big Data and cloud infrastructure solutions to large enterprise companies.",
 	  "prettyurl": "creationline.com",
 	  "contact": "sales@creationline.com"
+	},
+	
+	{ "name": "Cynergy Pro", 
+	  "url": "http://cynergy.pro",
+	  "logo": "images/partner_placeholder_logo.jpg",
+	  "tagline": "needs tagline",
+	  "locations": "US Federal",
+	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
+	  "prettyurl": "cynergy.pro",
+	  "contact": "hola@example.com"
 	},
 	
 	{ "name": "MustWin", 
@@ -80,13 +90,13 @@
 	},
 	
 	{ "name": "Slalom", 
-	  "url": "http://example.com",
-	  "logo": "images/partner_placeholder_logo.jpg",
-	  "tagline": "This is a pithy tagline.",
+	  "url": "http://slalom.com",
+	  "logo": "images/partner_slalom.png",
+	  "tagline": "Love your future",
 	  "locations": "USA",
-	  "ldesc": "Lorem Ipsum Bacon Description Goes here. Bacon ipsum dolor amet short loin biltong landjaeger, tail ribeye ham hock jowl spare ribs. Swine tail brisket short loin alcatra landjaeger. Sausage porchetta strip steak bacon flank pancetta sirloin picanha tail andouille.",
-	  "prettyurl": "example.com",
-	  "contact": "hello@example.com"
+	  "ldesc": "Slalom Consulting is an international business and technology consulting firm, founded in 2001 with 3600 employees. Slalom is headquartered in Seattle, Washington, with offices in 17 US Metro areas, Toronto, and London.",
+	  "prettyurl": "slalom.com",
+	  "contact": "connect@slalom.com"
 	},
 
 	{ "name": "unif.io", 
@@ -101,7 +111,7 @@
 
 	{ "name": "Vibrato", 
 	  "url": "http://vibrato.com.au",
-	  "logo": "images/partner_placeholder_logo2.jpg",
+	  "logo": "images/partner_vibrato.png",
 	  "tagline": "Modern application automation and delivery, done well",
 	  "locations": "Australia, Asia",
 	  "ldesc": "Vibrato helps organisations to make sense of the modern automation landscape. We help to reduce application delivery times while also increasing the reliability and stability of the application infrastructure.  We work to provide pragmatic solutions for your business.",
@@ -113,7 +123,7 @@
 	  "url": "http://xebia.com",
 	  "logo": "images/partner_xebia.png",
 	  "tagline": "Accelerating businesses with New IT",
-	  "locations": "Netherlands, France, India, USA",
+	  "locations": "Netherlands, Europe, India, USA",
 	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 600 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
 	  "prettyurl": "xebia.com",
 	  "contact": "info@xebia.com"
