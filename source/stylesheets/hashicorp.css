@@ -1269,6 +1269,10 @@ body.page-sub #header .main-links.nav > li > a:focus {
     text-indent: -9999px;
     white-space: nowrap;
   }
+  .main-links.navbar-nav li > a {
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+  }
 }
 @media (max-width: 992px) {
   #header .navbar-brand.logo span {
