@@ -13,7 +13,7 @@
 	  "url": "http://www.chevalpartners.com",
 	  "logo": "images/partner_cheval.jpg",
 	  "tagline": "Collaborate, Innovate, Transform",
-	  "locations": "USA",
+	  "locations": "US",
 	  "ldesc": "Cheval Partners is a networks of experts specializing in Cloud, IoT, DevOps, Innovation and Business Strategy.",
 	  "prettyurl": "www.chevalpartners.com",
 	  "contact": "info@chevalpartners.com"
@@ -44,7 +44,7 @@
 	  "logo": "images/partner_cynergypro.png",
 	  "tagline": "Proudly working with Federal, State, and Local governments",
 	  "locations": "US Federal",
-	  "ldesc": "Cynergy offers a full range of communication and information technology products and services spanning all elements of the information technology and communications landscape.  Minority, service disabled veteran owned small business with HUBZone certification.",
+	  "ldesc": "Cynergy offers a full range of communication and information technology products and services spanning all elements of the information technology and communications landscape.  Minority, service disabled veteran owned small business.",
 	  "prettyurl": "cynergy.pro",
 	  "contact": "info@cynergy.pro"
 	},
@@ -73,7 +73,7 @@
 	  "url": "http://opexsoftware.com",
 	  "logo": "images/partner_opex.png",
 	  "tagline": "Automate IT.  Create Time.",
-	  "locations": "Wilmington, DE and Pune, India",
+	  "locations": "US, India",
 	  "ldesc": "Customers trust Opex in building advanced, state of the art DevOps automation that packs tremendous speed into IT operations with high stability that blends legacy and niche automation tools to build strong Ops.",
 	  "prettyurl": "opexsoftware.com",
 	  "contact": "DevOps@opexsoftware.com"
@@ -83,7 +83,7 @@
 	  "url": "http://reancloud.com",
 	  "logo": "images/partner_rean.jpg",
 	  "tagline": "REAN Cloud is a one-stop shop for all of your cloud services needs.",
-	  "locations": "USA, India",
+	  "locations": "US, India",
 	  "ldesc": "From figuring it out to getting it done, REAN Cloud is your full-service Cloud IT solutions provider. REAN Cloud, an Advanced AWS Consulting Partner, is a cloud-native firm with deep experience supporting enterprise IT infrastructures and DevOps CD/CI implementations.",
 	  "prettyurl": "reancloud.com",
 	  "contact": "info@reancloud.com"
@@ -93,7 +93,7 @@
 	  "url": "http://slalom.com",
 	  "logo": "images/partner_slalom.png",
 	  "tagline": "Love your future",
-	  "locations": "USA",
+	  "locations": "US",
 	  "ldesc": "Slalom Consulting is an international business and technology consulting firm, founded in 2001 with 3600 employees. Slalom is headquartered in Seattle, Washington, with offices in 17 US Metro areas, Toronto, and London.",
 	  "prettyurl": "slalom.com",
 	  "contact": "connect@slalom.com"
@@ -103,7 +103,7 @@
 	  "url": "http://unif.io",
 	  "logo": "images/partner_unifio.png",
 	  "tagline": "Unifying Development & Operations",
-	  "locations": "USA, Japan, UK",
+	  "locations": "US, Japan, UK",
 	  "ldesc": "Unif.io is a consulting services organization which uses a full-stack, holistic approach to solution design and automation. Unif.io’s deep partnership with their clients guides the achievement of business goals. The How changes quickly so Unif.io values the Why.",
 	  "prettyurl": "unif.io",
 	  "contact": "info@unif.io"
@@ -123,7 +123,7 @@
 	  "url": "http://xebia.com",
 	  "logo": "images/partner_xebia.png",
 	  "tagline": "Accelerating businesses with New IT",
-	  "locations": "Netherlands, Europe, India, USA",
+	  "locations": "Netherlands, Europe, India, US",
 	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 600 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
 	  "prettyurl": "xebia.com",
 	  "contact": "info@xebia.com"
