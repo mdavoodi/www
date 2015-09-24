@@ -1,0 +1,233 @@
+---
+page_title: "Nomad"
+title: "Nomad"
+list_image_url: "/images/blog/nomad/logo.png"
+post_image_url: "/images/blog/nomad/header.png"
+tags: nomad
+author: Armon Dadgar
+---
+
+Today we announce [Nomad](http://www.nomadproject.io), a cluster manager and
+scheduler designed for microservices and batch workloads. Nomad is distributed,
+highly available, and scales to thousands of nodes spanning multiple datacenters
+and regions.
+
+Nomad solves the problem of providing a common workflow to deploy applications
+across a shared infrastructure. Developers use a declarative job specification
+to submit work, and Nomad ensures constraints are satisfied and resource utilization
+is optimized by efficient task packing. Nomad supports virtualized, containerized,
+or standalone applications running on all major operating systems giving it
+the flexibility to support a broad range of workloads.
+
+Nomad is now being deployed in production environments and we are proud to
+share it publicly. We are excited about the future of the project, and are
+just beginning to build on the foundation that it provides.
+
+Read on to learn more.
+
+READMORE
+
+## Features
+
+As a cluster manager, Nomad combines the features of a resource manager,
+which pools resources together, with a scheduler that determines task
+placements and optimizes resource utilization by bin packing. Nomad
+has many features, but we highlight the major features here:
+
+* **Docker**: Nomad supports Docker as a first-class workload type.
+  Jobs submitted to Nomad can use the `docker` task driver to easily deploy
+  containerized applications. Jobs can specify the number of instances required
+  and Nomad will handle placement and recover from failures automatically.
+
+* **Operationally Simple**: Nomad ships as a single binary, both for clients
+  and servers, and requires no external services for coordination or storage.
+  Nomad is natively distributed and highly available, and combines resource
+  management and scheduling into a single system for simplicity.
+
+* **Multi-Datacenter and Multi-Region**: Nomad models infrastructure as groups
+  of datacenters which form a larger region. Scheduling operates at the region
+  level allowing for cross-datacenter scheduling. Multiple regions federate together
+  allowing jobs to be registered globally.
+
+* **Flexible Workloads**: Nomad has extensible support for task drivers, allowing
+  it to run containerized, virtualized, and standalone applications. Users can
+  easily start Docker containers, VMs, or application runtimes like Java. Nomad
+  supports Linux, Windows, BSD and OSX, providing the flexibility to run any workload.
+
+* **Built for Scale**: Nomad was designed from the ground up to support global
+  scale infrastructure. Nomad is distributed and highly available, using both leader
+  election and state replication to provide availability in the face of failures.
+  Nomad is optimistically concurrent, enabling all servers to participate in
+  scheduling decisions which increases the total throughput and reduces latency
+  to support demanding workloads.
+
+## Nomad Jobs
+
+Jobs are the heart of Nomad as they describe the tasks that Nomad should
+run. The [HCL](http://github.com/hashicorp/hcl) language is used to specify
+jobs making them easy to read and friendly for version control. Jobs are
+declarative and specify _what_ should be run, leaving the details of how
+and where to Nomad.
+
+Here is an example Nomad job specification to run web servers with Docker:
+
+    # Define the hashicorp/web/frontend job
+    job "hashicorp/web/frontend" {
+        # Run in both datacenters
+        datacenters = ["us-west-1", "us-east-1"]
+
+        # Only run our workload on linux
+        constraint {
+            attribute = "$attr.kernel.name"
+            value = "linux"
+        }
+
+        # Configure the job to do rolling updates
+        update {
+            # Stagger updates every 30 seconds
+            stagger = "30s"
+
+            # Update a single task at a time
+            max_parallel = 1
+        }
+
+        # Define the task group
+        group "frontend" {
+            # Ensure we have enough servers to handle traffic
+            count = 10
+
+            task "web" {
+                # Use Docker to run our server
+                driver = "docker"
+                config {
+                    image = "hashicorp/web-frontend:latest"
+                }
+
+                # Ask for some resources
+                resources {
+                    cpu = 500
+                    memory = 128
+                    network {
+                        mbits = 10
+                        dynamic_ports = ["http"]
+                    }
+                }
+            }
+        }
+    }
+
+This is a very simple example, but shows some of the capabilities of Nomad.
+Nomad jobs are composed of task groups which are a collection of tasks that
+must run together. Each task is an individual application that is executed
+by a driver. Drivers give Nomad the flexibility to run virtualized, containerized
+or standalone applications.
+
+At the time of release, Nomad can use Qemu to run full virtual machines,
+Docker to run containers, Java to run standalone Jars, and the `exec`
+driver to run any pre-installed application. These drivers are meant to
+demonstrate the spectrum of workloads that are possible, and support will
+be expanded over time.
+
+This example job also shows the constraint enforcement abilities of Nomad.
+Constraints can be used to restrict the hosts that are eligible to run a
+task and can be expressed at the job, group or individual task level. They
+can be imposed for technical reasons of the application requiring a certain
+kernel version, or for business reasons such as PCI compliance.
+
+We can see that an `update` block has been specified in the job, which
+informs the update strategy used when a job definition changes. This gives
+developers a simple way to do rolling updates to an application to minimize
+service disruptions. In addition to updates, the application can be easily
+scaled by changing the desired count in the task group.
+
+Lastly, we can see that the task specifies the resources it needs. This
+is used by the scheduler to pack many applications onto a machine to maximize
+utilization. Resource isolation uses operating system controls like cgroups,
+namespaces and chroots to prevent runaway usage.
+
+## State of the Art
+
+Nomad is built to be a general purpose scheduler that is simple to
+use but powerful enough to handle complex workload at enormous scale.
+We have designed it after carefully studying the prior art and leveraging
+mature and production-hardened libraries from our portfolio of distributed
+systems tools.
+
+**Cluster management** is based on [Google Borg](http://research.google.com/pubs/pub43438.html)
+and [Omega](http://research.google.com/pubs/pub41684.html) which have been
+refined over a decade of production usage. Omega introduces novel
+optimistic concurrency mechanisms that we've adopted to support the most
+demanding of workloads across multiple scheduler implementations.
+
+**Leader election** uses
+[Raft](https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf),
+a consensus algorithm out of Stanford. Our implementation was developed for
+[Consul](http://www.consul.io) and powers service discovery and configuration
+for thousands of organizations and millions of servers. Nomad uses Raft to
+avoid any external coordination or storage making it operationally simple.
+
+**Federation** is done via gossip based on [Serf](http://www.serfdom.io),
+built on top of [SWIM](http://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf).
+Serf is deployed around the world, including the San Diego Supercomputer Center,
+and powers the membership and coordination of extremely high scale infrastructures.
+Gossip is used because it is lightweight and enables Nomad to federate
+multiple regions together into a single global cluster.
+
+**Data storage** uses
+[BoltDB](https://github.com/boltdb/bolt), an embedded database that is fully ACID
+compliant and provides Multi-Version Concurrency Control (MVCC). These properties keep
+the data Nomad stores safe while also being extremely performant.
+
+**State Indexing** uses [MemDB](https://github.com/hashicorp/go-memdb), an
+in-memory index built on immutable data structures. MemDB provides concurrent
+access to state for scheduling decisions without lock contention, allowing
+Nomad to efficiently scale.
+
+## HashiCorp Built
+
+At HashiCorp, we build solutions to DevOps problems that are technically
+sound and are a joy to use. We don't take shortcuts with the technologies
+we choose, and just as importantly we don't take shortcuts in the experience
+of using and operating our tools. As a result, HashiCorp-made tools are
+stable, scalable, and easy to use and operate.
+
+Nomad is the eighth such tool we've built. We've also built
+[Vagrant](http://www.vagrantup.com),
+[Packer](http://www.packer.io),
+[Serf](http://www.serfdom.io),
+[Consul](http://www.consul.io),
+[Terraform](http://www.terraform.io),
+[Vault](http://www.vaultproject.io),
+and [Otto](http://www.ottoproject.io).
+Nomad works with our ecosystem of tooling, but doesn't require any of them.
+We have plans to integrate Nomad more closely with our existing tooling to
+provide richer functionality for service discovery, security, and capacity
+management. Otto will be able to transparently use Nomad, providing the
+simplest user experience possible. We are proud of Nomad and are excited to see
+the community learn about it and being using it.
+
+## Learn More
+
+To learn more about Nomad, please visit the [Nomad website](http://www.nomadproject.io).
+The following pages in particular are good next steps:
+
+* [Intro](http://www.nomadproject.io/intro/index.html) -
+  The intro section explains in more detail what Nomad is,
+  how it works, and includes a brief getting started guide so you can
+  play with Nomad on your own machine and start scheduling jobs.
+
+* [Internals](http://www.nomadproject.io/docs/internals/index.html) -
+  The internals section is an advanced topic but covers
+  details about all the internals of Nomad for those that are interested.
+  It isn’t required reading to use Nomad, but is recommended if you want to
+  learn about the technologies behind Nomad.
+
+* [Comparison to other software](http://www.nomadproject.io/intro/vs/index.html) -
+  If you'd like to know how Nomad is different from other options, take
+  a look at this page where we go into detail on the differences.
+
+* [GitHub](https://github.com/hashicorp/nomad) -
+  The source code for Nomad is hosted on GitHub if you want to dive right in.
+  We recommend reading the documentation first, since an understanding of how
+  Nomad works will help greatly in understanding the implementation.
+
