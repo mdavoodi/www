@@ -6,8 +6,14 @@ module.exports = function(grunt) {
       development:{
         files: {
           "source/stylesheets/hashicorp.css": "source/stylesheets/less/hashicorp.less"
-        }
-      }
+        },
+		options: {
+		  sourceMap: true,
+		  sourceMapFilename: "source/stylesheets/hashicorp.css.map",
+		  sourceMapURL: "hashicorp.css.map",
+		  sourceMapBasepath: "source/stylesheets"
+		}
+	  }
     },
     watch: {
       less: {
