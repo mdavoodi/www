@@ -333,6 +333,149 @@ h a s h i c o r p
     background-size: 39px 34px;
   }
 }
+.asteris-logo {
+  background: url(/images/partner_asteris.png) 0 0 no-repeat;
+  background-image: url("/images/partner_asteris.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .asteris-logo {
+    background-image: url("/images/partner_asteris@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.cheval-logo {
+  background: url(/images/partner_cheval.jp) 0 0 no-repeat;
+  background-image: url("/images/partner_cheval.jpg");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cheval-logo {
+    background-image: url("/images/partner_cheval@2x.jpg");
+    background-size: 200px 160px;
+  }
+}
+.contsoln-logo {
+  background: url(/images/partner_contsoln.png) 0 0 no-repeat;
+  background-image: url("/images/partner_contsoln.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .contsoln-logo {
+    background-image: url("/images/partner_contsoln@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.creationline-logo {
+  background: url(/images/partner_creationline.png) 0 0 no-repeat;
+  background-image: url("/images/partner_creationline.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .creationline-logo {
+    background-image: url("/images/partner_creationline@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.cynergypro-logo {
+  background: url(/images/partner_cynergypro.png) 0 0 no-repeat;
+  background-image: url("/images/partner_cynergypro.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cynergypro-logo {
+    background-image: url("/images/partner_cynergypro@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.mustwin-logo {
+  background: url(/images/partner_mustwin.png) 0 0 no-repeat;
+  background-image: url("/images/partner_mustwin.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .mustwin-logo {
+    background-image: url("/images/partner_mustwin@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.opencredo-logo {
+  background: url(/images/partner_opencredo.png) 0 0 no-repeat;
+  background-image: url("/images/partner_opencredo.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .opencredo-logo {
+    background-image: url("/images/partner_opencredo@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.opex-logo {
+  background: url(/images/partner_opex.png) 0 0 no-repeat;
+  background-image: url("/images/partner_opex.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .opex-logo {
+    background-image: url("/images/partner_opex@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.rean-logo {
+  background: url(/images/partner_rean.jpg) 0 0 no-repeat;
+  background-image: url("/images/partner_rean.jpg");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .rean-logo {
+    background-image: url("/images/partner_rean@2x.jpg");
+    background-size: 200px 160px;
+  }
+}
+.slalom-logo {
+  background: url(/images/partner_slalom.png) 0 0 no-repeat;
+  background-image: url("/images/partner_slalom.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .slalom-logo {
+    background-image: url("/images/partner_slalom@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.unifio-logo {
+  background: url(/images/partner_unifio.png) 0 0 no-repeat;
+  background-image: url("/images/partner_unifio.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .unifio-logo {
+    background-image: url("/images/partner_unifio@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.vibrato-logo {
+  background: url(/images/partner_vibrato.png) 0 0 no-repeat;
+  background-image: url("/images/partner_vibrato.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .vibrato-logo {
+    background-image: url("/images/partner_vibrato@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.xebia-logo {
+  background: url(/images/partner_xebia.png) 0 0 no-repeat;
+  background-image: url("/images/partner_xebia.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .xebia-logo {
+    background-image: url("/images/partner_xebia@2x.png");
+    background-size: 200px 160px;
+  }
+}
 .offbg {
   background-color: #f7f7f9;
 }
@@ -2941,6 +3084,153 @@ body.about .press .kit {
 }
 .partners .sipart .panel img {
   padding: 5px;
+}
+.partners .sipart .panel .panel-body i {
+  width: 200px;
+  height: 160px;
+}
+.partners .sipart .panel .panel-body i.asteris {
+  background: url(/images/partner_asteris.png) 0 0 no-repeat;
+  background-image: url("/images/partner_asteris.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.asteris {
+    background-image: url("/images/partner_asteris@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.cheval {
+  background: url(/images/partner_cheval.jp) 0 0 no-repeat;
+  background-image: url("/images/partner_cheval.jpg");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.cheval {
+    background-image: url("/images/partner_cheval@2x.jpg");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.contsoln {
+  background: url(/images/partner_contsoln.png) 0 0 no-repeat;
+  background-image: url("/images/partner_contsoln.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.contsoln {
+    background-image: url("/images/partner_contsoln@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.creationline {
+  background: url(/images/partner_creationline.png) 0 0 no-repeat;
+  background-image: url("/images/partner_creationline.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.creationline {
+    background-image: url("/images/partner_creationline@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.cynergypro {
+  background: url(/images/partner_cynergypro.png) 0 0 no-repeat;
+  background-image: url("/images/partner_cynergypro.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.cynergypro {
+    background-image: url("/images/partner_cynergypro@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.mustwin {
+  background: url(/images/partner_mustwin.png) 0 0 no-repeat;
+  background-image: url("/images/partner_mustwin.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.mustwin {
+    background-image: url("/images/partner_mustwin@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.opencredo {
+  background: url(/images/partner_opencredo.png) 0 0 no-repeat;
+  background-image: url("/images/partner_opencredo.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.opencredo {
+    background-image: url("/images/partner_opencredo@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.opex {
+  background: url(/images/partner_opex.png) 0 0 no-repeat;
+  background-image: url("/images/partner_opex.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.opex {
+    background-image: url("/images/partner_opex@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.rean {
+  background: url(/images/partner_rean.jpg) 0 0 no-repeat;
+  background-image: url("/images/partner_rean.jpg");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.rean {
+    background-image: url("/images/partner_rean@2x.jpg");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.slalom {
+  background: url(/images/partner_slalom.png) 0 0 no-repeat;
+  background-image: url("/images/partner_slalom.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.slalom {
+    background-image: url("/images/partner_slalom@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.unifio {
+  background: url(/images/partner_unifio.png) 0 0 no-repeat;
+  background-image: url("/images/partner_unifio.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.unifio {
+    background-image: url("/images/partner_unifio@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.vibrato {
+  background: url(/images/partner_vibrato.png) 0 0 no-repeat;
+  background-image: url("/images/partner_vibrato.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.vibrato {
+    background-image: url("/images/partner_vibrato@2x.png");
+    background-size: 200px 160px;
+  }
+}
+.partners .sipart .panel .panel-body i.xebia {
+  background: url(/images/partner_xebia.png) 0 0 no-repeat;
+  background-image: url("/images/partner_xebia.png");
+  background-size: 200px 160px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partners .sipart .panel .panel-body i.xebia {
+    background-image: url("/images/partner_xebia@2x.png");
+    background-size: 200px 160px;
+  }
 }
 .partners .sipart .panel p {
   color: #151515;

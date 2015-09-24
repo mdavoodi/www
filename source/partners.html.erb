@@ -72,9 +72,9 @@ page_title: Partners
 	<article class="partners sipart" id="sipart">
 		<div class="container">
 			<div class="row">
-				<div class="customers-content col-xs-12">
+				<div class="si-content col-xs-12">
 					<h1> System Integration Partners </h1>
-				</div> <!-- FIXME customers-content -->
+				</div> 
 			</div> <!-- row -->
 			<div class="row">
 
@@ -86,7 +86,9 @@ page_title: Partners
 							<h2 class="pname"><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
 						</div> <!-- panel-heading -->
 						<div class="panel-body">
-							<a href=<%= val["url"] %>><img class="plogo" src=<%= val["logo"] %> ></a>
+							<a href=<%= val["url"] %>><div class="plogo"> 
+									<i class=<%= val["logo"] %> ></i>
+							</div></a>
 							<p class="ptagline"> <%= val["tagline"] %> </p>
 							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
 							<p class="pldesc"> <%= val["ldesc"] %> </p> 
