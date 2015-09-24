@@ -53,7 +53,7 @@
 	  "url": "http://mustwin.com",
 	  "logo": "mustwin",
 	  "tagline": "All Star Strategic Design & Engineering",
-	  "locations": "San Francisco, New York, US",
+	  "locations": "US",
 	  "ldesc": "Must Win is a full-service software solutions provider based in the heart of Silicon Valley. We work on technical challenges: optimizing hardware utilization, security compliance, dev/ops automation and developing entirely new lines of business from concept to launch.",
 	  "prettyurl": "mustwin.com",
 	  "contact": "we@mustwin.com"
@@ -123,7 +123,7 @@
 	  "url": "http://xebia.com",
 	  "logo": "xebia",
 	  "tagline": "Accelerating businesses with New IT",
-	  "locations": "Netherlands, Europe, India, US",
+	  "locations": "Netherlands, EU, India, US",
 	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 600 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
 	  "prettyurl": "xebia.com",
 	  "contact": "info@xebia.com"
