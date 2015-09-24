@@ -5,7 +5,7 @@
 	  "tagline": "Next Generation Infrastructure",
 	  "locations": "US Midwest, NYC",
 	  "ldesc": "Asteris writes software that makes it easy for companies to implement continuous delivery and realtime data pipelines.  We support the HashiCorp stack, along with Kubernetes, Apache Mesos, Spark and Kafka. We're core committers on <a href='https://github.com/ciscocloud/microservices-infrastructure'> mantl.io</a>, <a href='https://github.com/CiscoCloud/consul-cli'>consul-cli</a> and <a href='https://github.com/CiscoCloud/mesos-consul'>mesos-consul</a>.",
-	  "prettyurl": "aster.is",
+	  "pretty": "asteris",
 	  "contact": "info@aster.is"
 	},
 	
@@ -15,7 +15,7 @@
 	  "tagline": "Collaborate, Innovate, Transform",
 	  "locations": "US",
 	  "ldesc": "Cheval Partners is a networks of experts specializing in Cloud, IoT, DevOps, Innovation and Business Strategy.",
-	  "prettyurl": "www.chevalpartners.com",
+	  "pretty": "cheval",
 	  "contact": "info@chevalpartners.com"
 	},
 
@@ -25,7 +25,7 @@
 	  "tagline": "Making sense of complexity",
 	  "locations": "Europe, UK, Scandinavia ",
 	  "ldesc": "Container Solutions specialize in building distributed systems for and with their clients and partners. Container Solutions specialize in open source projects and are community driven.",
-	  "prettyurl": "container-solutions.com",
+	  "pretty": "CS",
 	  "contact": "info@container-solutions.com"
 	},
 
@@ -35,7 +35,7 @@
 	  "tagline": "Open Source solutions specialists for the Enterprise",
 	  "locations": "Tokyo, Japan",
 	  "ldesc": "We are a global system integrator specialized in Open Source solutions. Based in Tokyo, Japan, we provide DevOps, Big Data and cloud infrastructure solutions to large enterprise companies.",
-	  "prettyurl": "creationline.com",
+	  "pretty": "Cl",
 	  "contact": "sales@creationline.com"
 	},
 	
@@ -45,7 +45,7 @@
 	  "tagline": "Proudly working with Federal, State, and Local governments",
 	  "locations": "US Federal, State, Local",
 	  "ldesc": "Cynergy offers a full range of communication and information technology products and services spanning all elements of the information technology and communications landscape.  Minority, service disabled veteran owned small business.",
-	  "prettyurl": "cynergy.pro",
+	  "pretty": "Cynergy",
 	  "contact": "info@cynergy.pro"
 	},
 	
@@ -55,7 +55,7 @@
 	  "tagline": "All Star Strategic Design & Engineering",
 	  "locations": "US",
 	  "ldesc": "Must Win is a full-service software solutions provider based in the heart of Silicon Valley. We work on technical challenges: optimizing hardware utilization, security compliance, dev/ops automation and developing entirely new lines of business from concept to launch.",
-	  "prettyurl": "mustwin.com",
+	  "pretty": "mustwin",
 	  "contact": "we@mustwin.com"
 	},
 
@@ -65,7 +65,7 @@
 	  "tagline": "Delivering business outcomes by applying emerging technology.",
 	  "locations": "UK, Europe, US",
 	  "ldesc": "OpenCredo is a pragmatic software and DevOps consultancy with a wealth of experience in open source. Since 2009, we have been helping clients align technical and business strategy, delivering solutions in software & programmable infrastructure.",
-	  "prettyurl": "opencredo.com",
+	  "pretty": "opencredo",
 	  "contact": "info@opencredo.com"
 	},
 
@@ -75,7 +75,7 @@
 	  "tagline": "Automate IT.  Create Time.",
 	  "locations": "US, India",
 	  "ldesc": "Customers trust Opex in building advanced, state of the art DevOps automation that packs tremendous speed into IT operations with high stability that blends legacy and niche automation tools to build strong Ops.",
-	  "prettyurl": "opexsoftware.com",
+	  "pretty": "opex",
 	  "contact": "DevOps@opexsoftware.com"
 	},
 
@@ -85,7 +85,7 @@
 	  "tagline": "REAN Cloud is a one-stop shop for all of your cloud services needs.",
 	  "locations": "US, India",
 	  "ldesc": "From figuring it out to getting it done, REAN Cloud is your full-service Cloud IT solutions provider. REAN Cloud, an Advanced AWS Consulting Partner, is a cloud-native firm with deep experience supporting enterprise IT infrastructures and DevOps CD/CI implementations.",
-	  "prettyurl": "reancloud.com",
+	  "pretty": "rean",
 	  "contact": "info@reancloud.com"
 	},
 	
@@ -95,7 +95,7 @@
 	  "tagline": "Love your future",
 	  "locations": "US, Canada, Europe",
 	  "ldesc": "Slalom Consulting is an international business and technology consulting firm, founded in 2001 with 3600 employees. Slalom is headquartered in Seattle, Washington, with offices in 17 US Metro areas, Toronto, and London.",
-	  "prettyurl": "slalom.com",
+	  "pretty": "slalom",
 	  "contact": "connect@slalom.com"
 	},
 
@@ -105,7 +105,7 @@
 	  "tagline": "Unifying Development & Operations",
 	  "locations": "US, Japan, UK",
 	  "ldesc": "Unif.io is a consulting services organization which uses a full-stack, holistic approach to solution design and automation. Unif.io’s deep partnership with their clients guides the achievement of business goals. The How changes quickly so Unif.io values the Why.",
-	  "prettyurl": "unif.io",
+	  "pretty": "unif.io",
 	  "contact": "info@unif.io"
 	},
 
@@ -115,7 +115,7 @@
 	  "tagline": "Modern application automation and delivery, done well",
 	  "locations": "Australia, Asia",
 	  "ldesc": "Vibrato helps organisations to make sense of the modern automation landscape. We help to reduce application delivery times while also increasing the reliability and stability of the application infrastructure.  We work to provide pragmatic solutions for your business.",
-	  "prettyurl": "vibrato.com.au",
+	  "pretty": "vibrato",
 	  "contact": "info@vibrato.com.au"
 	},
 
@@ -125,7 +125,7 @@
 	  "tagline": "Accelerating businesses with New IT",
 	  "locations": "Netherlands, EU, India, US",
 	  "ldesc": "Xebia is a specialized, international IT consultancy, training and project company. We employ over 600 experts worldwide, who are up-to-date on the latest technologies in agile development, continuous delivery, architecture, and datacenter automation.",
-	  "prettyurl": "xebia.com",
+	  "pretty": "xebia",
 	  "contact": "info@xebia.com"
 	}
 	

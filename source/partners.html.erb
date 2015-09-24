@@ -93,7 +93,7 @@ page_title: Partners
 							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
 							<p class="pldesc"> <%= val["ldesc"] %> </p> 
 							<% if val["contact"] != "" %>
-							<span class="atbottom"><a class="hbtn outline-btn buttongray small contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact us </a></span>
+							<span class="atbottom"><a class="hbtn outline-btn buttongray small contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> </a></span>
 							<% elsif val["contact"] == "" %>
 							<span class="atbottom"><a class="hbtn outline-btn gray small contactus">(missing email)</a></span>
 							<% end %>
