@@ -1,5 +1,4 @@
-((js-mode . ((js-indent-level . 4)
-             (indent-tabs-mode . t)
+((js-mode . ((js-indent-level . 2)
              ))
  (html-mode . ((sgml-basic-offset . 4)
 	       ))
