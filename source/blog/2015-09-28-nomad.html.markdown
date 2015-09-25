@@ -31,10 +31,12 @@ READMORE
 
 ## Features
 
-As a cluster manager, Nomad combines the features of a resource manager,
-which pools resources together, with a scheduler that determines task
-placements and optimizes resource utilization by bin packing. Nomad
-has many features, but we highlight the major features here:
+Nomad combines the features of a resource manager and a scheduler. As a
+resource manager, Nomad collects information on the available resources
+and capabilities per host. As a scheduler, the central Nomad servers use
+this information to make optimal placement decisions when jobs are submitted.
+These capabilities give Nomad a lot of possibilities, but here are a few
+highlighted features:
 
 * **Docker**: Nomad supports Docker as a first-class workload type.
   Jobs submitted to Nomad can use the `docker` task driver to easily deploy
@@ -43,7 +45,7 @@ has many features, but we highlight the major features here:
 
 * **Operationally Simple**: Nomad ships as a single binary, both for clients
   and servers, and requires no external services for coordination or storage.
-  Nomad is natively distributed and highly available, and combines resource
+  Nomad is distributed and highly available, and combines resource
   management and scheduling into a single system for simplicity.
 
 * **Multi-Datacenter and Multi-Region**: Nomad models infrastructure as groups
@@ -67,7 +69,7 @@ has many features, but we highlight the major features here:
 
 Jobs are the heart of Nomad as they describe the tasks that Nomad should
 run. The [HCL](http://github.com/hashicorp/hcl) language is used to specify
-jobs making them easy to read and friendly for version control. Jobs are
+jobs, which makes them easy to read and friendly for version control. Jobs are
 declarative and specify _what_ should be run, leaving the details of how
 and where to Nomad.
 
@@ -187,11 +189,10 @@ Nomad to efficiently scale.
 
 ## HashiCorp Built
 
-At HashiCorp, we build solutions to DevOps problems that are technically
-sound and are a joy to use. We don't take shortcuts with the technologies
-we choose, and just as importantly we don't take shortcuts in the experience
-of using and operating our tools. As a result, HashiCorp-made tools are
-stable, scalable, and easy to use and operate.
+At HashiCorp, we build tools for application delivery done right. We don't take
+shortcuts with the technologies we choose, and just as importantly we don't
+take shortcuts in the experience of using and operating our tools. As a result,
+HashiCorp-made tools are stable, scalable, and easy to use and operate.
 
 Nomad is the eighth such tool we've built. We've also built
 [Vagrant](http://www.vagrantup.com),
