@@ -12,12 +12,14 @@ scheduler designed for microservices and batch workloads. Nomad is distributed,
 highly available, and scales to thousands of nodes spanning multiple datacenters
 and regions.
 
-Nomad solves the problem of providing a common workflow to deploy applications
-across a shared infrastructure. Developers use a declarative job specification
-to submit work, and Nomad ensures constraints are satisfied and resource utilization
-is optimized by efficient task packing. Nomad supports virtualized, containerized,
-or standalone applications running on all major operating systems giving it
-the flexibility to support a broad range of workloads.
+Nomad provides a common workflow to deploy applications across an infrastructure.
+Developers use a declarative job specification to define how an application should
+be deployed and the resources it requires (CPU, memory, disk). Nomad accepts these
+jobs and finds available resources to run them. The scheduling algorithm ensures
+all constraints are satisfied, and packs as many applications on a host as possible
+to optimize resource utilization. Additionally, Nomad supports virtualized,
+containerized, or standalone applications running on all major operating systems
+giving it the flexibility to support a broad range of workloads
 
 Nomad is now being deployed in production environments and we are proud to
 share it publicly. We are excited about the future of the project, and are
@@ -204,7 +206,7 @@ We have plans to integrate Nomad more closely with our existing tooling to
 provide richer functionality for service discovery, security, and capacity
 management. Otto will be able to transparently use Nomad, providing the
 simplest user experience possible. We are proud of Nomad and are excited to see
-the community learn about it and being using it.
+the community learn about it and begin using it.
 
 ## Learn More
 
