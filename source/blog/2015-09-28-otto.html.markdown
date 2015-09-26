@@ -50,7 +50,7 @@ We created a new configuration format for Otto expressive enough to solve all th
 
 As the name suggests, the Appfile is a higher-level description focusing on the application. A complete example is shown below:
 
-```
+<pre class="prettyprint">
 application {
   name = “my-app”
   type = “ruby”
@@ -63,7 +63,7 @@ application {
 customization “ruby” {
   ruby_version = “2.1”
 }
-```
+</pre>
 
 Notice that the Appfile makes no mention of OS, memory, disk space, etc. Otto has built-in knowledge of best practices and picks smart defaults for you. In addition to this, you can see how dependencies are first-class features. Otto will use this information to automatically install and configure dependencies in your development and deployment environments.
 
@@ -89,7 +89,7 @@ To create a development environment, you run `otto dev`. This will build a virtu
 
 Otto will automatically build a development environment tailored to your application. For example, using the Appfile above, Otto will automatically install Ruby, Bundler, and configure various OS settings for Ruby development (directories and so on). Otto outputs application-specific instructions after creating the development environment to guide you along:
 
-```
+<pre class="prettyprint">
 $ otto dev
 ...
 
@@ -101,7 +101,7 @@ will be synced to the development environment.
 When you’re ready to build your project, run ‘otto dev ssh’ to enter
 the development environment. You’ll be placed directly into the working
 directory where you can run ‘bundle install’ and ‘ruby’ as you normally would.
-```
+</pre>
 
 With little to no configuration, Otto knows how to build development environments for many popular languages and frameworks. You can use customizations in the Appfile to change the environments slightly as needed, but the goal is for Otto to build a best practices development environment for every common application type.
 
@@ -123,19 +123,19 @@ Developing and deploying microservices has historically been a challenging, tedi
 
 Service dependencies are defined in the Appfile. Below, we show an Appfile from HashiCorp internally that depends on two internal services that we have: Binstore and Storagelocker.
 
-```
+<pre class="prettyprint">
 application {
-	…
+  …
 
-	dependency {
-		source = “github.com/hashicorp/binstore”
+  dependency {
+    source = “github.com/hashicorp/binstore”
   }
 
-	dependency {
-		source = “github.com/hashicorp/storagelocker”
+  dependency {
+    source = “github.com/hashicorp/storagelocker”
   }
 }
-```
+</pre>
 
 Dependencies are declared using the `dependency` block and point to the dependency with a URL. This URL can point to a file path, Git, Mercurial, HTTP, and more.
 
