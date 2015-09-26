@@ -7,7 +7,7 @@ tags: nomad
 author: Armon Dadgar
 ---
 
-Today we announce [Nomad](http://www.nomadproject.io), a cluster manager and
+Today we announce [Nomad](https://www.nomadproject.io), a cluster manager and
 scheduler designed for microservices and batch workloads. Nomad is distributed,
 highly available, and scales to thousands of nodes spanning multiple datacenters
 and regions.
@@ -68,7 +68,7 @@ highlighted features:
 ## Nomad Jobs
 
 Jobs are the heart of Nomad as they describe the tasks that Nomad should
-run. The [HCL](http://github.com/hashicorp/hcl) language is used to specify
+run. The [HCL](https://github.com/hashicorp/hcl) language is used to specify
 jobs, which makes them easy to read and friendly for version control. Jobs are
 declarative and specify _what_ should be run, leaving the details of how
 and where to Nomad.
@@ -77,7 +77,7 @@ Here is an example Nomad job specification to run web servers with Docker:
 
     # Define the hashicorp/web/frontend job
     job "hashicorp/web/frontend" {
-        # Run in both datacenters
+        # Run in two datacenters
         datacenters = ["us-west-1", "us-east-1"]
 
         # Only run our workload on linux
@@ -157,8 +157,8 @@ We have designed it after carefully studying the prior art and leveraging
 mature and production-hardened libraries from our portfolio of distributed
 systems tools.
 
-**Cluster management** is based on [Google Borg](http://research.google.com/pubs/pub43438.html)
-and [Omega](http://research.google.com/pubs/pub41684.html) which have been
+**Cluster management** is based on [Google Borg](https://research.google.com/pubs/pub43438.html)
+and [Omega](https://research.google.com/pubs/pub41684.html) which have been
 refined over a decade of production usage. Omega introduces novel
 optimistic concurrency mechanisms that we've adopted to support the most
 demanding of workloads across multiple scheduler implementations.
@@ -166,12 +166,12 @@ demanding of workloads across multiple scheduler implementations.
 **Leader election** uses
 [Raft](https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf),
 a consensus algorithm out of Stanford. Our implementation was developed for
-[Consul](http://www.consul.io) and powers service discovery and configuration
+[Consul](https://www.consul.io) and powers service discovery and configuration
 for thousands of organizations and millions of servers. Nomad uses Raft to
 avoid any external coordination or storage making it operationally simple.
 
-**Federation** is done via gossip based on [Serf](http://www.serfdom.io),
-built on top of [SWIM](http://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf).
+**Federation** is done via gossip based on [Serf](https://www.serfdom.io),
+built on top of [SWIM](https://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf).
 Serf is deployed around the world, including the San Diego Supercomputer Center,
 and powers the membership and coordination of extremely high scale infrastructures.
 Gossip is used because it is lightweight and enables Nomad to federate
@@ -189,19 +189,20 @@ Nomad to efficiently scale.
 
 ## HashiCorp Built
 
-At HashiCorp, we build tools for application delivery done right. We don't take
-shortcuts with the technologies we choose, and just as importantly we don't
-take shortcuts in the experience of using and operating our tools. As a result,
-HashiCorp-made tools are stable, scalable, and easy to use and operate.
+At HashiCorp, we build solutions to DevOps problems that are technically
+sound and are a joy to use. We do not take shortcuts with the technologies we choose,
+and just as importantly we don't take shortcuts in the experience of using and
+operating our tools. As a result, HashiCorp-made tools are stable, scalable,
+and easy to use and operate.
 
 Nomad is the eighth such tool we've built. We've also built
-[Vagrant](http://www.vagrantup.com),
-[Packer](http://www.packer.io),
-[Serf](http://www.serfdom.io),
-[Consul](http://www.consul.io),
-[Terraform](http://www.terraform.io),
-[Vault](http://www.vaultproject.io),
-and [Otto](http://www.ottoproject.io).
+[Vagrant](https://www.vagrantup.com),
+[Packer](https://www.packer.io),
+[Serf](https://www.serfdom.io),
+[Consul](https://www.consul.io),
+[Terraform](https://www.terraform.io),
+[Vault](https://www.vaultproject.io),
+and [Otto](https://www.ottoproject.io).
 Nomad works with our ecosystem of tooling, but doesn't require any of them.
 We have plans to integrate Nomad more closely with our existing tooling to
 provide richer functionality for service discovery, security, and capacity
@@ -211,21 +212,21 @@ the community learn about it and begin using it.
 
 ## Learn More
 
-To learn more about Nomad, please visit the [Nomad website](http://www.nomadproject.io).
+To learn more about Nomad, please visit the [Nomad website](https://www.nomadproject.io).
 The following pages in particular are good next steps:
 
-* [Intro](http://www.nomadproject.io/intro/index.html) -
+* [Intro](https://www.nomadproject.io/intro/index.html) -
   The intro section explains in more detail what Nomad is,
   how it works, and includes a brief getting started guide so you can
   play with Nomad on your own machine and start scheduling jobs.
 
-* [Internals](http://www.nomadproject.io/docs/internals/index.html) -
+* [Internals](https://www.nomadproject.io/docs/internals/index.html) -
   The internals section is an advanced topic but covers
   details about all the internals of Nomad for those that are interested.
   It isn’t required reading to use Nomad, but is recommended if you want to
   learn about the technologies behind Nomad.
 
-* [Comparison to other software](http://www.nomadproject.io/intro/vs/index.html) -
+* [Comparison to other software](https://www.nomadproject.io/intro/vs/index.html) -
   If you'd like to know how Nomad is different from other options, take
   a look at this page where we go into detail on the differences.
 
