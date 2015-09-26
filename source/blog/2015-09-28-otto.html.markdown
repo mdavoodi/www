@@ -13,7 +13,7 @@ Otto automatically builds development environments without any configuration; it
 
 With the growing trend of microservices, Otto knows how to install and configure service dependencies for development and production. It automatically exposes these dependencies via DNS for your application to consume.
 
-Vagrant revolutionized the development workflow, and we believe we’ve done it again with Otto.
+Vagrant brought simplicity and power to development, and we believe we’ve brought that same elegant user experience to both development and deployment with Otto.
 
 Read on to learn more.
 
@@ -48,7 +48,7 @@ Vagrant is a mature, healthy project that is continuing to grow every day. We ar
 
 We created a new configuration format for Otto expressive enough to solve all the mentioned shortcomings of Vagrant: the Appfile.
 
-As the name suggests, the Appfile is a higher-level description focusing on the application. A complete example is shown below:
+js the name suggests, the Appfile is a higher-level description focusing on the application. A complete example is shown below:
 
 <pre class="prettyprint">
 application {
