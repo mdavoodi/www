@@ -98,7 +98,7 @@ application. For this development environment, Ruby is pre-installed. To
 work on your project, edit files locally on your own machine. The file changes
 will be synced to the development environment.
 
-When you’re ready to build your project, run ‘otto dev ssh’ to enter
+When you’re ready to build your project, run 'otto dev ssh' to enter
 the development environment. You’ll be placed directly into the working
 directory where you can run ‘bundle install’ and ‘ruby’ as you normally would.
 </pre>
@@ -125,14 +125,14 @@ Service dependencies are defined in the Appfile. Below, we show an Appfile from 
 
 <pre class="prettyprint">
 application {
-  …
+  ...
 
   dependency {
-    source = “github.com/hashicorp/binstore”
+    source = "github.com/hashicorp/binstore"
   }
 
   dependency {
-    source = “github.com/hashicorp/storagelocker”
+    source = "github.com/hashicorp/storagelocker"
   }
 }
 </pre>
@@ -157,16 +157,16 @@ Otto is the eighth open source tool we’ve built. We’ve also built
 [Terraform](http://www.terraform.io),
 [Vault](http://vaultproject.io),
 and [Nomad](http://nomadproject.io).
-Otto will use and build on top of all of these other tools to develop and deploy applications using tried and true technologies.
+Otto will use and build on top of these tools to develop and deploy applications in a secure, scalable, and modern way.
 
-We’re proud of Otto and are excited for its future. As a disclaimer: Otto is very young and while we tout it as a successor to Vagrant, it’ll take time to reach the maturity level that Vagrant is already at. We don’t recommend dropping Vagrant today, but look to Otto for the future..
+We're proud of Otto and are excited for its future. As a disclaimer: Otto is very young and while we tout it as a successor to Vagrant, it’ll take time to reach the maturity level that Vagrant is already at. We don’t recommend dropping Vagrant today, but look to Otto for the future..
 
 ## Learn More
 
-To learn more about Otto, please visit the [Otto website](http://ottoproject.io). The following pages in particular are good next steps:
+To learn more about Otto, please visit the [Otto website](https://ottoproject.io). The following pages in particular are good next steps:
 
-* [Intro](http://ottoproject.io/intro/index.html) - The intro section explains in more detail what Vault is, how it works, what use cases it has, and includes a brief getting started guide so you can start experimenting with Vault and learn about all of its features.
+* [Intro](https://ottoproject.io/intro/index.html) - The intro section explains in more detail what Vault is, how it works, what use cases it has, and includes a brief getting started guide so you can start experimenting with Vault and learn about all of its features.
 
-* [Comparison to other software](http://ottoproject.io/intro/vs/index.html) - If you’d like to know how Vault is different from other options out there, take a look at this page and we go into detail on the differences.
+* [Comparison to other software](https://ottoproject.io/intro/vs/index.html) - If you'd like to know how Vault is different from other options out there, take a look at this page and we go into detail on the differences.
 
 * [GitHub](https://github.com/hashicorp/otto) - The source code for Otto is hosted on GitHub if you want to dive right in. We recommend reading the documentation first, since an understanding of how Otto works will help greatly in understanding the implementation.
