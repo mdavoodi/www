@@ -69,7 +69,7 @@ Notice that the Appfile makes no mention of OS, memory, disk space, etc. Otto ha
 
 The Appfile is the simplest configuration format we’ve ever made. Actually, everything in the Appfile (including the existence of the Appfile itself) is _completely optional_. You can run Otto in any directory and it will attempt to discover the application type automatically.
 
-On top of this simplicity, `customization` blocks are a way to customize Otto’s behavior. These are also fairly high level, but let you dig deeper down. This where things such as manually tuning memory would go.
+On top of this simplicity, `customization` blocks are a way to customize Otto’s behavior. These are also fairly high level, but let you dig deeper down. This is where things such as manually tuning memory would go.
 
 ## Centralization of Knowledge
 
