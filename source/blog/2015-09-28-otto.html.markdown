@@ -159,14 +159,16 @@ Otto is the eighth open source tool we’ve built. We’ve also built
 and [Nomad](http://nomadproject.io).
 Otto will use and build on top of these tools to develop and deploy applications in a secure, scalable, and modern way.
 
+Otto will integrate with our commercial tool [Atlas](https://atlas.hashicorp.com) to help developers and operators collaborate, monitor, and maintain applications and infrastructure across an organization. Otto on its own can't prevent simultaneous deploys from different team members, a deployment history, etc. Atlas will do this.
+
 We're proud of Otto and are excited for its future. As a disclaimer: Otto is very young and while we tout it as a successor to Vagrant, it’ll take time to reach the maturity level that Vagrant is already at. We don’t recommend dropping Vagrant today, but look to Otto for the future..
 
 ## Learn More
 
 To learn more about Otto, please visit the [Otto website](https://ottoproject.io). The following pages in particular are good next steps:
 
-* [Intro](https://ottoproject.io/intro/index.html) - The intro section explains in more detail what Vault is, how it works, what use cases it has, and includes a brief getting started guide so you can start experimenting with Vault and learn about all of its features.
+* [Intro](https://ottoproject.io/intro/index.html) - The intro section explains in more detail what Otto is, how it works, what use cases it has, and includes a brief getting started guide so you can start experimenting with Otto and learn about all of its features.
 
-* [Comparison to other software](https://ottoproject.io/intro/vs/index.html) - If you'd like to know how Vault is different from other options out there, take a look at this page and we go into detail on the differences.
+* [Comparison to other software](https://ottoproject.io/intro/vs/index.html) - If you'd like to know how Otto is different from other options out there, take a look at this page and we go into detail on the differences.
 
 * [GitHub](https://github.com/hashicorp/otto) - The source code for Otto is hosted on GitHub if you want to dive right in. We recommend reading the documentation first, since an understanding of how Otto works will help greatly in understanding the implementation.
