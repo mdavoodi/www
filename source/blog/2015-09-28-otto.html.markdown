@@ -34,7 +34,7 @@ Vagrant does a lot right. Vagrant downloads have continued to accelerate and gro
 
 We’ve learned a lot about developers and development environments over the past six years:
 
-* **Development environments are similar**: All Ruby development environments look alike, all PHP development environments look alike, etc. There isn’t much deviation between two development environments for the same language or framework. The Vagrantfile makes it difficult to abstract this away.
+* **Development environments are similar**: All Ruby development environments look alike, all PHP development environments look alike, etc. There isn’t much deviation between two development environments for the same language or framework. The Vagrantfile requires users to configure these environments for every project, rather than having it abstracted away.
 
 * **Developers want to deploy**: After developing an application, the next step is to deploy! “vagrant up” to production has been a feature request for years. Production environments look very different from development: load balancers, firewalls, routing concerns, new configurations, etc. Unfortunately, the Vagrantfile isn’t a good format to describe this information.
 
