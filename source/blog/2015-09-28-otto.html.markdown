@@ -7,13 +7,13 @@ tags: otto
 author: Mitchell Hashimoto
 ---
 
-Today we announce [Otto](https://ottoproject.io) &mdash; the successor to Vagrant. Otto is a single solution to develop and deploy any application, with first class support for microservices. It is the most powerful tool we’ve built yet.
+Today we announce [Otto](https://ottoproject.io) &mdash; the successor to Vagrant. Otto is the single solution to develop and deploy any application, with first class support for microservices. It is the most powerful tool we've built yet.
 
 Otto automatically builds development environments without any configuration; it can detect your project type and has built-in knowledge of industry-standard tools to setup a development environment that is ready to go. When you’re ready to deploy, otto builds and manages an infrastructure, sets up servers, builds, and deploys the application.
 
-With the growing trend of microservices, Otto knows how to install and configure service dependencies for development and production. It automatically exposes these dependencies via DNS for your application to consume.
+With the growing trend of microservices, Otto knows how to install and configure service dependencies for development and deployment. It automatically exposes these dependencies via DNS for your application to consume.
 
-Vagrant brought simplicity and power to development, and we believe we’ve brought that same elegant user experience to both development and deployment with Otto.
+Vagrant brought simplicity and power to development, and we believe we've brought that same elegant user experience to both development and deployment with Otto.
 
 Read on to learn more.
 
@@ -85,9 +85,9 @@ This scenario isn’t fiction, it is what Otto was designed to do.
 
 ## Development
 
-To create a development environment, you run `otto dev`. This will build a virtualized local development environment.
+To create a development environment, you run `otto dev`.
 
-Otto will automatically build a development environment tailored to your application. For example, using the Appfile above, Otto will automatically install Ruby, Bundler, and configure various OS settings for Ruby development (directories and so on). Otto outputs application-specific instructions after creating the development environment to guide you along:
+This will build a virtualized local development environment tailored to your application. For example, using the Appfile above, Otto will automatically install Ruby, Bundler, and configure various OS settings for Ruby development (directories and so on). Otto outputs application-specific instructions after creating the development environment to guide you along:
 
 <pre class="prettyprint">
 $ otto dev
@@ -109,7 +109,7 @@ Once the development is up and running, commands exist such as `otto dev ssh` to
 
 ## Deployment
 
-Otto deploys applications using industry best practices, in just a few simple commands. Otto manages your infrastructure, builds your application, and then deploys the application.
+Otto deploys applications using industry best practices in just a few simple commands. Otto manages your infrastructure, builds your application, and then deploys the application.
 
 The Appfile is cloud-agnostic: Otto is built to support deploying any application to any cloud environment with no special configuration. Otto 0.1 ships with AWS support only, but we’ll be adding new cloud targets rapidly.
 
