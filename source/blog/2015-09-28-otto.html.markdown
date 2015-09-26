@@ -46,9 +46,9 @@ Vagrant is a mature, healthy project that is continuing to grow every day. We ar
 
 ## Appfile
 
-We created a new configuration format for Otto expressive enough to solve all the mentioned shortcomings of Vagrant: the Appfile.
+We created a new configuration format for Otto that is expressive enough to solve all the mentioned shortcomings of Vagrant: the Appfile.
 
-js the name suggests, the Appfile is a higher-level description focusing on the application. A complete example is shown below:
+As the name suggests, the Appfile is a higher-level description focusing on the application. A complete example is shown below:
 
 <pre class="prettyprint">
 application {
@@ -143,7 +143,7 @@ This is all you need to tell Otto about your dependencies. Otto fetches and load
 
 In development, Otto configures and starts these dependencies all within the same virtual machine. They are then available via DNS as they normally would be in production.
 
-When deployed, Otto ensures that only one of each service is deployed, and configures your application to be able to find and communicate with these services over DNS.
+When deployed, Otto ensures that only one of each service is deployed, and configures your application to be able to find and communicate with these services over DNS. Future versions of Otto will allow for multiple instances of the same service.
 
 ## HashiCorp Built
 
