@@ -32,11 +32,11 @@ READMORE
 
 Vagrant does a lot right. Vagrant downloads have continued to accelerate and grow to this day. There are more Vagrant downloads per day today than ever before. But we think we can do even better.
 
-We’ve learned a lot about developers and development environments over the past six years:
+We've learned a lot about developers and development environments over the past six years:
 
-* **Development environments are similar**: All Ruby development environments look alike, all PHP development environments look alike, etc. There isn’t much deviation between two development environments for the same language or framework. The Vagrantfile requires users to configure these environments for every project, rather than having it abstracted away.
+* **Development environments are similar**: All Ruby development environments look alike, all PHP development environments look alike, etc. There isn't much deviation between two development environments for the same language or framework. The Vagrantfile requires users to configure these environments for every project, rather than having it abstracted away.
 
-* **Developers want to deploy**: After developing an application, the next step is to deploy! “vagrant up” to production has been a feature request for years. Production environments look very different from development: load balancers, firewalls, routing concerns, new configurations, etc. Unfortunately, the Vagrantfile isn’t a good format to describe this information.
+* **Developers want to deploy**: After developing an application, the next step is to deploy! "vagrant up" to production has been a feature request for years. Production environments look very different from development: load balancers, firewalls, routing concerns, new configurations, etc. Unfortunately, the Vagrantfile isn’t a good format to describe this information.
 
 * **Microservices are difficult**: More and more applications are being written in a service oriented way. Modeling these services for development and deploy is difficult. The Vagrantfile puts the burden of installing/configuring every service onto the end user.
 
@@ -69,19 +69,19 @@ Notice that the Appfile makes no mention of OS, memory, disk space, etc. Otto ha
 
 The Appfile is the simplest configuration format we’ve ever made. Actually, everything in the Appfile (including the existence of the Appfile itself) is _completely optional_. You can run Otto in any directory and it will attempt to discover the application type automatically.
 
-On top of this simplicity, `customization` blocks are a way to customize Otto’s behavior. These are also fairly high level, but let you dig deeper down. This is where things such as manually tuning memory would go.
+On top of this simplicity, `customization` blocks are a way to customize Otto's behavior. These are also fairly high level, but let you dig deeper down. This is where things such as manually tuning memory would go.
 
 ## Centralization of Knowledge
 
 The simplicity and purposeful lack of detail in the Appfile embodies one of the core ideas behind Otto: the centralization of knowledge.
 
-Otto is smart. When you tell Otto the type of application you’re developing, Otto knows how to develop and deploy that application using industry best practices. Otto knows how to configure and manage systems such as Terraform, Consul, and others.
+Otto is smart. When you tell Otto the type of application you're developing, Otto knows how to develop and deploy that application using industry best practices. Otto knows how to configure and manage systems such as Terraform, Consul, and others.
 
 Over time, Otto will get smarter, and adopt new best practices to improve your environments. For example, Otto will soon be able to configure and bootstrap [Vault](https://vaultproject.io) to automatically store and provide secrets to applications securely.
 
-Imagine this scenario: a critical security update is released for your OS. The average developer or operator doesn’t always keep up with these, but someone who does will contribute a change up to Otto to handle it. When Otto is updated, it’ll automatically perform a rolling upgrade of this OS on your deployed servers, and secure your infrastructure using the latest best practices.
+Imagine this scenario: a critical security update is released for your OS. The average developer or operator doesn't always keep up with these, but someone who does will contribute a change up to Otto to handle it. When Otto is updated, it'll automatically perform a rolling upgrade of this OS on your deployed servers, and secure your infrastructure using the latest best practices.
 
-This scenario isn’t fiction, it is what Otto was designed to do.
+This scenario isn't fiction, it is what Otto was designed to do.
 
 ## Development
 
@@ -149,7 +149,7 @@ When deployed, Otto ensures that only one of each service is deployed, and confi
 
 At HashiCorp, we build solutions to DevOps problems that are a joy to use. We approach difficult problems and solve them elegantly for the user.
 
-Otto is the eighth such tool we’ve built. We’ve also built
+Otto is the eighth open source tool we’ve built. We’ve also built
 [Vagrant](http://www.vagrantup.com),
 [Packer](http://www.packer.io),
 [Serf](http://www.serfdom.io),
