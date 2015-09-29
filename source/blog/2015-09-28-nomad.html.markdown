@@ -19,7 +19,7 @@ jobs and finds available resources to run them. The scheduling algorithm ensures
 all constraints are satisfied, and packs as many applications on a host as possible
 to optimize resource utilization. Additionally, Nomad supports virtualized,
 containerized, or standalone applications running on all major operating systems
-giving it the flexibility to support a broad range of workloads
+giving it the flexibility to support a broad range of workloads.
 
 Nomad is now being deployed in production environments and we are proud to
 share it publicly. We are excited about the future of the project, and are
