@@ -9,7 +9,7 @@ author: Mitchell Hashimoto
 
 Today we announce [Otto](https://ottoproject.io) &mdash; the successor to Vagrant. Otto is the single solution to develop and deploy any application, with first class support for microservices. It is the most powerful tool we've built yet.
 
-Otto automatically builds development environments without any configuration; it can detect your project type and has built-in knowledge of industry-standard tools to setup a development environment that is ready to go. When you’re ready to deploy, otto builds and manages an infrastructure, sets up servers, builds, and deploys the application.
+Otto automatically builds development environments without any configuration; it can detect your project type and has built-in knowledge of industry-standard tools to setup a development environment that is ready to go. When you're ready to deploy, otto builds and manages an infrastructure, sets up servers, builds, and deploys the application.
 
 With the growing trend of microservices, Otto knows how to install and configure service dependencies for development and deployment. It automatically exposes these dependencies via DNS for your application to consume.
 
@@ -22,7 +22,7 @@ READMORE
 <hr>
 
 <blockquote>
-<p>The industry has needed this kind of abstraction for a long time, and it’s finally here with Otto.</p>
+<p>The industry has needed this kind of abstraction for a long time, and it's finally here with Otto.</p>
 <cite>Ben McRae, Head of Technical Operations at Conde Nast Commerce</cite>
 </blockquote>
 
@@ -36,7 +36,7 @@ We've learned a lot about developers and development environments over the past 
 
 * **Development environments are similar**: All Ruby development environments look alike, all PHP development environments look alike, etc. There isn't much deviation between two development environments for the same language or framework. The Vagrantfile requires users to configure these environments for every project, rather than having it abstracted away.
 
-* **Developers want to deploy**: After developing an application, the next step is to deploy! "vagrant up" to production has been a feature request for years. Production environments look very different from development: load balancers, firewalls, routing concerns, new configurations, etc. Unfortunately, the Vagrantfile isn’t a good format to describe this information.
+* **Developers want to deploy**: After developing an application, the next step is to deploy! "vagrant up" to production has been a feature request for years. Production environments look very different from development: load balancers, firewalls, routing concerns, new configurations, etc. Unfortunately, the Vagrantfile isn't a good format to describe this information.
 
 * **Microservices are difficult**: More and more applications are being written in a service oriented way. Modeling these services for development and deploy is difficult. The Vagrantfile puts the burden of installing/configuring every service onto the end user.
 
@@ -52,22 +52,22 @@ As the name suggests, the Appfile is a higher-level description focusing on the 
 
 <pre class="prettyprint">
 application {
-  name = “my-app”
-  type = “ruby”
+  name = "my-app"
+  type = "ruby"
 
   dependency {
-     source = “github.com/hashicorp/otto/examples/postgresql”
+     source = "github.com/hashicorp/otto/examples/postgresql"
   }
 }
 
-customization “ruby” {
-  ruby_version = “2.1”
+customization "ruby" {
+  ruby_version = "2.1"
 }
 </pre>
 
 Notice that the Appfile makes no mention of OS, memory, disk space, etc. Otto has built-in knowledge of best practices and picks smart defaults for you. In addition to this, you can see how dependencies are first-class features. Otto will use this information to automatically install and configure dependencies in your development and deployment environments.
 
-The Appfile is the simplest configuration format we’ve ever made. Actually, everything in the Appfile (including the existence of the Appfile itself) is _completely optional_. You can run Otto in any directory and it will attempt to discover the application type automatically.
+The Appfile is the simplest configuration format we've ever made. Actually, everything in the Appfile (including the existence of the Appfile itself) is _completely optional_. You can run Otto in any directory and it will attempt to discover the application type automatically.
 
 On top of this simplicity, `customization` blocks are a way to customize Otto's behavior. These are also fairly high level, but let you dig deeper down. This is where things such as manually tuning memory would go.
 
@@ -98,9 +98,9 @@ application. For this development environment, Ruby is pre-installed. To
 work on your project, edit files locally on your own machine. The file changes
 will be synced to the development environment.
 
-When you’re ready to build your project, run 'otto dev ssh' to enter
-the development environment. You’ll be placed directly into the working
-directory where you can run ‘bundle install’ and ‘ruby’ as you normally would.
+When you're ready to build your project, run 'otto dev ssh' to enter
+the development environment. You'll be placed directly into the working
+directory where you can run 'bundle install' and 'ruby' as you normally would.
 </pre>
 
 With little to no configuration, Otto knows how to build development environments for many popular languages and frameworks. You can use customizations in the Appfile to change the environments slightly as needed, but the goal is for Otto to build a best practices development environment for every common application type.
@@ -111,7 +111,7 @@ Once the development is up and running, commands exist such as `otto dev ssh` to
 
 Otto deploys applications using industry best practices in just a few simple commands. Otto manages your infrastructure, builds your application, and then deploys the application.
 
-The Appfile is cloud-agnostic: Otto is built to support deploying any application to any cloud environment with no special configuration. Otto 0.1 ships with AWS support only, but we’ll be adding new cloud targets rapidly.
+The Appfile is cloud-agnostic: Otto is built to support deploying any application to any cloud environment with no special configuration. Otto 0.1 ships with AWS support only, but we'll be adding new cloud targets rapidly.
 
 In just a few commands: `otto infra`, `otto build`, and `otto deploy`, Otto launches a complete infrastructure, builds your application, and deploys it.
 
@@ -139,7 +139,7 @@ application {
 
 Dependencies are declared using the `dependency` block and point to the dependency with a URL. This URL can point to a file path, Git, Mercurial, HTTP, and more.
 
-This is all you need to tell Otto about your dependencies. Otto fetches and loads the Appfiles from these dependencies to know how to install and configure them. Otto will also automatically fetch dependencies of dependencies; you don’t need to specify these manually.
+This is all you need to tell Otto about your dependencies. Otto fetches and loads the Appfiles from these dependencies to know how to install and configure them. Otto will also automatically fetch dependencies of dependencies; you don't need to specify these manually.
 
 In development, Otto configures and starts these dependencies all within the same virtual machine. They are then available via DNS as they normally would be in production.
 
@@ -149,7 +149,7 @@ When deployed, Otto ensures that only one of each service is deployed, and confi
 
 At HashiCorp, we build solutions to DevOps problems that are a joy to use. We approach difficult problems and solve them elegantly for the user.
 
-Otto is the eighth open source tool we’ve built. We’ve also built
+Otto is the eighth open source tool we've built. We've also built
 [Vagrant](http://www.vagrantup.com),
 [Packer](http://www.packer.io),
 [Serf](http://www.serfdom.io),
@@ -161,7 +161,7 @@ Otto will use and build on top of these tools to develop and deploy applications
 
 Otto will integrate with our commercial tool [Atlas](https://atlas.hashicorp.com) to help developers and operators collaborate, monitor, and maintain applications and infrastructure across an organization. Otto on its own can't prevent simultaneous deploys from different team members, a deployment history, etc. Atlas will do this.
 
-We're proud of Otto and are excited for its future. As a disclaimer: Otto is very young and while we tout it as a successor to Vagrant, it’ll take time to reach the maturity level that Vagrant is already at. We don’t recommend dropping Vagrant today, but look to Otto for the future..
+We're proud of Otto and are excited for its future. As a disclaimer: Otto is very young and while we tout it as a successor to Vagrant, it'll take time to reach the maturity level that Vagrant is already at. We don't recommend dropping Vagrant today, but look to Otto for the future..
 
 ## Learn More
 

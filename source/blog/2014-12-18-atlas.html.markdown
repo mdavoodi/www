@@ -53,21 +53,21 @@ Because of this design Atlas is not black box software. The major internals of A
 
 ## Continued improvements to open source tooling
 
-As a result of Atlas’s design around our open source projects, more resources than ever before will be dedicated to improving our projects. As features and integrations arrive in our open source tools, they'll be improving Atlas at the same time.
+As a result of Atlas's design around our open source projects, more resources than ever before will be dedicated to improving our projects. As features and integrations arrive in our open source tools, they'll be improving Atlas at the same time.
 
 Because Atlas focuses on the integration of our open source tools, project-specific features will be brought into the open source itself, rather than kept proprietary in Atlas. As an example, Terraform will be able to orchestrate rolling deploys. Since Atlas is using Terraform under the hood, providing our commercial customers with this feature in turn makes it available it for the open source community.
 
 In addition to simply improving our existing open source, we have a handful of new open source projects on the way for 2015 which will bring more critical features to the HashiCorp product line.
 
-We couldn't be happier with the interaction of Atlas and our open source. After working in the open source ecosystem for years, we’ve arrived at this strategy because it allows us to improve both lines in tandem, without worry that one group will lose feature functionality that it currently depends on.
+We couldn't be happier with the interaction of Atlas and our open source. After working in the open source ecosystem for years, we've arrived at this strategy because it allows us to improve both lines in tandem, without worry that one group will lose feature functionality that it currently depends on.
 
 ## Vagrant Cloud
 
 Vagrant Cloud was a platform to host and discover Vagrant boxes, and millions of Vagrant users have discovered and downloaded boxes since it was announced. The features of Vagrant Cloud are now part of Atlas, and Atlas has replaced Vagrant Cloud. All Vagrant Cloud data is retained and visible in the Atlas UI.
 
-Existing Vagrant Cloud URLs will continue to function for the foreseeable future, redirecting to the proper location in Atlas. While all the features of Vagrant Cloud have migrated to Atlas, we’re still working to properly expose all of them. If you see a missing feature from Vagrant Cloud, please don’t hesitate to contact us.
+Existing Vagrant Cloud URLs will continue to function for the foreseeable future, redirecting to the proper location in Atlas. While all the features of Vagrant Cloud have migrated to Atlas, we're still working to properly expose all of them. If you see a missing feature from Vagrant Cloud, please don't hesitate to contact us.
 
-All paid features of Vagrant Cloud are free during the tech preview of Atlas. All previously free features of Vagrant Cloud will remain free in Atlas, and it’s possible that previously paid features will become free. We will communicate any pricing changes and give ample time to respond to these changes before starting any payments.
+All paid features of Vagrant Cloud are free during the tech preview of Atlas. All previously free features of Vagrant Cloud will remain free in Atlas, and it's possible that previously paid features will become free. We will communicate any pricing changes and give ample time to respond to these changes before starting any payments.
 
 ## A Vision for the Future
 

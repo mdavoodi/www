@@ -1,5 +1,5 @@
 [
-	{ "name": "Asteris", 
+	{ "name": "Asteris",
 	  "url": "http://aster.is",
 	  "logo": "asteris",
 	  "tagline": "Next Generation Infrastructure",
@@ -8,8 +8,8 @@
 	  "pretty": "asteris",
 	  "contact": "info@aster.is"
 	},
-	
-	{ "name": "Cheval Partners", 
+
+	{ "name": "Cheval Partners",
 	  "url": "http://www.chevalpartners.com",
 	  "logo": "cheval",
 	  "tagline": "Collaborate, Innovate, Transform",
@@ -19,7 +19,7 @@
 	  "contact": "info@chevalpartners.com"
 	},
 
-	{ "name": "Container Solutions", 
+	{ "name": "Container Solutions",
 	  "url": "http://container-solutions.com",
 	  "logo": "contsoln",
 	  "tagline": "Making sense of complexity",
@@ -29,7 +29,7 @@
 	  "contact": "info@container-solutions.com"
 	},
 
-	{ "name": "Creationline", 
+	{ "name": "Creationline",
 	  "url": "http://creationline.com",
 	  "logo": "creationline",
 	  "tagline": "Open Source solutions specialists for the Enterprise",
@@ -38,8 +38,8 @@
 	  "pretty": "Cl",
 	  "contact": "sales@creationline.com"
 	},
-	
-	{ "name": "Cynergy Pro", 
+
+	{ "name": "Cynergy Pro",
 	  "url": "http://cynergy.pro",
 	  "logo": "cynergypro",
 	  "tagline": "Proudly working with Federal, State, and Local governments",
@@ -48,8 +48,8 @@
 	  "pretty": "Cynergy",
 	  "contact": "info@cynergy.pro"
 	},
-	
-	{ "name": "MustWin", 
+
+	{ "name": "MustWin",
 	  "url": "http://mustwin.com",
 	  "logo": "mustwin",
 	  "tagline": "All Star Strategic Design & Engineering",
@@ -59,7 +59,7 @@
 	  "contact": "we@mustwin.com"
 	},
 
-	{ "name": "Open Credo", 
+	{ "name": "Open Credo",
 	  "url": "https://www.opencredo.com",
 	  "logo": "opencredo",
 	  "tagline": "Delivering business outcomes by applying emerging technology.",
@@ -69,7 +69,7 @@
 	  "contact": "info@opencredo.com"
 	},
 
-	{ "name": "Opex Software", 
+	{ "name": "Opex Software",
 	  "url": "http://opexsoftware.com",
 	  "logo": "opex",
 	  "tagline": "Automate IT.  Create Time.",
@@ -79,7 +79,7 @@
 	  "contact": "DevOps@opexsoftware.com"
 	},
 
-	{ "name": "REAN", 
+	{ "name": "REAN",
 	  "url": "http://reancloud.com",
 	  "logo": "rean",
 	  "tagline": "REAN Cloud is a one-stop shop for all of your cloud services needs.",
@@ -88,8 +88,8 @@
 	  "pretty": "rean",
 	  "contact": "info@reancloud.com"
 	},
-	
-	{ "name": "Slalom", 
+
+	{ "name": "Slalom",
 	  "url": "http://slalom.com",
 	  "logo": "slalom",
 	  "tagline": "Love your future",
@@ -99,17 +99,17 @@
 	  "contact": "connect@slalom.com"
 	},
 
-	{ "name": "unif.io", 
+	{ "name": "unif.io",
 	  "url": "http://unif.io",
 	  "logo": "unifio",
 	  "tagline": "Unifying Development & Operations",
 	  "locations": "US, Japan, UK",
-	  "ldesc": "Unif.io is a consulting services organization which uses a full-stack, holistic approach to solution design and automation. Unif.io’s deep partnership with their clients guides the achievement of business goals. The How changes quickly so Unif.io values the Why.",
+	  "ldesc": "Unif.io is a consulting services organization which uses a full-stack, holistic approach to solution design and automation. Unif.io's deep partnership with their clients guides the achievement of business goals. The How changes quickly so Unif.io values the Why.",
 	  "pretty": "unif.io",
 	  "contact": "info@unif.io"
 	},
 
-	{ "name": "Vibrato", 
+	{ "name": "Vibrato",
 	  "url": "http://vibrato.com.au",
 	  "logo": "vibrato",
 	  "tagline": "Modern application automation and delivery, done well",
@@ -119,7 +119,7 @@
 	  "contact": "info@vibrato.com.au"
 	},
 
-	{ "name": "Xebia", 
+	{ "name": "Xebia",
 	  "url": "http://xebia.com",
 	  "logo": "xebia",
 	  "tagline": "Accelerating businesses with New IT",
@@ -128,5 +128,5 @@
 	  "pretty": "xebia",
 	  "contact": "info@xebia.com"
 	}
-	
+
 ]

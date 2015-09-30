@@ -29,7 +29,7 @@ The above beliefs about responsible infrastructure management lay the foundation
 * Packer and Terraform enable service and infrastructure configuration to be represented as code and shared with teams for collaboration.
 * Consul enables dynamic service discovery and the removal of easily stale values from service configurations.
 
-Atlas’s workflow for turning code into a running application is shown below. The workflow builds on HashiCorp's open source tools as the foundation for responsible infrastructure management.
+Atlas's workflow for turning code into a running application is shown below. The workflow builds on HashiCorp's open source tools as the foundation for responsible infrastructure management.
 
 ![Atlas Mindset](/images/blog/atlas-mindset/atlas-workflow.png)
 

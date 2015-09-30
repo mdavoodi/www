@@ -45,11 +45,11 @@ Notification methods can be configured for your organization by visiting the Con
 
 ![Screenshot of configuring notification methods on an organization in Atlas](/images/blog/atlas-build-run-notifications/org-notification-methods.png)
 
-Additionally, it is now possible to customize notification methods on an individual build configuration or environment. For instance, maybe you want most infrastructure notifications to go to an `#ops` chat room, but would prefer your development team receives notifications for their application’s Packer builds in their own room.
+Additionally, it is now possible to customize notification methods on an individual build configuration or environment. For instance, maybe you want most infrastructure notifications to go to an `#ops` chat room, but would prefer your development team receives notifications for their application's Packer builds in their own room.
 
 ![Screenshot of overriding notification methods on a build configuration in Atlas](/images/blog/atlas-build-run-notifications/notification-methods-override.png)
 
-When you override notification methods, your organization’s notification methods are copied to make customizing them easier.
+When you override notification methods, your organization's notification methods are copied to make customizing them easier.
 
 ## Getting Started
 
