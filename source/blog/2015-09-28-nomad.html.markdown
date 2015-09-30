@@ -223,7 +223,7 @@ The following pages in particular are good next steps:
 * [Internals](https://www.nomadproject.io/docs/internals/index.html) -
   The internals section is an advanced topic but covers
   details about all the internals of Nomad for those that are interested.
-  It isn’t required reading to use Nomad, but is recommended if you want to
+  It isn't required reading to use Nomad, but is recommended if you want to
   learn about the technologies behind Nomad.
 
 * [Comparison to other software](https://www.nomadproject.io/intro/vs/index.html) -

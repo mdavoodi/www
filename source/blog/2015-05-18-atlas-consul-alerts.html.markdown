@@ -9,7 +9,7 @@ author: Jack Pearkes
 
 Today we are proud to announce another feature powered by Consul and Atlas — infrastructure alerts. Operators can receive alerts in Slack, email, PagerDuty, and custom webhooks when there is a status change in a node or service in their infrastructure. Atlas also provides a complete history of alerts, so the state of a cluster through time can be easily visualized.
 
-[Consul](https://consul.io) is a solution for service discovery, health checks, and runtime orchestration for the modern datacenter. It is distributed, highly available, and scalable to thousands of nodes and services across multiple datacenters. Consul’s health checks are configurable at both the service and node level. A health check can be as simple as measuring disk utility or as complex as a custom service-level test. Since health checks can use Nagios plugins or native HTTP checks, they are easy to integrate into an existing infrastructure.
+[Consul](https://consul.io) is a solution for service discovery, health checks, and runtime orchestration for the modern datacenter. It is distributed, highly available, and scalable to thousands of nodes and services across multiple datacenters. Consul's health checks are configurable at both the service and node level. A health check can be as simple as measuring disk utility or as complex as a custom service-level test. Since health checks can use Nagios plugins or native HTTP checks, they are easy to integrate into an existing infrastructure.
 
 Read on to learn more about Consul alerts and see screenshots of the features in action.
 
@@ -43,11 +43,11 @@ If your infrastructure is already using Consul and Atlas to monitor node and ser
 
 If you haven't connected Consul to Atlas yet, follow the [integration guide](https://consul.io/docs/guides/atlas.html) in the Consul documentation. Note that using Consul alerts does not require using all features of Atlas.
 
-If you aren’t using Consul for service discovery, health checks, and runtime orchestration, you can [learn more about Consul](https://consul.io) and [configuring Consul health checks](https://consul.io/docs/agent/checks.html).
+If you aren't using Consul for service discovery, health checks, and runtime orchestration, you can [learn more about Consul](https://consul.io) and [configuring Consul health checks](https://consul.io/docs/agent/checks.html).
 
 ## The Future
 
-The announcement today follows recent Atlas improvements to enable operators to responsibly deploy applications and make changes to infrastructure. Real-time alerting is a key feature for infrastructure management, and we’re excited to bring this functionality to Atlas.
+The announcement today follows recent Atlas improvements to enable operators to responsibly deploy applications and make changes to infrastructure. Real-time alerting is a key feature for infrastructure management, and we're excited to bring this functionality to Atlas.
 
 As we extend support for notifications in Atlas, both Packer builds and Terraform runs will be able to trigger notifications upon completion and/or failure.
 

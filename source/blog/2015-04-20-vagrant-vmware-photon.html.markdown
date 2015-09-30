@@ -1,6 +1,6 @@
 ---
-page_title: "Vagrant Up and Running with VMware’s Project Photon"
-title: "Vagrant Up and Running with VMware’s Project Photon"
+page_title: "Vagrant Up and Running with VMware's Project Photon"
+title: "Vagrant Up and Running with VMware's Project Photon"
 list_image_url: /images/blog/vagrant-vmware-photon/vagrant.png
 post_image_url: /images/blog/vagrant-vmware-photon/vagrant-vmware-photon.png
 tags: vagrant, vmware
@@ -41,4 +41,4 @@ _Note:_ This guide requires that you have at least [VMware Fusion](http://www.vm
 
 Since VMware's Photon has rkt installed as well, simply run `rkt` to view the possible commands.
 
-That’s it — you can now experiment with building, testing, and running containers in a lightweight development environment with Vagrant and Project Photon!
+That's it — you can now experiment with building, testing, and running containers in a lightweight development environment with Vagrant and Project Photon!

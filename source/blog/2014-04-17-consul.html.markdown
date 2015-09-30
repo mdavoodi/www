@@ -14,7 +14,7 @@ to thousands of nodes and services across multiple datacenters.
 Some concrete problems Consul solves: finding the services applications need
 (database, queue, mail server, etc.), configuring services with key/value
 information such as enabling maintenance mode for a web application, and
-health checking services so that unhealthy services aren’t used. These are
+health checking services so that unhealthy services aren't used. These are
 just a handful of important problems Consul addresses.
 
 Consul solves the problem of service discovery and configuration.
@@ -23,7 +23,7 @@ data safe and works with the largest of infrastructures. Consul embraces
 modern practices and is friendly to existing DevOps tooling.
 
 Consul is already deployed in very large infrastructures across multiple
-datacenters and has been running in production for several months. We’re
+datacenters and has been running in production for several months. We're
 excited to share it publicly.
 
 Read on to learn more.
@@ -34,7 +34,7 @@ READMORE
 
 This section will briefly explain how Consul is used and operated. This brief
 explanation will show how simple and powerful Consul is. Many technical details
-are omitted on purpose since they’re covered in detail in the
+are omitted on purpose since they're covered in detail in the
 [complete documentation](http://www.consul.io/docs/index.html).
 
 Consul has two components: servers and clients. The servers and clients
@@ -42,7 +42,7 @@ together form a single Consul cluster. The only difference between servers
 and clients are that servers are the only components that store and replicate
 data. Members of a Consul cluster automatically discover each other as long as
 they are given the address of at least one existing member. The built-in
-auto-discovery features of Consul means operators don’t need to hard code server
+auto-discovery features of Consul means operators don't need to hard code server
 addresses, making it easy to support a dynamic infrastructure. Reads and
 writes can be done to any member of the Consul cluster.
 
@@ -123,16 +123,16 @@ safe while also being extremely performant.
 ## HashiCorp Built
 
 At HashiCorp, we build solutions to DevOps problems that are technically
-sound and are a joy to use. We don’t take shortcuts with the technologies
-we choose, and just as importantly we don’t take shortcuts in the
+sound and are a joy to use. We don't take shortcuts with the technologies
+we choose, and just as importantly we don't take shortcuts in the
 experience of using and operating our tools. As a result, HashiCorp-made tools
 are stable, scalable, and easy to use and operate.
 
-Consul is the fourth such tool we’ve built. Previously, we’ve built
+Consul is the fourth such tool we've built. Previously, we've built
 [Vagrant](http://www.vagrantup.com),
 [Packer](http://www.packer.io), and
 [Serf](http://www.serfdom.io).
-Consul works great with our other tools, but doesn’t require the use of
+Consul works great with our other tools, but doesn't require the use of
 any of them.
 
 [Mitchell Hashimoto](https://github.com/mitchellh) and
@@ -154,7 +154,7 @@ following pages in particular are good next steps:
 * [Internals](http://www.consul.io/docs/internals/index.html) -
   The internals section is an advanced topic but covers
   details about all the internals of Consul for those that are interested.
-  It isn’t required reading to use Consul, but is recommended if you want to
+  It isn't required reading to use Consul, but is recommended if you want to
   learn about the technologies behind Consul.
 
 * [Comparison to other software](http://www.consul.io/intro/vs/index.html) -

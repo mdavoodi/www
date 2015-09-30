@@ -5,7 +5,7 @@ list_image_url: /images/hashicorp-black-large.png
 post_image_url: /images/hashicorp-black-large.png
 author: Mitchell Hashimoto, Armon Dadgar
 ---
-The Tao of HashiCorp is the foundation that guides our vision, roadmap, and product design. As you evaluate using or contributing to HashiCorp’s products, it may be valuable to understand the motivations and intentions for our work.
+The Tao of HashiCorp is the foundation that guides our vision, roadmap, and product design. As you evaluate using or contributing to HashiCorp's products, it may be valuable to understand the motivations and intentions for our work.
 
 READMORE
 
@@ -34,7 +34,7 @@ Codification is the belief that all processes should be written as code, stored,
 HashiCorp products are all designed to follow the codification of knowledge paradigm. Any changes a user makes are versioned and stored to keep a clean history of process.
 
 ## Automation through Codification
-System administration typically requires an operator to manually make changes to infrastructure, making the position’s responsibilities difficult to scale. The scale of infrastructure under management is forever increasing, and manual system administration techniques have struggled to to match this new scale. Automation to manage more systems with less overhead is the only option.
+System administration typically requires an operator to manually make changes to infrastructure, making the position's responsibilities difficult to scale. The scale of infrastructure under management is forever increasing, and manual system administration techniques have struggled to to match this new scale. Automation to manage more systems with less overhead is the only option.
 
 While there are many approaches to automation, we promote codification. Codification allows for knowledge to be executed by machines, but still readable by operators. Automated tooling allows operators to increase their productivity, move quicker, and reduce human error.  Machines can automatically detect, triage and resolve issues.
 
@@ -46,4 +46,4 @@ We believe that applying this sort of systems rigor to infrastructure is critica
 ## Pragmatism
 We strongly believe in the value of pragmatism when approaching any problem. Many of the principles we believe in like immutability, codification, automation, and CSP are ideals which we aspire towards and not requirements that we dogmatically impose. There are many situations in which the practical solution requires reevaluating our ideals.
 
-Pragmatism allows us to assess new ideas, approaches, and technologies and how they may be adopted to improve HashiCorp’s best practices. It would be a mistake to view this as a compromise of first principles, but rather open-mindedness and humility to accept that we may be wrong. The ability to adapt is critical to innovation and one we take pride in.
+Pragmatism allows us to assess new ideas, approaches, and technologies and how they may be adopted to improve HashiCorp's best practices. It would be a mistake to view this as a compromise of first principles, but rather open-mindedness and humility to accept that we may be wrong. The ability to adapt is critical to innovation and one we take pride in.

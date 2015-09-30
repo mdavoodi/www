@@ -34,7 +34,7 @@ READMORE
 
 This brief explanation of how Terraform is used and operated will show how
 simple and powerful Terraform is. Many technical details
-are omitted on purpose since they’re covered in detail in the
+are omitted on purpose since they're covered in detail in the
 [complete documentation](http://www.terraform.io/docs/index.html).
 
 Terraform is configured using a high-level, expressive configuration syntax
@@ -156,16 +156,16 @@ and launch the official [Terraform website](http://www.terraform.io).
 ## HashiCorp Built
 
 At HashiCorp, we build solutions to DevOps problems that are technically
-sound and are a joy to use. We don’t take shortcuts with the technologies
-we choose, and just as importantly we don’t take shortcuts in the
+sound and are a joy to use. We don't take shortcuts with the technologies
+we choose, and just as importantly we don't take shortcuts in the
 experience of using and operating our tools. Terraform is no different.
 
-Terraform is the fifth such tool we’ve built. Previously, we’ve built
+Terraform is the fifth such tool we've built. Previously, we've built
 [Vagrant](http://www.vagrantup.com),
 [Packer](http://www.packer.io),
 [Serf](http://www.serfdom.io), and
 [Consul](http://www.consul.io).
-Terraform works great with our other tools, but doesn’t require the use of
+Terraform works great with our other tools, but doesn't require the use of
 any of them.
 
 ## Learn More

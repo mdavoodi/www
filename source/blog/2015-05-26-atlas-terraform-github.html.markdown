@@ -20,7 +20,7 @@ Terraform is an open source project by HashiCorp for deploying and
 managing infrastructure. It supports many providers, such as AWS,
 Google Cloud, OpenStack, and Docker.
 
-Atlas is HashiCorp’s commercial product which allows teams to version and
+Atlas is HashiCorp's commercial product which allows teams to version and
 collaborate on infrastructure changes.
 
 Read on to learn more about the integration and to view GitHub, Terraform,
