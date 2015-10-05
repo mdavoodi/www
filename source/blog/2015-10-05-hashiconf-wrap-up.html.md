@@ -15,41 +15,43 @@ author: Seth Vargo
   }
 </style>
 
-On behalf of myself, Jana, and the entire HashiCorp team, I want to say
-"thank you" for an amazing HashiConf 2015. This post details some of the
-highlights of HashiConf including the post-conference survey results.
+On behalf of the entire HashiCorp team, I want to say thank you for an amazing
+HashiConf 2015. This blog post details some of the key highlights including the
+post-conference survey results.
 
-It has already been a week since HashiConf 2015 first began, but we are already
-hard at work planning for 2016! We have received overwhelmingly positive
-feedback, and we are very excited to share them with you today. But first, some
-housekeeping notes.
+It has been a week since HashiConf 2015 first began, but we are already hard at
+work planning for 2016! We have received overwhelmingly positive feedback, and
+we are very excited to share them with you today. But first, some housekeeping
+notes.
 
 READMORE
 
-All talks and keynotes were recorded. Our production company is finalizing all
-the details and editing the videos this week. We will post them publicly soon.
-They will be available for free.
+All talks and keynotes were recorded. Our production company is editing the
+videos this week and we will make them publicly available soon. We announced
+exciting new updates to [Consul](https://consul.io) and
+[Vault](https://vaultproject.io). We also launched two new open-source projects,
+[Nomad](https://nomadproject.io) and [Otto](https://ottoproject.io). We have
+written about many of these exciting updates already:
+[Vault 0.3 release](/blog/vault-0.3.html), [Nomad announcement](/blog/nomad.html),
+and the [Otto announcement](/blog/otto.html).
 
-Nomad and Otto are now both open source and available for download. You can read
-more about [Nomad](/blog/nomad.html) and [Otto](/blog/otto.html) in their
-official announcements. Consul 0.6 will be available mid-October, and Vault 0.3
-is [already available](/blog/vault-0.3.html).
+We had an amazing showing with over 300 attendees, speakers, and sponsors
+joining us at the Gerding Theater on September 28, 2015. Thank you to all our
+speakers and sponsors for helping to make this event a reality.
 
-We had an amazing showing with over 300 attendees, speakers, and sponsors joining
-us at the Gerding Theater on September 28, 2015.
+Select results from the post-conference survey are published in the charts
+below. We are very excited to share the results.
 
-The charts are interactive and may take a moment to load on slow connections.
+_The following charts are interactive and may take a moment to load on slow
+connections._
 
 - - -
 
 HashiConf 2015 was a global conference. We had speakers and attendees from many
-countries around the world; some attendees reported 48 hours of travel time! The
-map below shows the geographic breakdown of attendees by reported country of
-residence:
+countries around the world; some attendees reported 48 hours of travel time! Our
+furthest attendees traveled from Japan, Estonia, and India!
 
-<iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=887877220&amp;format=interactive" border="0" height="375" width="650" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
-
-The majority of HashiConf 2015 attendees who completed the survey were between
+The majority of HashiConf 2015 attendees who completed the surveywere between
 31 and 40 years of age. The full breakdown is below.
 
 <iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=1907427423&amp;format=interactive" border="0" height="375" width="610" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
@@ -59,8 +61,9 @@ one rated the food less than a 3 on a 5-point scale.
 
 <iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=1883362705&amp;format=interactive" border="0" height="375" width="610" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
 
-Similarly, almost 80% of attendees rated the talks and speakers a 4 or a 5. No
-talks were rated less than a 2 and only 2.4% of talks were rated less than a 3.
+Similarly, more than 80% of attendees rated the talks and speakers a 4 or a 5.
+No talks were rated less than a 2 and only 2.3% of talks were rated less than a
+3.
 
 <iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=312362524&amp;format=interactive" border="0" height="375" width="610" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
 
@@ -75,9 +78,12 @@ if they could.
 
 <iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=2095242513&amp;format=interactive" border="0" height="375" width="610" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
 
+We would like to extend a big thank you to everyone who helped make HashiConf
+2015 a reality. We are very excited for next year!
+
 - - -
 
-<sup>Please note that all of the following data has a
+<sup>Please note that the previous data displays a
 [selection bias](https://en.wikipedia.org/wiki/Selection_bias) of people who
 completed the survey. We did not collect demographic data during the ticketing
 process. There we over 300 attendees at the conference and only about 30% of
