@@ -51,7 +51,7 @@ HashiConf 2015 was a global conference. We had speakers and attendees from many
 countries around the world; some attendees reported 48 hours of travel time! Our
 furthest attendees traveled from Japan, Estonia, and India!
 
-The majority of HashiConf 2015 attendees who completed the surveywere between
+The majority of HashiConf 2015 attendees who completed the survey were between
 31 and 40 years of age. The full breakdown is below.
 
 <iframe src="https://docs.google.com/spreadsheets/d/1XbkPJWQo0uuYTlZpjRlrqpuIIA3-wY8VJzPxFns28xg/pubchart?oid=1907427423&amp;format=interactive" border="0" height="375" width="610" frameBorder="0" seamless="seamless" class="hashiconf-survey-chart"></iframe>
@@ -86,5 +86,5 @@ We would like to extend a big thank you to everyone who helped make HashiConf
 <sup>Please note that the previous data displays a
 [selection bias](https://en.wikipedia.org/wiki/Selection_bias) of people who
 completed the survey. We did not collect demographic data during the ticketing
-process. There we over 300 attendees at the conference and only about 30% of
+process. There were over 300 attendees at the conference and only about 30% of
 the attendees completed the post-conference survey.</sup>
