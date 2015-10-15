@@ -18,12 +18,12 @@ meet the evolving use cases and challenges of the community.
 READMORE
 
 At HashiCorp, we expect Alex to work various layers of Nomad, including
-the client, server, and builtin schedulers. He will use his knowledge of
+the client, server, and built-in schedulers. He will use his knowledge of
 Nomad to help integrate it more with our Atlas product and open source
-portfolio of tools to ensure Nomad is well integreated into our ecosystem.
+portfolio of tools to ensure Nomad is well integrated into our ecosystem.
 
 Prior to HashiCorp, Alex worked at Google as a member of the YouTube Data team.
-While there he rearchitected a large batch processing pipeline into a streaming
+While there he re-architected a large batch processing pipeline into a streaming
 architecture which handles terabytes of data a day. He also created the conversion
 analytics system used by many YouTube products to provide insights into user
 usage and conversion. Previously, Alex worked on brain computer interface research
