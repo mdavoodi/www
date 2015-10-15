@@ -19,12 +19,12 @@ the community of users.
 READMORE
 
 At HashiCorp, Sam will be working on adding new features and improving the
-UX of Atlas. Sam previously worked at Sunlight foundation where he became
+UX of Atlas. Sam previously worked at Sunlight Foundation where he became
 a polyglot working in Ruby, Python and React. Prior to that he worked at
 StreetEasy, and learned about the complex data modeling problems in real
 estate.
 
-Sam lives in the Beltway where he enjoys riding his bike and keeping
+Sam lives in DC where he enjoys riding his bike and keeping
 tabs on American politics and foreign affairs. He is known to have strong
 opinions about current events that he often vocalizes in Slack.
 
