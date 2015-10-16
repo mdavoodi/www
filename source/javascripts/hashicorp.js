@@ -1,4 +1,3 @@
-
 //slider
 (function ($, global) {
   var HSHC = global.HSH || {};
@@ -221,4 +220,3 @@ if (!Function.prototype.bind) {
     return fBound;
   };
 }
-
