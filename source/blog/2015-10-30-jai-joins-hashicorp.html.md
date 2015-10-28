@@ -10,10 +10,9 @@ tags: hiring
 [Jai Desai](https://www.linkedin.com/in/jaidesai) is now an employee of
 HashiCorp!
 
-Jai is joining as our director of enterprise solutions. He brings a rich
+Jai is joining as our Senior Director of Enterprise Solutions. He brings a rich
 set of experience including product management, technical product marketing,
-system engineering and sales. Jai will be focused on enabling our customers
-with a focus on the enterprise.
+system engineering and sales. Jai will be focused on enabling our Enterprise customers.
 
 READMORE
 
