@@ -30,7 +30,7 @@ for test kitchen.
 
 Jake is located in Columbus, Indiana where he lives with his wife
 and two dogs. Jake loves automation, learning, eating waffles, and
-is a gearhead. He can be found riding his motorcycle or fixing his
+is an aspiring gearhead. He can be found riding his motorcycle or fixing his
 Jeep. He has recently contributed to the minority of Emacs users
 at HashiCorp, raising doubts as to the strength of the local Vim
 hegemony.
