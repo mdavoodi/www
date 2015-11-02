@@ -25,7 +25,7 @@ to create a dynamic experience. Matthew will work to enhance the user
 experience, to provide the user with the most pertinent content, maximizing
 responsiveness, and allowing users to drill into the state of their infrastructure.
 
-Prior to HashiCorp, Matthew working at Instructure, which provides software
+Prior to HashiCorp, Matthew worked at Instructure, which provides software
 for education. Previously to that, Matthew worked at Safari Books Online where
 he worked on their web based reader, now the flagship product. The online reader
 was heavily focused on user experience and building a more interactive experience
