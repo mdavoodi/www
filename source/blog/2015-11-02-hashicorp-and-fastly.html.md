@@ -44,7 +44,7 @@ Our S3 bucket is configured to serve content as a static website with our custom
 - Sending logs to custom service(s) for our own aggregation and analytics
 - A real-time usage dashboard that shows information about our hit ratios, error rates, redirects, and more
 
-One of the most excited features we discovered was Fastly's [shielding](https://docs.fastly.com/guides/performance-tuning/shielding), which designates a cache service to be the point-of-presence for the other cache servers.
+One of the most exciting features we discovered was Fastly's [shielding](https://docs.fastly.com/guides/performance-tuning/shielding), which designates a cache service to be the point-of-presence for the other cache servers.
 
 ![](/images/blog/hashicorp-and-fastly/shielding.png)
 ![](/images/blog/hashicorp-and-fastly/shielding-future.png)
