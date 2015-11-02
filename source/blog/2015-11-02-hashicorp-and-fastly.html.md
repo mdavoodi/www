@@ -39,7 +39,7 @@ Once we agreed on the format for our buckets, we began work on a tool to automat
 
 Our S3 bucket is configured to serve content as a static website with our custom content. Fastly is configured to read content out of the S3 origin URL with a cache time of 3600s. As we explored the service more, we discovered that Fastly provided us with some amazing features:
 
-- Content served over SSL, even if the backend is served over HTTP
+- Content served over modern SSL (TLS 1.2)
 - On-the-fly gzipping of our HTML and JSON
 - Sending logs to custom service(s) for our own aggregation and analytics
 - A real-time usage dashboard that shows information about our hit ratios, error rates, redirects, and more
