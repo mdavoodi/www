@@ -24,6 +24,12 @@ some considerations for designing deployment scenarios.
 
 READMORE
 
+**Please note**: Cubbyhole authentication provides a set of useful security
+primitives. The information in this post is intended to be useful, but it is
+not exhaustive and should not be taken as a recommendation of one approach or
+another. It is up to the implementor to ensure that any given authentication
+workflow meets their organization's policy.
+
 ## Why Cubbyhole?
 
 In Vault, there are two main types of authentication backends available:
@@ -192,7 +198,9 @@ This section will present a few considerations targeted to different
 deployment and operation models. They are not exhaustive, but should provide
 ideas for implementing Cubbyhole authentication in your own Vault deployment.
 
-### Pushing, Pulling, and Callbacks
+### Token Distribution Mechanisms
+
+#### Pushing
 
 In a normal push model, tokens are generated and pushed into an application,
 its container, or its virtual machine, usually upon startup. A common example
@@ -203,18 +211,25 @@ This is a convenient approach, but has some drawbacks:
 
 * Environment information is often logged at application or container startup,
   and may be accessible by others within a short time frame.
-* It may be difficult or impossible to configure the application launcher or
-  management system to perform this functionality, especially without writing a
-  framework, executor, or other large chunk of code.
 * If an application fails and it (or its container) is restarted, it may see an
   out-of-date `temp` token in its environment.
+
+Additionally, it may be difficult or impossible to configure the application launcher or
+management system to perform this functionality, especially without writing a
+framework, executor, or other large chunk of code. 
+
+As a result, this is a conceptually easy approach but can be difficult to
+execute. Often, a hybrid approach with a push model and pull or coprocess model
+will be the right approach.
+
+#### Pulling
 
 In a pull model, the application, upon startup, reaches out to a
 token-providing service to fetch a `temp` token. Alternately, rather than
 coding this logic into each application or container, a small boostrapping
 application could perform this task, then start the final application and pass
-the value of the `perm` token in. The same bootstrapping application could be
-used across machines or containers.
+the value of the `perm` token in (essentially, a hyrid pull/push) model). The
+same bootstrapping application could be used across machines or containers.
 
 The pull model provides some benefits:
 
@@ -232,56 +247,80 @@ application or container scheduler to determine if, in fact, that application
 was just spun up on that node. This may not work well if the application has a
 runtime manager that restarts it locally if it fails.
 
-If coding some Vault logic into each application is possible, one way to
-mitigate this is a callback approach: applications can implement a known
-endpoint, and upon startup -- whether initially or due to a restart after a
-failure -- an application can provide its ID (and possibly other values, such
-as its host) and ask the token-providing service to provide a token to its
-callback endpoint.
+#### Coprocesses
 
-The benefit here is that the token-providing service does not need to trust
-that the calling application is what it says it is -- it sends the token to the
-known good location of the application. If that application did not request a
-new token, it can send an alert to trigger an investigation.
+A third approach uses a coprocess model: applications implement a known HTTP
+endpoint, then an agent, usually on the local machine, pushes a token into the
+application.
 
-### Host-based vs. Network-based
+At first, this approach might seem like it combines the complexity of
+implementing both a push and a pull model. However, its advantages are enough
+to warrant serious consideration (the following points assume that the
+token-providing service is on each local machine, although it does not have to
+be):
 
-The above section makes an assumption that there is a networked application
-management system or a centralized token-providing service. However, in many
-cases each host may be given a token and be responsible for creating
-sub-tokens. For instance, rather than have a known endpoint in each
-application, each machine could utilize the callback method described above by
-running a small daemon that can be contacted on a specific port by the
-token-providing service; once retrieved, the token could be stored in a secure
-location on the host (such as a memory-locked ramdisk or normal ramdisk with
-random-key encrypted swap) with appropriate filesystem permissions. The host's
-token could then be used to generate tokens for other applications and services
-running on the host.
+* Unlike the pull model, the coprocess does not need to trust
+  that the calling application is what it says it is -- it sends a token to the
+  known good location of the application. If that application did not request a
+  new token, it can send an alert to trigger an investigation.
+* If the application is running in a container, a local coprocess could write
+  the token to a directory on the host file system created specifically for
+  that container and bind-mount it into the container upon startup, rather than
+  pushing it in via environment variables that are more likely to be logged.
+* If the application is running in a chroot, a local coprocess could write the
+  token into the chroot before application startup.
+* The coprocess can be responsible for generating tokens at predictable
+  intervals and storing them into the appropriate file system location, whether
+  in a Docker container, chroot, or simply a directory with appropriate access
+  permissions. Then the application only needs to implement a simple watch on
+  the file to see if it has been updated, and to fetch its new Vault token when
+  that happens.
 
-When the host itself is handing out the `temp` tokens, several additional
-options become viable for applications. Some examples:
+An example of a coprocess-based approach would be a coprocess that watches the
+local Docker event API to determine when new containers have started, then
+generates a `temp`/`perm` token pair and sends the `temp` token to the
+well-known endpoint of the application in the new container. The coprocess
+itself would need a token; this could also use Cubbyhole authentication, with
+the `temp` token injected vi a push approach to the host, perhaps from a
+central coprocess that manages host authentication.
 
-* If the application is running in a container, the host could write the token
-  to a directory on the host file system created specifically for that
-  container and bind-mount it into the container upon startup.
-* If the application is running in a chroot, the host could write the token
-  into the chroot before application startup.
+Overall, we think that a coprocess-based approach will generally offer the most
+flexibility and security.
 
-Generally in these scenarios, application or container startup would require a
-pre-start command to generate a token pair and receive the `temp` token to pass
-to the application. (In most cases supervisors or init daemons responsible for
-application startup run as privileged users, so this can be done safely before
-starting the final application with reduced or dropped privileges). Depending
-on how the application is started, this may mean a wrapper around Docker CLI
-calls, an extra line(s) in the application's init/startup script, or other
-methods.
+### Token-based Authentication Pros and Cons
 
-An advantage of this approach is that the host daemon could be responsible for
-generating tokens at predictable intervals and storing them into the
-appropriate file system location, whether in a Docker container, chroot, or
-simply a directory with appropriate access permissions. Then the application
-only needs to implement a simple watch on the file to see if it has been
-updated, and to fetch its new Vault token when that happens.
+Finally, some remarks on the differences between using Cubbyhole
+authentication, which is _token-based_, versus a normal authentication backend,
+which is _credential-based_.
+
+Tokens carry with them some restrictions:
+
+* When the TTL of a token expires or is otherwise revoked, any child tokens it
+  created will be revoked as well.
+* Child tokens must contain a subset of their parent's policies.
+
+Compare this to an authentication backend, which can create tokens up to a
+lifetime determined by the mount properties or system configuration, and with
+any set of policies as configured by a backend administrator.
+
+Of course, whether these restrictions are pros or cons depends on your own
+needs. However, looking at the restrictions another way:
+
+* A parent token's TTL expiring forces all tokens to eventually rotate,
+  preventing accidental long-lived tokens (at least, longer than the token used
+  to create the `perm` token)
+* A backend cannot accidentally or maliciously be configured to associate more
+  (or more permissive) policies with a token, because the set of available
+  policies is constrained by the parent. In fact, a token-providing service
+  could have multiple tokens each associated with a limited set of policies,
+  and use the correct token to create the correct child token depending on the
+  needs of the application.
+
+If you want the benefits of the restricted set of policies, but not tie child
+tokens to the lifetime of the parent token, Vault 0.4 will contain a
+`auth/token/create-orphan` endpoint which will allow tokens with policies
+granting them access to this endpoint to create orphan tokens without requiring
+`root` or `sudo` access to `auth/token/create`.
 
 ## Share the Knowledge
 
