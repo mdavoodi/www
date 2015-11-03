@@ -1,5 +1,5 @@
 ---
-page_title: "Pete Shima Hinze Joins HashiCorp"
+page_title: "Pete Shima Joins HashiCorp"
 title: "Peta Shima Joins HashiCorp"
 list_image_url: /images/blog/pete-joins-hashicorp/list.jpg
 post_image_url: /images/blog/pete-joins-hashicorp/post.jpg
