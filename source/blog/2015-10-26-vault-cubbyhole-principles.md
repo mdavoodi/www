@@ -214,13 +214,13 @@ This is a convenient approach, but has some drawbacks:
 * If an application fails and it (or its container) is restarted, it may see an
   out-of-date `temp` token in its environment.
 
-Additionally, it may be difficult or impossible to configure the application launcher or
-management system to perform this functionality, especially without writing a
-framework, executor, or other large chunk of code. 
+Additionally, it may be difficult or impossible to configure the provisioning
+and/or orchestration system to perform this functionality, especially without
+writing a framework, executor, or other large chunk of code. 
 
 As a result, this is a conceptually easy approach but can be difficult to
-execute. Often, a hybrid approach with a push model and pull or coprocess model
-will be the right approach.
+implement. Often, a hybrid approach with a push model and pull or coprocess
+model will be the right approach.
 
 #### Pulling
 
@@ -228,8 +228,8 @@ In a pull model, the application, upon startup, reaches out to a
 token-providing service to fetch a `temp` token. Alternately, rather than
 coding this logic into each application or container, a small boostrapping
 application could perform this task, then start the final application and pass
-the value of the `perm` token in (essentially, a hyrid pull/push) model). The
-same bootstrapping application could be used across machines or containers.
+the value of the `perm` token in. The same bootstrapping application could be
+used across machines or containers.
 
 The pull model provides some benefits:
 
@@ -281,11 +281,14 @@ local Docker event API to determine when new containers have started, then
 generates a `temp`/`perm` token pair and sends the `temp` token to the
 well-known endpoint of the application in the new container. The coprocess
 itself would need a token; this could also use Cubbyhole authentication, with
-the `temp` token injected vi a push approach to the host, perhaps from a
+the `temp` token injected via a push approach to the host, perhaps from a
 central coprocess that manages host authentication.
 
-Overall, we think that a coprocess-based approach will generally offer the most
-flexibility and security.
+Overall, a coprocess-based approach requires little support from the
+provisioning and orchestration systems and minimal changes to applications,
+which can usually be implemented with a common library. As a result, it
+generally offers the best combination of flexibility and operational
+robustness.
 
 ### Token-based Authentication Pros and Cons
 
