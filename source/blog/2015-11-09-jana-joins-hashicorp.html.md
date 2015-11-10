@@ -17,14 +17,12 @@ the events we host and participate in.
 
 READMORE
 
-At HashiCorp, Jana will be in charge of all events that we host and
-participate in. In addition to large events like HashiConf, we want
-to support community members that are organizing meetups as well as
-hosting more of our own events. HashiCorp employees frequently attend
-and present at conferences and Jana will help bring some method to the
-madness.
+In addition to large events like HashiConf, we want to support community
+members that are organizing meetups as well as hosting more of our own
+events. HashiCorp employees frequently attend and present at conferences
+and Jana will help bring some method to the madness.
 
-Prior to HashiCorp, Jana was at NewRelic where she co-organized FutureStack13
+Prior to HashiCorp, Jana was at NewRelic where she co-organized FutureStack13,
 the first NewRelic user and technology conference. She led FutureStack14
 which had over 1200 people, 46 speakers, and 30 sponsors. Before that,
 she worked at Prismatic, StackMob and Engine Yard. She has organized
