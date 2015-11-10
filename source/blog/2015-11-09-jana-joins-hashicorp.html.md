@@ -1,6 +1,6 @@
 ---
 page_title: "Jana Boruta Joins HashiCorp"
-title: "Jana Boruta HashiCorp"
+title: "Jana Boruta Joins HashiCorp"
 list_image_url: /images/blog/jana-joins-hashicorp/list.jpg
 post_image_url: /images/blog/jana-joins-hashicorp/post.jpg
 author: Mitchell Hashimoto
