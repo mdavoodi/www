@@ -24,4 +24,12 @@ title: #{tagname}
         </article>
         <% end %>
     </div>
+	<div class="col-md-11" style="padding: 3em 0; text-align: center;">
+		<% if prev_page %>
+			<%= link_to "Previous Page", prev_page.url, class: "hbtn outline-btn black small" %>
+		<% end %>
+		<% if next_page %>
+			<%= link_to "Next Page", next_page.url, class: "hbtn outline-btn black small" %>
+		<% end %>
+	</div>
 </div> <!-- container -->
