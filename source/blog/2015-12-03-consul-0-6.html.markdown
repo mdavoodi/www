@@ -19,10 +19,16 @@ tomography subsystem that spans several internal layers. Despite all the major
 changes, we've worked hard to make upgrading from Consul 0.5.2 a standard
 upgrade that will usually just require an agent restart with the new binary.
 
-In addition to network tomography and the new in-memory database, Consul 0.6
-also includes other new features like prepared queries, enhanced ACLs, TCP and
-Docker container health checks, and better low-level network robustness. Consul
-0.6 is also now 100% pure Go, making it even easier to build and deploy.
+There are a huge number of features, bug fixes, and improvements in Consul 0.6.
+Consul is also now 100% pure Go, making it even easier to build and deploy. Here
+are some of the feature highlights:
+
+ * [Network Tomography](/blog/consul-0-6.html#network-tomography)
+ * [New In-Memory Database](/blog/consul-0-6.html#go-memdb)
+ * [Prepared Queries](/blog/consul-0-6.html#prepared-queries)
+ * [Enhanced ACLs](/blog/consul-0-6.html#enhanced-acls)
+ * [TCP and Docker Container Health Checks](/blog/consul-0-6.html#health-checks)
+ * [Better Low-Level Network Robustness](/blog/consul-0-6.html#network-robustness)
 
 You can [download Consul 0.6 here](http://www.consul.io/downloads.html) or
 view the [changelog](https://github.com/hashicorp/consul/blob/v0.6.0/CHANGELOG.md)
@@ -30,6 +36,8 @@ view the [changelog](https://github.com/hashicorp/consul/blob/v0.6.0/CHANGELOG.m
 Read on to learn more about the major new features in 0.6.
 
 READMORE
+
+<a id="network-tomography"></a>
 
 ## Network Tomography
 
@@ -120,7 +128,9 @@ to improve the accuracy of its RTT estimates by reading the [Consul](https://con
 and [Serf](https://serfdom.io/docs/internals/coordinates.html) internals guides
 on network coordinates.
 
-## In-Memory Database
+<a id="go-memdb"></a>
+
+## New In-Memory Database
 
 Previous versions of Consul used [LMDB](http://symas.com/mdb/) for the in-memory
 database that backs all of a Consul's server's data such as the catalog, key/value
@@ -152,6 +162,8 @@ However, because we removed the LMDB dependency, there's no longer an automated
 migration for the Raft log itself when upgrading from Consul versions prior to
 0.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
 for details.
+
+<a id="prepared-queries"></a>
 
 ## Prepared Queries
 
@@ -207,6 +219,8 @@ available via a new HTTP endpoint for integration with other applications.
 
 More details are available in the [prepared query HTTP endpoint documentation](https://www.consul.io/docs/agent/http/query.html)
 
+<a id="enhanced-acls"></a>
+
 ## Enhanced ACLs
 
 Consul users often have several different teams sharing the same infrastructure
@@ -240,6 +254,8 @@ like this for Consul 0.6 would mimic the behavior of previous Consul versions:
 More details are available in the [ACL documentation](https://www.consul.io/docs/internals/acl.html) and
 the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html).
 
+<a id="health-checks"></a>
+
 ## TCP and Docker Container Health Checks
 
 Consul 0.6 introduces two new types of health checks. A TCP check performs a
@@ -272,7 +288,9 @@ Here's an example configuration:
 
 More details can be found in the [health check documentation](https://www.consul.io/docs/agent/checks.html).
 
-## Better Low-level Network Robustness
+<a id="network-robustness"></a>
+
+## Better Low-Level Network Robustness
 
 Consul 0.6 introduces many low-level changes to help make Consul more stable in
 the face of misconfigured or misbehaving networks.
