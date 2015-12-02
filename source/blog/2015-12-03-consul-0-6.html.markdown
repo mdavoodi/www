@@ -146,6 +146,13 @@ granularity of blocking queries in a future version of Consul. This can be
 added with support from the database itself, and will also exploit the radix
 tree structure.
 
+The in-memory store is built from state snapshots and the Raft log at startup,
+so upgrading to the new in-memory database doesn't require any special steps.
+However, because we removed the LMDB dependency, there's no longer an automated
+migration for the Raft log itself when upgrading from Consul versions prior to
+0.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
+for details.
+
 ## Prepared Queries
 
 Consul's DNS interface is popular part of Consul because it's simple to use and
@@ -293,6 +300,10 @@ upgrading will just require an agent restart with the new binary.
 
 Prepared queries introduce new internal commands and must not be used until
 all servers have been upgraded to version 0.6.0.
+
+A manual step may be required to migrate Raft log data if you are upgrading from
+a Consul version prior to 1.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
+for details.
 
 As described above, any users with the `acl_default_policy` set to `deny` must
 update their policies to handle the service enforcement prior to upgrade.
