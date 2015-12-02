@@ -34,7 +34,7 @@ READMORE
 ## Network Tomography
 
 Consul's underlying [gossip protocol](https://www.consul.io/docs/internals/gossip.html),
-provided by Serf, has all nodes in a cluster perform random probes of other nodes
+provided by [Serf](https://serfdom.io/), has all nodes in a cluster perform random probes of other nodes
 at regular intervals to detect node failures. A nice side effect of these probes
 is that nodes get a measurement of the network round trip time to a different
 node each probe period. Consul 0.6 takes advantage of these measurements by
