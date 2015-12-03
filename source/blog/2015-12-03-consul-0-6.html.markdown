@@ -133,7 +133,7 @@ on network coordinates.
 ## New In-Memory Database
 
 Previous versions of Consul used [LMDB](http://symas.com/mdb/) for the in-memory
-database that backs all of a Consul's server's data such as the catalog, key/value
+database that backs all of a Consul server's data such as the catalog, key/value
 store, and sessions. LMDB performed well and was very stable, but by moving to a
 new [in-memory database](https://github.com/hashicorp/go-memdb) based on
 [radix trees](https://en.wikipedia.org/wiki/Radix_tree), we were able to tailor
