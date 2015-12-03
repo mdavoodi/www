@@ -167,9 +167,9 @@ for details.
 
 ## Prepared Queries
 
-Consul's DNS interface is popular part of Consul because it's simple to use and
+Consul's DNS interface is a popular part of Consul because it's simple to use and
 integrates with nearly any existing application. A common request is to expose
-more feature to the DNS interface, such as queries using multiple tags. Also, we
+more features via the DNS interface, such as queries using multiple tags. Also, we
 wanted to expose the new network tomography system via DNS. Unfortunately, the
 syntax of DNS queries is fairly limited so it's hard to add complex new
 functionality.
@@ -299,8 +299,8 @@ A TCP fallback probe was added to Serf's node failure detector in order to help
 operators diagnose a common misconfiguration where TCP traffic is allowed
 between nodes but not UDP. A log message will alert the operator to the problem,
 but the node will still be probed successfully, preventing a flappy failure
-detection. this also helps ride out brief periods of high packet loss by
-providing a more reliable alternate path for a probe of another node.
+detection. This also helps ride out brief periods of high packet loss by
+providing a more reliable alternate path to probe another node.
 
 Consul's stream multiplexer and connection pool logic was also improved to
 provide much lower overhead when network reconnects occur, as well as reducing
@@ -320,7 +320,7 @@ Prepared queries introduce new internal commands and must not be used until
 all servers have been upgraded to version 0.6.0.
 
 A manual step may be required to migrate Raft log data if you are upgrading from
-a Consul version prior to 1.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
+a Consul version prior to 0.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
 for details.
 
 As described above, any users with the `acl_default_policy` set to `deny` must
@@ -335,7 +335,7 @@ More details are available on the [upgrade process here](https://consul.io/docs/
 ## Roadmap
 
 The next release will be focused less on major new features and more on bug
-fixes, small improvements, and performance. We hope to release smaller and more
-often now that we are past some of these major changes!
+fixes, small improvements, and performance. We hope to have smaller, more
+frequent releases now that these major changes are completed!
 
 If you experience any issues, please report them on [GitHub](https://github.com/hashicorp/consul/issues).
