@@ -10,8 +10,8 @@ author: James Phillips
 We are excited to release [Consul 0.6](http://www.consul.io), a major update
 with many new features and improvements. Consul is a modern datacenter runtime
 that provides service discovery, configuration, and orchestration capabilities
-in an easy-to-deploy single Go binary. It is distributed, highly available, and
-proven to scale to thousands of nodes and services across multiple datacenters.
+in an easy-to-deploy Go binary. It is distributed, highly available, and proven
+to scale to thousands of nodes and services across multiple datacenters.
 
 This release has taken a few months to prepare as it involved core changes
 like migrating to a totally new in-memory database and adding a new network
