@@ -1,0 +1,30 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+// @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu+Mono");
+
+// Core variables
+@import 'scss/_variables';
+
+//Global Site
+@import 'scss/_global';
+
+// Hashicorp Shared Project Styles
+@import 'scss/hashicorp-shared/_hashicorp-utility';
+@import 'scss/hashicorp-shared/_project-utility';
+@import 'scss/hashicorp-shared/_hashicorp-header';
+@import 'scss/hashicorp-shared/_hashicorp-sidebar';
+
+// Components
+@import 'scss/_header';
+@import 'scss/_footer';
+// @import 'scss/_buttons';
+// @import 'scss/_sidebar';
+
+// Pages
+@import 'scss/_home';
+@import 'scss/_jobs';
+@import 'scss/_about';
+//@import 'scss/_community';
+//@import 'scss/_docs';
+//@import 'scss/_downloads';

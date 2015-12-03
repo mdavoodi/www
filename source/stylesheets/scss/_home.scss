@@ -1,0 +1,25 @@
+//
+// Home
+// --------------------------------------------------
+
+$hero-total-height: 790px;
+
+#hero-mask{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: $hero-total-height;
+}
+
+#hero{
+  color: white;
+  height: $hero-total-height;
+
+  #hero-content{
+      position: relative;
+      z-index: 1;
+      height: $hero-total-height;
+      @include img-retina( '../images/v2/home-hero-bg', png, 1604px, 790px);
+      background-position: center 0;
+  }
+}

@@ -63,6 +63,8 @@
         //cache elements
         this.ui = {
           $doc: $(window),
+          $hero: $('#hero'),
+          $heroContent: $('#hero-content'),
           $slider: $('.slider'),
           $productsDisplay: $('#products-display'),
           $productsNav: $('#products-nav li')
@@ -83,14 +85,18 @@
 
         if(HSHC.Utils.isMobile)
           return;
-        /*_this.ui.$doc.scroll(function() {
-          var top = _this.ui.$doc.scrollTop(),
-              speedAdj = (top*0.6),
-              speedAdjOffset = speedAdj - top;
 
-          _this.ui.$slider.css('webkitTransform', 'translate(0, '+ speedAdj +'px)');
-          _this.ui.$slider.find('.container').css('webkitTransform', 'translate(0, '+  speedAdjOffset +'px)');
-        })*/
+        _this.ui.$doc.scroll(function() {
+          //if collapseable menu is open dont do parrallax. It looks wonky. Bootstrap conflict
+          // if( _this.ui.$collapse.hasClass('in'))
+              // return;
+
+          var scrolled = _this.ui.$doc.scrollTop();
+
+          _this.ui.$hero.css('webkitTransform', 'translate(0, ' + -(scrolled*0.0315) + 'rem)');
+          _this.ui.$heroContent.css('webkitTransform', 'translate(0, '+  -(scrolled*-0.005) +'rem)');
+          _this.ui.$heroContent.css('opacity', 1 - (scrolled*.00175));
+        })
       },
 
       initSlider: function(){
@@ -158,22 +164,6 @@
           return false;
         });
 
-      }
-
-    }
-  }());
-
-  HSHC.Timeline = (function () {
-    return {
-
-      init: function () {
-        this.initScrollpane();
-      },
-
-      initScrollpane: function(){
-        $('.scroll-pane').jScrollPane({
-          autoReinitialise: true
-        });
       }
 
     }
