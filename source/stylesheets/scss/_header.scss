@@ -7,14 +7,18 @@
 #header {
   .navbar-brand {
     .logo{
-      color: $gray-darker;
-      font-family: $font-family-blanc;
+      color: $white;
+      font-family: $font-family-klav;
       font-size: 28px;
       @include img-retina( '../images/logo-header', png, $project-logo-width, $project-logo-height);
       background-position: 0 center;
 
       &:hover{
         color: $blue;
+      }
+
+      img{
+        margin-right: 10px;
       }
     }
 
@@ -45,6 +49,15 @@
         }
       }
     }
+  }
+
+  nav{
+      text-align: center;
+  }
+
+  .main-links{
+    display: inline-block;
+    float: none !important;
   }
 
   .main-links,

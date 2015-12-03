@@ -12,7 +12,10 @@ $hero-total-height: 790px;
 }
 
 #hero{
+  position: fixed;
+  z-index: 1;
   color: white;
+  width: 100%;
   height: $hero-total-height;
 
   #hero-content{
@@ -21,5 +24,11 @@ $hero-total-height: 790px;
       height: $hero-total-height;
       @include img-retina( '../images/v2/home-hero-bg', png, 1604px, 790px);
       background-position: center 0;
+  }
+
+  #hero-headline{
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
