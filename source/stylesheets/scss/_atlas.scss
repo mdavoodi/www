@@ -74,3 +74,26 @@ $atlas-hero-total-height: 706px;
   background-color: $white;
   z-index: 2;
 }
+
+#atlas-features-header{
+  @include img-retina( '../images/v2/atlas-feature-bg', png, 100%, 481px);
+  background-color: $black;
+  background-position: center top;
+
+  >.container{
+    position: relative;
+    height: 481px;
+  }
+
+  h1{
+    position: absolute;
+    bottom: $med-pad;
+    left: 15px;
+    font-weight: 700;
+  }
+}
+
+#atlas-feature-content{
+  background-color: $white;
+  color: $black;
+}

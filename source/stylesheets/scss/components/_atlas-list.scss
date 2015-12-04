@@ -1,10 +1,10 @@
 //
-// Atlas features
+// Atlas List features
 // /index and /atlas
 // -------------------------------------------------
 
 
-.atlas-features{
+.atlas-list{
 
   &.white{
     color: $black;
@@ -20,13 +20,13 @@
     }
   }
 
-  .atlas-features-header{
+  .atlas-list-header{
     text-align: center;
   }
-  .atlas-features-flex{
+  .atlas-list-flex{
     display: flex;
     flex-wrap: wrap;
-    .atlas-feature{
+    .atlas-list-item{
       width: 50%;
       padding-left: 96px;
       box-sizing: border-box;

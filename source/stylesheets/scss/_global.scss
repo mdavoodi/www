@@ -12,7 +12,7 @@ body {
   color: $white;
   background-color: $black;
   font-size: 15px;
-  font-family: $font-family-open-sans;
+  font-family: $font-family-klav;
   font-weight: 500;
 }
 
@@ -21,17 +21,21 @@ h1, h2, h3, h4, h5 {
   -webkit-font-smoothing: antialiased;
 }
 h1{
-  font-size: 42px;
+  font-size: $font-size-xl;
   line-height: 42px;
-  font-family: $font-family-open-sans;
+  font-family: $font-family-klav;
   font-weight: $font-weight-reg;
   margin-bottom: 24px;
+}
+
+h2{
+  font-size: $font-size-l;
 }
 
 h3, h4{
   font-size: 24px;
   line-height: 24px;
-  font-family: $font-family-open-sans;
+  font-family: $font-family-klav;
   font-weight: $font-weight-reg;
 }
 
