@@ -25,29 +25,39 @@
 
   HSHC.Hero = (function () {
     return {
+      ui : null,
 
       init: function () {
-        this.startAnimation();
-      },
-
-      startAnimation: function(){
         var _this = this;
-        setTimeout(_this.showHeroLogo, 100);
 
-        for(var i = 1; i < 8; i++) {
-          (function(index) {
-              setTimeout(function() {
-                $('.hero-prod-logos .prod.p'+index).addClass('in');
-              }, 700 + (i*300));
-          })(i);
+        //cache elements
+        this.ui = {
+          $doc: $(window),
+          $hero: $('.hero'),
+          $heroContent: $('.hero-content')
         }
 
+        this.addEventListeners();
       },
 
-      showHeroLogo: function(){
-        $('.hero-logo').addClass('in');
-      },
+      addEventListeners: function(){
+        var _this = this;
 
+        if(HSHC.Utils.isMobile)
+          return;
+
+        _this.ui.$doc.scroll(function() {
+          //if collapseable menu is open dont do parrallax. It looks wonky. Bootstrap conflict
+          // if( _this.ui.$collapse.hasClass('in'))
+              // return;
+
+          var scrolled = _this.ui.$doc.scrollTop();
+
+          _this.ui.$hero.css('webkitTransform', 'translate(0, ' + -(scrolled*0.0315) + 'rem)');
+          _this.ui.$heroContent.css('webkitTransform', 'translate(0, '+  -(scrolled*-0.005) +'rem)');
+          _this.ui.$heroContent.css('opacity', 1 - (scrolled*.00175));
+        })
+      }
     }
   }());
 
@@ -63,8 +73,6 @@
         //cache elements
         this.ui = {
           $doc: $(window),
-          $hero: $('#hero'),
-          $heroContent: $('#hero-content'),
           $slider: $('.slider'),
           $productsDisplay: $('#products-display'),
           $productsNav: $('#products-nav li')
@@ -81,21 +89,6 @@
           var index = $(this).index();
           _this.ui.$slider.data('owlCarousel').goTo(index);
           return false;
-        })
-
-        if(HSHC.Utils.isMobile)
-          return;
-
-        _this.ui.$doc.scroll(function() {
-          //if collapseable menu is open dont do parrallax. It looks wonky. Bootstrap conflict
-          // if( _this.ui.$collapse.hasClass('in'))
-              // return;
-
-          var scrolled = _this.ui.$doc.scrollTop();
-
-          _this.ui.$hero.css('webkitTransform', 'translate(0, ' + -(scrolled*0.0315) + 'rem)');
-          _this.ui.$heroContent.css('webkitTransform', 'translate(0, '+  -(scrolled*-0.005) +'rem)');
-          _this.ui.$heroContent.css('opacity', 1 - (scrolled*.00175));
         })
       },
 
@@ -170,9 +163,13 @@
   }());
 
   $( document ).ready(function() {
+    //.hero-mask used to parallax
+    if($('.hero-mask').length > 0){
+      HSHC.Hero.init();
+    }
+
     if($('.index').length > 0){
       HSHC.Slider.init();
-      HSHC.Hero.init();
     }
 
     if($('#jobs').length > 0){

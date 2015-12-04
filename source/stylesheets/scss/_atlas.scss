@@ -1,0 +1,27 @@
+//
+// /Atlas
+// -------------------------------------------------
+
+$atlas-hero-total-height: 706px;
+
+#atlas-hero-mask{
+  margin-top: -100px;
+  height: $atlas-hero-total-height;
+}
+
+#atlas-hero{
+  height: $atlas-hero-total-height;
+
+  #atlas-hero-content{
+    height: $atlas-hero-total-height;
+    padding-top: 120px;
+    @include img-retina( '../images/v2/atlas-hero-bg', png, 1605px, $atlas-hero-total-height);
+    background-position: center 0;
+  }
+
+  #hero-headline{
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

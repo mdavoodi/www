@@ -22,23 +22,14 @@ $hero-total-height: 790px;
   z-index: 100;
 }
 
-#hero-mask{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+#home-hero-mask{
   height: $hero-total-height;
 }
 
-#hero{
-  position: fixed;
-  z-index: 1;
-  color: white;
-  width: 100%;
+#home-hero{
   height: $hero-total-height;
 
-  #hero-content{
-    position: relative;
-    z-index: 1;
+  #home-hero-content{
     height: $hero-total-height;
     @include img-retina( '../images/v2/home-hero-bg', png, 1604px, 790px);
     background-position: center 0;
@@ -217,7 +208,6 @@ $hero-total-height: 790px;
 #section-cta{
   padding: 200px 0;
 }
-
 
 .bnr{
   margin-top: 120px;
