@@ -10,6 +10,7 @@
 // #site-wra:           z-index 2
 // #atlas-bg:           z-index 3
 // .atlas-features-fle: z-index 4
+// #product-bg:         z-index 5
 // --------------------------------------------------
 
 $hero-total-height: 790px;
@@ -50,6 +51,13 @@ $hero-total-height: 790px;
     overflow: hidden;
 }
 
+.section{
+  .section-footer{
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
 #section-why{
   padding-bottom: 400px;
 
@@ -69,18 +77,27 @@ $hero-total-height: 790px;
 // Atlas Section
 #section-atlas{
   position: relative;
-  padding: 300px 0;
+  padding: 300px 0 200px;
 
-  #atlas-bg{
+  .skew-bg{
     position: absolute;
-    top: 0;
     left: 50%;
-    height: 1200px;
     width: 2400px;
     margin-left: -1200px;
-    background-color: $blue-dark;
     z-index: 3;
     @include skewY(-30deg);
+  }
+
+  #atlas-bg{
+    top: 0;
+    height: 1200px;
+    background-color: $blue-dark;
+  }
+
+  #atlas-bg-2{
+    top: 1200px;
+    height: 400px;
+    background-color: $blue-darkest;
   }
 
   #atlas-header-cta{
@@ -121,4 +138,30 @@ $hero-total-height: 790px;
 }
 
 // End Atlas Section
+// ----------------------------
+
+
+// ----------------------------
+// Product Section
+#section-product{
+  position: relative;
+  padding: 300px 0 200px;
+
+  #product-bg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2400px;
+    height: 1000px;
+    margin-left: -1200px;
+    z-index: 3;
+    @include skewY(15deg);
+    background-color: $white;
+  }
+
+  
+
+}
+
+// End Product Section
 // ----------------------------
