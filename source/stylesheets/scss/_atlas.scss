@@ -25,3 +25,10 @@ $atlas-hero-total-height: 706px;
     margin: 0 auto;
   }
 }
+
+#atlas-why{
+  position: relative;
+  padding: $large-pad 0;
+  background-color: $white;
+  z-index: 2;
+}

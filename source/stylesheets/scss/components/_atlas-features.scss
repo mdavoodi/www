@@ -1,0 +1,35 @@
+//
+// Atlas features
+// /index and /atlas
+// -------------------------------------------------
+
+
+.atlas-features{
+
+  &.white{
+    color: $black;
+    .atlas-features-header{
+      h2,p{
+        color: $black;
+      }
+    }
+    .atlas-features-flex{
+      .atlas-feature{
+
+      }
+    }
+  }
+
+  .atlas-features-header{
+    text-align: center;
+  }
+  .atlas-features-flex{
+    display: flex;
+    flex-wrap: wrap;
+    .atlas-feature{
+      width: 50%;
+      padding-left: 96px;
+      box-sizing: border-box;
+    }
+  }
+}

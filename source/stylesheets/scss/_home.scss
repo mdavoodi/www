@@ -7,11 +7,11 @@
 // - add to it as you change z-index values
 //
 // #hero:                        z-index 1
-// #section-why:                 z-index 2
+// #home-why:                 z-index 2
 // #atlas-bg:                    z-index 3
-// .section-atlas > container:   z-index 4
+// .home-atlas > container:   z-index 4
 // #product-bg:                  z-index 5
-// #section-product > container: z-index 6
+// #home-product > container: z-index 6
 // --------------------------------------------------
 
 $hero-total-height: 790px;
@@ -49,7 +49,7 @@ $hero-total-height: 790px;
   }
 }
 
-#section-why{
+#home-why{
   padding-bottom: 400px;
 
   >.container{
@@ -71,7 +71,7 @@ $hero-total-height: 790px;
 
 // ----------------------------
 // Atlas Section
-#section-atlas{
+#home-atlas{
   position: relative;
   padding: 300px 0 200px;
 
@@ -117,20 +117,6 @@ $hero-total-height: 790px;
     position: relative;
     z-index: 4;
   }
-
-  .atlas-section-header{
-      text-align: center;
-  }
-
-  .atlas-features-flex{
-    display: flex;
-    flex-wrap: wrap;
-    .atlas-feature{
-      width: 50%;
-      padding-left: 96px;
-      box-sizing: border-box;
-    }
-  }
 }
 
 // End Atlas Section
@@ -139,7 +125,7 @@ $hero-total-height: 790px;
 
 // ----------------------------
 // Product Section
-#section-product{
+#home-product{
   position: relative;
   padding: 160px 0 400px;
 
@@ -178,7 +164,7 @@ $hero-total-height: 790px;
 
 // ----------------------------
 // Customer Section
-#section-customers{
+#home-customers{
   padding: 400px 0 200px;
 
   .customers-section-header{
@@ -205,7 +191,7 @@ $hero-total-height: 790px;
 
 // ----------------------------
 // Cta Section
-#section-cta{
+#home-cta{
   padding: 200px 0;
 }
 
