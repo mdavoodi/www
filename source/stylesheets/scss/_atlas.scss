@@ -19,10 +19,52 @@ $atlas-hero-total-height: 706px;
     background-position: center 0;
   }
 
-  #hero-headline{
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
+  #atlas-headline{
+
+  }
+
+  #pipeline-wrap{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 120px;
+
+    #pipeline-graphic{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 266px;
+      height: 306px;
+      @include img-retina( '../images/v2/atlas-graphic', png, 266px, 306px);
+      background-position: center 0;
+    }
+
+    .pipeline-step{
+      position: absolute;
+      width: 80px;
+
+      &.pstep-1{
+        top: 200px;
+        left: -100px;
+        text-align: right;
+      }
+      &.pstep-2{
+        top: 200px;
+        left: 290px;
+      }
+      &.pstep-3{
+        top: 110px;;
+        left: 290px;
+      }
+      &.pstep-4{
+        top: 120px;;
+        left: -110px;
+        text-align: right;
+      }
+      &.pstep-5{
+        top: -25px;;
+        left: 160px;
+      }
+    }
   }
 }
 
