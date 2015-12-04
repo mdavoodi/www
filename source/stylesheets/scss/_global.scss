@@ -35,14 +35,6 @@ h3, h4{
   font-weight: $font-weight-reg;
 }
 
-//an alternative color for buttons in the doc body
-.btn-serf{
-  color: $white !important;
-  background-color: $btn-color;
-  border-radius: $btn-border-radius;
-  //@include box-shadow( $shadow );
-}
-
 .highlight{
   margin-bottom: 18px;
 }
