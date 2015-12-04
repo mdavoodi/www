@@ -2,6 +2,16 @@
 // Home
 // --------------------------------------------------
 
+// --------------------------------------------------
+// ZINDEX KEY
+// - add to it as you change z-index values
+//
+// #hero:               z-index 1
+// #site-wra:           z-index 2
+// #atlas-bg:           z-index 3
+// .atlas-features-fle: z-index 4
+// --------------------------------------------------
+
 $hero-total-height: 790px;
 
 #hero-mask{
@@ -32,3 +42,83 @@ $hero-total-height: 790px;
     margin: 0 auto;
   }
 }
+
+
+#site-wrap{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#section-why{
+  padding-bottom: 400px;
+
+  .why-section-header{
+      text-align: center;
+  }
+
+  p{
+    color: $blue-light;
+  }
+  .why-feature{
+    padding-left: 120px;
+  }
+}
+
+// ----------------------------
+// Atlas Section
+#section-atlas{
+  position: relative;
+  padding: 300px 0;
+
+  #atlas-bg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1200px;
+    width: 2400px;
+    margin-left: -1200px;
+    background-color: $blue-dark;
+    z-index: 3;
+    @include skewY(-30deg);
+  }
+
+  #atlas-header-cta{
+    position: absolute;
+    top: -257px;
+    left: 50%;
+    margin-left: -222px;
+    width: 445px;
+    height: 514px;
+    text-align: center;
+    padding-top: 120px;
+    z-index: 3;
+    @include img-retina('../images/v2/atlas-cta-bg', png, 445px, 514px);
+
+    h3{
+      margin-bottom: 40px;
+    }
+  }
+
+  >.container{
+    position: relative;
+    z-index: 4;
+  }
+
+  .atlas-section-header{
+      text-align: center;
+  }
+
+  .atlas-features-flex{
+    display: flex;
+    flex-wrap: wrap;
+    .atlas-feature{
+      width: 50%;
+      padding-left: 96px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+// End Atlas Section
+// ----------------------------

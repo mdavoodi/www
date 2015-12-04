@@ -57,6 +57,14 @@ $nav-margin-right: 12px;
   }
 }
 
+@mixin skewY($skew) {
+	-webkit-transform: skewY($skew);
+  -moz-transform: skewY($skew);
+  -ms-transform: skewY($skew);
+  -o-transform: skewY($skew);
+  transform: skewY($skew);
+}
+
 //
 // -------------------------
 @mixin anti-alias() {
