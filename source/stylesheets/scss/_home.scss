@@ -6,14 +6,21 @@
 // ZINDEX KEY
 // - add to it as you change z-index values
 //
-// #hero:               z-index 1
-// #site-wra:           z-index 2
-// #atlas-bg:           z-index 3
-// .atlas-features-fle: z-index 4
-// #product-bg:         z-index 5
+// #hero:                        z-index 1
+// #section-why:                 z-index 2
+// #atlas-bg:                    z-index 3
+// .section-atlas > container:   z-index 4
+// #product-bg:                  z-index 5
+// #section-product > container: z-index 6
 // --------------------------------------------------
 
 $hero-total-height: 790px;
+
+#site-wrap{
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
 
 #hero-mask{
   position: relative;
@@ -30,11 +37,11 @@ $hero-total-height: 790px;
   height: $hero-total-height;
 
   #hero-content{
-      position: relative;
-      z-index: 1;
-      height: $hero-total-height;
-      @include img-retina( '../images/v2/home-hero-bg', png, 1604px, 790px);
-      background-position: center 0;
+    position: relative;
+    z-index: 1;
+    height: $hero-total-height;
+    @include img-retina( '../images/v2/home-hero-bg', png, 1604px, 790px);
+    background-position: center 0;
   }
 
   #hero-headline{
@@ -42,13 +49,6 @@ $hero-total-height: 790px;
     max-width: 80%;
     margin: 0 auto;
   }
-}
-
-
-#site-wrap{
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
 }
 
 .section{
@@ -60,6 +60,11 @@ $hero-total-height: 790px;
 
 #section-why{
   padding-bottom: 400px;
+
+  >.container{
+    position: relative;
+    z-index: 4;
+  }
 
   .why-section-header{
       text-align: center;
@@ -145,7 +150,7 @@ $hero-total-height: 790px;
 // Product Section
 #section-product{
   position: relative;
-  padding: 300px 0 200px;
+  padding: 160px 0 400px;
 
   #product-bg{
     position: absolute;
@@ -155,13 +160,62 @@ $hero-total-height: 790px;
     height: 1000px;
     margin-left: -1200px;
     z-index: 3;
-    @include skewY(15deg);
+    @include skewY(10deg);
     background-color: $white;
   }
 
-  
+  h2, h3{
+    color: $black;
+    text-align: center;
+  }
 
+  #products-display{
+    position: relative;
+    z-index: 6;
+
+    .descs{
+    }
+    p{
+      color: $black;
+    }
+  }
 }
-
 // End Product Section
+// ----------------------------
+
+
+
+// ----------------------------
+// Customer Section
+#section-customers{
+  padding: 400px 0 200px;
+
+  .customers-section-header{
+      text-align: center;
+      margin-bottom: 80px;
+  }
+
+  .customer-wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .customer-item{
+    width: 25%;
+    height: 120px;
+    @include img-retina( '../images/v2/atlas-customer', png, 144px, 27px);
+    background-position: center center;
+
+  }
+}
+// End Customer Section
+// ----------------------------
+
+
+// ----------------------------
+// Cta Section
+#section-cta{
+  padding: 200px 0;
+}
+// End Cta Section
 // ----------------------------
