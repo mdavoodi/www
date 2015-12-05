@@ -181,8 +181,26 @@ $atlas-hero-total-height: 706px;
   padding: $large-pad 0;
 }
 
-#section-os{
+#atlas-os{
   text-align: center;
+  margin-bottom: $large-pad;
+
+  > .container{
+      //padding-top: $large-pad;
+      padding-bottom: $large-pad;
+      //border-top: 1px solid $dft-brdr-clr;
+      border-bottom: 1px solid $dft-brdr-clr;
+  }
+
+  h1,p{
+    max-width: $small-body;
+    margin: 0 auto;
+  }
+
+  h1{
+    margin-bottom: $small-pad;
+  }
+
   .open-source-graphic{
     display: flex;
     flex-flow: row wrap;
@@ -199,7 +217,105 @@ $atlas-hero-total-height: 706px;
     li{
       width: 25%;
       font-size: 34px;
-      //flex-grow: 1;
+
+      a{
+        color: $white;
+        text-shadow: 3px 2px 4px $black;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+#atlas-info{
+  margin-bottom: $large-pad;
+
+  h1{
+    margin: $med-pad 0 $med-pad;
+    text-align: center;
+  }
+
+  h3{
+    margin-top: 0;
+  }
+
+  .info-split{
+    .atlas-info{
+      padding: 0 $small-pad $small-pad;
+
+      &:first-child{
+        border-right: 1px solid $dft-brdr-clr;
+      }
+    }
+  }
+
+  .info-full{
+    > div{
+      padding: $small-pad;
+    }
+  }
+
+  > .container{
+    > .row{
+      .row{
+        border-bottom: 1px solid $dft-brdr-clr;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+
+      >.col-md-10{
+          border: 1px solid $dft-brdr-clr;
+      }
+    }
+  }
+}
+
+#atlas-customers{
+
+  h1{
+    text-align: center;
+    margin: $med-pad;
+  }
+
+  > .container{
+    .col-md-10{
+      border: 1px solid $dft-brdr-clr;
+    }
+  }
+
+  .customers{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $small-pad;
+
+    li{
+      width: 25%;
+      height: 120px;
+      @include img-retina( '../images/v2/atlas-customer', png, 144px, 27px);
+      background-position: center center;
+      border-left: 1px solid $dft-brdr-clr;
+      border-right: 1px solid $dft-brdr-clr;
+      border-bottom: 1px solid $dft-brdr-clr;
+
+      &:not(:nth-child(-n+4)){
+        border-bottom: none;
+      }
+
+      &:nth-child(4n){
+        border-right: none;
+      }
+
+      &:nth-child(1n){
+        border-left: none;
+      }
     }
   }
 }

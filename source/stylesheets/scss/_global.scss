@@ -53,6 +53,11 @@ pre {
   margin-bottom: 0;
 }
 
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
 //all below styles are overriding corrections for below (min-width: 992px)
 //below (min-width: 992px) these styles change
 .navbar-nav {
