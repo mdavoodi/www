@@ -106,7 +106,7 @@ $atlas-hero-total-height: 706px;
     margin-bottom: $large-pad;
   }
 
-  &.automation-1{
+  .automation-1{
     .feature-graphic{
       width: 236px;
       height: 230px;
@@ -114,16 +114,64 @@ $atlas-hero-total-height: 706px;
     }
   }
 
-  &.automation-2{
+  .automation-2{
     .feature-graphic{
-      width: 236px;
-      height: 230px;
+      width: 317px;
+      height: 237px;
       @include img-retina( '../images/v2/atlas-graphic-automation-2', png, 317px, 237px);
     }
   }
 
+  .flexibility{
+    .feature-graphic{
+      width: 1004px;
+      height: 398px;
+      @include img-retina( '../images/v2/atlas-graphic-flexibility', png, 1004px, 398px);
+    }
+  }
 
-  .feature-content{
+  .security-1{
+    .feature-graphic{
+      width: 452px;
+      height: 109px;
+      @include img-retina( '../images/v2/atlas-graphic-security-1', png, 452px, 109px);
+    }
 
+    .feature-content{
+      padding-top: 72px;
+    }
+  }
+
+  .security-2{
+    .feature-graphic{
+      width: 117px;
+      height: 117px;
+      @include img-retina( '../images/v2/atlas-graphic-security-2', png, 117px, 117px);
+    }
+  }
+
+  .security-3{
+    .feature-graphic{
+      width: 117px;
+      height: 96px;
+      @include img-retina( '../images/v2/atlas-graphic-security-3', png, 117px, 96px);
+    }
+  }
+
+  .security-4{
+    .feature-graphic{
+      width: 117px;
+      height: 96px;
+      @include img-retina( '../images/v2/atlas-graphic-security-4', png, 117px, 96px);
+    }
+  }
+
+
+  .t-right{
+    .feature-content{
+      p{
+        text-align: right
+      }
+    }
   }
 }
