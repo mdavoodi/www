@@ -4,7 +4,7 @@
 // -------------------------------------------------
 
 
-.atlas-list{
+.atlas-highlights{
 
   &.white{
     color: $black;
@@ -20,13 +20,13 @@
     }
   }
 
-  .atlas-list-header{
+  .atlas-highlights-header{
     text-align: center;
   }
-  .atlas-list-flex{
+  .atlas-highlights-flex{
     display: flex;
     flex-wrap: wrap;
-    .atlas-list-item{
+    .atlas-highlights-item{
       width: 50%;
       padding-left: 96px;
       box-sizing: border-box;

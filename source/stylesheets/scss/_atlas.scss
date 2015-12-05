@@ -175,3 +175,31 @@ $atlas-hero-total-height: 706px;
     }
   }
 }
+
+.black-wrap{
+  background-color: $black;
+  padding: $large-pad 0;
+}
+
+#section-os{
+  text-align: center;
+  .open-source-graphic{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 618px;
+    height: 158px;
+    margin: $small-pad auto;
+    padding-top: 20px;
+    @include img-retina( '../images/v2/open-source-bg', png, 618px, 158px);
+    list-style-type: none;
+    padding: 0;
+
+    li{
+      width: 25%;
+      font-size: 34px;
+      //flex-grow: 1;
+    }
+  }
+}
