@@ -26,7 +26,7 @@ $atlas-hero-total-height: 706px;
   #pipeline-wrap{
     position: relative;
     margin-top: 150px;
-    margin-left: 120px;
+    margin-left: 180px;
 
     #pipeline-graphic{
       position: absolute;
@@ -79,6 +79,7 @@ $atlas-hero-total-height: 706px;
   @include img-retina( '../images/v2/atlas-feature-bg', png, 100%, 481px);
   background-color: $black;
   background-position: center top;
+  box-shadow: inset 0 12px 8px rgba($black, .1);
 
   >.container{
     position: relative;
@@ -96,4 +97,33 @@ $atlas-hero-total-height: 706px;
 #atlas-feature-content{
   background-color: $white;
   color: $black;
+
+  h1{
+    margin: $med-pad 0;
+  }
+
+  .feature-graphic{
+    margin-bottom: $large-pad;
+  }
+
+  &.automation-1{
+    .feature-graphic{
+      width: 236px;
+      height: 230px;
+      @include img-retina( '../images/v2/atlas-graphic-automation-1', png, 236px, 230px);
+    }
+  }
+
+  &.automation-2{
+    .feature-graphic{
+      width: 236px;
+      height: 230px;
+      @include img-retina( '../images/v2/atlas-graphic-automation-2', png, 317px, 237px);
+    }
+  }
+
+
+  .feature-content{
+
+  }
 }

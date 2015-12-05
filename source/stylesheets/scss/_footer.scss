@@ -12,6 +12,7 @@ body.page-sub{
   position: relative;
   padding: 64px 0;
   color: $black;
+  z-index: 99;
 
   > .container{
     position: relative;

@@ -16,12 +16,6 @@
 
 $hero-total-height: 790px;
 
-#site-wrap{
-  position: relative;
-  overflow: hidden;
-  z-index: 100;
-}
-
 #home-hero-mask{
   height: $hero-total-height;
 }
@@ -54,7 +48,6 @@ $hero-total-height: 790px;
 
   >.container{
     position: relative;
-    z-index: 4;
   }
 
   .why-section-header{
