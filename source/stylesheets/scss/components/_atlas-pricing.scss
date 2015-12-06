@@ -1,0 +1,92 @@
+//
+// Pricing
+// -------------------------------------------------
+
+
+.pricing{
+  display: flex;
+
+  .col{
+    flex: 1;
+    padding: $small-pad $xsmall-pad;
+    border-left: 1px solid $blue;
+
+    &:first-child{
+      border-left: none;
+    }
+
+    &.enterprise{
+      border: 1px solid $blue;
+    }
+
+    .pricing-header{
+      text-align: center;
+      h1{
+        display: inline-block;
+      }
+
+      p{
+          margin: 0;
+      }
+
+      .hbtn{
+        margin: $small-pad 0 $med-pad;
+      }
+    }
+
+    .pricing-number{
+      position: relative;
+      &:before{
+        content: "$";
+        position: absolute;
+        top: -4px;
+        left: -10px;
+        font-size: 14px;
+      }
+    }
+
+    .pricing-features{
+      margin: 0 20px;
+
+      ul{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: $xsmall-pad +10;
+
+        &.ul-2{
+          li{
+            &:before{
+              background-position: 0 -11px;
+            }
+          }
+        }
+
+        &.ul-3{
+          li{
+            &:before{
+              background-position: 0 -22px;
+            }
+          }
+        }
+
+        li{
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: $small-pad;
+
+          &:before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            display: inline-block;
+            width: 13px;
+            height: 11px;
+            margin-right: 12px;
+            @include img-retina( '../images/v2/atlas-check-sprite', png, 13px, 33px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -277,7 +277,6 @@ $atlas-hero-total-height: 706px;
 }
 
 #atlas-customers{
-
   h1{
     text-align: center;
     margin: $med-pad;
@@ -317,5 +316,21 @@ $atlas-hero-total-height: 706px;
         border-left: none;
       }
     }
+  }
+}
+
+#atlas-contact{
+  margin: $large-pad 0;
+
+  .form-header{
+    text-align: center;
+  }
+}
+
+#atlas-pricing{
+  margin: $large-pad 0;
+
+  .section-header{
+    text-align: center;
   }
 }
