@@ -20,13 +20,17 @@ $project-logo-pad-left: 8px;
 
 //hashicorp button classes
 .hbtn{
-  padding: 10px 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 6px 12px;
 
   &.orange{
-    display: inline-block;
     color: $black;
     background-color: $orange;
-    text-transform: uppercase;
-    padding: 10px 4px;
+  }
+
+  &.blue{
+    color: $white;
+    background-color: $blue;
   }
 }
