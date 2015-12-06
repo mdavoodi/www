@@ -1,0 +1,60 @@
+//
+// Contact Form
+// /index and /atlas
+// -------------------------------------------------
+
+
+.contact-form{
+  margin: $large-pad 0;
+  .form-header{
+    text-align: center;
+  }
+
+  form{
+    display: flex;
+    flex-flow: row wrap;
+    width: $small-body;
+    margin: 0 auto;
+
+    input, textarea{
+      flex-grow: 1;
+      background-color: #171D29;
+      border: none;
+      margin-top: $xsmall-pad;
+      padding: 10px;
+
+      @include placeholder {
+        color: $white;
+      }
+    }
+
+    .left, .right, .bottom{
+      display: flex;
+    }
+
+    .left, .right{
+      flex: 1 auto;
+      flex-direction: column;
+    }
+
+    .bottom{
+      flex: 1 100%;
+      justify-content: center;
+      margin-top: $xsmall-pad;
+      text-align: center;
+
+      .hbtn{
+        border: none;
+        padding: 8px 80px;
+      }
+    }
+
+    .left{
+      // padding-right: $xsmall-pad;
+    }
+
+    .right{
+      padding-left: $xsmall-pad;
+    }
+  }
+}

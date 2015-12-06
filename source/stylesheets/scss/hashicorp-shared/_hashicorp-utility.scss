@@ -95,3 +95,10 @@ $nav-margin-right: 12px;
 @mixin bez-1-transition{
   @include transition( all 300ms ease-in-out );
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
