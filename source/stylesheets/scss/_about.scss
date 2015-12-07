@@ -67,8 +67,38 @@ body.about{
     padding: 120px 0;
   }
 
-  .history{
+  #about-who-we{
     padding-top: 80px;
+  }
+
+  #about-tao{
+    background-color: $white;
+    color: $black;
+    text-align: center;
+
+    h1{
+      display: inline-block;
+      line-height: $font-size-xl;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    p{
+      color: $blue-black;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    a{
+      display: inline-block;
+      vertical-align: top;
+      height: $font-size-xl;
+      line-height: $font-size-xl;
+      padding: 0 80px;
+      margin-top: 20px;
+      margin-left: $small-pad;
+      font-size: 20px;
+    }
   }
 
   .team{
