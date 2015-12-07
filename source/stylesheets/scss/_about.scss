@@ -3,8 +3,33 @@
 // --------------------------------------------------
 
 
+$about-hero-total-height: 600px;
 
 body.about{
+
+  #template-hero-mask{
+    height: $about-hero-total-height;
+    margin-top: -100px;
+  }
+
+  #template-hero{
+    height: $about-hero-total-height;
+
+    #template-hero-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $about-hero-total-height;
+      @include img-retina( '../images/v2/about-hero-bg', png, 1280px, $about-hero-total-height);
+      background-position: cover;
+
+      .template-headline{
+        width: $template-h4-width;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
 
   article{
     padding: 120px 0;
