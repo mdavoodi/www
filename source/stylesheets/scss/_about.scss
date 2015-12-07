@@ -53,6 +53,14 @@ body.about{
       @include img-retina( '../images/v2/about-right-graphic', png, 452px, 630px);
       opacity: .5;
     }
+
+    .about-pic{
+      width: 518px;
+      height: 370px;
+      margin-top: $med-pad + 10;
+      margin-left: $small-pad;
+      @include img-retina( '../images/v2/about-pic', png, 518px, 370px);
+    }
   }
 
   article{
