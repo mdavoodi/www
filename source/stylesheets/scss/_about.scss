@@ -31,6 +31,30 @@ body.about{
     }
   }
 
+  .subhero-site-wrap{
+    overflow: visible;
+
+    .left-graphic{
+      position: absolute;
+      left: -50px;
+      top: -400px;
+      width: 451px;
+      height: 685px;
+      @include img-retina( '../images/v2/about-left-graphic', png, 451px, 685px);
+      opacity: .5;
+    }
+
+    .right-graphic{
+      position: absolute;
+      right: 0;
+      top: -360px;
+      width: 452px;
+      height: 630px;
+      @include img-retina( '../images/v2/about-right-graphic', png, 452px, 630px);
+      opacity: .5;
+    }
+  }
+
   article{
     padding: 120px 0;
   }
