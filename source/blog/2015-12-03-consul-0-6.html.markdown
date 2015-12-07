@@ -169,10 +169,9 @@ for details.
 
 Consul's DNS interface is a popular part of Consul because it's simple to use and
 integrates with nearly any existing application. A common request is to expose
-more features via the DNS interface, such as queries using multiple tags. Also, we
-wanted to expose the new network tomography system via DNS. Unfortunately, the
-syntax of DNS queries is fairly limited so it's hard to add complex new
-functionality.
+more features via DNS, such as queries using multiple tags. Also, we wanted to expose
+the new network tomography system via DNS. Unfortunately, the syntax of DNS queries is
+fairly limited so it's hard to add complex new functionality.
 
 Consul 0.6 introduces prepared queries which allow a complex query to be defined
 via a new HTTP API endpoint and then exposed via DNS. Here's an example query
@@ -224,14 +223,15 @@ More details are available in the [prepared query HTTP endpoint documentation](h
 ## Enhanced ACLs
 
 Consul users often have several different teams sharing the same infrastructure
-so a common request has been richer ACLs to support for mixed environments.
-Consul 0.6 provides several enhanced ACLs to support these uses.
+so a common request has been richer ACLs to support mixed environments. Consul
+0.6 provides several enhanced ACLs to support these uses.
 
 Service ACLs have been extended to cover service discovery, not just service
-registration. HTTP clients would need to provide a capable token in order to
-read service information. By registering prepared queries with a capable token
-and providing the secure prepared query ID to clients, service discovery read
-ACLs can be enabled even when using the DNS interface.
+registration. With read ACLs enabled, HTTP clients would need to provide a
+capable token in order to read service information. By registering prepared
+queries with a capable token and providing the secure prepared query ID to
+clients, service discovery read ACLs can be enabled even when using the DNS
+interface.
 
 New ACLs have also been added to control access to firing user events and for
 keyring operations.
@@ -313,7 +313,7 @@ instability.
 
 Consul 0.6 has been designed to "upshift" automatically as servers and clients
 are upgraded to start taking advantage of network tomography features and new
-protocol features such as the new TCP fallback probe. For most configurations,
+protocol features such as the TCP fallback probe. For most configurations,
 upgrading will just require an agent restart with the new binary.
 
 Prepared queries introduce new internal commands and must not be used until
