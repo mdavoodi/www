@@ -13,7 +13,7 @@
 
     input, textarea{
       flex-grow: 1;
-      background-color: #171D29;
+      background-color: $dark-input-bg;
       border: none;
       margin-top: $xsmall-pad;
       padding: 10px;

@@ -1,4 +1,9 @@
 footer{
+  .container{
+    padding-top: $med-pad;
+    border-top: 1px solid $dft-brdr-clr;
+  }
+
   .navbar-brand{
     .logo{
       font-size: 20px;
@@ -46,7 +51,7 @@ footer{
   }
 
   .legal{
-    margin-top: $small-pad;
+    margin: $small-pad 0;
     opacity: .7;
   }
 }
@@ -60,7 +65,7 @@ footer{
   }
 
   input{
-    background-color: #171D29;
+    background-color: $dark-input-bg;
     @include placeholder {
       color: $white;
     }
