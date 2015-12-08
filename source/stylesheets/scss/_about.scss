@@ -69,6 +69,7 @@ body.about{
 
   #about-who-we{
     padding-top: 80px;
+    background-color: $black;
   }
 
   #about-tao{
@@ -81,6 +82,7 @@ body.about{
       line-height: $font-size-xl;
       font-weight: 600;
       margin: 20px 0;
+      letter-spacing: -1px;
     }
 
     p{
@@ -106,19 +108,26 @@ body.about{
       margin-bottom: 40px;
     }
 
-    img{
-      display: block;
+    .founder-img{
+      height: 280px;
       max-width: 100%;
-      height: auto;
-      font-size: 0;
       margin-bottom: $baseline;
+      background-size: contain !important;
+
+      &.founder-m{
+        background: url('../images/people/mh.jpg') 0 0 no-repeat;
+      }
+
+      &.founder-a{
+        background: url('../images/people/ad.jpg') 0 0 no-repeat;
+      }
     }
 
     h4{
       margin-bottom: $baseline/2;
       font-size: 20px;
       line-height: 1.1em;
-      color: $black;
+      color: $white;
     }
 
     p{
@@ -139,10 +148,11 @@ body.about{
     }
 
     .hiring{
-      height: 331px;
+      height: 280px;
       text-align: center;
       background-color: $black;
       color: $white;
+      border: 1px solid $blue;
 
       h2{
         margin: 58px 0 0 0 ;
@@ -275,16 +285,16 @@ body.about{
   }
 }
 
-@media (min-width: 1200px) {
-  body.about{
-    .team{
-      .hiring{
-        height: 331px;
-
-        h2{
-          margin-top: 60px;
-        }
-      }
-    }
-  }
-}
+// @media (min-width: 1200px) {
+//   body.about{
+//     .team{
+//       .hiring{
+//         height: 331px;
+//
+//         h2{
+//           margin-top: 60px;
+//         }
+//       }
+//     }
+//   }
+// }
