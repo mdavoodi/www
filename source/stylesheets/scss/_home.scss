@@ -147,14 +147,40 @@ $hero-total-height: 790px;
     text-align: center;
   }
 
+  #products-header{
+    position: relative;
+    z-index: 10;
+  }
+
   #products-display{
     position: relative;
     z-index: 6;
+    //padding-left: 250px;
 
-    .descs{
-    }
     p{
       color: $black;
+    }
+    h3{
+      text-align: left;
+    }
+  }
+
+  #products-nav{
+    position: absolute;
+    top: $small-pad;
+    left: $small-pad;
+    background-color: $white;
+
+    .vagrant{
+      a{
+        &:hover{
+          color: $orange;
+        }
+      }
+    }
+    a{
+      color: $black;
+      font-size: $font-size-m;
     }
   }
 }

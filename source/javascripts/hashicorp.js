@@ -78,6 +78,22 @@
           $productsNav: $('#products-nav li')
         }
 
+        this.owlProps = {
+          stopOnHover : true,
+          slideSpeed: 600,
+          pagination: false,
+          goToFirstSpeed : 2000,
+          singleItem : true,
+          autoHeight : true,
+          transitionStyle: 'backSlide',
+          afterInit: function(){
+            _this.prevSlideClass = _this.ui.$productsNav[this.currentItem].getAttribute('data-prod');
+          },
+          afterAction : function(elem, num){
+            _this.handleSliderUpdate(this.currentItem);
+          }
+        }
+
         _this.initSlider();
         _this.addEventListeners();
       },
@@ -95,22 +111,7 @@
       initSlider: function(){
         var _this = this;
 
-        this.ui.$slider.owlCarousel({
-          //autoPlay : 3000,
-          stopOnHover : true,
-          slideSpeed: 600,
-          pagination: false,
-          goToFirstSpeed : 2000,
-          singleItem : true,
-          autoHeight : true,
-          transitionStyle: 'backSlide',
-          afterInit: function(){
-            _this.prevSlideClass = _this.ui.$productsNav[this.currentItem].getAttribute('data-prod');
-          },
-          afterAction : function(elem, num){
-            _this.handleSliderUpdate(this.currentItem);
-          }
-        });
+        this.ui.$slider.owlCarousel(_this.owlProps);
       },
 
       handleSliderUpdate: function(num){
