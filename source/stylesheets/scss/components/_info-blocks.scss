@@ -9,7 +9,10 @@
   }
 
   .info-split{
+    display: flex;
+
     .atlas-info{
+      flex: 1 auto;
       padding: 0 $small-pad $small-pad;
 
       &:first-child{
@@ -34,8 +37,8 @@
         }
       }
 
-      >.col-md-10{
-          border: 1px solid $dft-brdr-clr;
+      >.bdr{
+          //border: 1px solid $dft-brdr-clr;
       }
     }
   }
