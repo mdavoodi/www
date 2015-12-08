@@ -3,31 +3,11 @@
 // --------------------------------------------------
 
 
-$about-hero-total-height: 600px;
-
 body.about{
-
-  #template-hero-mask{
-    height: $about-hero-total-height;
-    margin-top: -100px;
-  }
-
-  #template-hero{
-    height: $about-hero-total-height;
-
-    #template-hero-content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: $about-hero-total-height;
-      @include img-retina( '../images/v2/about-hero-bg', png, 1280px, $about-hero-total-height);
+  .template-hero{
+    .template-hero-content{
+      @include img-retina( '../images/v2/about-hero-bg', png, 1280px, $template-hero-height);
       background-position: cover;
-
-      .template-headline{
-        width: $template-h4-width;
-        margin: 0 auto;
-        text-align: center;
-      }
     }
   }
 
@@ -177,80 +157,6 @@ body.about{
     }
 
   } //team
-
-  .quotes{
-    .quotes{
-      .quote{
-        i{
-          // height: 64px;
-          margin-bottom: 10px;
-        }
-        p{
-          font-size: 16px;
-          color: $black;
-          // .lato-light;
-        }
-      }
-
-      .temp-big {
-        p {
-          font-size: 28px;
-        }
-      }
-
-      .q1{
-        i{
-          width: 186px;
-          //background: url(/images/quote1.png) 0 0 no-repeat;
-          @include img-retina(/images/quote1, png, 186px, 64px);
-        }
-      }
-      .q2{
-        i{
-          width: 127px;
-          //background: url(/images/quote2.png) 0 0 no-repeat;
-          @include img-retina(/images/quote2, png, 127px, 64px);
-        }
-      }
-      .q3{
-        i{
-          width: 151px;
-          //background: url(/images/quote3.png) 0 0 no-repeat;
-          @include img-retina(/images/quote3, png, 151px, 64px);
-        }
-      }
-    }
-  } //press
-
-
-  .more-team{
-    h3{
-      margin-bottom: 25px;
-    }
-
-    h4{
-      margin-bottom: 10px;
-    }
-
-    img{
-      display: block;
-      max-width: 100%;
-      height: auto;
-      font-size: 0;
-      margin-bottom: 10px;
-    }
-
-    .more{
-      margin-bottom: 80px;
-    }
-
-  } //more-team
-
-  .press{
-    .kit{
-      text-align: center;
-    }
-  } //press
 
 }
 
