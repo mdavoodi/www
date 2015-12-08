@@ -1,0 +1,273 @@
+//
+// About
+// --------------------------------------------------
+
+
+$about-hero-total-height: 600px;
+
+body.tao{
+
+  #template-hero-mask{
+    height: $about-hero-total-height;
+    margin-top: -100px;
+  }
+
+  #template-hero{
+    height: $about-hero-total-height;
+
+    #template-hero-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $about-hero-total-height;
+      @include img-retina( '../images/v2/tao-hero-bg', png, 813px, 317px);
+      background-position: center bottom;
+
+      .template-headline{
+        width: $template-h4-width;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .subhero-site-wrap{
+    background-color: $white;
+    color: $black;
+  }
+
+  section{
+    padding: 120px 0;
+  }
+
+  #about-who-we{
+    padding-top: 80px;
+    background-color: $black;
+  }
+
+  #about-tao{
+    background-color: $white;
+    color: $black;
+    text-align: center;
+
+    h1{
+      display: inline-block;
+      line-height: $font-size-xl;
+      font-weight: 600;
+      margin: 20px 0;
+      letter-spacing: -1px;
+    }
+
+    p{
+      color: $blue-black;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    a{
+      display: inline-block;
+      vertical-align: top;
+      height: $font-size-xl;
+      line-height: $font-size-xl;
+      padding: 0 80px;
+      margin-top: 20px;
+      margin-left: $small-pad;
+      font-size: 20px;
+    }
+  }
+
+  .team{
+    h2{
+      margin-bottom: 40px;
+    }
+
+    .founder-img{
+      height: 280px;
+      max-width: 100%;
+      margin-bottom: $baseline;
+      background-size: contain !important;
+
+      &.founder-m{
+        background: url('../images/people/mh.jpg') 0 0 no-repeat;
+      }
+
+      &.founder-a{
+        background: url('../images/people/ad.jpg') 0 0 no-repeat;
+      }
+    }
+
+    h4{
+      margin-bottom: $baseline/2;
+      font-size: 20px;
+      line-height: 1.1em;
+      color: $white;
+    }
+
+    p{
+      margin-bottom: $baseline/2;
+      font-size: 15px;
+      line-height: 1.5em;
+    }
+
+    .twitter-about{
+      display: inline-block;
+      width: 39px;
+      height: 34px;
+      i{
+        width: 39px;
+        height: 34px;
+        // .twitter-about();
+      }
+    }
+
+    .hiring{
+      height: 280px;
+      text-align: center;
+      background-color: $black;
+      color: $white;
+      border: 1px solid $blue;
+
+      h2{
+        margin: 58px 0 0 0 ;
+        padding: 30px;
+        text-align: center;
+        color: $white;
+        font-size: 36px;
+        // .lato-bold;
+      }
+
+      a{
+        box-shadow: 2px 2px 0px 1px rgba(27, 145, 224, 0.5);
+
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+
+    .row.team-2, .row.team-3{
+      margin-top: 40px;
+    }
+
+  } //team
+
+  .quotes{
+    .quotes{
+      .quote{
+        i{
+          // height: 64px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 16px;
+          color: $black;
+          // .lato-light;
+        }
+      }
+
+      .temp-big {
+        p {
+          font-size: 28px;
+        }
+      }
+
+      .q1{
+        i{
+          width: 186px;
+          //background: url(/images/quote1.png) 0 0 no-repeat;
+          @include img-retina(/images/quote1, png, 186px, 64px);
+        }
+      }
+      .q2{
+        i{
+          width: 127px;
+          //background: url(/images/quote2.png) 0 0 no-repeat;
+          @include img-retina(/images/quote2, png, 127px, 64px);
+        }
+      }
+      .q3{
+        i{
+          width: 151px;
+          //background: url(/images/quote3.png) 0 0 no-repeat;
+          @include img-retina(/images/quote3, png, 151px, 64px);
+        }
+      }
+    }
+  } //press
+
+
+  .more-team{
+    h3{
+      margin-bottom: 25px;
+    }
+
+    h4{
+      margin-bottom: 10px;
+    }
+
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      font-size: 0;
+      margin-bottom: 10px;
+    }
+
+    .more{
+      margin-bottom: 80px;
+    }
+
+  } //more-team
+
+  .press{
+    .kit{
+      text-align: center;
+    }
+  } //press
+
+}
+
+@media (max-width: 768px) {
+  body.about{
+    .press{
+      .quotes{
+        .quote{
+          margin-bottom: 60px;
+        }
+      }
+      .kit{
+        a{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  body.about{
+    .team{
+      .hiring{
+        height: 270px;
+
+        h2{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+// @media (min-width: 1200px) {
+//   body.about{
+//     .team{
+//       .hiring{
+//         height: 331px;
+//
+//         h2{
+//           margin-top: 60px;
+//         }
+//       }
+//     }
+//   }
+// }
