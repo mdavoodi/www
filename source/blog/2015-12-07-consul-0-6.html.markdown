@@ -323,6 +323,10 @@ A manual step may be required to migrate Raft log data if you are upgrading from
 a Consul version prior to 0.5.1. Please see the [upgrade process documentation](https://consul.io/docs/upgrade-specific.html)
 for details.
 
+Consul will refuse to start if there are multiple private IPs available, so
+if this is the case you will need to configure Consul's advertise or bind
+addresses before upgrading.
+
 As described above, any users with the `acl_default_policy` set to `deny` must
 update their policies to handle the service enforcement prior to upgrade.
 Otherwise, service discovery will be denied by ACLs. This also applies to the
