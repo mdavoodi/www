@@ -18,6 +18,34 @@ body.tao{
   section{
     padding: 120px 0;
   }
+
+  #tao-features{
+    .graphic{
+      margin-top: $med-pad;
+      width: 100%;
+      background-position: center 0;
+    }
+
+    .t1{
+      .graphic{
+        height: 233px;
+        @include img-retina( '../images/v2/tao-1', png, 233px, 184px);
+      }
+    }
+
+    .t2{
+      .graphic{
+        height: 303px;
+        @include img-retina( '../images/v2/tao-2', png, 303px, 177px);
+      }
+    }
+    .t3{
+      .graphic{
+        height: 262px;
+        @include img-retina( '../images/v2/tao-3', png, 251px, 262px);
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
