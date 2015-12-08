@@ -1,0 +1,42 @@
+.info{
+  h1{
+    margin: $med-pad 0 $med-pad;
+    text-align: center;
+  }
+
+  h3{
+    margin-top: 0;
+  }
+
+  .info-split{
+    .atlas-info{
+      padding: 0 $small-pad $small-pad;
+
+      &:first-child{
+        border-right: 1px solid $dft-brdr-clr;
+      }
+    }
+  }
+
+  .info-full{
+    > div{
+      padding: $small-pad;
+    }
+  }
+
+  > .container{
+    > .row{
+      .row{
+        border-bottom: 1px solid $dft-brdr-clr;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+
+      >.col-md-10{
+          border: 1px solid $dft-brdr-clr;
+      }
+    }
+  }
+}
