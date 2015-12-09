@@ -20,36 +20,92 @@ body.tao{
   }
 
   #tao-features{
-    .graphic{
+
+    .content{
+      margin-bottom: $large-pad;
+    }
+
+    .graphic i{
+      display: block;
       margin-top: $med-pad;
       width: 100%;
       background-position: center 0;
     }
 
     .t1{
-      .graphic{
+      .graphic i{
         height: 233px;
         @include img-retina( '../images/v2/tao-1', png, 233px, 184px);
       }
     }
 
     .t2{
-      .graphic{
-        height: 303px;
+      .graphic i{
+        height: 177px;
         @include img-retina( '../images/v2/tao-2', png, 303px, 177px);
       }
     }
     .t3{
-      .graphic{
+      .graphic i{
         height: 262px;
         @include img-retina( '../images/v2/tao-3', png, 251px, 262px);
+      }
+    }
+    .t4{
+      .graphic i{
+        height: 151px;
+        @include img-retina( '../images/v2/tao-4', png, 274px, 151px);
+      }
+    }
+    .t5{
+      .graphic i{
+        height: 165px;
+        @include img-retina( '../images/v2/tao-5', png, 299px, 165px);
+      }
+    }
+    .t6{
+      .graphic i{
+        height: 297px;
+        @include img-retina( '../images/v2/tao-6', png, 180px, 297px);
+      }
+    }
+    .t7{
+      .graphic i{
+        height: 224px;
+        @include img-retina( '../images/v2/tao-7', png, 235px, 224px);
+      }
+    }
+    .t8{
+      .graphic i{
+        height: 190px;
+        @include img-retina( '../images/v2/tao-8', png, 283px, 190px);
       }
     }
   }
 }
 
 @media (max-width: 768px) {
+  #tao-features{
+    .row{
+      display: flex;
+      flex-flow: column;
+      text-align: center;
 
+      > div{
+        flex: 1 auto;
+      }
+    }
+
+    .graphic{
+      order: 1;
+      margin-bottom: $xsmall-pad;
+    }
+
+    .content{
+      order: 2;
+      margin-bottom: $med-pad !important;
+    }
+  }
 }
 
 @media (min-width: 992px) {
