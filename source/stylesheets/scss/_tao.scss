@@ -41,8 +41,8 @@ body.tao{
 
     .t2{
       .graphic i{
-        height: 177px;
-        @include img-retina( '../images/v2/tao-2', png, 303px, 177px);
+        height: 168px;
+        @include img-retina( '../images/v2/tao-2', png, 285px, 168px);
       }
     }
     .t3{
@@ -80,6 +80,14 @@ body.tao{
         height: 190px;
         @include img-retina( '../images/v2/tao-8', png, 283px, 190px);
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #tao-features{
+    .content{
+      margin-bottom: $xl-pad !important;
     }
   }
 }
