@@ -4,7 +4,18 @@
 // -------------------------------------------------
 
 
+.white{
+  .contact-form{
+    form{
+      input, textarea{
+        background-color: $light-input-bg;
+      }
+    }
+  }
+}
+
 .contact-form{
+
   form{
     display: flex;
     flex-flow: row wrap;
