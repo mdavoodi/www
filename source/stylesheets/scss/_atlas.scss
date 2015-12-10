@@ -255,7 +255,7 @@ $atlas-hero-total-height: 706px;
 
   h1{
     text-align: center;
-  }  
+  }
 }
 
 #atlas-customers{
@@ -265,7 +265,7 @@ $atlas-hero-total-height: 706px;
   }
 
   > .container{
-    .col-md-10{
+    .row{
       border: 1px solid $dft-brdr-clr;
     }
   }
