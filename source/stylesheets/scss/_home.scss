@@ -67,6 +67,21 @@ $hero-total-height: 790px;
   }
   .why-feature{
     padding-left: 120px;
+    margin-bottom: 45px;
+
+    &.fast{
+      @include img-retina('../images/v2/icon-fast', png, 67px, 40px);
+    }
+
+    &.efficient{
+      @include img-retina('../images/v2/icon-efficient', png, 59px, 47px);
+      background-position: 16px 0;
+    }
+
+    &.secure{
+      @include img-retina('../images/v2/icon-secure', png, 37px, 43px);
+      background-position: 28px 0;
+    }
   }
 }
 
