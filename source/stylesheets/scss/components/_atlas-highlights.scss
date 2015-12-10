@@ -13,23 +13,51 @@
         color: $black;
       }
     }
-    .atlas-features-flex{
-      .atlas-feature{
-
+    .atlas-highlights-flex{
+      .atlas-highlights-item{
+        &.automate{
+          @include img-retina( '../images/v2/atlas-icon-bl-automate', png, 67px, 50px);
+        }
+        &.self{
+          @include img-retina( '../images/v2/atlas-icon-bl-self', png, 75px, 52px);
+        }
+        &.pipeline{
+          @include img-retina( '../images/v2/atlas-icon-bl-pipeline', png, 74px, 44px);
+        }
+        &.collab{
+          @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 78px, 67px);
+        }
       }
     }
   }
 
   .atlas-highlights-header{
     text-align: center;
+    margin-bottom: $small-pad;
   }
   .atlas-highlights-flex{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 70px;
+
     .atlas-highlights-item{
       width: 50%;
-      padding-left: 96px;
+      padding-left: 110px;
+      padding-right: 70px;
       box-sizing: border-box;
+      background-position: 0 30px;
+      &.automate{
+        @include img-retina( '../images/v2/atlas-icon-automate', png, 67px, 50px);
+      }
+      &.self{
+        @include img-retina( '../images/v2/atlas-icon-self', png, 75px, 51px);
+      }
+      &.pipeline{
+        @include img-retina( '../images/v2/atlas-icon-pipeline', png, 75px, 44px);
+      }
+      &.collab{
+        @include img-retina( '../images/v2/atlas-icon-collab', png, 73px, 61px);
+      }
     }
   }
 }
