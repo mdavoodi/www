@@ -9,12 +9,20 @@
     form{
       input, textarea{
         background-color: $light-input-bg;
+
+        @include placeholder {
+          color: $black;
+        }
       }
     }
   }
 }
 
 .contact-form{
+
+  .form-header{
+    text-align: center;
+  }
 
   form{
     display: flex;
