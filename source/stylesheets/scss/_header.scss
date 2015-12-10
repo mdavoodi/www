@@ -6,8 +6,9 @@
 
 #header, footer {
   background-color: transparent;
+  overflow: hidden;
+  
   .navbar-brand {
-    float: none;
     padding-left: 0;
     .logo{
       color: $white;
