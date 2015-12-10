@@ -13,20 +13,13 @@ body.marketing{
   }
 
   .subhero-site-wrap{
-    padding-top: 120px;
-    background-color: $white;
-    color: $black;
   }
 
   section{
     padding-bottom: 120px;
-  }
 
-  #template-sub-hero{
-    text-align: center;
-
-    .content{
-      margin-bottom: $large-pad;
+    &.first{
+      padding-top: 120px;
     }
   }
 }

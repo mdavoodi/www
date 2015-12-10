@@ -1,6 +1,6 @@
 .info{
-  h1{
-    margin: $med-pad 0 $med-pad;
+  h2{
+    margin: 0 0 $small-pad;
     text-align: center;
   }
 
@@ -11,12 +11,15 @@
   .info-split{
     display: flex;
 
-    .atlas-info{
+    .info-block{
       flex: 1 auto;
-      padding: 0 $small-pad $small-pad;
+      padding: $small-pad;
+      text-align: left;
+      border-left: 1px solid $dft-brdr-clr;
+      border-right: 1px solid $dft-brdr-clr;
 
       &:first-child{
-        border-right: 1px solid $dft-brdr-clr;
+        border-right: none;
       }
     }
   }
@@ -24,16 +27,24 @@
   .info-full{
     > div{
       padding: $small-pad;
+      text-align: left;
+      border-left: 1px solid $dft-brdr-clr;
+      border-right: 1px solid $dft-brdr-clr;
     }
   }
 
   > .container{
     > .row{
       .row{
+        border-top: 1px solid $dft-brdr-clr;
         border-bottom: 1px solid $dft-brdr-clr;
 
         &:last-child{
-          border-bottom: none;
+          border-top: none;
+
+          .info-block{
+            border-bottom: none;
+          }
         }
       }
 

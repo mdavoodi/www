@@ -23,3 +23,27 @@
     }
   }
 }
+
+section.template{
+  text-align: center;
+
+  &.white{
+    background-color: $white;
+    color: $black;
+  }
+
+  &.simple{
+    .row{
+      border: none;
+        border-bottom: 1px solid $dft-brdr-clr;
+        padding-bottom: $med-pad;
+    }
+
+    .col-md-8{
+    }
+  }
+
+  &.info{
+
+  }
+}
