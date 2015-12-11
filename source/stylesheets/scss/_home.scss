@@ -195,7 +195,7 @@ $hero-total-height: 790px;
 
       // assign product classes color
       @for $i from 0 to length($name-list) {
-        $color: nth($colors-list, $i+1);
+        $color: nth($colors-dark-list, $i+1);
         $name: unquote(nth($name-list, $i+1));
         &.#{$name}{
           .explore{
@@ -215,7 +215,7 @@ $hero-total-height: 790px;
   }
 
   #products-nav{
-    width: 330px;
+    width: 330px; //    width: 260px;
     position: absolute;
     top: $small-pad;
     left: $small-pad;
@@ -224,17 +224,18 @@ $hero-total-height: 790px;
 
     // assign product classes color
     @for $i from 0 to length($name-list) {
-      $color: nth($colors-list, $i+1);
+      $color: nth($colors-dark-list, $i+1);
       $name: unquote(nth($name-list, $i+1));
       .#{$name}{
         &.active{
           a{
-            color: darken($color, 10%);
+            color: $color;
           }
         }
         a{
           &:hover{
-            color: darken($color, 10%);
+            color: $color;
+            text-decoration: none;
           }
         }
       }
@@ -256,11 +257,11 @@ $hero-total-height: 790px;
 
       // assign product classes backround-color
       @for $i from 0 to length($name-list) {
-        $color: nth($colors-list, $i+1);
+        $color: nth($colors-dark-list, $i+1);
         $name: unquote(nth($name-list, $i+1));
         &.#{$name}.active{
           i{
-            background-color: darken($color, 10%);
+            background-color: $color;
           }
         }
       }
@@ -372,3 +373,20 @@ $hero-total-height: 790px;
 }
 // End Cta Section
 // ----------------------------
+
+@media (max-width: 1170px) {
+  #products{
+    #products-nav{
+      width: 260px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #products{
+    #products-nav{
+      width: 160px;
+      left: 0;
+    }
+  }
+}
