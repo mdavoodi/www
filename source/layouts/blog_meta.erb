@@ -1,4 +1,4 @@
-<a href="<%= article.url %>"><h1><%= article.title %></h1></a>
+<a class="article-title" href="<%= article.url %>"><h1><%= article.title %></h1></a>
 <div class="meta-wrap">
     <span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
     <span class="meta author"><%= article.data.author || "HashiCorp" %></span>

@@ -45,12 +45,6 @@ $project-logo-pad-left: 8px;
     border: 1px solid $white;
   }
 
-  &.plain{
-    background-color: transparent;
-    border: none;
-    padding-left: 0;
-  }
-
   &.orange{
     color: $black;
     background-color: $orange;
@@ -60,19 +54,45 @@ $project-logo-pad-left: 8px;
     color: $white;
     background-color: $blue;
   }
+
+  &.plain{
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+
+    &.blue{
+      color: $blue;
+    }
+
+    &.careted{
+      &:hover{
+        text-decoration: none;
+        .hcaret{
+          right: -3px;
+          @include transition(right .1s ease-in);
+        }
+      }
+    }
+  }
 }
 
 .hcaret{
   display: inline-block;
   position: absolute;
   -webkit-transform: rotate(135deg);
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   top: 50%;
   right: 0;
-  margin-top: -7px;
+  margin-top: -6px;
   border-top: 2px solid $black;
   border-left: 2px solid $black;
+  @include transition(right .1s ease-in);
+
+  &.blue{
+    border-top: 2px solid $blue;
+    border-left: 2px solid $blue;
+  }
 
   &.vagrant{
     border-top: 2px solid $vagrant-color;

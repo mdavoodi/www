@@ -19,7 +19,7 @@ pageable: true
 				<div class="col-md-8 col-sm-12">
 					<%= partial "layouts/blog_meta", locals: {article: article} %>
 					<p><%= article.summary %></p>
-					<a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
+					<a class="hbtn plain blue careted read-more" href="<%= article.url %>">read more<span class="hcaret small blue"></span></a>
 				</div>	<!-- span -->
 			</div>	<!-- row -->
 		</article>
@@ -35,4 +35,3 @@ pageable: true
 		<% end %>
 	</div>
 </div> <!-- container -->
-
