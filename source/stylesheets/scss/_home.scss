@@ -30,8 +30,7 @@ $hero-total-height: 790px;
       color: $blue;
     }
 
-    .brand{
-      font-weight: 400;
+    .brand-hashi{
       color: $white;
     }
 
@@ -143,7 +142,7 @@ $hero-total-height: 790px;
 // Product Section
 #products{
   position: relative;
-  padding: 250px 0 300px;
+  padding: 200px 0;
 
   #product-bg{
     position: absolute;
