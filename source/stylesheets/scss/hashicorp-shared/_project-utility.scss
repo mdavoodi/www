@@ -63,14 +63,16 @@ $project-logo-pad-left: 8px;
     &.blue{
       color: $blue;
     }
+  }
 
-    &.careted{
-      &:hover{
-        text-decoration: none;
-        .hcaret{
-          right: -3px;
-          @include transition(right .1s ease-in);
-        }
+  &.careted{
+    &:hover{
+      text-decoration: none;
+      .hcaret{
+        -moz-transform: translate(3px, -2px) rotate(135deg);
+        -webkit-transform: translate(3px, -2px) rotate(135deg);
+        transform: translate(3px, -2px) rotate(135deg);
+        @include transition(all .1s ease-in);
       }
     }
   }
@@ -78,16 +80,15 @@ $project-logo-pad-left: 8px;
 
 .hcaret{
   display: inline-block;
-  position: absolute;
-  -webkit-transform: rotate(135deg);
+  -moz-transform: translate(0, -2px) rotate(135deg);
+  -webkit-transform: translate(0, -2px) rotate(135deg);
+  transform: translate(0, -2px) rotate(135deg);
   width: 9px;
   height: 9px;
-  top: 50%;
-  right: 0;
-  margin-top: -6px;
+  margin-left: 3px;
   border-top: 2px solid $black;
   border-left: 2px solid $black;
-  @include transition(right .1s ease-in);
+  @include transition(all .1s ease-in);
 
   &.blue{
     border-top: 2px solid $blue;
