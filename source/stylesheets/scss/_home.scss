@@ -143,7 +143,7 @@ $hero-total-height: 790px;
 // Product Section
 #products{
   position: relative;
-  padding: 160px 0 400px;
+  padding: 250px 0 300px;
 
   #product-bg{
     position: absolute;
@@ -157,7 +157,11 @@ $hero-total-height: 790px;
     background-color: $white;
   }
 
-  h2, h3{
+  h1{
+    margin-bottom: $med-pad;
+  }
+
+  h1, h2, h3{
     color: $black;
     text-align: center;
   }
@@ -170,32 +174,109 @@ $hero-total-height: 790px;
   #products-display{
     position: relative;
     z-index: 6;
-    //padding-left: 250px;
+
+    img{
+      margin: $small-pad 0;
+    }
 
     p{
       color: $black;
+      font-family: $font-family-open-sans;
+      line-height: 1.8em;
     }
+
+    .descs-btns{
+      margin-top: $small-pad;
+
+      a{
+        &:last-child{
+          margin-left: $xsmall-pad;
+        }
+      }
+
+      // assign product classes color
+      @for $i from 0 to length($name-list) {
+        $color: nth($colors-list, $i+1);
+        $name: unquote(nth($name-list, $i+1));
+        &.#{$name}{
+          .explore{
+            color: #{$color};
+          }
+        }
+      }
+
+      .explore{
+        &:hover{
+          color: $black;
+        }
+      }
+    }
+
     h3{
       text-align: left;
     }
   }
 
   #products-nav{
+    width: 330px;
     position: absolute;
     top: $small-pad;
     left: $small-pad;
     background-color: $white;
+    border-right: 1px solid rgba($black, .05);
 
-    .vagrant{
-      a{
-        &:hover{
-          color: $orange;
+    // assign product classes color
+    @for $i from 0 to length($name-list) {
+      $color: nth($colors-list, $i+1);
+      $name: unquote(nth($name-list, $i+1));
+      .#{$name}{
+        &.active{
+          a{
+            color: darken($color, 10%);
+          }
+        }
+        a{
+          &:hover{
+            color: darken($color, 10%);
+          }
         }
       }
     }
+
+    li{
+      position: relative;
+      text-align: right;
+      padding-right: 40px;
+      margin: 16px 0;
+
+      i{
+        position: absolute;
+        top: -3px;
+        right: -1px;
+        width: 3px;
+        height: 100%;
+      }
+
+      // assign product classes backround-color
+      @for $i from 0 to length($name-list) {
+        $color: nth($colors-list, $i+1);
+        $name: unquote(nth($name-list, $i+1));
+        &.#{$name}.active{
+          i{
+            background-color: darken($color, 10%);
+          }
+        }
+      }
+    }
+
     a{
       color: $black;
       font-size: $font-size-m;
+      line-height: $font-size-m;
+
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 }

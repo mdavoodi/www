@@ -52,7 +52,7 @@
     <div class="container">
       <%= partial "layouts/atlas-highlights" %>
       <div class="row atlas-section-footer section-footer">
-        <a href="#">learn more</a>
+        <a class="hbtn lrg" href="#">learn more</a>
       </div>
     </div> <!-- /.container -->
   </section><!-- /#home-atlas -->
@@ -63,7 +63,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12">
-            <h2>HashiCorp Products</h2>
+            <h1>HashiCorp Products</h1>
           </div>
           <div class="col-lg-12 col-md-12">
             <ul id="products-nav" class="clearfix">
@@ -103,6 +103,18 @@
                   <span>Vault</span>
                 </a>
               </li>
+              <li class="nomad" data-prod="nomad">
+                <a href="#nomad">
+                  <i></i>
+                  <span>Nomad</span>
+                </a>
+              </li>
+              <li class="otto" data-prod="otto">
+                <a href="#otto">
+                  <i></i>
+                  <span>Otto</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -112,19 +124,21 @@
     <div id="products-display" class="slider atlas">
       <div class="vagrant container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Vagrant</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/vagrant-logo.png" alt="Vagrant" height="100px"/>
             <p>Development environments made easy. Vagrant is the defacto way to create and configure lightweight, reproducible, and portable development environments with support for Virtualbox, VMware, Hyper-V, Docker, and more. Say goodbye to long onboarding times and "works on my machine" excuses.
             </p>
-            <a href="http://vagrantup.com" class="hbtn fill-btn white small">Explore Vagrant<span class="black-caret-right small"></span></a>
-            <a href="http://docs.vagrantup.com/v2/" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns vagrant">
+              <a href="http://vagrantup.com" class="hbtn plain careted explore">Explore Vagrant<span class="hcaret small vagrant"></span></a>
+              <a href="http://docs.vagrantup.com/v2/" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="packer container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Packer</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/packer-logo.png" alt="Packer" height="110px"/>
             <p>
               Packer is a tool for creating images for platforms such as Amazon AWS, OpenStack, VMware, VirtualBox, Docker,
               and more &mdash; all from a single source configuration.
@@ -134,55 +148,89 @@
               pre-baking deployment images, packaging applications, testing
               configuration management, and more.
             </p>
-            <a href="http://packer.io" class="hbtn fill-btn white small">Explore Packer<span class="black-caret-right small"></span></a>
-            <a href="http://www.packer.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns packer">
+              <a href="http://packer.io" class="hbtn plain careted explore">Explore Packer<span class="hcaret small packer"></span></a>
+              <a href="http://www.packer.io/docs/index.html" class="hbtn plain careted">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="serf container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Serf</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/serf-logo.png" alt="Serf" height="110px"/>
             <p>Serf is a lightweight and decentralized solution for cluster membership, failure detection, and orchestration. Serf is used as a building block for highly available systems, such as Consul.</p>
-            <a href="http://serfdom.io" class="hbtn fill-btn white small">Explore Serf<span class="black-caret-right small"></span></a>
-            <a href="http://www.serfdom.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns serf">
+              <a href="http://serfdom.io" class="hbtn plain careted explore">Explore Serf<span class="hcaret small serf"></span></a>
+              <a href="http://www.serfdom.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="consul container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Consul</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/consul-logo.png" alt="Consul" height="110px"/>
             <p>
               Consul is a distributed, highly-available, and multi-datacenter aware tool for service
               discovery, configuration, and orchestration. In the ever-growing
               datacenter, Consul enables rapid deployment, configuration, and
               maintenance of service-oriented architectures.
             </p>
-            <a href="http://consul.io" class="hbtn fill-btn white small">Explore Consul<span class="black-caret-right small"></span></a>
-            <a href="http://www.consul.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns consul">
+              <a href="http://consul.io" class="hbtn plain careted explore">Explore Consul<span class="hcaret small consul"></span></a>
+              <a href="http://www.consul.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="terraform container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Terraform</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/terraform-logo.png" alt="Terraform" height="110px"/>
             <p>Terraform allows you to effortlessly combine high-level system providers with your own or with each other – from physical and virtual servers to email
               and DNS providers. Once launched, Terraform safely and efficiently changes infrastructure as the configuration is evolved.</p>
-            <a href="http://terraform.io" class="hbtn fill-btn white small">Explore Terraform<span class="black-caret-right small"></span></a>
-            <a href="http://www.terraform.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns terraform">
+              <a href="http://terraform.io" class="hbtn plain careted explore">Explore Terraform<span class="hcaret small terraform"></span></a>
+              <a href="http://www.terraform.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="vault container">
         <div class="row">
-          <div class="descs col-md-offset-2 col-md-10 col-sm-offset-3 col-sm-9 col-xs-12">
-            <h3>Vault</h3>
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/vault-logo.png" alt="Vault" height="110px"/>
             <p>Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing.
               Vault handles leasing, key revocation, key rolling, and auditing.</p>
-            <a href="https://vaultproject.io" class="hbtn fill-btn white small">Explore Vault<span class="black-caret-right small"></span></a>
-            <a href="https://vaultproject.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+            <div class="descs-btns vault">
+              <a href="https://vaultproject.io" class="hbtn plain careted explore">Explore Vault<span class="hcaret small vault"></span></a>
+              <a href="https://vaultproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nomad container">
+        <div class="row">
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/nomad-logo.png" alt="Nomad" height="100px"/>
+            <p>Nomad provides a common workflow to deploy applications across an infrastructure. Developers use a declarative job specification to define how an application should be deployed and the resources it requires (CPU, memory, disk). Nomad accepts these jobs and finds available resources to run them. The scheduling algorithm ensures all constraints are satisfied, and packs as many applications on a host as possible to optimize resource utilization. Additionally, Nomad supports virtualized, containerized, or standalone applications running on all major operating systems giving it the flexibility to support a broad range of workloads.</p>
+            <div class="descs-btns nomad">
+              <a href="https://nomadproject.io" class="hbtn plain careted explore">Explore Nomad<span class="hcaret small nomad"></span></a>
+              <a href="https://nomadproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="otto container">
+        <div class="row">
+          <div class="descs col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-9 col-xs-12">
+            <img src="/images/v2/logos/otto-logo.png" alt="Otto" height="110px"/>
+            <p>Otto knows how to develop and deploy any application on any cloud platform, all controlled with a single consistent workflow to maximize the productivity of you and your team.</p>
+            <div class="descs-btns otto">
+              <a href="https://ottoproject.io" class="hbtn plain careted explore">Explore Otto<span class="hcaret small otto"></span></a>
+              <a href="https://ottoproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+            </div>
           </div>
         </div>
       </div>

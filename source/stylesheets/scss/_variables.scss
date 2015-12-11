@@ -37,6 +37,19 @@ $dft-brdr-clr:          #1A253F; // #26364C; // #313944;
 $dark-input-bg:         #171D29;
 $light-input-bg:        $blue-faint;
 
+$vagrant-color: #48b4fb;
+$packer-color: #7bc6b1;
+$serf-color: #E14B55;
+$consul-color: #694a9c;
+$terraform-color: #822ff7;
+$vault-color: #00D8FE; //#00a9c7;
+$nomad-color: #56cdad;
+$otto-color: $orange;
+
+// helper list for loops. ORDER IS IMPORTANT
+$colors-list: $vagrant-color $packer-color $serf-color $consul-color $terraform-color $vault-color $nomad-color $otto-color;
+$name-list: ('vagrant', 'packer', 'serf', 'consul', 'terraform', 'vault', 'nomad', 'otto');
+
 // Scaffolding
 // -------------------------
 $body-bg:               #fff;
