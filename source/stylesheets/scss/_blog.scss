@@ -6,23 +6,6 @@
 }
 
 body.blog {
-  color: $black;
-
-  p{
-    color: $light-black;
-    font-size: 18px;
-    font-family: $font-family-open-sans;
-    font-weight: $font-weight-reg;
-    line-height: 1.84em;
-    margin: 0 0 18px;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  section.inner-page,
-  section.page{
-    background-color: $white;
-  }
-
   #subheader{
     border-bottom: 1px solid $off-white;
     padding: $small-pad;
@@ -132,7 +115,7 @@ body.blog {
       color: $blue;
       text-decoration: none;
     }
-    
+
     h1 {
       font-size: $font-size-l;
       line-height: 1.2em;

@@ -6,22 +6,10 @@
 
 body.jobs{
 
-  .inner-page{
-    padding: 0;
-    background-color: transparent;
-  }
-
-  .inner-page-header{
-    .headline{
-      color: $white;
-      margin-bottom: $xsmall-pad + $small-pad;
-    }
-  }
-
   article{
     padding: 120px 0;
   }
-
+  
   #location{
     position: relative;
     width: 100%;

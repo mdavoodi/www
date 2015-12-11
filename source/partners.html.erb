@@ -15,9 +15,9 @@ page_title: Partners
 	</div>
 	<!-- page contents -->
 
-	<% 
+	<%
 		 myPartnersJSON = File.read("source/sipart.json");
-		 
+
 		 myPartners = JSON.parse(myPartnersJSON)
 		 %>
 
@@ -52,8 +52,8 @@ page_title: Partners
 				<div class="col-xs-12">
 					<h1>
 						Technology Partners
-					</h1>					
-				</div> 
+					</h1>
+				</div>
 			</div> <!-- row -->
 			<div class="row">
 				<div class="col-xs-12">
@@ -74,7 +74,7 @@ page_title: Partners
 			<div class="row">
 				<div class="si-content col-xs-12">
 					<h1> System Integration Partners </h1>
-				</div> 
+				</div>
 			</div> <!-- row -->
 			<div class="row">
 
@@ -86,12 +86,12 @@ page_title: Partners
 							<h2 class="pname"><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
 						</div> <!-- panel-heading -->
 						<div class="panel-body">
-							<a href=<%= val["url"] %>><div class="plogo"> 
+							<a href=<%= val["url"] %>><div class="plogo">
 									<i class=<%= val["logo"] %> ></i>
 							</div></a>
 							<p class="ptagline"> <%= val["tagline"] %> </p>
 							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
-							<p class="pldesc"> <%= val["ldesc"] %> </p> 
+							<p class="pldesc"> <%= val["ldesc"] %> </p>
 							<% if val["contact"] != "" %>
 							<span class="atbottom"><a class="hbtn outline-btn buttongray small contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> </a></span>
 							<% elsif val["contact"] == "" %>
@@ -99,7 +99,7 @@ page_title: Partners
 							<% end %>
 						</div> <!-- panel-body -->
 					</div>	   <!-- panel -->
-				</div>		  
+				</div>
 
 				<% if (index + 1) % 2 == 0 %>
 				    <div class="clearfix visible-sm-block"></div> <!-- add at multiples of 2 (sm) -->
@@ -123,5 +123,4 @@ page_title: Partners
 			</div>
 		</div> <!-- container -->
 	</article> <!-- sipart -->
-
-
+</section>

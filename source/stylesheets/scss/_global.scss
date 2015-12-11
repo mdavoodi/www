@@ -19,7 +19,7 @@ body {
 a{
   color: $blue;
 
-  &:hover{
+  &:hover, &:focus{
     color: $blue;
   }
 }
@@ -93,6 +93,30 @@ ul{
 
 .center {
   text-align: center;
+}
+
+section.inner-page,
+section.page{
+  padding: $small-pad 0 $med-pad;
+  background-color: $white;
+  color: $black;
+
+  li,p{
+    color: $light-black;
+    font-size: 18px;
+    font-family: $font-family-open-sans;
+    font-weight: $font-weight-reg;
+    line-height: 1.84em;
+    margin: 0 0 18px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .inner-page-header{
+    .headline{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
 
 //fixed grid below 992 to prevent smaller responsive sizes
