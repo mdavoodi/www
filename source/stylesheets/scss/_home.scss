@@ -318,38 +318,12 @@ $hero-total-height: 790px;
 .bnr{
   margin-top: 120px;
 
-  .col{
-    p{
-      line-height: 24px;
-    }
-  }
-
-  &.gray-bnr{
-    .col{
-      border: 1px solid $dft-brdr-clr;
-    }
-
-    p{
-      color: $blue-light;
-    }
-  }
-
-  &.orange-bnr{
-    .col{
-      border: 1px solid $orange;
-    }
-
-    p{
-      color: $blue-dark;
-    }
-  }
-
   &#cta-bnr{
     margin-top: 0;
     margin-bottom: 80px;
 
     .col{
-      padding: 60px 20px;
+      padding: 60px 40px;
     }
   }
 
@@ -359,16 +333,26 @@ $hero-total-height: 790px;
     border-radius: 3px;
   }
 
-  p{
+  h4{
+    display: inline-block;
     margin-bottom: 0px;
     margin-right: 30px;
-    font-size: $font-size-reg;
-    line-height: $font-size-reg;
-    font-family: $font-family-klav;
   }
 
-  p, a{
-    display: inline-block;
+  &.gray-bnr{
+    .col{
+      border: 1px solid $dft-brdr-clr;
+    }
+
+    color: $blue-light;
+  }
+
+  &.orange-bnr{
+    .col{
+      border: 1px solid $orange;
+    }
+
+    color: $blue-dark;
   }
 }
 // End Cta Section

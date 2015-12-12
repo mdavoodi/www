@@ -72,14 +72,21 @@ footer{
 
   input{
     background-color: $dark-input-bg;
+    line-height: 34px;
+    font-size: 13px;
+    color: $white;
     @include placeholder {
       color: $white;
     }
   }
 
   button{
+    height: 34px;
     background-color: $blue;
     color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
   }
 
   .input-group{

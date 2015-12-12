@@ -13,6 +13,7 @@ $project-logo-pad-left: 8px;
 @mixin project-a-style{
   color: $white;
   opacity: .75;
+  font-family: $font-family-klav;
 
   &:hover{
     color: $white;
@@ -29,6 +30,7 @@ $project-logo-pad-left: 8px;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
+  font-family: $font-family-klav;
   font-size: 18px;
   padding: 6px 12px;
   font-weight: 600;

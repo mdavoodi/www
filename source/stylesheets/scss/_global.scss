@@ -7,57 +7,32 @@ text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 }*/
 
-body {
+html, body {
   -webkit-font-smoothing: antialiased;
   color: $white;
   background-color: $black;
-  font-size: 15px;
-  font-family: $font-family-klav;
-  font-weight: 500;
+  font-family: $font-family-open-sans;
+  line-height: 1.5;
+  font-size: 100%;
 }
 
-a{
-  color: $blue;
-
-  &:hover, &:focus{
-    color: $blue;
-  }
-}
-
-i{
-  display: inline-block; 
-}
-
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-klav;
   font-weight: $font-weight-reg;
+  line-height: 1.25;
+  //margin-top: 1em;
+  margin-bottom: .5em;
 }
 
-h1{
-  font-size: $font-size-xl;
-  line-height: 42px;
-  font-family: $font-family-klav;
-  font-weight: $font-weight-reg;
-  margin-bottom: 24px;
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-h2{
-  font-size: $font-size-l;
-}
-
-h3{
-  font-size: $font-size-m;
-  line-height: 1.5em;
-}
-
-h4{
-  font-size: $font-size-sml;
-  line-height: 1.5em;
-}
-
-.highlight{
-  margin-bottom: 18px;
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 pre {
@@ -76,8 +51,38 @@ ul{
   padding-left: 0;
 }
 
-//all below styles are overriding corrections for below (min-width: 992px)
-//below (min-width: 992px) these styles change
+h1 { font-size: 3.5rem }
+h2 { font-size: 2.5rem }
+h3 { font-size: 2rem }
+h4 { font-size: 1.5rem }
+h5 { font-size: 1.25rem }
+h6 { font-size: 1rem }
+
+a{
+  color: $blue;
+
+  &:hover, &:focus{
+    color: $blue;
+  }
+}
+
+i{
+  display: inline-block;
+}
+
+// very important
+// hides fonts while typekit is loading
+.wf-loading {
+  visibility: hidden;
+}
+.wf-active, .wf-inactive {
+  visibility: visible;
+}
+
+.highlight{
+  margin-bottom: 18px;
+}
+
 .navbar-nav {
   margin: 0;
 }
@@ -110,9 +115,6 @@ section.page{
     font-size: 18px;
     font-family: $font-family-open-sans;
     font-weight: $font-weight-reg;
-    line-height: 1.84em;
-    margin: 0 0 18px;
-    -webkit-font-smoothing: antialiased;
   }
 
   .inner-page-header{
