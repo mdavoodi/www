@@ -1,333 +1,235 @@
+// partners
+
+// Media breakpoints (using BS 3.2 nomenclature)
+// @screen-sm-min: 768px;
+// @screen-md-min: 992px;
+// @screen-lg-min: 1200px;
 //
-// Jobs
-// --------------------------------------------------
+// @screen-xs-max: (@screen-sm-min - 1);
+// @screen-sm-max: (@screen-md-min - 1);
+// @screen-md-max: (@screen-lg-min - 1);
 
 
-
-body.jobs{
-
-  article{
-    padding: 120px 0;
+.partners {
+  .intropart {
+    background-color: #f7f7f9;
   }
-  
-  #location{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    padding: 0;
-    overflow: hidden;
-    background-color: $gray;
-    //box-shadow: inset -5px -5px 0 3px rgba(0,0,0,.2);
 
-    .map-text{
-      margin-top: 120px;
-      padding: 32px;
-      background-color: rgba(15, 16, 17, 0.8);
-      color: $white;
-      border-radius: 2px;
-      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+  .sipart {
+    background-color: #f7f7f9;
+    text-align: center;
 
-      h2{
-        //.lato-bold;
+    h1 {
+      color: $black;
+    }
+
+    .panel {
+      .panel-heading {
+        background-color: $gray;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 0px;
         color: $white;
-        font-size: 42px;
-        margin-bottom: 10px;
+        // .lato-light();
+      }
 
-        span{
-          //.lato-light;
+      img {
+        padding: 5px;
+      }
+      .panel-body {
+        i{
+          width: 200px;
+          height: 160px;
+
+          &.asteris{
+            .asteris-logo();
+          }
+          &.cheval{
+            .cheval-logo();
+          }
+          &.contsoln{
+            .contsoln-logo();
+          }
+          &.creationline{
+            .creationline-logo();
+          }
+          &.cynergypro{
+            .cynergypro-logo();
+          }
+          &.mustwin{
+            .mustwin-logo();
+          }
+          &.opencredo{
+            .opencredo-logo();
+          }
+          &.opex{
+            .opex-logo();
+          }
+          &.rean{
+            .rean-logo();
+          }
+          &.slalom{
+            .slalom-logo();
+          }
+          &.unifio{
+            .unifio-logo();
+          }
+          &.vibrato{
+            .vibrato-logo();
+          }
+          &.xebia{
+            .xebia-logo();
+          }
         }
       }
 
-      p{
+      p {
+        color: $black;
+      }
+
+      .atbottom {
+        vertical-align: bottom;
+      }
+
+      a.contactus {
+        margin-top: 20px;
+      }
+
+      .outline-btn:hover {
+        color: $black;
+      }
+    }
+  }
+
+  article {
+    padding: 80px 0;
+
+    &:first-child {
+      padding: 40px 0 80px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+  }
+
+  h1 {
+    padding: 0 0 60px 0;
+    color: @black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    // .lato-bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .meta-wrap{
+    position: relative;
+
+    a{
+      &:hover{
+        text-decoration: underline;
         color: $blue;
       }
-    } //map-text
-
-    #map-wrap{
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 1466px;
-      height: 500px;
-      margin-left: -733px;
     }
 
-    #map{
-      padding: 0;
-      height: 500px;
-      //background: url(/images/map.png) center 0 no-repeat;
-      @include img-retina('/images/map', png, 1466px, 500px);
-      background-position: center 0;
+    .meta{
+      position: relative;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-right: 18px;
+      color: $light-gray-text;
 
-      h2{
-        margin-bottom: 40px;
+      &.meta-tag {
+        margin-right: 0px;
       }
 
-      #pins{
-        position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -12px;
+        width: 3px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $lightgray;
+      }
 
-        .pinpoint{
-          position: absolute;
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-
-          &.p1{
-            top: 208px;
-            left: 470px;
-            -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-          }
-
-          &.p2{
-            top: 237px;
-            left: 402px;
-            -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-          }
-
-          &.bounce {
-            -webkit-animation-name: bounce;
-            -webkit-animation-fill-mode: both;
-            -webkit-animation-duration: 1s;
-            animation-name: bounce;
-            animation-fill-mode: both;
-            animation-duration: 1s;
-          }
-
-          i{
-            width: 29px;
-            height: 37px;
-            //background: url(/images/pin-red.png) center 0 no-repeat;
-            @include img-retina('/images/pin-red', png, 29px, 37px);
-            background-position: center 0;
-          }
+      &.last{
+        &::after{
+          display: none;
         }
-
-        .hq{
-          position: absolute;
-          top: 190px;
-          left: 322px;
-
-          .pulser{
-            position: relative;
-            .pulse {
-              position: absolute;
-              top: 25px;
-              left: -43px;
-              width: 112px;
-              height: 48px;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              border-radius: 50%;
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box;
-              box-sizing: border-box;
-            }
-
-            .pulse1 {
-              background-color: #c24141;
-              border: 7px solid #c24141;
-              -webkit-animation: pulse1 4s linear infinite;
-              -moz-animation: pulse1 4s linear infinite;
-              animation: pulse1 4s linear infinite;
-            }
-          }
-
-          i{
-            width:  38px;
-            height: 60px;
-            // background: url(/images/hashi-pin.png) center 0 no-repeat;
-            @include img-retina('/images/hashi-pin', png, 38px, 60px);
-            background-position: center 0;
-          }
-        }
-      } //pins
-
-    } //map
+      }
+    }
   }
 
+  pre {
+    margin-top: $base-line-height;
+  }
 
-  #positions{
-    position: relative;
-    background-color: $black;
+  .big-background {
+    background-color: $black !important;
     color: $white;
-    box-shadow: -5px -5px 0 1px rgba(0,0,0,.2);
 
-    h2{
+    .date {
       color: $white;
-      //.lato-regular;
-      letter-spacing: 1px;
-      text-align: center;
     }
 
-    #jobs{
-      .job{
-        position: relative;
-
-        &.active{
-          background-color: $white;
-        }
-
-        h4{
-          //.lato-bold;
-          letter-spacing: 1px;
-          font-size: 20px;
-          margin-bottom: 4px;
-        }
-
-        .panel-body{
-          padding-top: 0;
-          padding-bottom: 45px;
-
-          .col{
-            padding: 15px 0;
-          }
-
-          h4{
-            margin-bottom: 15px;
-          }
-
-          ul li{
-            margin-bottom: 6px;
-          }
-
-          .outline-btn{
-            text-transform: none !important;
-          }
-        }
-
-        a.trigger{
-          display: block;
-          padding: 25px 0;
-          border-bottom: 2px solid #000;
-
-          &:hover{
-            color: $white;
-          }
-
-          .location{
-            display: block;
-            padding: 0 0 0 18px;
-            font-size: 12px;
-            line-height: 15px;
-            color: $gray;
-            //background: url(/images/pin-white.png) 0 0 no-repeat;
-            @include img-retina('/images/pin-white', png, 11px, 14px);
-          }
-
-          .toggle{
-            position: absolute;
-            top: 30px;
-            right: 15px;
-            font-size: 50px;
-            //.lato-light;
-            color: $blue;
-            @include transition(all .3s ease-in);
-          }
-
-          &.active{
-            background-color: transparent;
-            border-bottom: 2px solid transparent;
-
-            h4{
-              color: $black;
-            }
-
-            .location{
-              //background: url(/images/pin-black.png) 0 0 no-repeat;
-              @include img-retina('/images/pin-black', png, 11px, 14px);
-            }
-
-            .toggle{
-              color: $black;
-              -moz-transform: rotate(45deg);
-              -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-              @include transition(all .3s ease-in);
-            }
-          }
-
-        }
-
-        .panel-body{
-          color: $black;
-          p,ul{
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  } //positions
-
-  #chat{
-    color: $black;
-    background-color: $blue;
-
-    h2{
-      //.lato-bold;
-      margin-bottom: 12px;
-      line-height: 55px;
-
-      .chat{
-        margin: 0 8px -8px 0;
-        width: 65px;
-        height: 45px;
-        //background: url(/images/chat-icon.png) 0 0 no-repeat;
-        @include img-retina('/images/chat-icon', png, 65px, 45px);
-      }
-    }
-
-    p{
-      font-size: 22px;
-      line-height: 26px;
-      color: $blue;
-    }
-
-  } //chat
-
-}	//body.jobs
-
-@media (max-width: 480px) {
-  body.jobs{
-    #chat{
-      h2{
-        .chat{
-          display: block;
-          margin-bottom: 8px;
-        }
-      }
+    img {
+      opacity: .7;
+      background: $black;
     }
   }
-}
 
-@media (max-width: 320px) {
-  body.jobs{
-    #positions{
-      #jobs{
-        .job{
-          a.trigger{
-            border-bottom: 1px solid #000;
-          }
+  .techparts {
+    color: $white;
+    background-color: $white;
+    text-align: center;
+
+    ul.techpart-logos {
+      position: relative;
+      width: 100%;
+      .clearfix;
+      padding: 0;
+
+      li {
+        float: left;
+        width: 33.3333%;
+        height: 128px;
+        overflow: hidden;
+
+        &.tpart{
+          @include img-retina( '../images/v2/techpart-sprite', png, 1130px, 256px);
         }
-      }
-    }
 
-    #location{
-      #map-wrap{
-        margin-left: -430px;
-      }
-
-      .map-text{
-        margin-top: 30px;
-        background-color: transparent;
-        box-shadow: none;
-
-        p{
-          margin-top: 130px;
-          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+        &.tp1 {
+          background-position: 0px 0;
         }
-      }
-    }
+        &.tp2 {
+          background-position: -380px 0;
+        }
+        &.tp3 {
+          background-position: -760px 0;
+        }
+        &.tp4 {
+          background-position: 0px -128px;
+        }
+        &.tp5 {
+          background-position: -380px -128px;
+        }
+        &.tp6 {
+          background-position: -760px -128px;
+        }
+      } // li
+    } //ul
   }
 }
