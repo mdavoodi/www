@@ -142,22 +142,12 @@ body.about{
         font-size: 36px;
         // .lato-bold;
       }
-
-      a{
-        box-shadow: 2px 2px 0px 1px rgba(27, 145, 224, 0.5);
-
-        &:hover{
-          color: $white;
-        }
-      }
     }
 
     .row.team-2, .row.team-3{
       margin-top: 40px;
     }
-
-  } //team
-
+  }
 }
 
 @media (max-width: 768px) {
