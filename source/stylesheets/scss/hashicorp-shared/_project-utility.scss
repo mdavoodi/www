@@ -21,6 +21,10 @@ $project-logo-pad-left: 8px;
   }
 }
 
+@mixin section-border-bottom{
+  border-bottom: 1px solid $off-white;
+}
+
 .brand-hashi{
   font-weight: $font-weight-medium;
 }

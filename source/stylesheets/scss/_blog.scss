@@ -7,7 +7,7 @@
 
 body.blog {
   #subheader{
-    border-bottom: 1px solid $off-white;
+    @include section-border-bottom();
     padding: 10px 0 $small-pad;
 
     #blogheader-meta{
@@ -263,7 +263,7 @@ article {
   }
 
   &.right-aligned {
-    border-bottom: 1px solid $off-white;
+    @include section-border-bottom();
   }
 
   &.support{

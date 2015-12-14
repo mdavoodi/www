@@ -51,17 +51,27 @@
 }
 
 .partners {
+
+  .bnr{
+    margin-top: 0;
+  }
+  .inner-page-header{
+    h1{
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    color: $black;
+    font-weight: 300;
+  }
+
   .intropart {
-    background-color: #f7f7f9;
+    @include section-border-bottom();
   }
 
   .sipart {
-    background-color: #f7f7f9;
     text-align: center;
-
-    h1 {
-      color: $black;
-    }
 
     .panel {
       .panel-heading {
@@ -157,13 +167,6 @@
   }
 
   h1 {
-    padding: 0 0 60px 0;
-    color: $black;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    // .lato-bold;
-    font-size: 35px;
-    line-height: 42px;
     text-align: center;
   }
 
@@ -236,6 +239,7 @@
     color: $white;
     background-color: $white;
     text-align: center;
+    @include section-border-bottom();
 
     ul.techpart-logos {
       position: relative;

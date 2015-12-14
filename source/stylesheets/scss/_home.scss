@@ -347,6 +347,14 @@ $hero-total-height: 790px;
     color: $blue-light;
   }
 
+  &.light-bnr{
+    .col{
+      border: 1px solid $off-white;
+    }
+
+    color: $light-black;
+  }
+
   &.orange-bnr{
     .col{
       border: 1px solid $orange;
