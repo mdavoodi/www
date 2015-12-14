@@ -33,6 +33,12 @@ footer{
     margin: 0;
   }
 
+  ul{
+    a{
+      font-family: $font-family-klav;
+    }
+  }
+
   .social-links{
     .twitter{
       float: left;
