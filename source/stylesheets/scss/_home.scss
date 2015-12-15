@@ -394,4 +394,59 @@ $hero-total-height: 790px;
       }
     }
   }
+
+  #products{
+    #products-display{
+      .descs{
+        text-align: center;
+      }
+    }
+
+    #products-header{
+      h1{
+        margin-bottom: $xsmall-pad;
+      }
+    }
+
+    #products-nav-wrap{
+      height: 80px;
+      overflow: hidden;
+    }
+
+    #products-nav{
+      height: 80px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-right: none;
+      //border-right: 1px solid rgba($black, .05);
+      background-color: transparent;
+
+      padding-left: $small-pad;
+      padding-right: $small-pad;
+      list-style: none;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      li{
+        display: inline-block;
+        float: none;
+        position: relative;
+        text-align: center;
+        padding-right: 0;
+        margin-right: $small-pad;
+
+        i{
+          display: none;
+          position: absolute;
+          top: -3px;
+          right: -1px;
+          width: 3px;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
