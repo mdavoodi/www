@@ -15,16 +15,24 @@
     .atlas-highlights-flex{
       .atlas-highlights-item{
         &.automate{
-          @include img-retina( '../images/v2/atlas-icon-bl-automate', png, 67px, 50px);
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-automate', png, 67px, 50px);
+          }
         }
         &.self{
-          @include img-retina( '../images/v2/atlas-icon-bl-self', png, 75px, 52px);
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-self', png, 75px, 52px);
+          }
         }
         &.pipeline{
-          @include img-retina( '../images/v2/atlas-icon-bl-pipeline', png, 74px, 44px);
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-pipeline', png, 74px, 44px);
+          }
         }
         &.collab{
-          @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 78px, 67px);
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 78px, 67px);
+          }
         }
       }
     }
@@ -99,13 +107,17 @@
 @media (max-width: 768px) {
   .atlas-highlights{
     .atlas-highlights-flex{
+      padding-left: 15px;
+      padding-right: 15px;
+      
       .atlas-highlights-item{
         padding-left: 0;
+        padding-right: 0;
         text-align: center;;
         margin-bottom: $small-pad;
 
         h2{
-            margin: 8px 0;
+          margin: 8px 0;
         }
 
         .graphic{

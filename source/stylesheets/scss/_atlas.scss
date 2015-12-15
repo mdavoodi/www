@@ -103,13 +103,10 @@ $atlas-hero-total-height: 706px;
 
   >.container{
     position: relative;
-    height: 481px;
   }
 
   h1{
-    position: absolute;
-    bottom: $med-pad;
-    left: 15px;
+    padding: $large-pad 0 $small-pad;
     font-weight: 700;
   }
 }
@@ -117,13 +114,14 @@ $atlas-hero-total-height: 706px;
 #atlas-feature-content{
   background-color: $white;
   color: $black;
+  padding-bottom: $large-pad;
 
   h1{
     margin: $med-pad 0;
   }
 
   .feature-graphic{
-    margin-bottom: $large-pad;
+    margin: 0 auto 30px
   }
 
   .automation-1{
@@ -143,6 +141,14 @@ $atlas-hero-total-height: 706px;
   }
 
   .flexibility{
+    h1{
+      margin-bottom: $xsmall-pad;
+    }
+
+    .feature-content{
+      margin-bottom: $med-pad;
+    }
+
     .feature-graphic{
       width: 1004px;
       height: 398px;
@@ -335,6 +341,59 @@ $atlas-hero-total-height: 706px;
       top: 94px;
     }
   }
+
+  #atlas-features-header{
+    h1{
+      text-align: center;
+    }
+  }
+
+  #atlas-feature-content{
+    text-align: center;
+
+    h1{
+      margin: $med-pad 0;
+    }
+
+    .feature-graphic{
+      margin: 0 auto 30px
+    }
+
+    .automation-1{
+      margin-bottom: $med-pad;
+    }
+
+    .automation-2{
+      margin-bottom: $med-pad;
+    }
+
+    .flexibility{
+      .feature-graphic{
+        background-size: 768px 304px;
+        margin-left: -30px;
+      }
+    }
+
+    .security{
+      text-align: left;
+
+      p{
+        padding-left:$xsmall-pad;
+      }
+
+      .security-2{
+        margin-top: 120px;
+      }
+
+      .security-3{
+        margin-top: 0;
+      }
+
+      .security-4{
+        margin-top: 80px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px){
@@ -355,10 +414,45 @@ $atlas-hero-total-height: 706px;
 
     #pipeline-wrap{
       position: relative;
-      left: auto;
+      left: $xsmall-pad;
       top: auto;
-      margin-top: $small-pad;
-      margin-left: 160px;
+      width: 266px;
+      height: 306px;
+      margin: $small-pad auto 0;
+    }
+  }
+
+  #atlas-feature-content{
+    .flexibility{
+      .feature-graphic{
+        margin-left: auto;
+        width: 480px;
+        height: 190px;
+        background-size: 480px 190px;
+      }
+    }
+
+    .security{
+      text-align: center;
+
+      .row{
+        margin-top: 0 !important;
+      }
+
+      p{
+        padding-left: 0;
+      }
+
+      .security-1{
+        .feature-content{
+          padding-top: 0;
+          margin-top: -76px;
+        }
+      }
+
+      .feature-content{
+        margin-bottom: $med-pad;
+      }
     }
   }
 }
@@ -377,6 +471,53 @@ $atlas-hero-total-height: 706px;
 
     #pipeline-wrap{
       display: none;
+    }
+  }
+
+  #atlas-feature-content{
+    // .automation-1{
+    //   .feature-graphic{
+    //     width: 300px;
+    //     height: 292px;
+    //     background-size: 300px 292px;
+    //   }
+    // }
+    .automation-2{
+      .feature-graphic{
+        width: 280px;
+        height: 209px;
+        background-size: 280px 209px;
+      }
+    }
+
+    .flexibility{
+      .feature-graphic{
+        width: 251px;
+        height: 290px;
+        @include img-retina( '../images/v2/atlas-graphic-flexibility-mobile', png, 251px, 290px);
+      }
+    }
+
+    .security{
+      text-align: center;
+
+      .row{
+      }
+
+      p{
+      }
+
+      .security-1{
+        .feature-content{
+          margin-top: 0;
+        }
+
+        .feature-graphic{
+          width: 256px;
+          height: 109px;
+          @include img-retina( '../images/v2/atlas-graphic-security-1-mobile', png, 256px, 109px);
+        }
+      }
     }
   }
 }
