@@ -104,6 +104,11 @@ $project-logo-pad-left: 8px;
   border-left: 2px solid $black;
   @include transition(all .1s ease-in);
 
+  &.white{
+    border-top: 2px solid $white;
+    border-left: 2px solid $white;
+  }
+
   &.blue{
     border-top: 2px solid $blue;
     border-left: 2px solid $blue;
