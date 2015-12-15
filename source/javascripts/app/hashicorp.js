@@ -180,6 +180,8 @@
     if($('#timeline').length > 0){
       HSHC.Timeline.init();
     }
+
+    new Sidebar();
   });
 
 }(jQuery, this));

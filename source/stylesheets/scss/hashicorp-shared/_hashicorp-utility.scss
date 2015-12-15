@@ -21,7 +21,7 @@ $nav-margin-right: 12px;
 @mixin hashi-a-style-core{
   font-family: $header-font-family;
   font-weight: $header-font-weight;
-  font-size: 14px;
+  font-size: $font-size-reg;
   //letter-spacing: 0.0625em;
 }
 

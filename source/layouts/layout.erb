@@ -21,7 +21,9 @@
 		<%= javascript_include_tag "owl.carousel" %>
 		<%= javascript_include_tag "jquery.jscrollpane.min" %>
 		<%= javascript_include_tag "jquery.mousewheel" %>
-		<%= javascript_include_tag "hashicorp" %>
+    <%= javascript_include_tag "lib/Base" %>
+    <%= javascript_include_tag "app/Sidebar" %>
+		<%= javascript_include_tag "app/hashicorp" %>
 
 		<!-- Atom -->
 		<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="HashiCorp ATOM Feed">
@@ -32,6 +34,7 @@
 	</head>
 	<body class="<%= page_classes %>">
 		<%= partial "layouts/header" %>
+    <%= partial "layouts/sidebar" %>
 		<%= yield %>
 		<%= partial "layouts/footer" %>
 	</body>

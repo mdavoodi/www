@@ -13,7 +13,6 @@
 @import 'scss/hashicorp-shared/_hashicorp-utility';
 @import 'scss/hashicorp-shared/_project-utility';
 @import 'scss/hashicorp-shared/_hashicorp-header';
-@import 'scss/hashicorp-shared/_hashicorp-sidebar';
 
 //Components
 @import 'scss/components/_bnr';
@@ -24,7 +23,7 @@
 @import 'scss/components/_info-blocks';
 @import 'scss/components/_template';
 
-// Components
+// Partials
 @import 'scss/_header';
 @import 'scss/_footer';
 @import 'scss/_sidebar';

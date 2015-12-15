@@ -49,6 +49,10 @@ $project-logo-pad-left: 8px;
   &.outline{
     background-color: transparent;
     border: 1px solid $white;
+
+    &.white{
+      color: $white;
+    }
   }
 
   &.orange{
@@ -68,6 +72,10 @@ $project-logo-pad-left: 8px;
 
     &.blue{
       color: $blue;
+    }
+
+    &.white{
+      color: $white;
     }
   }
 

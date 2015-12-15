@@ -1,15 +1,5 @@
 // partners
 
-// Media breakpoints (using BS 3.2 nomenclature)
-// @screen-sm-min: 768px;
-// @screen-md-min: 992px;
-// @screen-lg-min: 1200px;
-//
-// @screen-xs-max: (@screen-sm-min - 1);
-// @screen-sm-max: (@screen-md-min - 1);
-// @screen-md-max: (@screen-lg-min - 1);
-
-
 @mixin asteris-logo {
   @include img-retina( '../images/partner_asteris', png, 200px, 160px);
 }
@@ -195,10 +185,6 @@
   img{
     max-width: 100%;
     height: auto;
-  }
-
-  pre {
-    margin-top: $base-line-height;
   }
 
   .big-background {
