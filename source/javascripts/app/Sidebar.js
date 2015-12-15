@@ -13,6 +13,7 @@
       this.$body = $('body');
       this.$overlay = $('.sidebar-overlay');
       this.$sidebar = $('#sidebar');
+      this.$links = $('.main', this.$sidebar);
       this.$sidebarHeader = $('#sidebar .sidebar-header');
       this.$toggleButton = $('.navbar-toggle');
       this.sidebarImg = this.$sidebarHeader.css('background-image');
@@ -36,11 +37,20 @@
         return false;
       });
 
+      _this.$links.on('click', function() {
+        setTimeout(_this.closeSidebar.bind(_this), 250);
+      })
+
       _this.$overlay.on('click', function() {
-        $(this).removeClass('active');
-        _this.$body.css('overflow', 'auto');
-        _this.$sidebar.removeClass('open');
+        _this.closeSidebar();
       });
+    },
+
+    closeSidebar(){
+      var _this = this;
+      _this.$overlay.removeClass('active');
+      _this.$body.css('overflow', 'auto');
+      _this.$sidebar.removeClass('open');
     }
 
   });
