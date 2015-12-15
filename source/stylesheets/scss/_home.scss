@@ -315,54 +315,6 @@ $hero-total-height: 790px;
   padding: $large-pad 0;
 }
 
-.bnr{
-  margin-top: 120px;
-
-  &#cta-bnr{
-    margin-top: 0;
-    margin-bottom: 80px;
-
-    .col{
-      padding: 60px 40px;
-    }
-  }
-
-  .col{
-    padding: 20px;
-    text-align: center;
-    border-radius: 3px;
-  }
-
-  h4{
-    display: inline-block;
-    margin-bottom: 0px;
-    margin-right: 30px;
-  }
-
-  &.gray-bnr{
-    .col{
-      border: 1px solid $dft-brdr-clr;
-    }
-
-    color: $blue-light;
-  }
-
-  &.light-bnr{
-    .col{
-      border: 1px solid $off-white;
-    }
-
-    color: $light-black;
-  }
-
-  &.orange-bnr{
-    .col{
-      border: 1px solid $orange;
-    }
-
-    color: $blue-dark;
-  }
-}
 // End Cta Section
 // ----------------------------
 

@@ -15,19 +15,20 @@
 @import 'scss/hashicorp-shared/_hashicorp-header';
 @import 'scss/hashicorp-shared/_hashicorp-sidebar';
 
-// Components
-@import 'scss/_header';
-@import 'scss/_footer';
-@import 'scss/_sidebar';
-// @import 'scss/_buttons';
-
 //Components
+@import 'scss/components/_bnr';
 @import 'scss/components/_hero-parallax';
 @import 'scss/components/_atlas-highlights';
 @import 'scss/components/_contact-form';
 @import 'scss/components/_atlas-pricing';
 @import 'scss/components/_info-blocks';
 @import 'scss/components/_template';
+
+// Components
+@import 'scss/_header';
+@import 'scss/_footer';
+@import 'scss/_sidebar';
+// @import 'scss/_buttons';
 
 // Pages
 @import 'scss/_home';
