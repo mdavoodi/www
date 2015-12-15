@@ -54,6 +54,7 @@ $atlas-hero-total-height: 706px;
     .pipeline-step{
       position: absolute;
       width: 80px;
+      font-family: $font-family-klav;
 
       span{
         position: absolute;
@@ -313,6 +314,69 @@ $atlas-hero-total-height: 706px;
   }
 }
 
-#atlas-cta{
+@media (min-width: 992px) and (max-width: 1200px) {
+  #atlas-hero{
+    #pipeline-wrap{
+      margin-top: 180px;
+      margin-left: 90px;
+    }
+  }
+}
 
+@media (max-width: 992px){
+  #atlas-hero{
+    #atlas-hero-content{
+      padding-top: 80px;
+    }
+
+    #pipeline-wrap{
+      position: absolute;
+      left: -176px;
+      top: 94px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  #atlas-hero{
+    h1{
+      font-size: 36px;
+      line-height: 1em;
+    }
+
+    h2{
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    #atlas-hero-content{
+      padding-top: 80px;
+    }
+
+    #pipeline-wrap{
+      position: relative;
+      left: auto;
+      top: auto;
+      margin-top: $small-pad;
+      margin-left: 160px;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  #atlas-hero-mask{
+    height: 520px;
+  }
+
+  #atlas-hero{
+    height: 520px;
+    #atlas-hero-content{
+      height: 520px;
+      padding: 120px 0;
+    }
+
+    #pipeline-wrap{
+      display: none;
+    }
+  }
 }
