@@ -43,8 +43,8 @@
       addEventListeners: function(){
         var _this = this;
 
-        if(HSHC.Utils.isMobile)
-          return;
+        // if(HSHC.Utils.isMobile)
+        //  return;
 
         _this.ui.$doc.scroll(function() {
           //if collapseable menu is open dont do parrallax. It looks wonky. Bootstrap conflict
