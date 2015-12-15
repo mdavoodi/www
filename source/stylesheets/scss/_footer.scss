@@ -67,7 +67,7 @@ footer{
   }
 
   .legal{
-    margin: $small-pad 0;
+    margin: $med-pad 0;
     opacity: .7;
   }
 }
@@ -114,7 +114,6 @@ footer{
   footer{
     #subscribe{
       width: 80%;
-      margin: $med-pad 0;
       p{
         text-align: left;
       }
@@ -138,7 +137,6 @@ footer{
 
     #subscribe{
       width: 100%;
-      margin: 0 0 $small-pad;
     }
 
     .col-xs-4{
