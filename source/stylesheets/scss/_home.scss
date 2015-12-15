@@ -319,8 +319,8 @@ $hero-total-height: 790px;
   padding: 400px 0 200px;
 
   .customers-section-header{
-      text-align: center;
-      margin-bottom: 80px;
+    text-align: center;
+    margin-bottom: 80px;
   }
 
   .customer-wrap{
@@ -448,5 +448,21 @@ $hero-total-height: 790px;
         }
       }
     }
+  }
+
+  #home-customers{
+    .customers-section-header{
+      margin-bottom: $small-pad;
+    }
+
+    .customer-item{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  #home-customers{
+    padding: 120px 0 80px;
   }
 }
