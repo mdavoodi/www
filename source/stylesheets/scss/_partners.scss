@@ -73,66 +73,92 @@
   .sipart {
     text-align: center;
 
-    .panel {
-      .panel-heading {
-        background-color: $gray;
+    .panel-wrap{
+      display: flex;
+    	flex-flow: row wrap;
+    }
+
+    .pan {
+      width: 33%;
+      padding: 0 10px 10px;
+      border-right: 1px solid $off-white;
+      margin-bottom: $med-pad;
+
+      &:last-child, &:nth-child(3n+3){
+        border-right: none;
+      }
+
+      .pan-heading {
+        padding: 10px 0;
+        background-color: $black;
       }
 
       h2 {
         text-align: center;
-        margin-bottom: 0px;
-        color: $white;
-        // .lato-light();
+        margin: 0;
+        a{
+          color: $white;
+        }
       }
 
       img {
         padding: 5px;
       }
-      .panel-body {
-        i{
-          width: 200px;
-          height: 160px;
+      .pan-body{
+        padding-right: $small-pad;
+        padding-left: $small-pad;
+        .plogo{
+         i{
+           width: 200px;
+           height: 160px;
+           background-position: center center;
 
-          &.asteris{
-            @include asteris-logo();
-          }
-          &.cheval{
-            @include cheval-logo();
-          }
-          &.contsoln{
-            @include contsoln-logo();
-          }
-          &.creationline{
-            @include creationline-logo();
-          }
-          &.cynergypro{
-            @include cynergypro-logo();
-          }
-          &.mustwin{
-            @include mustwin-logo();
-          }
-          &.opencredo{
-            @include opencredo-logo();
-          }
-          &.opex{
-            @include opex-logo();
-          }
-          &.rean{
-            @include rean-logo();
-          }
-          &.slalom{
-            @include slalom-logo();
-          }
-          &.unifio{
-            @include unifio-logo();
-          }
-          &.vibrato{
-            @include vibrato-logo();
-          }
-          &.xebia{
-            @include xebia-logo();
-          }
-        }
+           &.asteris{
+             @include asteris-logo();
+           }
+           &.cheval{
+             @include cheval-logo();
+             background-size: 140px 112px !important;
+           }
+           &.contsoln{
+             @include contsoln-logo();
+             background-size: 150px 120px !important;
+           }
+           &.creationline{
+             @include creationline-logo();
+           }
+           &.cynergypro{
+             @include cynergypro-logo();
+           }
+           &.mustwin{
+             @include mustwin-logo();
+             background-size: 140px 112px !important;
+           }
+           &.opencredo{
+             @include opencredo-logo();
+           }
+           &.opex{
+             @include opex-logo();
+             background-size: 140px 112px !important;
+           }
+           &.rean{
+             @include rean-logo();
+           }
+           &.slalom{
+             @include slalom-logo();
+           }
+           &.unifio{
+             @include unifio-logo();
+           }
+           &.vibrato{
+             @include vibrato-logo();
+             background-size: 140px 112px !important;
+           }
+           &.xebia{
+             @include xebia-logo();
+           }
+         }
+       }
       }
 
       p {
@@ -156,65 +182,19 @@
   article {
     padding: 80px 0;
 
-    &:first-child {
-      padding: 40px 0 80px;
-    }
-
     h2 {
       font-size: 28px;
     }
-
   }
 
   h1 {
     text-align: center;
+    margin-bottom: $med-pad;
   }
 
   img{
     max-width: 100%;
     height: auto;
-  }
-
-  .meta-wrap{
-    position: relative;
-
-    a{
-      &:hover{
-        text-decoration: underline;
-        color: $blue;
-      }
-    }
-
-    .meta{
-      position: relative;
-      font-size: 12px;
-      text-transform: uppercase;
-      margin-right: 18px;
-      // color: $light-gray-text;
-      color: $light-black;
-
-      &.meta-tag {
-        margin-right: 0px;
-      }
-
-      &::after{
-        content: '';
-        position: absolute;
-        top: 5px;
-        right: -12px;
-        width: 3px;
-        height: 3px;
-        border-radius: 3px;
-        // background-color: $lightgray;
-        background-color: $light-black;
-      }
-
-      &.last{
-        &::after{
-          display: none;
-        }
-      }
-    }
   }
 
   pre {

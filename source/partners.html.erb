@@ -77,15 +77,14 @@ page_title: Partners
 				</div>
 			</div> <!-- row -->
 			<div class="row">
-
+        <div class="panel-wrap">
 				<% myPartners.each_with_index { |val, index| %>
 
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h2 class="pname"><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
+					<div class="pan">
+						<div class="pan-heading">
+							<h2><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
 						</div> <!-- panel-heading -->
-						<div class="panel-body">
+						<div class="pan-body">
 							<a href=<%= val["url"] %>><div class="plogo">
 									<i class=<%= val["logo"] %> ></i>
 							</div></a>
@@ -93,24 +92,16 @@ page_title: Partners
 							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
 							<p class="pldesc"> <%= val["ldesc"] %> </p>
 							<% if val["contact"] != "" %>
-							<span class="atbottom"><a class="hbtn outline-btn buttongray small contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> </a></span>
+							<div class="atbottom"><a class="hbtn blue plain careted contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> <span class="hcaret blue"></span></a></div>
 							<% elsif val["contact"] == "" %>
-							<span class="atbottom"><a class="hbtn outline-btn gray small contactus">(missing email)</a></span>
+							<a class="hbtn blue plain careted contactus">(missing email)<span class="hcaret blue"></span></a>
 							<% end %>
 						</div> <!-- panel-body -->
 					</div>	   <!-- panel -->
-				</div>
-
-				<% if (index + 1) % 2 == 0 %>
-				    <div class="clearfix visible-sm-block"></div> <!-- add at multiples of 2 (sm) -->
-				<% end %>
-
-				<% if (index + 1) % 3 == 0 %>
-				    <div class="clearfix visible-md-block visible-lg-block"></div> <!-- add at multiples of 3 (md & lg) -->
-				<% end %>
 
 				<% } %>
 
+        </div> <!-- panel-wrap -->
 			</div> <!-- row -->
 		</div> <!-- container -->
 	</article> <!-- sipart -->
