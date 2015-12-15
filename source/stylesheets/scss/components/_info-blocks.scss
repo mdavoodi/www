@@ -54,3 +54,31 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .info{
+    .info-split{
+      display: block;
+      .info-block{
+        border-left: none;
+        border-right: none;
+        // border-bottom: 1px solid $dft-brdr-clr;
+      }
+    }
+    .info-full{
+      > div{
+        border-left: none;
+        border-right: none;
+        // border-bottom: 1px solid $dft-brdr-clr;
+      }
+    }
+    > .container{
+      > .row{
+        .row{
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

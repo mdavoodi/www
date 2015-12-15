@@ -247,9 +247,13 @@ $atlas-hero-total-height: 706px;
       a{
         color: $white;
         text-shadow: 3px 2px 4px $black;
+        font-family: $font-family-klav;
+        @include transition(all .1s ease-in);
 
         &:hover{
           text-decoration: none;
+          opacity: .6;
+          @include transition(all .1s ease-in);
         }
       }
     }
@@ -452,6 +456,58 @@ $atlas-hero-total-height: 706px;
 
       .feature-content{
         margin-bottom: $med-pad;
+      }
+    }
+  }
+
+  #atlas-os{
+    margin-bottom: $med-pad;
+
+    > .container{
+        padding-bottom: $med-pad;
+    }
+
+    h1,p{
+      max-width: none;
+      margin: 0 auto;
+    }
+
+    h1{
+      margin-bottom: $small-pad;
+    }
+
+    .open-source-graphic{
+      width: 100%;
+      height: auto;
+      padding: 0 15px;
+      background-repeat: repeat-y;
+      background-position: center center;
+
+      li{
+        width: 100%;
+      }
+    }
+  }
+
+  #atlas-customers{
+
+    h1{
+      margin-bottom: $xsmall-pad;
+    }
+
+    > .container{
+      .row{
+        border-right: none;
+        border-left: none;
+      }
+    }
+
+    .customers{
+      padding-bottom: $med-pad;
+      li{
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
       }
     }
   }

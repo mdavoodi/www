@@ -47,10 +47,15 @@
 
     .pricing-features{
       margin: 0 20px;
+      text-align: center;
+
+      .ul-wrap{
+        display: inline-block;
+      }
 
       ul{
-        width: 80%;
-        margin: 0 auto;
+        // width: 80%;
+        text-align: left;
         margin-bottom: $xsmall-pad +10;
 
         &.ul-2{
@@ -87,6 +92,65 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .pricing{
+    flex-direction: column;
+
+    .col, .col.enterprise{
+      flex: 1;
+      border-top: 8px solid $blue;
+      border-right: 8px solid $blue;
+      border-left: 8px solid $blue;
+
+      &:first-child{
+        border-left: 8px solid $blue;
+      }
+
+      &:last-child{
+        border-bottom: 8px solid $blue;
+      }
+
+      // &:first-child{
+      //   border-left: none;
+      // }
+      //
+      // &.enterprise{
+      //   border: 1px solid $blue;
+      // }
+      //
+      // .pricing-header{
+      //   text-align: center;
+      //   h1{
+      //     display: inline-block;
+      //   }
+      //
+      //   p{
+      //       margin: 0;
+      //   }
+      //
+      //   .hbtn{
+      //     margin: $small-pad 0 $med-pad;
+      //   }
+      // }
+      //
+      // .pricing-number{
+      //   position: relative;
+      //   &:before{
+      //     content: "$";
+      //     position: absolute;
+      //     top: -4px;
+      //     left: -10px;
+      //     font-size: 14px;
+      //   }
+      // }
+      //
+      // .pricing-features{
+
+      //}
     }
   }
 }

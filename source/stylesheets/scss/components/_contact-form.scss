@@ -19,7 +19,6 @@
 }
 
 .contact-form{
-
   .form-header{
     text-align: center;
   }
@@ -69,6 +68,33 @@
 
     .right{
       padding-left: $xsmall-pad;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .contact-form{
+    form{
+      width: 100%;
+      padding: 0 $xsmall-pad;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .contact-form{
+    form{
+      flex-flow: column wrap;
+
+      .bottom{
+        .hbtn{
+          width: 100%;
+        }
+      }
+
+      .right{
+        padding-left: 0;
+      }
     }
   }
 }
