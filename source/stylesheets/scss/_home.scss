@@ -58,28 +58,58 @@ $hero-total-height: 790px;
   }
 
   .why-section-header{
-      text-align: center;
+    text-align: center;
   }
 
   p{
     color: $blue-light;
   }
   .why-feature{
+    position: relative;
     padding-left: 120px;
     margin-bottom: 45px;
 
+    h2{
+      margin-left: -120px;
+      padding-left: 120px;
+    }
+
+    .graphic{
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 120px;
+      height: 48px;
+    }
+
     &.fast{
-      @include img-retina('../images/v2/icon-fast', png, 67px, 40px);
+      .graphic{
+        width: 67px;
+        height: 40px;
+        @include img-retina('../images/v2/icon-fast', png, 67px, 40px);
+        left: 12px;
+        top: 11px;
+      }
     }
 
     &.efficient{
-      @include img-retina('../images/v2/icon-efficient', png, 59px, 47px);
-      background-position: 16px 0;
+      .graphic{
+        width: 59px;
+        height: 47px;
+        @include img-retina('../images/v2/icon-efficient', png, 59px, 47px);
+        left: 16px;
+      }
     }
 
     &.secure{
-      @include img-retina('../images/v2/icon-secure', png, 37px, 43px);
-      background-position: 28px 0;
+      .graphic{
+        width: 37px;
+        height: 43px;
+        @include img-retina('../images/v2/icon-secure', png, 37px, 43px);
+        left: 28px;
+        top: 8px;
+      }
     }
   }
 }
@@ -119,7 +149,7 @@ $hero-total-height: 790px;
     width: 445px;
     height: 514px;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 160px;
     z-index: 3;
     @include img-retina('../images/v2/atlas-cta-bg', png, 445px, 514px);
 
@@ -331,6 +361,37 @@ $hero-total-height: 790px;
     #products-nav{
       width: 160px;
       left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home-why{
+    .why-section-header{
+      margin-bottom: $small-pad;
+    }
+
+    .why-feature{
+      margin-bottom: $small-pad;
+      padding-left: 0;
+      text-align: center;
+
+      h2{
+        margin: 8px 0;
+        padding-left: 0
+      }
+
+      .graphic{
+        position: relative;
+        background-position: 0 0 !important;
+        left: auto !important;
+        top: auto !important;
+
+        h2{
+          margin-left: -120px;
+          padding-left: 120px;
+        }
+      }
     }
   }
 }
