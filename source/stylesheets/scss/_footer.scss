@@ -60,6 +60,10 @@ footer{
         @include img-retina('../images/v2/icon-github', png, 15px, 14px);
       }
     }
+
+    a:hover{
+      opacity: .6;
+    }
   }
 
   .legal{
@@ -107,12 +111,52 @@ footer{
 }
 
 @media (max-width: 992px) {
-
+  footer{
+    #subscribe{
+      width: 80%;
+      margin: $med-pad 0;
+      p{
+        text-align: left;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-  #footer{
+  footer{
+    // text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer{
     text-align: center;
+
+    .navbar-brand{
+      padding-right: 0;
+    }
+
+    #subscribe{
+      width: 100%;
+      margin: 0 0 $small-pad;
+    }
+
+    .col-xs-4{
+      width: 100%;
+    }
+
+    .col-xs-4.footer-links{
+      float: left;
+      width: 50%;
+    }
+
+    .social-links{
+      margin: $small-pad 0;
+      li{
+        display: inline-block;
+        float: none !important;
+      }
+    }
 
     .footer-links{
       float: none;
@@ -132,13 +176,10 @@ footer{
   }
 }
 
-@media (max-width: 414px) {
-  #footer{
-    .footer-links{
-      li{
-        display: block;
-        float: none;
-      }
+@media (max-width: 320px) {
+  footer{
+    .col-xs-4.footer-links{
+      width: 100%;
     }
   }
 }
