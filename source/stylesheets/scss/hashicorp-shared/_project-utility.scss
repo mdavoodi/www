@@ -46,6 +46,11 @@ $project-logo-pad-left: 8px;
     padding: 10px 36px;
   }
 
+  &.xlrg{
+    font-size: 20px;
+    padding: 10px 80px;
+  }
+
   &.outline{
     background-color: transparent;
     border: 1px solid $white;
