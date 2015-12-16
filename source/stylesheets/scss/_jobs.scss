@@ -5,7 +5,6 @@
 
 
 body.jobs{
-
   .inner-page{
     padding: 0;
     background-color: transparent;
@@ -28,32 +27,29 @@ body.jobs{
     height: 500px;
     padding: 0;
     overflow: hidden;
-    //box-shadow: inset -5px -5px 0 3px rgba(0,0,0,.2);
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    > .container{
+      align-self: center;
+    }
 
     .map-text{
-      margin-top: 120px;
-      padding: 32px;
-      background-color: rgba(15, 16, 17, 0.8);
+      padding: $small-pad;
       color: $white;
-      border-radius: 2px;
-      box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
 
       h2{
-        //.lato-bold;
         color: $white;
         font-size: 42px;
         margin-bottom: 10px;
-
-        span{
-          //.lato-light;
-        }
       }
 
       p{
         color: $white;
         opacity: .7;
       }
-    } //map-text
+    }
 
     #map-wrap{
       position: absolute;
@@ -307,6 +303,13 @@ body.jobs{
         .chat{
           display: block;
           margin-bottom: 8px;
+        }
+      }
+    }
+    #location{
+      .map-text{
+        h2,p{
+          text-align: center;
         }
       }
     }
