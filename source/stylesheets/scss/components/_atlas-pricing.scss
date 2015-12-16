@@ -9,20 +9,23 @@
   .col{
     flex: 1;
     padding: $small-pad $xsmall-pad;
-    border-left: 1px solid $blue;
+    border-left: 1px solid $dft-brdr-clr;
 
     &:first-child{
       border-left: none;
     }
 
     &.enterprise{
-      border: 1px solid $blue;
+      border: 1px solid $dft-brdr-clr;
     }
 
     .pricing-header{
       text-align: center;
+
       h1{
         display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 0px;
       }
 
       p{
@@ -39,7 +42,7 @@
       &:before{
         content: "$";
         position: absolute;
-        top: -4px;
+        top: 10px;
         left: -10px;
         font-size: 14px;
       }
@@ -47,6 +50,7 @@
 
     .pricing-features{
       margin: 0 20px;
+      padding-top: 25px;
       text-align: center;
 
       .ul-wrap{
@@ -102,16 +106,16 @@
 
     .col, .col.enterprise{
       flex: 1;
-      border-top: 8px solid $blue;
-      border-right: 8px solid $blue;
-      border-left: 8px solid $blue;
+      border-top: 8px solid $dft-brdr-clr;
+      border-right: 8px solid $dft-brdr-clr;
+      border-left: 8px solid $dft-brdr-clr;
 
       &:first-child{
-        border-left: 8px solid $blue;
+        border-left: 8px solid $dft-brdr-clr;
       }
 
       &:last-child{
-        border-bottom: 8px solid $blue;
+        border-bottom: 8px solid $dft-brdr-clr;
       }
 
       // &:first-child{
