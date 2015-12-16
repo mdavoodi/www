@@ -216,32 +216,102 @@
       li {
         float: left;
         width: 33.3333%;
-        height: 128px;
-        overflow: hidden;
+        height: 120px;
 
-        &.tpart{
-          @include img-retina( '../images/techpart-sprite', png, 1130px, 256px);
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 120px;
         }
 
-        &.tp1 {
-          background-position: 0px 0;
+        i{
+          display: inline-block;
         }
-        &.tp2 {
-          background-position: -380px 0;
+
+        &.tpart i{
+          @include img-retina( '../images/techpartners-sprite', jpg, 259px, 386px);
         }
-        &.tp3 {
-          background-position: -760px 0;
+
+        &.tp1 i{
+          background-position: 0 0;
+          width: 242px;
+          height: 68px;
         }
-        &.tp4 {
-          background-position: 0px -128px;
+        &.tp2 i{
+          background-position: 0 -69px;
+          width: 256px;
+          height: 87px;
         }
-        &.tp5 {
-          background-position: -380px -128px;
+        &.tp3 i{
+          background-position: 0 -158px;
+          width: 268px;
+          height: 53px;
         }
-        &.tp6 {
-          background-position: -760px -128px;
+        &.tp4 i{
+          background-position: 0 -212px;
+          width: 177px;
+          height: 93px;
+        }
+        &.tp5 i{
+          background-position: 0 -305px;
+          width: 255px;
+          height: 40px;
+        }
+        &.tp6 i{
+          background-position: 0 -345px;
+          width: 258px;
+          height: 41px;
         }
       } // li
     } //ul
+  }
+}
+
+@media (max-width: 992px) {
+  .partners {
+    .techparts {
+      ul.techpart-logos {
+        li {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .sipart {
+      .panel-wrap{
+        .pan{
+          width: 50%;
+          border-right: none;
+          margin-bottom: $med-pad;
+
+          &:last-child, &:nth-child(2n+2){
+            border-left: 1px solid $off-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    .techparts {
+      ul.techpart-logos {
+        li {
+          float: none;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .sipart {
+      .panel-wrap{
+        .pan{
+          width: 100%;
+          border: none !important;
+        }
+      }
+    }
   }
 }
