@@ -87,6 +87,8 @@
       flex-flow: column wrap;
 
       .bottom{
+        flex: 1 auto;
+
         .hbtn{
           width: 100%;
         }
