@@ -270,25 +270,26 @@ body.jobs{
 
   #chat{
     color: $black;
-    background-color: $blue;
+    background-color: $white;
 
-    h2{
-      //.lato-bold;
+    .chat-headline{
+      // color: $blue;
       margin-bottom: 12px;
       line-height: 55px;
 
-      .chat{
-        margin: 0 8px -8px 0;
-        width: 65px;
-        height: 45px;
+      .icon{
+        margin: 0 $xsmall-pad -8px 0;
+        width: 68px;
+        height: 50px;
         //background: url(/images/chat-icon.png) 0 0 no-repeat;
-        @include img-retina('/images/chat-icon', png, 65px, 45px);
+        @include img-retina('../images/v2/icon-jobs-chat', png, 72px, 54px);
       }
     }
 
     p{
       font-size: 22px;
       line-height: 26px;
+      margin-bottom: $small-pad;
       color: $black;
     }
 
