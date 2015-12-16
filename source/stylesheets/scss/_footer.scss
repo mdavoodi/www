@@ -47,6 +47,7 @@ footer{
         width: 16px;
         height: 13px;
         @include img-retina('../images/v2/icon-twitter', png, 16px, 13px);
+        background-size: 16px 13px;
         margin-right: 10px;
       }
     }
@@ -58,6 +59,7 @@ footer{
         width: 15px;
         height: 14px;
         @include img-retina('../images/v2/icon-github', png, 15px, 14px);
+        background-size: 15px 14px;
       }
     }
 
