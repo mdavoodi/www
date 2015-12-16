@@ -90,44 +90,76 @@ $atlas-hero-total-height: 706px;
 
 #atlas-why{
   position: relative;
-  padding: $large-pad 0;
-  background-color: $white;
+  //background-color: rgba($white, .6);
   z-index: 2;
+
+  > .container{
+    padding-top: $large-pad;
+    padding-bottom: $large-pad;
+    border-bottom: 1px solid $off-white;
+  }
+}
+
+#atlas-features{
+  text-align: center;
+  background-color: $white;
+  padding-top: $large-pad;
+  padding-bottom: $large-pad;
 }
 
 #atlas-features-header{
-  @include img-retina( '../images/v2/atlas-feature-bg', png, 100%, 481px);
-  background-color: $black;
+  //@include img-retina( '../images/v2/atlas-feature-bg', png, 100%, 481px);
+  background-color: $white;
   background-position: center top;
-  box-shadow: inset 0 12px 8px rgba($black, .1);
+  //box-shadow: inset 0 12px 8px rgba($black, .1);
 
   >.container{
     position: relative;
   }
 
   h1{
-    padding: $large-pad 0 $small-pad;
-    font-weight: 700;
+    color: $black;
+    margin-bottom: $med-pad;
+    //padding: $large-pad 0 $small-pad;
+    //font-weight: 700;
   }
 }
 
 #atlas-feature-content{
-  background-color: $white;
   color: $black;
-  padding-bottom: $large-pad;
 
-  h1{
-    margin: $med-pad 0;
+  > .container{
+    > .row{
+      margin-bottom: $large-pad;
+    }
   }
 
-  .feature-graphic{
-    margin: 0 0 $med-pad 15px;
+  h1{
+    margin-bottom: $med-pad;
+  }
+
+  h2{
+    padding-bottom: $small-pad;
+    margin-bottom: $med-pad;
+    border-bottom: 1px solid $off-white;
+  }
+
+  p{
+    color: $blue-black;
+    font-size: 24px;
+  }
+
+  .automation{
+    .feature-graphic{
+      margin: 0 auto $small-pad;
+    }
   }
 
   .automation-1{
     .feature-graphic{
       width: 236px;
-      height: 230px;
+      //height: 230px;
+      height: 237px;
       @include img-retina( '../images/v2/atlas-graphic-automation-1', png, 236px, 230px);
     }
   }
@@ -141,10 +173,6 @@ $atlas-hero-total-height: 706px;
   }
 
   .flexibility{
-    h1{
-      margin-bottom: $xsmall-pad;
-    }
-
     .feature-content{
       margin-bottom: $med-pad;
     }
@@ -153,6 +181,16 @@ $atlas-hero-total-height: 706px;
       width: 1004px;
       height: 398px;
       @include img-retina( '../images/v2/atlas-graphic-flexibility', png, 1004px, 398px);
+    }
+  }
+
+  .security{
+    .feature-graphic{
+      margin: 0 0 $med-pad 15px;
+    }
+
+    .feature-content{
+      text-align: left;
     }
   }
 
@@ -251,7 +289,6 @@ $atlas-hero-total-height: 706px;
 
 section{
   &.white{
-    padding: $large-pad 0;
     margin: 0;
     background-color: $white;
     color: $black;
@@ -259,13 +296,14 @@ section{
 }
 
 #atlas-info{
+  padding: $large-pad 0 $med-pad;
   h1{
     text-align: center;
   }
 }
 
 #atlas-customers{
-  padding: 0 0 $large-pad;
+  padding: $med-pad 0 $large-pad;
   background-color: $white;
   color: $black;
 
@@ -495,18 +533,19 @@ section{
   }
 
   #atlas-feature-content{
-    // .automation-1{
-    //   .feature-graphic{
-    //     width: 300px;
-    //     height: 292px;
-    //     background-size: 300px 292px;
-    //   }
-    // }
+    .automation-1{
+      .feature-graphic{
+        width: 180px;
+        height: 175px;
+        background-size: 180px 175px;
+      }
+    }
+
     .automation-2{
       .feature-graphic{
-        width: 280px;
-        height: 209px;
-        background-size: 280px 209px;
+        width: 175px;
+        height: 131px;
+        background-size: 175px 131px;
       }
     }
 
@@ -519,12 +558,12 @@ section{
     }
 
     .security{
-      text-align: center;
-
-      .row{
+      .feature-content{
+        text-align: center;
       }
 
-      p{
+      .feature-graphic{
+        margin: 0 auto $small-pad;
       }
 
       .security-1{
