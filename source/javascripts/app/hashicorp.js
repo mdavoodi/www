@@ -37,6 +37,8 @@
           $heroContent: $('.hero-content')
         }
 
+        _this.ui.$hero.css('webkitTransform', 'translate(0, 0rem)'); // prevent initial jump
+
         this.addEventListeners();
       },
 
