@@ -202,21 +202,10 @@ $atlas-hero-total-height: 706px;
   }
 }
 
-.black-wrap{
-  background-color: $black;
-  padding: $large-pad 0;
-}
-
 #atlas-os{
+  padding: $large-pad 0;
+  background-color: $black;
   text-align: center;
-  margin-bottom: $large-pad;
-
-  > .container{
-      //padding-top: $large-pad;
-      padding-bottom: $large-pad;
-      //border-top: 1px solid $dft-brdr-clr;
-      border-bottom: 1px solid $dft-brdr-clr;
-  }
 
   h1,p{
     max-width: $small-body;
@@ -260,68 +249,53 @@ $atlas-hero-total-height: 706px;
   }
 }
 
+section{
+  &.white{
+    padding: $large-pad 0;
+    margin: 0;
+    background-color: $white;
+    color: $black;
+  }
+}
 
 #atlas-info{
-  margin-bottom: $large-pad;
-
   h1{
     text-align: center;
   }
 }
 
 #atlas-customers{
+  padding: 0 0 $large-pad;
+  background-color: $white;
+  color: $black;
+
   h1{
     text-align: center;
-    margin: $med-pad;
+    margin: $small-pad 0;
   }
 
   > .container{
-    .row{
-      border: 1px solid $dft-brdr-clr;
+    .col-xs-12{
+      padding: $small-pad;
+      border: 1px solid $off-white;
     }
   }
-
-  .customers{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: $small-pad;
-
-    li{
-      width: 25%;
-      height: 120px;
-      @include img-retina( '../images/v2/atlas-customer', png, 144px, 27px);
-      background-position: center center;
-      border-left: 1px solid $dft-brdr-clr;
-      border-right: 1px solid $dft-brdr-clr;
-      border-bottom: 1px solid $dft-brdr-clr;
-
-      &:not(:nth-child(-n+4)){
-        border-bottom: none;
-      }
-
-      &:nth-child(4n){
-        border-right: none;
-      }
-
-      &:nth-child(1n){
-        border-left: none;
-      }
-    }
-  }
-}
-
-#atlas-contact{
-  margin: $small-pad 0;
 }
 
 #atlas-pricing{
-  margin: $small-pad 0;
+  padding: $large-pad 0;
 
   .section-header{
     text-align: center;
   }
+}
+
+#atlas-contact{
+  padding: $small-pad 0 $large-pad;
+}
+
+#atlas-cta{
+  padding: $large-pad 0;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -490,7 +464,6 @@ $atlas-hero-total-height: 706px;
   }
 
   #atlas-customers{
-
     h1{
       margin-bottom: $xsmall-pad;
     }
@@ -499,15 +472,6 @@ $atlas-hero-total-height: 706px;
       .row{
         border-right: none;
         border-left: none;
-      }
-    }
-
-    .customers{
-      padding-bottom: $med-pad;
-      li{
-        width: 100%;
-        border-right: none;
-        border-bottom: none;
       }
     }
   }

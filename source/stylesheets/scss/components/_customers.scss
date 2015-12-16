@@ -1,0 +1,77 @@
+// .customer-wrap{
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+//
+// .customer-item{
+//   width: 25%;
+//   height: 120px;
+//   @include img-retina( '../images/v2/atlas-customer', png, 144px, 27px);
+//   background-position: center center;
+// }
+
+@mixin dark-customer{
+  @include img-retina( '../images/v2/atlas-customer-black', png, 144px, 27px);
+}
+
+.customer-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 0;
+
+  li{
+    width: 25%;
+    height: 120px;
+    @include img-retina( '../images/v2/atlas-customer', png, 144px, 27px);
+    background-position: center center;
+    // border-left: 1px solid $dft-brdr-clr;
+    // border-right: 1px solid $dft-brdr-clr;
+    // border-bottom: 1px solid $dft-brdr-clr;
+
+    &.dark-customer{
+      @include dark-customer();
+    }
+
+    &:not(:nth-child(-n+4)){
+      border-bottom: none;
+    }
+
+    &:nth-child(4n){
+      border-right: none;
+    }
+
+    &:nth-child(1n){
+      border-left: none;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .customer-wrap{
+    // padding-bottom: $med-pad;
+    li{
+      width: 33.333%;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .customer-wrap{
+    // padding-bottom: $med-pad;
+    li{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .customer-wrap{
+    padding-bottom: $med-pad;
+    li{
+      width: 100%;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+}
