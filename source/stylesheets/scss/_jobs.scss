@@ -175,6 +175,10 @@ body.jobs{
 
         &.active{
           background-color: $white;
+
+          .panel-body{
+            visibility: visible;
+          }
         }
 
         h4{
@@ -185,8 +189,14 @@ body.jobs{
         }
 
         .panel-body{
+          color: $black;
+          visibility: hidden;
           padding-top: 0;
           padding-bottom: 45px;
+
+          p,ul{
+            font-size: 16px;
+          }
 
           .col{
             padding: 15px 0;
@@ -209,9 +219,20 @@ body.jobs{
           display: block;
           padding: 25px 0;
           border-bottom: 1px solid $dft-brdr-clr;
+          @include transition(color .3s ease-in);
+
+          &:focus{
+            text-decoration: none;
+          }
 
           &:hover{
             color: $white;
+            text-decoration: none;
+            @include transition(color .3s ease-in);
+
+            .toggle{
+              color: $white;
+            }
           }
 
           .location{
@@ -220,6 +241,8 @@ body.jobs{
             font-size: 12px;
             line-height: 15px;
             color: $gray;
+            font-family: $font-family-klav;
+            font-weight: 300;
             //background: url(/images/pin-white.png) 0 0 no-repeat;
             @include img-retina('/images/pin-white', png, 11px, 14px);
           }
@@ -230,13 +253,12 @@ body.jobs{
             right: 15px;
             font-size: 50px;
             //.lato-light;
-            color: $blue;
-            @include transition(all .3s ease-in);
+            color: $dft-brdr-clr;
           }
 
           &.active{
             background-color: transparent;
-            border-bottom: 2px solid transparent;
+            border-color: transparent;
 
             h4{
               color: $black;
@@ -252,16 +274,7 @@ body.jobs{
               -moz-transform: rotate(45deg);
               -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
-              @include transition(all .3s ease-in);
             }
-          }
-
-        }
-
-        .panel-body{
-          color: $black;
-          p,ul{
-            font-size: 16px;
           }
         }
       }

@@ -140,7 +140,7 @@
 
         $('#jobs .trigger').click(function() {
           var $this = $(this);
-
+          
           _this.panels.slideUp();
 
           if($this.hasClass('active')){
@@ -151,12 +151,10 @@
             $('.job').removeClass('active');
             $this.addClass('active');
             $this.closest('.job').addClass('active');
+
+            $this.parent().find('.panel-body').slideDown();
           }
 
-          if($(this).parent().find('.panel-body').css('display') != 'block'){
-            $(this).parent().find('.panel-body').slideDown();
-              return false;
-          }
           return false;
         });
 
