@@ -88,8 +88,8 @@ page_title: Partners
 							<a href=<%= val["url"] %>><div class="plogo">
 									<i class=<%= val["logo"] %> ></i>
 							</div></a>
-							<p class="ptagline"> <%= val["tagline"] %> </p>
-							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
+							<p class="plocations"> <span> <%= val["locations"] %> </span> </p>
+							<h4 class="ptagline"> <%= val["tagline"] %> </h4>
 							<p class="pldesc"> <%= val["ldesc"] %> </p>
 							<% if val["contact"] != "" %>
 							<div class="atbottom"><a class="hbtn blue plain careted contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> <span class="hcaret blue"></span></a></div>

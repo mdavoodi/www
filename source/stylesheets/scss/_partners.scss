@@ -95,8 +95,8 @@
         padding: 5px;
       }
       .pan-body{
-        padding-right: $small-pad;
-        padding-left: $small-pad;
+        padding-right: $base-pad;
+        padding-left: $base-pad;
         .plogo{
          i{
            width: 200px;
@@ -149,6 +149,33 @@
            }
          }
        }
+      }
+
+      .ptagline{
+        //text-transform: uppercase;
+        font-family: $font-family-open-sans;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: $small-pad;
+      }
+
+      .plocations{
+        color: $gray-font;
+        font-size: 16px;
+        font-family: $font-family-klav;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 0;
+        margin-bottom: $base-pad;
+        i{
+          display: block;
+        }
+      }
+
+      .pldesc{
+        padding: $base-pad;
+        background-color: $off-white-bg;
+        font-size: 15px;
       }
 
       p {

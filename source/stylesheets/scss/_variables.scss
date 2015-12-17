@@ -15,6 +15,7 @@ $el-border-radius:      6px;
 
 $white:                 #fff;
 $off-white:             #ECECEC;
+$off-white-bg:          #F7F8FB;
 $black:                 #030811;
 $light-black:           #37434E;
 $green:                 #56cdad;
@@ -27,6 +28,7 @@ $blue-link:             #127EFF;
 $blue-faint:            #E7ECF2;
 $gray-dark:             #3B4142;
 $gray:                  #929199;
+$gray-font:             #89909A;
 $gray-light:            #939393;
 $gray-lighter:          #979797;
 $orange:                #FF6D38;
@@ -89,6 +91,7 @@ $baseline: 20px;
 $headline-span-size: 30px;
 
 //margin + padding
+$base-pad:              15px;
 $xsmall-pad:            20px;
 $small-pad:             30px;
 $med-pad:               70px;
