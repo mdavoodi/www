@@ -88,7 +88,7 @@ footer{
     font-size: 13px;
     color: $white;
     @include placeholder {
-      color: $white;
+      color: darken($sub-white, 20%);
     }
   }
 
