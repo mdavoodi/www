@@ -38,6 +38,8 @@ body.jobs{
     .map-text{
       padding: $small-pad;
       color: $white;
+      text-align: right;
+      margin-top: - $small-pad;
 
       h2{
         color: $white;
