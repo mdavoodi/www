@@ -10,9 +10,9 @@
       input, textarea{
         background-color: $light-input-bg;
 
-        @include placeholder {
-          color: $black;
-        }
+        // @include placeholder {
+        //   color: $black;
+        // }
       }
     }
   }
@@ -36,9 +36,9 @@
       margin-top: $xsmall-pad;
       padding: 15px 10px 15px 20px;
 
-      @include placeholder {
-        color: $white;
-      }
+      // @include placeholder {
+      //   color: $white;
+      // }
     }
 
     .left, .right, .bottom{
