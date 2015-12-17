@@ -87,7 +87,7 @@
           goToFirstSpeed : 2000,
           singleItem : true,
           autoHeight : true,
-          transitionStyle: 'backSlide',
+          // transitionStyle: 'fade',
           afterInit: function(){
             _this.prevSlideClass = _this.ui.$productsNav[this.currentItem].getAttribute('data-prod');
           },
@@ -140,7 +140,7 @@
 
         $('#jobs .trigger').click(function() {
           var $this = $(this);
-          
+
           _this.panels.slideUp();
 
           if($this.hasClass('active')){
