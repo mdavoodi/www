@@ -183,7 +183,6 @@
 
   .nav > li > a:hover, .nav > li > a:focus {
     background-color: transparent;
-    color: $black;
     @include transition( all 300ms ease-in );
   }
 }

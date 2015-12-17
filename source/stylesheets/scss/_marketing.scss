@@ -7,7 +7,8 @@ body.marketing{
     .template-hero-content{
       // &.v1{ //aka the default
         @include img-retina( '../images/v2/marketing-v1', png, 1280px, 453px);
-        background-position: center bottom;
+        background-position: 0 bottom;
+        //background-size: 100% 55% !important;
       //}
     }
   }
@@ -24,6 +25,16 @@ body.marketing{
   }
 }
 
+@media (min-width: 1200px ){
+  body.marketing{
+    .template-hero{
+      .template-hero-content{
+        background-size: cover !important;
+        background-position: center bottom;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
 }
