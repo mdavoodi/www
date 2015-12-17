@@ -169,6 +169,7 @@
       }
 
       .plocations{
+        position: relative;
         color: $gray-font;
         font-size: 16px;
         font-family: $font-family-klav;
@@ -176,8 +177,12 @@
         letter-spacing: 3px;
         margin-top: 0;
         margin-bottom: $base-pad;
-        i{
-          display: block;
+        .pin{
+          display: inline-block;
+          width: 9px;
+          height: 12px;
+          margin-right: 6px;
+          @include img-retina( '../images/v2/partners-pin', png, 9px, 12px );
         }
       }
 
