@@ -31,7 +31,9 @@
         }
         &.collab{
           .graphic{
-            @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 78px, 67px);
+            width: 83px;
+            height: 49px;
+            @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 83px, 49px);
           }
         }
       }
@@ -109,7 +111,7 @@
     .atlas-highlights-flex{
       padding-left: 15px;
       padding-right: 15px;
-      
+
       .atlas-highlights-item{
         padding-left: 0;
         padding-right: 0;
