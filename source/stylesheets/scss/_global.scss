@@ -59,10 +59,10 @@ h5 { font-size: 1.25rem }
 h6 { font-size: 1rem }
 
 a{
-  color: $blue;
+  color: $blue-link;
 
   &:hover, &:focus{
-    color: $blue;
+    color: $blue-link;
   }
 }
 
