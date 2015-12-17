@@ -72,9 +72,9 @@
       display: flex;
       flex-direction: column;
       width: 33%;
-      padding: 0 10px 10px;
+      padding: 0 $xsmall-pad $xsmall-pad;
       border-right: 1px solid $off-white;
-      margin-bottom: $med-pad;
+      margin-bottom: $large-pad;
 
       &:last-child, &:nth-child(3n+3){
         border-right: none;
