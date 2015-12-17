@@ -27,7 +27,6 @@ $hero-total-height: 790px;
       margin: 30px 0 20px;
       font-size: 40px;
       font-weight: 300;
-      color: $blue;
     }
 
     .brand-hashi{
@@ -39,6 +38,7 @@ $hero-total-height: 790px;
       line-height: 1.6em;
       max-width: $small-body - 150;
       margin: 0 auto;
+      color: $sub-white;
     }
   }
 }
@@ -62,7 +62,7 @@ $hero-total-height: 790px;
   }
 
   p{
-    color: $blue-light;
+    color: $sub-white;
   }
   .why-feature{
     position: relative;
