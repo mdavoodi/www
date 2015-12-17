@@ -346,6 +346,17 @@ section{
   }
 }
 
+
+@media (min-width: 992px){
+  #atlas-feature-content{
+    .flexibility{
+      .feature-graphic{
+        margin-left: -32px;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px){
   #atlas-hero{
     #atlas-hero-content{
