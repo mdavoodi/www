@@ -69,6 +69,8 @@
     }
 
     .pan {
+      display: flex;
+      flex-direction: column;
       width: 33%;
       padding: 0 10px 10px;
       border-right: 1px solid $off-white;
@@ -80,14 +82,14 @@
 
       .pan-heading {
         padding: 10px 0;
-        background-color: $black;
+        //background-color: $gray-font;
       }
 
       h2 {
         text-align: center;
         margin: 0;
         a{
-          color: $white;
+          color: $black;
         }
       }
 
@@ -95,9 +97,16 @@
         padding: 5px;
       }
       .pan-body{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
         padding-right: $base-pad;
         padding-left: $base-pad;
+        border-bottom: 1px solid $off-white;
+
         .plogo{
+          border-top: 1px solid $off-white;
+
          i{
            width: 200px;
            height: 160px;
@@ -174,6 +183,7 @@
 
       .pldesc{
         padding: $base-pad;
+        margin: 0;
         background-color: $off-white-bg;
         font-size: 15px;
       }
@@ -182,16 +192,15 @@
         color: $black;
       }
 
-      .atbottom {
-        vertical-align: bottom;
-      }
-
-      a.contactus {
-        margin-top: 20px;
-      }
-
-      .outline-btn:hover {
-        color: $black;
+      .atbottom{
+        display: flex;
+        flex: 1;
+        a.contactus {
+          display: block;
+          width: 100%;
+          align-self: flex-end;
+          margin: $xsmall-pad auto;
+        }
       }
     }
   }
