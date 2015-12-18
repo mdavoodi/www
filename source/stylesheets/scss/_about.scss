@@ -5,6 +5,13 @@
 $founder-height: 300px;
 
 body.about{
+  .inner-page{
+    overflow: hidden;
+  }
+
+  p,ul{
+    color: $sub-white;
+  }
   .template-hero{
     .template-hero-content{
       @include img-retina( '../images/v2/about-hero-bg', png, 1280px, $template-hero-height);
@@ -45,12 +52,7 @@ body.about{
     }
   }
 
-  section{
-    padding: 120px 0;
-  }
-
   #about-who-we{
-    padding-top: 80px;
     background-color: $black;
   }
 
