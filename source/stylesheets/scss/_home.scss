@@ -39,9 +39,10 @@ $hero-total-height: 790px;
     h2{
       font-size: 18px;
       line-height: 1.6em;
-      max-width: $small-body - 150;
-      margin: 0 auto;
+      max-width: $small-body;
+      margin: 4px auto 0;
       color: $sub-white;
+      font-family: $font-family-open-sans;
     }
   }
 }
