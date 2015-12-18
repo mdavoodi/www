@@ -24,13 +24,16 @@ $hero-total-height: 790px;
     margin: 0 auto;
 
     h1{
-      margin: 30px 0 20px;
+      margin: 0 0 8px;
       font-size: 40px;
       font-weight: 300;
     }
 
     .brand-hashi{
-      color: $white;
+      margin: $small-pad 0 8px;
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 600;
     }
 
     h2{
