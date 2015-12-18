@@ -217,6 +217,14 @@ $hero-total-height: 790px;
     position: relative;
     z-index: 6;
 
+    .slider{
+      padding: 0 !important;
+    }
+
+    .descs{
+      padding: 0 50px;
+    }
+
     img{
       margin: $small-pad 0;
     }
@@ -257,14 +265,11 @@ $hero-total-height: 790px;
     }
   }
 
-  #products-nav{
-    width: 330px; //    width: 260px;
-    position: absolute;
-    top: $small-pad;
-    left: $small-pad;
-    background-color: $white;
+  #products-nav-wrap{
     border-right: 1px solid rgba($black, .05);
+  }
 
+  #products-nav{
     // assign product classes color
     @for $i from 0 to length($name-list) {
       $color: nth($colors-dark-list, $i+1);
@@ -287,14 +292,14 @@ $hero-total-height: 790px;
     li{
       position: relative;
       text-align: right;
-      padding-right: 40px;
+      padding-right: $xsmall-pad;
       margin: 16px 0;
 
       i{
         position: absolute;
         top: -3px;
-        right: -1px;
-        width: 3px;
+        right: -16px;
+        width: 4px;
         height: 100%;
       }
 
@@ -349,19 +354,12 @@ $hero-total-height: 790px;
 // End Cta Section
 // ----------------------------
 
-@media (max-width: 1170px) {
+@media(max-width: 1170px){
   #products{
-    #products-nav{
-      width: 260px;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  #products{
-    #products-nav{
-      width: 160px;
-      left: 0;
+    #products-display{
+      .descs{
+        padding: 0 45px;
+      }
     }
   }
 }
@@ -399,7 +397,6 @@ $hero-total-height: 790px;
   #products{
     #products-display{
       .descs{
-        background-color: $white;
         text-align: center;
       }
     }
@@ -408,11 +405,6 @@ $hero-total-height: 790px;
       h1{
         margin-bottom: $xsmall-pad;
       }
-    }
-
-    #products-nav-wrap{
-      height: 80px;
-      overflow: hidden;
     }
 
     #products-nav{
