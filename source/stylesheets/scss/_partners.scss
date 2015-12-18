@@ -102,11 +102,10 @@
         flex: 1 0 auto;
         padding-right: $base-pad;
         padding-left: $base-pad;
+          border-top: 1px solid $off-white;
         border-bottom: 1px solid $off-white;
 
         .plogo{
-          border-top: 1px solid $off-white;
-
          i{
            width: 200px;
            height: 160px;
