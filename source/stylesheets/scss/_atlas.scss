@@ -269,14 +269,12 @@ section{
 }
 
 #atlas-info{
-  //padding: $large-pad 0 $med-pad;
   h1{
     text-align: center;
   }
 }
 
 #atlas-customers{
-  // padding: $med-pad 0 $large-pad;
   background-color: $white;
   color: $black;
 
@@ -294,19 +292,9 @@ section{
 }
 
 #atlas-pricing{
-  // padding: $large-pad 0;
-
   .section-header{
     text-align: center;
   }
-}
-
-#atlas-contact{
-  // padding: $small-pad 0 $large-pad;
-}
-
-#atlas-cta{
-   // padding: $large-pad 0;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -320,7 +308,7 @@ section{
 
 
 @media (min-width: 992px){
-  #atlas-feature-content{
+  #atlas-features{
     .flexibility{
       .feature-graphic{
         margin-left: -32px;
@@ -331,7 +319,7 @@ section{
 
 @media (max-width: 992px){
   #atlas-hero{
-    #atlas-hero-content{
+    #atlas-hero{
       padding-top: 80px;
     }
 
@@ -342,7 +330,7 @@ section{
     }
   }
 
-  #atlas-feature-content{
+  #atlas-features{
     text-align: center;
 
     h1{
@@ -351,6 +339,11 @@ section{
 
     .feature-graphic{
       margin: 0 auto 30px
+    }
+
+    .feature-content{
+      padding-top: $small-pad;
+      padding-left: $xsmall-pad;
     }
 
     .automation-1{
@@ -416,7 +409,7 @@ section{
     }
   }
 
-  #atlas-feature-content{
+  #atlas-features{
     .flexibility{
       .feature-graphic{
         margin-left: auto;
@@ -427,8 +420,6 @@ section{
     }
 
     .security{
-      text-align: center;
-
       .row{
         margin-top: 0 !important;
       }
@@ -437,15 +428,23 @@ section{
         padding-left: 0;
       }
 
+      .feature-graphic{
+        margin: 0 auto $small-pad;
+      }
+
       .security-1{
         .feature-content{
           padding-top: 0;
+          padding-left: $small-pad;
           margin-top: -76px;
         }
       }
 
       .feature-content{
+        text-align: center;
         margin-bottom: $med-pad;
+        padding-left: 0;
+        padding-top: 0;
       }
     }
   }
@@ -504,7 +503,7 @@ section{
     }
   }
 
-  #atlas-feature-content{
+  #atlas-features{
     .automation-1{
       .feature-graphic{
         width: 180px;
@@ -530,14 +529,6 @@ section{
     }
 
     .security{
-      .feature-content{
-        text-align: center;
-      }
-
-      .feature-graphic{
-        margin: 0 auto $small-pad;
-      }
-
       .security-1{
         .feature-content{
           margin-top: 0;
