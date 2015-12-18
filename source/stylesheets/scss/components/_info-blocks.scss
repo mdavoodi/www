@@ -1,5 +1,11 @@
 .info{
 
+  &.white{
+    p{
+      color: $light-black;
+    }
+  }
+
   &.blue-brdr{
     .info-split{
       .info-block{
@@ -59,7 +65,7 @@
 
   p{
     color: $sub-white;
-  }  
+  }
 
   .info-split{
     display: flex;
