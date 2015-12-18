@@ -183,7 +183,7 @@ $hero-total-height: 790px;
 
 // ----------------------------
 // Product Section
-#products{
+#products-wrap{
   position: relative;
   padding: 200px 0;
 
@@ -208,7 +208,7 @@ $hero-total-height: 790px;
     text-align: center;
   }
 
-  #products-header{
+  #products{
     position: relative;
     z-index: 10;
   }
@@ -345,17 +345,11 @@ $hero-total-height: 790px;
 // ----------------------------
 
 
-// ----------------------------
-// Cta Section
-#home-cta{
-
-}
-
 // End Cta Section
 // ----------------------------
 
 @media(max-width: 1170px){
-  #products{
+  #products-wrap{
     #products-display{
       .descs{
         padding: 0 45px;
@@ -394,7 +388,7 @@ $hero-total-height: 790px;
     }
   }
 
-  #products{
+  #products-wrap{
     #products-display{
       .descs{
         text-align: center;
