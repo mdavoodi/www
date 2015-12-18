@@ -56,11 +56,17 @@ $project-logo-pad-left: 8px;
   }
 
   &.outline{
-    background-color: transparent;
     border: 1px solid $white;
 
     &.white{
+      background: transparent;
       color: $white;
+    }
+
+    &.orange{
+      background: transparent;
+      border: 1px solid $orange;
+      color: $orange;
     }
   }
 
@@ -88,9 +94,12 @@ $project-logo-pad-left: 8px;
     }
   }
 
+  &:hover{
+    text-decoration: none;
+  }
+
   &.careted{
     &:hover{
-      text-decoration: none;
       .hcaret{
         -moz-transform: translate(3px, -2px) rotate(135deg);
         -webkit-transform: translate(3px, -2px) rotate(135deg);

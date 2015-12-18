@@ -24,8 +24,16 @@
 
       h1{
         display: inline-block;
-        margin-bottom: 5px;
-        margin-top: 0px;
+        margin-bottom: $xsmall-pad;
+        margin-top: $xsmall-pad;
+      }
+
+      h4{
+        margin-bottom: 0;
+      }
+
+      .contact{
+        color: $orange;
       }
 
       p{
@@ -33,7 +41,11 @@
       }
 
       .hbtn{
-        margin: $small-pad 0 $med-pad;
+        vertical-align: middle;
+        font-size: 30px;
+        line-height: 30px;
+        color: white;
+        padding: 10px 20px;
       }
     }
 
@@ -42,9 +54,10 @@
       &:before{
         content: "$";
         position: absolute;
-        top: 10px;
-        left: -10px;
-        font-size: 14px;
+        top: 2px;
+        left: -16px;
+        font-size: 28px;
+        font-weight: 300;
       }
     }
 
@@ -117,44 +130,6 @@
       &:last-child{
         border-bottom: 8px solid $dft-brdr-clr;
       }
-
-      // &:first-child{
-      //   border-left: none;
-      // }
-      //
-      // &.enterprise{
-      //   border: 1px solid $blue;
-      // }
-      //
-      // .pricing-header{
-      //   text-align: center;
-      //   h1{
-      //     display: inline-block;
-      //   }
-      //
-      //   p{
-      //       margin: 0;
-      //   }
-      //
-      //   .hbtn{
-      //     margin: $small-pad 0 $med-pad;
-      //   }
-      // }
-      //
-      // .pricing-number{
-      //   position: relative;
-      //   &:before{
-      //     content: "$";
-      //     position: absolute;
-      //     top: -4px;
-      //     left: -10px;
-      //     font-size: 14px;
-      //   }
-      // }
-      //
-      // .pricing-features{
-
-      //}
     }
   }
 }
