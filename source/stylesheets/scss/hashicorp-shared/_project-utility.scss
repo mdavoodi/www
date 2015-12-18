@@ -71,7 +71,7 @@ $project-logo-pad-left: 8px;
 
   &.blue{
     color: $white;
-    background-color: $blue;
+    background-color: $blue-link;
   }
 
   &.plain{
@@ -80,7 +80,7 @@ $project-logo-pad-left: 8px;
     padding-left: 0;
 
     &.blue{
-      color: $blue;
+      color: $blue-link;
     }
 
     &.white{
@@ -119,8 +119,8 @@ $project-logo-pad-left: 8px;
   }
 
   &.blue{
-    border-top: 2px solid $blue;
-    border-left: 2px solid $blue;
+    border-top: 2px solid $blue-link;
+    border-left: 2px solid $blue-link;
   }
 
   &.vagrant{

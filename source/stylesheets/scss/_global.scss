@@ -64,6 +64,10 @@ a{
   &:hover, &:focus{
     color: $blue-link;
   }
+
+  &:focus{
+    text-decoration: none;
+  }
 }
 
 i{
