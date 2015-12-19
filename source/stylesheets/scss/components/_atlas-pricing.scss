@@ -37,7 +37,8 @@
       }
 
       p{
-          margin: 0;
+        margin: 0 auto;
+        max-width: 60%;
       }
 
       .hbtn{
@@ -78,7 +79,7 @@
         &.ul-2{
           li{
             &:before{
-              background-position: 0 -11px;
+              background-position: 0 -12px;
             }
           }
         }
@@ -86,7 +87,7 @@
         &.ul-3{
           li{
             &:before{
-              background-position: 0 -22px;
+              background-position: 0 -24px;
             }
           }
         }
@@ -95,6 +96,7 @@
           position: relative;
           margin-bottom: 10px;
           padding-left: $small-pad;
+          color: $sub-black;
 
           &:before{
             content: '';
@@ -102,10 +104,35 @@
             top: 7px;
             left: 0;
             display: inline-block;
-            width: 13px;
+            width: 18px;
             height: 11px;
             margin-right: 12px;
-            @include img-retina( '../images/v2/atlas-check-sprite', png, 13px, 33px);
+            @include img-retina( '../images/v2/atlas-check-sprite', png, 15px, 35px);
+          }
+
+          a{
+            position: relative;
+            display: inline-block;
+            color: $sub-black;
+
+            &:hover{
+              color: $blue-link;
+              &:after{
+                background-position: 0 -7px;
+              }
+            }
+
+            &:after{
+              content: '';
+              position: absolute;
+              top: 6px;
+              right: -15px;
+              display: inline-block;
+              width: 8px;
+              height: 7px;
+              vertical-align: super;
+              @include img-retina( '../images/v2/atlas-icon-link-sprite', png, 8px, 14px);
+            }
           }
         }
       }
