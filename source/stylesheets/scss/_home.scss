@@ -335,9 +335,13 @@ $hero-total-height: 790px;
 #home-customers{
   padding-top: 200px;
 
+  .customer-wrap{
+    border-top: 1px solid $dft-brdr-clr;
+  }
+
   .customers-section-header{
     text-align: center;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
   }
 }
 // End Customer Section
@@ -441,12 +445,19 @@ $hero-total-height: 790px;
     .customers-section-header{
       margin-bottom: $small-pad;
     }
+
+    .customer-wrap{
+      padding: 0 $med-pad;
+    }
   }
 }
 
 @media (max-width: 480px){
   #home-customers{
     padding: 120px 0 80px;
+    .customer-wrap{
+      padding: 0;
+    }
   }
 
   #products-wrap{
