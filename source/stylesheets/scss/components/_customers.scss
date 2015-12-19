@@ -33,6 +33,19 @@
       @include dark-customer();
     }
 
+    &.classpass{
+      @include img-retina( '../images/v2/customers/customer-a-classpass', png, 135px, 16px);
+    }
+    &.yc{
+      @include img-retina( '../images/v2/customers/customer-a-yc', png, 145px, 29px);
+    }
+    &.condenast{
+      @include img-retina( '../images/v2/customers/customer-a-condenast', png, 144px, 22px);
+    }
+    &.mozilla{
+      @include img-retina( '../images/v2/customers/customer-a-mozilla', png, 144px, 39px);
+    }
+
     &:not(:nth-child(-n+4)){
       border-bottom: none;
     }
@@ -47,18 +60,8 @@
   }
 }
 
-@media (max-width: 992px){
-  .customer-wrap{
-    // padding-bottom: $med-pad;
-    li{
-      width: 33.333%;
-    }
-  }
-}
-
 @media (max-width: 768px){
   .customer-wrap{
-    // padding-bottom: $med-pad;
     li{
       width: 50%;
     }
@@ -67,11 +70,9 @@
 
 @media (max-width: 480px){
   .customer-wrap{
-    padding-bottom: $med-pad;
     li{
       width: 100%;
-      border-right: none;
-      border-bottom: none;
+      height: 85px;
     }
   }
 }

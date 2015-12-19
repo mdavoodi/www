@@ -285,8 +285,9 @@ section{
 
   > .container{
     .col-xs-12{
-      padding: $small-pad;
-      border: 1px solid $off-white;
+      padding: $small-pad $med-pad;
+      border-top: 1px solid $off-white;
+      border-bottom: 1px solid $off-white;
     }
   }
 }
@@ -381,9 +382,34 @@ section{
       }
     }
   }
+
+  #atlas-customers{
+    h1{
+      margin-bottom: $xsmall-pad;
+    }
+    > .container{
+      .col-xs-12{
+        padding-left: $xsmall-pad;
+        padding-right: $xsmall-pad;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px){
+
+  #atlas-customers{
+    h1{
+      margin-bottom: $xsmall-pad;
+    }
+    > .container{
+      .col-xs-12{
+        padding-left: $med-pad;
+        padding-right: $med-pad;
+      }
+    }
+  }
+
   #atlas-hero{
     h1{
       font-size: 36px;
@@ -468,19 +494,6 @@ section{
 
       li{
         width: 100%;
-      }
-    }
-  }
-
-  #atlas-customers{
-    h1{
-      margin-bottom: $xsmall-pad;
-    }
-
-    > .container{
-      .row{
-        border-right: none;
-        border-left: none;
       }
     }
   }
