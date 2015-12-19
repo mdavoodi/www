@@ -74,7 +74,7 @@ Packer helps isolate these software download and installation steps to one of th
   ...
 }
 </pre>
-_[packer/consul.json](https://github.com/hashicorp/atlas-examples/blob/master/spark/packer/consul.json)_  
+_[packer/spark-consul.json](https://github.com/hashicorp/atlas-examples/blob/master/spark/packer/spark-consul.json)_  
 
 For this Spark infrastructure automation project, Packer was used to build AMIs for the various Consul and Spark roles. Since Consul was used on the Spark nodes as well (more details below), Packer was able to re-use installation scripts across each AMI artifact that was produced. With Packer integrated into Atlas' _Builds_ support, new artifacts were built and staged with each change made to the installation scripts and Packer configurations on GitHub.
 
@@ -141,3 +141,5 @@ HashiCorp's Atlas is a modern infrastructure deployment tool. Atlas integrates e
 In this project we used HashiCorp tools to automate the infrastructure solution pipeline from artifacts release to production deployment. We knew from the start that the HashiCorp tools fit our bill at a conceptual level, for example, Packer is a great tool for the work of release stage, and Terraform is a great tool for the work of rollout stage, but by executing this PoC we understood some of the subtle benefits we did not expected before this project, such as 'late-binding' could be done is a much clever way by adopting HashiCorp Consul.
 
 At under 2,000 lines of code, including comments and blank lines, the final project came in at a very consumable and understandable size. While _lines of code_ is never the final measure of a project, we do feel it has a certain correlation to the long term maintainability of the overall product. Given that the code structure can be clearly understood, a new team member can easily come in and augment our solution to adapt to different customer environments.
+
+The full source of the project is available on [GitHub](https://github.com/hashicorp/atlas-examples/tree/master/spark).
