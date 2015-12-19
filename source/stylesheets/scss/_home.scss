@@ -47,13 +47,6 @@ $hero-total-height: 790px;
   }
 }
 
-.section{
-  .section-footer{
-    margin-top: 100px;
-    text-align: center;
-  }
-}
-
 #home-why{
   padding-bottom: 300px;
 
@@ -169,6 +162,11 @@ $hero-total-height: 790px;
     h3{
       margin-bottom: 40px;
     }
+  }
+
+  .atlas-section-footer{
+    margin-top: $med-pad;
+    text-align: center;
   }
 
   >.container{
