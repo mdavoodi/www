@@ -79,7 +79,7 @@
         &.ul-2{
           li{
             &:before{
-              background-position: 0 -11px;
+              background-position: 0 -12px;
             }
           }
         }
@@ -87,7 +87,7 @@
         &.ul-3{
           li{
             &:before{
-              background-position: 0 -22px;
+              background-position: 0 -24px;
             }
           }
         }
@@ -107,7 +107,7 @@
             width: 18px;
             height: 11px;
             margin-right: 12px;
-            @include img-retina( '../images/v2/atlas-check-sprite', png, 13px, 33px);
+            @include img-retina( '../images/v2/atlas-check-sprite', png, 15px, 35px);
           }
 
           a{
