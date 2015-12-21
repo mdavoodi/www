@@ -18,7 +18,7 @@ pageable: true
 				</div>	<!-- span -->
 				<div class="col-md-8 col-sm-12">
 					<%= partial "layouts/blog_meta", locals: {article: article} %>
-					<p><%= article.summary %></p>
+					<%= article.summary %>
 					<a class="hbtn plain blue careted read-more" href="<%= article.url %>">read more<span class="hcaret small blue"></span></a>
 				</div>	<!-- span -->
 			</div>	<!-- row -->
@@ -26,12 +26,12 @@ pageable: true
 		<% end %>
 	</div>
 
-	<div class="col-md-11" style="padding: 3em 0; text-align: center;">
+	<div class="col-md-11 next-previous" style="padding: 3em 0; text-align: center;">
 		<% if prev_page %>
-			<%= link_to "Previous Page", prev_page.url, class: "hbtn outline-btn black small" %>
+			<%= link_to "Previous Page", prev_page.url, class: "hbtn outline black small" %>
 		<% end %>
 		<% if next_page %>
-			<%= link_to "Next Page", next_page.url, class: "hbtn outline-btn black small" %>
+			<%= link_to "Next Page", next_page.url, class: "hbtn outline black small next" %>
 		<% end %>
 	</div>
 </div> <!-- container -->

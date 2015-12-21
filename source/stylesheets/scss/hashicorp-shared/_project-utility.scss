@@ -40,7 +40,7 @@ $project-logo-pad-left: 8px;
   text-transform: uppercase;
   font-family: $font-family-klav;
   font-size: 18px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   font-weight: 600;
   background-color: $white;
   color: $black;
@@ -68,6 +68,16 @@ $project-logo-pad-left: 8px;
       border: 1px solid $orange;
       color: $orange;
     }
+
+    &.black{
+      background: transparent;
+      border: 1px solid $black;
+      color: $black;
+
+      &:hover{
+        color: $blue;
+      }
+    }
   }
 
   &.orange{
@@ -78,6 +88,11 @@ $project-logo-pad-left: 8px;
   &.blue{
     color: $white;
     background-color: $blue-link;
+  }
+
+  &.black{
+    color: $white;
+    background-color: $black;
   }
 
   &.plain{
