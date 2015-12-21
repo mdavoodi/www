@@ -67,6 +67,7 @@ $hero-total-height: 790px;
     margin-bottom: 45px;
 
     h2{
+      margin-bottom: 0;
       margin-left: -120px;
       padding-left: 120px;
     }
@@ -74,7 +75,7 @@ $hero-total-height: 790px;
     .graphic{
       display: inline-block;
       position: absolute;
-      top: 5px;
+      top: 3px;
       left: 0;
       width: 120px;
       height: 48px;
@@ -86,7 +87,7 @@ $hero-total-height: 790px;
         height: 39px;
         @include img-retina('../images/v2/icon-fast', png, 60px, 39px);
         left: 12px;
-        top: 11px;
+        top: 7px;
       }
     }
 
@@ -293,6 +294,8 @@ $hero-total-height: 790px;
       text-align: right;
       padding-right: $xsmall-pad;
       margin: 16px 0;
+      font-size: 1.5rem;
+      font-family: $font-family-klav;
 
       i{
         position: absolute;

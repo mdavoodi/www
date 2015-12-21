@@ -91,6 +91,10 @@ $atlas-hero-total-height: 706px;
 #atlas-why{
   position: relative;
   z-index: 2;
+
+  > .container{
+    border-bottom: 1px solid $off-white;
+  }
 }
 
 #atlas-features{
@@ -99,37 +103,54 @@ $atlas-hero-total-height: 706px;
 
   > .container{
     > .row{
-      margin-bottom: $large-pad;
+      margin-bottom: $med-pad;
       &:first-child, &:last-child{
         margin-bottom: 0;
       }
     }
   }
 
+  .atlas-features-header{
+    text-align: center;
+  }
+
   h1{
-    font-weight: 600;
+    display: inline-block;
+    padding: 10px 48px;
+    margin: 0 auto;
     color: $black;
-    margin-bottom: $med-pad;
+    border: 1px solid $blue;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
   }
 
   h2{
-    padding-bottom: $small-pad;
-    margin-bottom: $med-pad;
-    border-bottom: 1px solid $off-white;
+    text-align: center;
+    padding-top: $small-pad;
+    margin-bottom: $xsmall-pad;
+    //border-top: 1px solid $blue;
   }
 
   p{
     color: $black;
-    font-size: 24px;
+    text-align: center
   }
 
   .automation{
     .feature-graphic{
       margin: 0 auto $small-pad;
     }
+
+    h2{
+      //border-top: none;
+      margin-bottom: $small-pad;
+    }
   }
 
   .automation-1{
+
     .feature-graphic{
       width: 236px;
       //height: 230px;
@@ -159,12 +180,18 @@ $atlas-hero-total-height: 706px;
   }
 
   .security{
+    h2{
+      margin-bottom: $small-pad;
+    }
+
     .feature-graphic{
       margin: 0 0 $med-pad 15px;
     }
 
     .feature-content{
-      text-align: left;
+      p{
+        text-align: left;
+      }
     }
   }
 
@@ -201,15 +228,6 @@ $atlas-hero-total-height: 706px;
       width: 117px;
       height: 96px;
       @include img-retina( '../images/v2/atlas-graphic-security-4', png, 117px, 96px);
-    }
-  }
-
-
-  .t-right{
-    .feature-content{
-      p{
-        text-align: right
-      }
     }
   }
 }
@@ -284,9 +302,9 @@ section{
   }
 
   > .container{
+    border-top: 1px solid $off-white;
     .col-xs-12{
-      padding: $small-pad $med-pad;
-      border-top: 1px solid $off-white;
+      padding: 0 $med-pad;
     }
   }
 }
@@ -332,10 +350,6 @@ section{
 
   #atlas-features{
     text-align: center;
-
-    h1{
-      margin: $med-pad 0;
-    }
 
     .feature-graphic{
       margin: 0 auto 30px
