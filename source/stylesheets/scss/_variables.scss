@@ -39,6 +39,7 @@ $dft-brdr-clr:          #1A253F; // #26364C; // #313944;
 $dark-input-bg:         #171D29; // #112746
 $light-input-bg:        $blue-faint;
 
+$atlas-color: $blue;
 $vagrant-color: #48b4fb;
 $packer-color: #7bc6b1;
 $serf-color: #E14B55;
@@ -48,6 +49,7 @@ $vault-color: #00D8FE; //#00a9c7;
 $nomad-color: #56cdad;
 $otto-color: $orange;
 
+$atlas-dark-color: darken($blue, 10%);
 $vagrant-dark-color: darken(#48b4fb, 10%);
 $packer-dark-color: darken(#7bc6b1, 10%);
 $serf-dark-color: darken(#E14B55, 10%);
@@ -58,9 +60,9 @@ $nomad-dark-color: darken(#56cdad, 10%);
 $otto-dark-color: darken($orange, 10%);
 
 // helper list for loops. ORDER IS IMPORTANT
-$colors-dark-list: $vagrant-dark-color $packer-dark-color $serf-dark-color $consul-dark-color $terraform-dark-color $vault-dark-color $nomad-dark-color $otto-dark-color;
-$colors-list: $vagrant-color $packer-color $serf-color $consul-color $terraform-color $vault-color $nomad-color $otto-color;
-$name-list: ('vagrant', 'packer', 'serf', 'consul', 'terraform', 'vault', 'nomad', 'otto');
+$colors-dark-list: $atlas-dark-color $vagrant-dark-color $packer-dark-color $serf-dark-color $consul-dark-color $terraform-dark-color $vault-dark-color $nomad-dark-color $otto-dark-color;
+$colors-list: $atlas-color $vagrant-color $packer-color $serf-color $consul-color $terraform-color $vault-color $nomad-color $otto-color;
+$name-list: ('atlas', 'vagrant', 'packer', 'serf', 'consul', 'terraform', 'vault', 'nomad', 'otto');
 
 // Scaffolding
 // -------------------------
