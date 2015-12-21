@@ -214,6 +214,7 @@ $hero-total-height: 790px;
 
   #products-display{
     position: relative;
+    height: 600px;
     z-index: 6;
 
     .slider{
@@ -394,6 +395,11 @@ $hero-total-height: 790px;
     #products-display{
       .descs{
         text-align: center;
+        a{
+          &:last-child {
+            margin-left: 0;
+          }
+        }
       }
     }
 
@@ -453,7 +459,7 @@ $hero-total-height: 790px;
 
 @media (max-width: 480px){
   #home-customers{
-    padding: 120px 0 80px;
+    padding: 200px 0 80px;
     .customer-wrap{
       padding: 0;
     }
@@ -464,7 +470,7 @@ $hero-total-height: 790px;
     padding: $med-pad 0;
 
     #product-bg{
-      height: 840px;
+      height: 820px;
     }
 
     h1{
