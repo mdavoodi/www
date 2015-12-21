@@ -22,12 +22,12 @@
   </div> <!-- hero -->
 </div> <!-- hero-mask -->
 <div class="subhero-site-wrap">
-  <section id="home-why" class="section">
+  <section id="home-why" class="">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 why-section-header">
           <h2>
-            <span class="brand-hashi">HashiCorp</span> Technologies Power the World's Largest Websites
+            Why Use the <span class="brand-hashi">HashiCorp</span> Workflow for Application Delivery?
           </h2>
           <p>
             Securely maintaining global infrastructure while
@@ -76,12 +76,12 @@
     </div><!-- /.container-->
   </section><!-- /#home-why -->
 
-  <section id="home-atlas" class="section atlas-highlights">
+  <section id="home-atlas" class="atlas-highlights">
     <div id="atlas-bg" class="skew-bg"></div>
     <div id="atlas-bg-2" class="skew-bg"></div>
     <div id="atlas-header-cta">
       <h4>For Enterprises</h4>
-      <h1><span class="brand-hashi">HashiCorp</span></br><span class="brand-atlas">Atlas</span></h1>
+      <h1 class="h1-scale"><span class="brand-hashi">HashiCorp</span></br><span class="brand-atlas">Atlas</span></h1>
     </div>
     <div class="container">
       <%= partial "layouts/atlas-highlights" %>
@@ -91,181 +91,174 @@
     </div> <!-- /.container -->
   </section><!-- /#home-atlas -->
 
-  <section id="products" class="section">
+  <section id="products-wrap" class="">
     <div id="product-bg" class="skew-bg"></div>
-    <div id="products-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+    <div id="products">
+      <div id="products-display" class="atlas">
+        <div class="container">
+          <div class="row">
             <h1><span class="brand-hashi">HashiCorp</span> Products</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="products-display" class="atlas">
-      <div class="container">
-        <div class="row">
-          <div id="products-nav-wrap" class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-3 col-sm-3 col-xs-12">
-            <ul id="products-nav" class="clearfix">
-              <li class="atlas" data-prod="atlas">
-                <a href="#atlas">
-                  <i></i>
-                  <h4>Atlas</h4>
-                </a>
-              </li>
-              <li class="vagrant" data-prod="vagrant">
-                <a href="#vagrant">
-                  <i></i>
-                  <h4>Vagrant</h4>
-                </a>
-              </li>
-              <li class="packer" data-prod="packer">
-                <a href="#packer">
-                  <i></i>
-                  <h4>Packer</h4>
-                </a>
-              </li>
-              <li class="serf" data-prod="serf">
-                <a href="#serf">
-                  <i></i>
-                  <h4>Serf</h4>
-                </a>
-              </li>
-              <li class="consul" data-prod="consul">
-                <a href="#consul">
-                  <i></i>
-                  <h4>Consul</h4>
-                </a>
-              </li>
-              <li class="terraform" data-prod="terraform">
-                <a href="#terraform">
-                  <i></i>
-                  <h4>Terraform</h4>
-                </a>
-              </li>
-              <li class="vault" data-prod="vault">
-                <a href="#vault">
-                  <i></i>
-                  <h4>Vault</h4>
-                </a>
-              </li>
-              <li class="nomad" data-prod="nomad">
-                <a href="#nomad">
-                  <i></i>
-                  <h4>Nomad</h4>
-                </a>
-              </li>
-              <li class="otto" data-prod="otto">
-                <a href="#otto">
-                  <i></i>
-                  <h4>Otto</h4>
-                </a>
-              </li>
-            </ul>
-          </div> <!-- products-nav-wrap -->
-          <div class="slider col-lg-8 col-md-6 col-sm-9 col-xs-12">
-            <div class="atlas row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/atlas-logo.png" alt="Atlas" height="100px"/>
-                <p>Atlas is a unified dashboard and workflow for developing, deploying, and maintaining applications on any public, private, or hybrid infrastructure. Enable your business to deliver at incredible speed without sacrificing change control, operational consistency, or quality.
-                </p>
-                <div class="descs-btns atlas">
-                  <a href="/atlas.html" class="hbtn plain careted explore">Learn about Atlas<span class="hcaret small atlas"></span></a>
+            <div id="products-nav-wrap" class="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-3 col-sm-3 col-xs-12">
+              <ul id="products-nav" class="clearfix no-ul">
+                <li class="atlas" data-prod="atlas">
+                  <a href="#atlas">
+                    <i></i>
+                    Atlas
+                  </a>
+                </li>
+                <li class="vagrant" data-prod="vagrant">
+                  <a href="#vagrant">
+                    <i></i>
+                    Vagrant
+                  </a>
+                </li>
+                <li class="packer" data-prod="packer">
+                  <a href="#packer">
+                    <i></i>
+                    Packer
+                  </a>
+                </li>
+                <li class="serf" data-prod="serf">
+                  <a href="#serf">
+                    <i></i>
+                    Serf
+                  </a>
+                </li>
+                <li class="consul" data-prod="consul">
+                  <a href="#consul">
+                    <i></i>
+                    Consul
+                  </a>
+                </li>
+                <li class="terraform" data-prod="terraform">
+                  <a href="#terraform">
+                    <i></i>
+                    Terraform
+                  </a>
+                </li>
+                <li class="vault" data-prod="vault">
+                  <a href="#vault">
+                    <i></i>
+                    Vault
+                  </a>
+                </li>
+                <li class="nomad" data-prod="nomad">
+                  <a href="#nomad">
+                    <i></i>
+                    Nomad
+                  </a>
+                </li>
+                <li class="otto" data-prod="otto">
+                  <a href="#otto">
+                    <i></i>
+                    Otto
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- products-nav-wrap -->
+            <div class="slider col-lg-8 col-md-6 col-sm-9 col-xs-12">
+              <div class="atlas row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/atlas-logo.png" alt="Atlas" height="100px"/>
+                  <p>Atlas is a unified dashboard and workflow for developing, deploying, and maintaining applications on any public, private, or hybrid infrastructure. Enable your business to deliver at incredible speed without sacrificing change control, operational consistency, or quality.
+                  </p>
+                  <div class="descs-btns atlas">
+                    <a href="/atlas.html" class="hbtn plain careted explore">Learn about Atlas<span class="hcaret small atlas"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="vagrant row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/vagrant-logo.png" alt="Vagrant" height="100px"/>
-                <p>Development environments made easy. Vagrant creates and configures lightweight, reproducible, and portable development environments with support for Virtualbox, VMware, Hyper-V, Docker, and more. Eliminate long onboarding times and "works on my machine" excuses.
-                </p>
-                <div class="descs-btns vagrant">
-                  <a href="https://www.vagrantup.com" class="hbtn plain careted explore">Explore Vagrant<span class="hcaret small vagrant"></span></a>
-                  <a href="https://docs.vagrantup.com/v2/" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="vagrant row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/vagrant-logo.png" alt="Vagrant" height="100px"/>
+                  <p>Development environments made easy. Vagrant creates and configures lightweight, reproducible, and portable development environments with support for Virtualbox, VMware, Hyper-V, Docker, and more. Eliminate long onboarding times and "works on my machine" excuses.
+                  </p>
+                  <div class="descs-btns vagrant">
+                    <a href="https://www.vagrantup.com" class="hbtn plain careted explore">Explore Vagrant<span class="hcaret small vagrant"></span></a>
+                    <a href="https://docs.vagrantup.com/v2/" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="packer row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/packer-logo.png" alt="Packer" height="110px"/>
-                <p>
-                  Packer is a tool for creating images for platforms such as Amazon AWS, OpenStack, VMware, VirtualBox, Docker,
-                  and more &mdash; all from a single source configuration.
-                </p>
-                <p>
-                  Common use cases for Packer include creating appliances,
-                  pre-baking deployment images, packaging applications, and testing
-                  configuration management scripts.
-                </p>
-                <div class="descs-btns packer">
-                  <a href="https://www.packer.io" class="hbtn plain careted explore">Explore Packer<span class="hcaret small packer"></span></a>
-                  <a href="https://www.packer.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="packer row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/packer-logo.png" alt="Packer" height="110px"/>
+                  <p>
+                    Packer is a tool for creating images for platforms such as Amazon AWS, OpenStack, VMware, VirtualBox, Docker,
+                    and more &mdash; all from a single source configuration.
+                  </p>
+                  <p>
+                    Common use cases for Packer include creating appliances,
+                    pre-baking deployment images, packaging applications, and testing
+                    configuration management scripts.
+                  </p>
+                  <div class="descs-btns packer">
+                    <a href="https://www.packer.io" class="hbtn plain careted explore">Explore Packer<span class="hcaret small packer"></span></a>
+                    <a href="https://www.packer.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="serf row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/serf-logo.png" alt="Serf" height="110px"/>
-                <p>Serf is a lightweight and decentralized solution for cluster membership, failure detection, and orchestration. Serf is used as a building block for highly available systems, such as Consul.</p>
-                <div class="descs-btns serf">
-                  <a href="https://www.serfdom.io" class="hbtn plain careted explore">Explore Serf<span class="hcaret small serf"></span></a>
-                  <a href="https://www.serfdom.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="serf row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/serf-logo.png" alt="Serf" height="110px"/>
+                  <p>Serf is a lightweight and decentralized solution for cluster membership, failure detection, and orchestration. Serf is used as a building block for highly available systems, such as Consul.</p>
+                  <div class="descs-btns serf">
+                    <a href="https://www.serfdom.io" class="hbtn plain careted explore">Explore Serf<span class="hcaret small serf"></span></a>
+                    <a href="https://www.serfdom.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="consul row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/consul-logo.png" alt="Consul" height="110px"/>
-                <p>
-                  Consul is a distributed, highly-available, and multi-datacenter aware tool for service
-                  discovery, configuration, and orchestration. Consul enables rapid deployment, configuration, and
-                  maintenance of service-oriented architectures at massive scale.
-                </p>
-                <div class="descs-btns consul">
-                  <a href="https://consul.io" class="hbtn plain careted explore">Explore Consul<span class="hcaret small consul"></span></a>
-                  <a href="https://www.consul.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="consul row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/consul-logo.png" alt="Consul" height="110px"/>
+                  <p>
+                    Consul is a distributed, highly-available, and multi-datacenter aware tool for service
+                    discovery, configuration, and orchestration. Consul enables rapid deployment, configuration, and
+                    maintenance of service-oriented architectures at massive scale.
+                  </p>
+                  <div class="descs-btns consul">
+                    <a href="https://consul.io" class="hbtn plain careted explore">Explore Consul<span class="hcaret small consul"></span></a>
+                    <a href="https://www.consul.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="terraform row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/terraform-logo.png" alt="Terraform" height="110px"/>
-                <p>Terraform is a tool for creating, combining, and managing infrastructure resources across multiple providers. Manage resources on cloud providers such as Amazon Web Services, Google Cloud, Microsoft Azure, DNS records on DNSSimple, Dyn, and CloudFlare, email services on Mailgun, and more.</p>
-                <div class="descs-btns terraform">
-                  <a href="https://terraform.io" class="hbtn plain careted explore">Explore Terraform<span class="hcaret small terraform"></span></a>
-                  <a href="https://www.terraform.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="terraform row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/terraform-logo.png" alt="Terraform" height="110px"/>
+                  <p>Terraform is a tool for creating, combining, and managing infrastructure resources across multiple providers. Manage resources on cloud providers such as Amazon Web Services, Google Cloud, Microsoft Azure, DNS records on DNSSimple, Dyn, and CloudFlare, email services on Mailgun, and more.</p>
+                  <div class="descs-btns terraform">
+                    <a href="https://terraform.io" class="hbtn plain careted explore">Explore Terraform<span class="hcaret small terraform"></span></a>
+                    <a href="https://www.terraform.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="vault row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/vault-logo.png" alt="Vault" height="110px"/>
-                <p>Vault secures, stores, and controls access to tokens, passwords, certificates, API keys, and other sensitive resources in modern datacenters.
-                  For each resource, Vault handles leasing, revocation, rolling, and auditing.</p>
-                <div class="descs-btns vault">
-                  <a href="https://vaultproject.io" class="hbtn plain careted explore">Explore Vault<span class="hcaret small vault"></span></a>
-                  <a href="https://vaultproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="vault row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/vault-logo.png" alt="Vault" height="110px"/>
+                  <p>Vault secures, stores, and controls access to tokens, passwords, certificates, API keys, and other sensitive resources in modern datacenters.
+                    For each resource, Vault handles leasing, revocation, rolling, and auditing.</p>
+                  <div class="descs-btns vault">
+                    <a href="https://vaultproject.io" class="hbtn plain careted explore">Explore Vault<span class="hcaret small vault"></span></a>
+                    <a href="https://vaultproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="nomad row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/nomad-logo.png" alt="Nomad" height="100px"/>
-                <p>Nomad is a cluster manager and scheduler that provides a common workflow to deploy applications across an infrastructure. Deploy virtualized, containerized, or standalone application workloads across a fleet of servers to maximize resource utilization.</p>
-                <div class="descs-btns nomad">
-                  <a href="https://nomadproject.io" class="hbtn plain careted explore">Explore Nomad<span class="hcaret small nomad"></span></a>
-                  <a href="https://nomadproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="nomad row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/nomad-logo.png" alt="Nomad" height="100px"/>
+                  <p>Nomad is a cluster manager and scheduler that provides a common workflow to deploy applications across an infrastructure. Deploy virtualized, containerized, or standalone application workloads across a fleet of servers to maximize resource utilization.</p>
+                  <div class="descs-btns nomad">
+                    <a href="https://nomadproject.io" class="hbtn plain careted explore">Explore Nomad<span class="hcaret small nomad"></span></a>
+                    <a href="https://nomadproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="otto row">
-              <div class="descs col-xs-12">
-                <img src="/images/v2/logos/otto-logo.png" alt="Otto" height="110px"/>
-                <p>Otto is a tool to develop and deploy any application on any cloud platform, all controlled with a single consistent workflow to maximize the productivity of you and your team.</p>
-                <div class="descs-btns otto">
-                  <a href="https://ottoproject.io" class="hbtn plain careted explore">Explore Otto<span class="hcaret small otto"></span></a>
-                  <a href="https://ottoproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+              <div class="otto row">
+                <div class="descs col-xs-12">
+                  <img src="/images/v2/logos/otto-logo.png" alt="Otto" height="110px"/>
+                  <p>Otto is a tool to develop and deploy any application on any cloud platform, all controlled with a single consistent workflow to maximize the productivity of you and your team.</p>
+                  <div class="descs-btns otto">
+                    <a href="https://ottoproject.io" class="hbtn plain careted explore">Explore Otto<span class="hcaret small otto"></span></a>
+                    <a href="https://ottoproject.io/docs/index.html" class="hbtn plain careted doc">Documentation<span class="hcaret black small"></span></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -283,15 +276,14 @@
           <h1>Trust HashiCorp</h1>
         </div>
         <div class="col-md-10 col-md-offset-1">
-          <ul class="customer-wrap">
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
-            <li class="customer-item"></li>
+          <ul class="customer-wrap no-ul">
+            <li class="customer-item yc"></li>
+            <li class="customer-item do"></li>
+            <li class="customer-item condenast"></li>
+            <li class="customer-item capitolone"></li>
+            <li class="customer-item stripe"></li>
+            <li class="customer-item pinterest"></li>
+            <li class="customer-item cisco"></li>
           </ul>
         </div>
       </div>
@@ -302,14 +294,14 @@
     <div class="container">
       <div class="row">
         <div id="cta-bnr" class="bnr gray-bnr">
-          <div class="col">
-            <h4>Atlas brings confidence and agility to modern application delivery.</h4>
+    			<div class="col">
+    				<h4>Read about HashiCorp’s guiding principles in the Tao of Hashicorp</h4>
             <div class="bnr-btn">
-              <a class="hbtn orange lrg careted" href="/atlas.html">Learn How<span class="hcaret"></span></a>
+    				  <a class="hbtn orange lrg careted" href="/tao.html">Read Now<span class="hcaret"></span></a>
             </div>
-          </div>
-        </div>
-      </div>
+    			</div>
+    		</div>
+    	</div>
     </div>
   </section> <!-- /#home-cta -->
 </div>

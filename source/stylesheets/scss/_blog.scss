@@ -132,6 +132,8 @@ body.blog {
 
   .meta-wrap{
     position: relative;
+    margin-bottom: 10px;
+    margin-top: 3px;
 
     a{
       &:hover{
@@ -189,12 +191,13 @@ body.blog {
       background: $black;
     }
   }
-
-  a.read-more {
-    margin-top: 20px;
-  }
 }
 
+.next-previous{
+  .next{
+    margin-left: $base-pad;
+  }
+}
 
 .pagination {
   height: 80px;
@@ -260,6 +263,11 @@ article {
       margin-bottom: 20px;
     }
 
+    .more-posts{
+      margin-top: $small-pad;
+      padding-top: $small-pad;
+      border-top: 1px solid $off-white;
+    }
   }
 
   &.right-aligned {
