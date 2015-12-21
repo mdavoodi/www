@@ -463,27 +463,23 @@ section{
         margin-top: 0 !important;
       }
 
-      p{
-        padding-left: 0;
-      }
-
       .feature-graphic{
-        margin: 0 auto $small-pad;
+        margin: 0 auto;
       }
 
       .security-1{
         .feature-content{
-          padding-top: 0;
-          padding-left: $small-pad;
-          margin-top: -76px;
+          padding-top: $small-pad;
         }
       }
 
       .feature-content{
-        text-align: center;
-        margin-bottom: $med-pad;
-        padding-left: 0;
-        padding-top: 0;
+        p{
+          text-align: center;
+          margin-bottom: $med-pad;
+          padding-left: 0;
+          padding-top: 0;
+        }
       }
     }
   }
