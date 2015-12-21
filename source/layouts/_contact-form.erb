@@ -6,17 +6,23 @@
         <p>A HashiCorp solutions engineer will be in touch to help demonstrate how Atlas can be used in your infrastructure.</p>
       </div>
       <div class="row">
-        <form action="index.html" method="post">
+
+        <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+          <input type=hidden name="oid" value="00D15000000Gbfw">
+          <input type=hidden name="retURL" value="http://hashicorp.com/atlas_thanks.html">
+
           <div class="left">
-            <input type="text" name="name" value="" placeholder="Name">
-            <input type="text" name="company" value="" placeholder="Company">
-            <input type="text" name="email" value="" placeholder="Email">
+            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Name"/>
+            <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Company"/>
+            <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Email"/>
           </div>
+
           <div class="right">
-            <textarea name="message" value="" placeholder="Message"></textarea>
+            <textarea name="description" value="" placeholder="Message"></textarea>
           </div>
           <div class="bottom">
-            <button class="hbtn orange careted" type="button">Submit Message<span class="hcaret"></span></button>
+            <button class="hbtn orange careted" type="submit">Submit Message<span class="hcaret"></span></button>
           </div>
         </form>
       </div>
