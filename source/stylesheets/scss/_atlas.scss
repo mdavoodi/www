@@ -302,9 +302,10 @@ section{
   }
 
   > .container{
-    border-top: 1px solid $off-white;
     .col-xs-12{
       padding: 0 $med-pad;
+      border-right: 1px solid $off-white;
+      border-left: 1px solid $off-white;
     }
   }
 }
@@ -324,8 +325,7 @@ section{
   }
 }
 
-
-@media (min-width: 992px){
+@media (min-width: 768px){
   #atlas-features{
     .flexibility{
       .feature-graphic{
@@ -371,7 +371,7 @@ section{
     .flexibility{
       .feature-graphic{
         background-size: 768px 304px;
-        margin-left: -30px;
+        //margin-left: -30px;
       }
     }
 
