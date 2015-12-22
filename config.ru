@@ -12,6 +12,10 @@ use Rack::Rewrite do
   r302      '/products.html',   '/'
 end
 
+use Rack::Auth::Basic, "Protected Area" do |username, password|
+  username == 'hashicorp' && password == 'hashicorp'
+end
+
 # Force SSL
 use Rack::SslEnforcer, :only_environments => ['production']
 

@@ -1,0 +1,356 @@
+// partners
+
+@mixin asteris-logo {
+  @include img-retina( '../images/partner_asteris', png, 200px, 160px);
+}
+@mixin cheval-logo {
+  @include img-retina( '../images/partner_cheval', jpg, 200px, 160px);
+}
+@mixin contsoln-logo {
+  @include img-retina( '../images/partner_contsoln', png, 200px, 160px);
+}
+@mixin creationline-logo {
+	@include img-retina( '../images/partner_creationline', png, 200px, 160px);
+}
+@mixin cynergypro-logo {
+	@include img-retina( '../images/partner_cynergypro', png, 200px, 160px);
+}
+@mixin mustwin-logo {
+  @include img-retina( '../images/partner_mustwin', png, 200px, 160px);
+}
+@mixin opencredo-logo {
+	@include img-retina( '../images/partner_opencredo', png, 200px, 160px);
+}
+@mixin opex-logo {
+	@include img-retina( '../images/partner_opex', png, 200px, 160px);
+}
+@mixin rean-logo {
+  @include img-retina( '../images/partner_rean', jpg, 200px, 160px);
+}
+@mixin slalom-logo {
+	@include img-retina( '../images/partner_slalom', png, 200px, 160px);
+}
+@mixin unifio-logo {
+	@include img-retina( '../images/partner_unifio', png, 200px, 160px);
+}
+@mixin vibrato-logo {
+	@include img-retina( '../images/partner_vibrato', png, 200px, 160px);
+}
+@mixin xebia-logo {
+	@include img-retina( '../images/partner_xebia', png, 200px, 160px);
+}
+
+.partners {
+
+  .bnr{
+    margin-top: 0;
+  }
+  .inner-page-header{
+    h1{
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    color: $black;
+    font-weight: 300;
+  }
+
+  .intropart {
+    @include section-border-bottom();
+  }
+
+  .sipart {
+    text-align: center;
+
+    .panel-wrap{
+      display: flex;
+    	flex-flow: row wrap;
+    }
+
+    .pan {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      padding: 0 $xsmall-pad $xsmall-pad;
+      border-right: 1px solid $off-white;
+      margin-bottom: $large-pad;
+
+      &:last-child, &:nth-child(3n+3){
+        border-right: none;
+      }
+
+      .pan-heading {
+        padding: 10px 0;
+        //background-color: $gray-font;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0;
+        a{
+          color: $black;
+        }
+      }
+
+      img {
+        padding: 5px;
+      }
+      .pan-body{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        padding-right: $base-pad;
+        padding-left: $base-pad;
+          border-top: 1px solid $off-white;
+        border-bottom: 1px solid $off-white;
+
+        .plogo{
+         i{
+           width: 200px;
+           height: 160px;
+           background-position: center center;
+
+           &.asteris{
+             @include asteris-logo();
+           }
+           &.cheval{
+             @include cheval-logo();
+             background-size: 140px 112px !important;
+           }
+           &.contsoln{
+             @include contsoln-logo();
+             background-size: 150px 120px !important;
+           }
+           &.creationline{
+             @include creationline-logo();
+           }
+           &.cynergypro{
+             @include cynergypro-logo();
+           }
+           &.mustwin{
+             @include mustwin-logo();
+             background-size: 140px 112px !important;
+           }
+           &.opencredo{
+             @include opencredo-logo();
+           }
+           &.opex{
+             @include opex-logo();
+             background-size: 140px 112px !important;
+           }
+           &.rean{
+             @include rean-logo();
+           }
+           &.slalom{
+             @include slalom-logo();
+           }
+           &.unifio{
+             @include unifio-logo();
+           }
+           &.vibrato{
+             @include vibrato-logo();
+             background-size: 140px 112px !important;
+           }
+           &.xebia{
+             @include xebia-logo();
+           }
+         }
+       }
+      }
+
+      .ptagline{
+        font-family: $font-family-open-sans;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: $small-pad;
+      }
+
+      .plocations{
+        position: relative;
+        color: $gray-font;
+        font-size: 16px;
+        font-family: $font-family-klav;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 0;
+        margin-bottom: $base-pad;
+        .pin{
+          display: inline-block;
+          width: 9px;
+          height: 12px;
+          margin-right: 6px;
+          @include img-retina( '../images/v2/partners-pin', png, 9px, 12px );
+        }
+      }
+
+      .pldesc{
+        padding: $base-pad;
+        margin: 0;
+        background-color: $off-white-bg;
+        font-size: 15px;
+      }
+
+      p {
+        color: $black;
+      }
+
+      .atbottom{
+        display: flex;
+        flex: 1;
+        a.contactus {
+          display: block;
+          width: 100%;
+          align-self: flex-end;
+          margin: $xsmall-pad auto;
+        }
+      }
+    }
+  }
+
+  article {
+    padding: 80px 0;
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: $med-pad;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .big-background {
+    background-color: $black !important;
+    color: $white;
+
+    .date {
+      color: $white;
+    }
+
+    img {
+      opacity: .7;
+      background: $black;
+    }
+  }
+
+  .techparts {
+    color: $white;
+    background-color: $white;
+    text-align: center;
+    @include section-border-bottom();
+
+    ul.techpart-logos {
+      position: relative;
+      width: 100%;
+      @include clearfix();
+      padding: 0;
+
+      li {
+        float: left;
+        width: 33.3333%;
+        height: 120px;
+
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 120px;
+        }
+
+        i{
+          display: inline-block;
+        }
+
+        &.tpart i{
+          @include img-retina( '../images/techpartners-sprite', jpg, 259px, 386px);
+        }
+
+        &.tp1 i{
+          background-position: 0 0;
+          width: 242px;
+          height: 68px;
+        }
+        &.tp2 i{
+          background-position: 0 -69px;
+          width: 256px;
+          height: 87px;
+        }
+        &.tp3 i{
+          background-position: 0 -158px;
+          width: 268px;
+          height: 53px;
+        }
+        &.tp4 i{
+          background-position: 0 -212px;
+          width: 177px;
+          height: 93px;
+        }
+        &.tp5 i{
+          background-position: 0 -305px;
+          width: 255px;
+          height: 40px;
+        }
+        &.tp6 i{
+          background-position: 0 -345px;
+          width: 258px;
+          height: 41px;
+        }
+      } // li
+    } //ul
+  }
+}
+
+@media (max-width: 992px) {
+  .partners {
+    .techparts {
+      ul.techpart-logos {
+        li {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .sipart {
+      .panel-wrap{
+        .pan{
+          width: 50%;
+          border-right: none;
+          margin-bottom: $med-pad;
+
+          &:last-child, &:nth-child(2n+2){
+            border-left: 1px solid $off-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    .techparts {
+      ul.techpart-logos {
+        li {
+          float: none;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .sipart {
+      .panel-wrap{
+        .pan{
+          width: 100%;
+          border: none !important;
+        }
+      }
+    }
+  }
+}

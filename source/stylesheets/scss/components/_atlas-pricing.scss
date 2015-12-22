@@ -1,0 +1,162 @@
+//
+// Pricing
+// -------------------------------------------------
+
+
+.pricing{
+  display: flex;
+
+  .col{
+    flex: 1;
+    padding: $small-pad $xsmall-pad;
+    border-left: 1px solid $dft-brdr-clr;
+
+    &:first-child{
+      border-left: none;
+    }
+
+    &.enterprise{
+      border: 1px solid $dft-brdr-clr;
+    }
+
+    .pricing-header{
+      text-align: center;
+
+      h1{
+        display: inline-block;
+        margin-bottom: $xsmall-pad;
+        margin-top: $xsmall-pad;
+      }
+
+      h4{
+        margin-bottom: 0;
+      }
+
+      .contact{
+        color: $orange;
+      }
+
+      p{
+        margin: 0 auto;
+        max-width: 60%;
+      }
+
+      .hbtn{
+        vertical-align: middle;
+        font-size: 30px;
+        line-height: 30px;
+        color: white;
+        padding: 10px 20px;
+      }
+    }
+
+    .pricing-number{
+      position: relative;
+      &:before{
+        content: "$";
+        position: absolute;
+        top: 2px;
+        left: -16px;
+        font-size: 28px;
+        font-weight: 300;
+      }
+    }
+
+    .pricing-features{
+      margin: 0 20px;
+      padding-top: 25px;
+      text-align: center;
+
+      .ul-wrap{
+        display: inline-block;
+      }
+
+      ul{
+        // width: 80%;
+        text-align: left;
+        margin-bottom: $xsmall-pad +10;
+
+        &.ul-2{
+          li{
+            &:before{
+              background-position: 0 -12px;
+            }
+          }
+        }
+
+        &.ul-3{
+          li{
+            &:before{
+              background-position: 0 -24px;
+            }
+          }
+        }
+
+        li{
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: $small-pad;
+          color: $sub-black;
+
+          &:before{
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 0;
+            display: inline-block;
+            width: 18px;
+            height: 11px;
+            margin-right: 12px;
+            @include img-retina( '../images/v2/atlas-check-sprite', png, 15px, 35px);
+          }
+
+          a{
+            position: relative;
+            display: inline-block;
+            color: $sub-black;
+
+            &:hover{
+              color: $blue-link;
+              &:after{
+                background-position: 0 -7px;
+              }
+            }
+
+            &:after{
+              content: '';
+              position: absolute;
+              top: 6px;
+              right: -15px;
+              display: inline-block;
+              width: 8px;
+              height: 7px;
+              vertical-align: super;
+              @include img-retina( '../images/v2/atlas-icon-link-sprite', png, 8px, 14px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .pricing{
+    flex-direction: column;
+
+    .col, .col.enterprise{
+      flex: 1;
+      // border-top: 8px solid $dft-brdr-clr;
+      // border-right: 8px solid $dft-brdr-clr;
+      // border-left: 8px solid $dft-brdr-clr;
+
+      // &:first-child{
+      //   border-left: 8px solid $dft-brdr-clr;
+      // }
+      //
+      // &:last-child{
+      //   border-bottom: 8px solid $dft-brdr-clr;
+      // }
+    }
+  }
+}

@@ -1,0 +1,364 @@
+//
+// Jobs
+// --------------------------------------------------
+
+
+
+body.jobs{
+  .inner-page{
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .inner-page-header{
+    .headline{
+      color: $white;
+      margin-bottom: $xsmall-pad + $small-pad;
+    }
+  }
+
+  article{
+    padding: 120px 0;
+  }
+
+  #location{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    > .container{
+      align-self: center;
+    }
+
+    .map-text{
+      padding: $small-pad;
+      color: $white;
+      text-align: right;
+      margin-top: - $small-pad;
+
+      h2{
+        color: $white;
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      p{
+        color: $white;
+        opacity: .7;
+      }
+    }
+
+    #map-wrap{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1466px;
+      height: 500px;
+      margin-left: -733px;
+    }
+
+    #map{
+      padding: 0;
+      height: 500px;
+      //background: url(/images/map.png) center 0 no-repeat;
+      @include img-retina('/images/map', png, 1466px, 500px);
+      background-position: center 0;
+
+      h2{
+        margin-bottom: 40px;
+      }
+
+      #pins{
+        position: relative;
+
+        .pinpoint{
+          position: absolute;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+
+          &.p1{
+            top: 208px;
+            left: 470px;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+          }
+
+          &.p2{
+            top: 237px;
+            left: 402px;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+          }
+
+          &.bounce {
+            -webkit-animation-name: bounce;
+            -webkit-animation-fill-mode: both;
+            -webkit-animation-duration: 1s;
+            animation-name: bounce;
+            animation-fill-mode: both;
+            animation-duration: 1s;
+          }
+
+          i{
+            width: 29px;
+            height: 37px;
+            //background: url(/images/pin-red.png) center 0 no-repeat;
+            @include img-retina('/images/pin-red', png, 29px, 37px);
+            background-position: center 0;
+          }
+        }
+
+        .hq{
+          position: absolute;
+          top: 190px;
+          left: 322px;
+
+          .pulser{
+            position: relative;
+            .pulse {
+              position: absolute;
+              top: 25px;
+              left: -43px;
+              width: 112px;
+              height: 48px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+
+            .pulse1 {
+              background-color: #c24141;
+              border: 7px solid #c24141;
+              -webkit-animation: pulse1 4s linear infinite;
+              -moz-animation: pulse1 4s linear infinite;
+              animation: pulse1 4s linear infinite;
+            }
+          }
+
+          i{
+            width:  38px;
+            height: 60px;
+            // background: url(/images/hashi-pin.png) center 0 no-repeat;
+            @include img-retina('/images/hashi-pin', png, 38px, 60px);
+            background-position: center 0;
+          }
+        }
+      } //pins
+
+    } //map
+  }
+
+
+  #positions{
+    position: relative;
+    background-color: $black;
+    color: $white;
+    box-shadow: -5px -5px 0 1px rgba(0,0,0,.2);
+
+    h2{
+      color: $white;
+      //.lato-regular;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    #jobs{
+      .job{
+        position: relative;
+
+        &.active{
+          background-color: $white;
+
+          .panel-body{
+            visibility: visible;
+          }
+        }
+
+        h4{
+          //.lato-bold;
+          letter-spacing: 1px;
+          font-size: 20px;
+          margin-bottom: 4px;
+        }
+
+        .panel-body{
+          color: $black;
+          visibility: hidden;
+          padding-top: 0;
+          padding-bottom: 45px;
+
+          p,ul{
+            font-size: 16px;
+          }
+
+          .col{
+            padding: 15px 0;
+          }
+
+          h4{
+            margin-bottom: 15px;
+          }
+
+          ul li{
+            margin-bottom: 6px;
+          }
+
+          .outline-btn{
+            text-transform: none !important;
+          }
+        }
+
+        a.trigger{
+          display: block;
+          padding: 25px 0;
+          border-bottom: 1px solid $dft-brdr-clr;
+          @include transition(color .3s ease-in);
+
+          &:focus{
+            text-decoration: none;
+          }
+
+          &:hover{
+            color: $white;
+            text-decoration: none;
+            @include transition(color .3s ease-in);
+
+            .toggle{
+              color: $white;
+            }
+          }
+
+          .location{
+            display: block;
+            padding: 0 0 0 18px;
+            font-size: 12px;
+            line-height: 15px;
+            color: $gray;
+            font-family: $font-family-klav;
+            font-weight: 300;
+            //background: url(/images/pin-white.png) 0 0 no-repeat;
+            @include img-retina('/images/pin-white', png, 11px, 14px);
+          }
+
+          .toggle{
+            position: absolute;
+            top: 30px;
+            right: 15px;
+            font-size: 50px;
+            //.lato-light;
+            color: $dft-brdr-clr;
+          }
+
+          &.active{
+            background-color: transparent;
+            border-color: transparent;
+
+            h4{
+              color: $black;
+            }
+
+            .location{
+              //background: url(/images/pin-black.png) 0 0 no-repeat;
+              @include img-retina('/images/pin-black', png, 11px, 14px);
+            }
+
+            .toggle{
+              color: $black;
+              -moz-transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  } //positions
+
+  #chat{
+    color: $black;
+    background-color: $white;
+
+    .chat-headline{
+      // color: $blue;
+      margin-bottom: 12px;
+      line-height: 55px;
+
+      .icon{
+        margin: 0 $xsmall-pad -8px 0;
+        width: 68px;
+        height: 50px;
+        //background: url(/images/chat-icon.png) 0 0 no-repeat;
+        @include img-retina('../images/v2/icon-jobs-chat', png, 72px, 54px);
+      }
+    }
+
+    p{
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: $small-pad;
+      color: $black;
+    }
+
+  } //chat
+
+}	//body.jobs
+
+@media (max-width: 480px) {
+  body.jobs{
+    #chat{
+      h2{
+        .chat{
+          display: block;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    #location{
+      .map-text{
+        h2,p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  body.jobs{
+    #positions{
+      #jobs{
+        .job{
+          a.trigger{
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+    }
+
+    #location{
+      #map-wrap{
+        margin-left: -430px;
+      }
+
+      .map-text{
+        margin-top: 30px;
+        background-color: transparent;
+        box-shadow: none;
+
+        p{
+          margin-top: 130px;
+          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+}

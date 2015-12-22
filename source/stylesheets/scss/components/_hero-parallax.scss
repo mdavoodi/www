@@ -1,0 +1,27 @@
+//
+// Shared Parallax classes for Heros
+// --------------------------------------------------
+
+.subhero-site-wrap{
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.hero-mask{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero{
+  position: fixed;
+  z-index: 1;
+  color: white;
+  width: 100%;
+
+  .hero-content{
+    position: relative;
+    z-index: 1;
+  }
+}

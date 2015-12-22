@@ -15,9 +15,9 @@ page_title: Partners
 	</div>
 	<!-- page contents -->
 
-	<% 
+	<%
 		 myPartnersJSON = File.read("source/sipart.json");
-		 
+
 		 myPartners = JSON.parse(myPartnersJSON)
 		 %>
 
@@ -52,18 +52,18 @@ page_title: Partners
 				<div class="col-xs-12">
 					<h1>
 						Technology Partners
-					</h1>					
-				</div> 
+					</h1>
+				</div>
 			</div> <!-- row -->
 			<div class="row">
 				<div class="col-xs-12">
-					<ul class="techpart-logos unstyled">
-						<a href="http://www.aws-partner-directory.com/PartnerDirectory/PartnerDetail?Name=HashiCorp"><li class="tpart tp1"></li></a>
-						<a href="https://cloud.google.com"><li class="tpart tp2"></li></a>
-						<a href="https://azure.microsoft.com"><li class="tpart tp3"></li></a>
-						<a href="http://www.cisco.com"><li class="tpart tp4"></li></a>
-						<a href="http://www.vmware.com"><li class="tpart tp5"></li></a>
-						<a href="https://www.digitalocean.com/"><li class="tpart tp6"></li></a>
+					<ul class="techpart-logos no-ul">
+						<li class="tpart tp1"><a href="http://www.aws-partner-directory.com/PartnerDirectory/PartnerDetail?Name=HashiCorp"><i></i></a></li>
+						<li class="tpart tp2"><a href="https://cloud.google.com"><i></i></a></li>
+						<li class="tpart tp3"><a href="https://azure.microsoft.com"><i></i></a></li>
+						<li class="tpart tp4"><a href="http://www.cisco.com"><i></i></a></li>
+						<li class="tpart tp5"><a href="http://www.vmware.com"><i></i></a></li>
+						<li class="tpart tp6"><a href="https://www.digitalocean.com/"><i></i></a></li>
 					</ul> <!-- techpart logos -->
 				</div> <!-- row -->
 		</div> <!-- container -->
@@ -74,54 +74,54 @@ page_title: Partners
 			<div class="row">
 				<div class="si-content col-xs-12">
 					<h1> System Integration Partners </h1>
-				</div> 
+				</div>
 			</div> <!-- row -->
 			<div class="row">
-
+        <div class="panel-wrap">
 				<% myPartners.each_with_index { |val, index| %>
 
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h2 class="pname"><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
+					<div class="pan">
+						<div class="pan-heading">
+							<h2><a href=<%= val["url"] %>><%= val["name"] %></a></h2>
 						</div> <!-- panel-heading -->
-						<div class="panel-body">
-							<a href=<%= val["url"] %>><div class="plogo"> 
+						<div class="pan-body">
+							<a href=<%= val["url"] %>><div class="plogo">
 									<i class=<%= val["logo"] %> ></i>
 							</div></a>
-							<p class="ptagline"> <%= val["tagline"] %> </p>
-							<p class="plocations"> <i> <%= val["locations"] %> </i> </p>
-							<p class="pldesc"> <%= val["ldesc"] %> </p> 
-							<% if val["contact"] != "" %>
-							<span class="atbottom"><a class="hbtn outline-btn buttongray small contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> </a></span>
-							<% elsif val["contact"] == "" %>
-							<span class="atbottom"><a class="hbtn outline-btn gray small contactus">(missing email)</a></span>
-							<% end %>
+							<p class="plocations"> <i class="pin"></i><span> <%= val["locations"] %> </span> </p>
+							<h4 class="ptagline"> <%= val["tagline"] %> </h4>
+							<p class="pldesc"> <%= val["ldesc"] %> </p>
+              <div class="atbottom">
+							  <% if val["contact"] != "" %>
+							  <a class="hbtn blue careted contactus" href="mailto:<%= val["contact"] %>?subject=HashiCorp Partner request&body=Hello,%0a%0dI'm interested in your HashiCorp expertise.%0a%0dPlease contact me.%0a%0d%0a%0dThank you.%0a%0d%0a%0dBest Regards,"> contact <%= val["pretty"] %> <span class="hcaret white"></span></a>
+							  <% elsif val["contact"] == "" %>
+							  <a class="hbtn blue careted contactus">(missing email)<span class="hcaret white"></span></a>
+							  <% end %>
+              </div><!-- atbottom -->
 						</div> <!-- panel-body -->
 					</div>	   <!-- panel -->
-				</div>		  
-
-				<% if (index + 1) % 2 == 0 %>
-				    <div class="clearfix visible-sm-block"></div> <!-- add at multiples of 2 (sm) -->
-				<% end %>
-
-				<% if (index + 1) % 3 == 0 %>
-				    <div class="clearfix visible-md-block visible-lg-block"></div> <!-- add at multiples of 3 (md & lg) -->
-				<% end %>
 
 				<% } %>
 
+        </div> <!-- panel-wrap -->
 			</div> <!-- row -->
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<p > If your organization is interested in
-						becoming a HashiCorp Partner, we welcome you to
-						learn more.  Please email us
-						at <a href="mailto:partner-request@hashicorp.com?subject=Interested in HashiCorp Partner Program&body=I'd like to learn more about the HashiCorp Partner Program.%0a%0DThank you.">partner-request@hashicorp.com</a>
-					</p>
-				</div>
-			</div>
 		</div> <!-- container -->
 	</article> <!-- sipart -->
 
-
+  <article>
+    <div class="bnr light-bnr">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col">
+    				<h4>If your organization is interested in
+              becoming a HashiCorp Partner, we welcome you to
+              learn more. Send us an email.</h4>
+    				<div class="bnr-btn">
+    				  <a class="hbtn orange lrg careted" href="mailto:partner-request@hashicorp.com?subject=Interested in HashiCorp Partner Program&body=I'd like to learn more about the HashiCorp Partner Program.%0a%0DThank you.">Email Us<span class="hcaret"></span></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </article> <!-- /#home-cta -->
+</section>

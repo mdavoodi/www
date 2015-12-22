@@ -1,0 +1,132 @@
+//
+// Atlas List features
+// /index and /atlas
+// -------------------------------------------------
+
+
+.atlas-highlights{
+  &.white{
+    color: $black;
+    .atlas-features-header{
+      h2,p{
+        color: $black;
+      }
+    }
+    .atlas-highlights-flex{
+      .atlas-highlights-item{
+        &.automate{
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-automate', png, 67px, 50px);
+          }
+        }
+        &.self{
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-self', png, 75px, 52px);
+          }
+        }
+        &.pipeline{
+          .graphic{
+            @include img-retina( '../images/v2/atlas-icon-bl-pipeline', png, 74px, 44px);
+          }
+        }
+        &.collab{
+          .graphic{
+            width: 83px;
+            height: 49px;
+            @include img-retina( '../images/v2/atlas-icon-bl-collab', png, 83px, 49px);
+          }
+        }
+      }
+    }
+  }
+
+  .atlas-highlights-header{
+    text-align: center;
+    margin-bottom: $small-pad;
+  }
+  .atlas-highlights-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+
+    .atlas-highlights-item{
+      position: relative;
+      width: 50%;
+      padding-left: 110px;
+      padding-right: 70px;
+      box-sizing: border-box;
+      background-position: 0 30px;
+
+      &.automate{
+        .graphic{
+          width: 67px;
+          height: 50px;
+          @include img-retina( '../images/v2/atlas-icon-automate', png, 67px, 50px);
+        }
+      }
+      &.self{
+        .graphic{
+          width: 75px;
+          height: 51px;
+          @include img-retina( '../images/v2/atlas-icon-self', png, 75px, 51px);
+        }
+      }
+      &.pipeline{
+        .graphic{
+          width: 75px;
+          height: 44px;
+          @include img-retina( '../images/v2/atlas-icon-pipeline', png, 75px, 44px);
+        }
+      }
+      &.collab{
+        .graphic{
+          width: 81px;
+          height: 49px;
+          @include img-retina( '../images/v2/atlas-icon-collab', png, 81px, 49px);
+        }
+      }
+
+      .graphic{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .atlas-highlights{
+    .atlas-highlights-flex{
+      .atlas-highlights-item{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .atlas-highlights{
+    .atlas-highlights-flex{
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .atlas-highlights-item{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;;
+        margin-bottom: $small-pad;
+
+        h2{
+          margin: 8px 0;
+        }
+
+        .graphic{
+          position: relative;
+          top: auto;
+        }
+      }
+    }
+  }
+}
