@@ -142,6 +142,7 @@ section{
 
 section.inner-page,
 section.page{
+  min-height: 400px;
   padding: $small-pad 0 $med-pad;
   background-color: $white;
   color: $black;
@@ -158,6 +159,12 @@ section.page{
       padding-left: 15px;
       padding-right: 15px;
     }
+  }
+
+  .inner-footer-wrap{
+    padding: $small-pad 0;
+    margin: $small-pad 0;
+    border-top: 1px solid $off-white;
   }
 }
 
