@@ -1,0 +1,403 @@
+//
+// Header
+// --------------------------------------------------
+
+#header {
+    position: relative;
+    height: 100px;
+    color: @white;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 0;
+    background-color: @blue;
+
+    &.navbar-static-top{
+        //height:70px;
+
+        -webkit-transform:translate3d(0,0,0);
+           -moz-transform:translate3d(0,0,0);
+            -ms-transform:translate3d(0,0,0);
+             -o-transform:translate3d(0,0,0);
+                transform:translate3d(0,0,0);
+        z-index: 1000;
+    }
+
+    .navbar-toggle{
+        margin-top: 26px;
+        margin-bottom: 14px;
+        margin-right: 0;
+        border: 2px solid @white;
+        border-radius: 0;
+        .icon-bar{
+            border: 1px solid @white;
+            border-radius: 0;
+        }
+    }
+
+    .navbar-brand {
+        &.logo{
+            margin-top: 30px;
+            padding: 0 0 0 48px;
+            height: 40px;
+            line-height: 39px;
+            font-size: 24px;
+            //.lato-regular();
+            .lato-bold();
+            text-transform: uppercase;
+        }
+
+        &.white{
+            &.logo{
+                background: url(/images/hashicorp-white-logo.png) 0 0 no-repeat;
+                .img-retina("/images/hashicorp-white-logo.png", "/images/hashicorp-white-logo@2x.png", 37px, 40px);
+            }
+        }
+        &.black{
+            &.logo{
+                color: @black;
+                background: url(/images/hashicorp-black-logo.png) 0 0 no-repeat;
+                .img-retina("/images/hashicorp-black-logo.png", "/images/hashicorp-black-logo@2x.png", 37px, 40px);
+            }
+        }
+        &.blue{
+            &.logo{
+                color: @blue;
+                background: url(/images/hashicorp-blue-logo.png) 0 0 no-repeat;
+                .img-retina("/images/hashicorp-blue-logo.png", "/images/hashicorp-blue-logo@2x.png", 37px, 40px);
+            }
+        }
+    }
+
+    .navbar-nav{
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: transparent;
+        color: @black;
+        .transition( color 0.3s ease );
+    }
+
+    .main-links.navbar-nav{
+        margin-left: 28px;
+
+        li + li{
+            padding-left: 6px;
+        }
+
+        li{
+            > a {
+                color: @white;
+                .lato-bold();
+                font-size: 16px;
+                line-height: 29px;
+                letter-spacing: 1px;
+                padding-left: 22px;
+                .transition( color 0.3s ease );
+                //border-bottom: 2px solid rgba(255, 255, 255, .2);
+                margin: 0 8px;
+                padding: 0 0 0 10px;
+
+                &:hover{
+                    color: @black;
+                }
+            }
+            &.first{
+                >a{
+                  padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .collapse{
+        margin-top: 35px;
+    }
+
+    .buttons.navbar-nav{
+
+        .fill-btn{
+            padding-left: 35px;
+        }
+
+        li{
+
+            &.first{
+                margin-right: 13px;
+            }
+        }
+
+        li > a {
+
+        }
+    }
+}
+
+//homepage specific
+body.index, body.blog {
+    #header {
+        .navbar-toggle {
+            background-color: @white;
+            border-color: @black;
+
+            .icon-bar {
+                border-color: @black;
+            }
+        }
+
+        background-color: @white;
+
+        .main-links.navbar-nav{
+            li{
+                > a {
+                    color: @black;
+                    &:hover{
+                        color: @blue;
+                    }
+                }
+            }
+        }
+        .buttons.navbar-nav{
+            .black-caret-right{
+                .light-caret-right();
+            }
+        }
+    }
+}
+
+body.page-sub{
+
+    #header{
+        height: 90px;
+        background-color: @purple;
+
+        .navbar-collapse{
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-logo{
+            height: 90px;
+        }
+
+        .nav-white{
+            height: 90px;
+            background-color: white;
+        }
+
+        .main-links.navbar-nav{
+            float: left !important;
+            li > a {
+                color: black;
+                .transition( color 0.3s ease );
+            }
+        }
+
+        .buttons.nav > li > a, .buttons.nav > li > a {
+            //background-color: lighten(@purple, 1%);
+            .transition( background-color 0.3s ease );
+        }
+
+        .buttons.nav > li > a:hover, .buttons.nav > li > a:focus {
+            background-color: black;
+            .transition( background-color 0.3s ease );
+        }
+
+        .main-links.nav > li > a:hover, .main-links.nav > li > a:focus {
+            color: @purple;
+            .transition( color 0.3s ease );
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    #header{
+        .main-links.navbar-nav{
+            //margin-top: 28px;
+
+            li + li{
+                padding-left: 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .collapse{
+        margin-top: 8px;
+    }
+
+    //homepage has more space at this width to accomodate chevrons
+    .page-home{
+        #header{
+            .main-links.navbar-nav{
+                li + li{
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    body.page-home{
+        .nav-logo{
+            width: 30%;
+        }
+        .nav-white{
+            margin-top: 8px;
+            width: 70%;
+        }
+        .buttons.navbar-nav{
+            li{
+               > a{
+                    padding-right: 4px !important;
+                    text-indent: -9999px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+	.main-links.navbar-nav{
+		li{
+			> a{
+				padding-right: 0px !important;
+				margin-right: 0px !important;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+
+    #header {
+        .navbar-brand {
+            &.logo{
+                span{
+                    width: 120px;
+                    height: 39px;
+                    margin-top: 12px;
+                    background-size: 120px 39px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    body.page-sub{
+        #header{
+            .nav-white{
+                background-color: transparent;
+            }
+        }
+    }
+
+    #header{
+        .buttons.navbar-nav{
+            float: none !important;
+            margin: 0;
+            padding-bottom: 0 !important;
+
+            li{
+                &.first{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    //#footer,
+    #header{
+        .buttons.navbar-nav,
+        .main-links.navbar-nav{
+            display: block;
+            padding-bottom: 15px;
+            li{
+                display: block;
+                float: none;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    //#footer,
+    #header{
+        .main-links.navbar-nav{
+            float: left !important;
+            li > a {
+                padding: 0;
+                padding-left: 0;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    body.index, body.blog {
+        #header {
+
+            .nav-white{
+                background-color: rgba(255,255,255, 0.9);
+            }
+        }
+    }
+
+    #header{
+
+        .collapse{
+            margin-top: 0;
+        }
+        .nav-white{
+            background-color: rgba(72,180,250,.88);
+        }
+
+        .buttons.navbar-nav{
+            margin-top: 20px !important;
+            text-align: center
+        }
+
+        .main-links.navbar-nav li.first > a {
+            padding-left: 0;
+        }
+
+        .main-links.navbar-nav{
+            float: none !important;
+            margin-left: -15px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    #header{
+        .navbar-brand {
+            &.logo{
+                padding:0 0 0 54px !important;
+                font-size: 20px !important;
+                line-height:42px !important;
+                margin-top: 23px !important ;
+                .img-retina("../images/header-logo.png", "../images/header-logo@2x.png", 39px, 44px);
+            }
+        }
+
+    }
+
+    #feature-auto{
+        .terminal-text{
+            line-height: 48px !important;
+            font-size: 20px !important;
+        }
+    }
+
+}

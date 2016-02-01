@@ -1,0 +1,324 @@
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+    color: @dark-text;
+    background-color: @white;
+    .lato-regular();
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+i{
+	display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    .lato-bold();
+}
+
+h1 {
+    color: @black;
+    @font-size: 70px;
+    font-size: @font-size;
+    line-height: 80px;
+    letter-spacing: 1px;
+
+    span {
+        font-size: @headline-span-size;
+        display: block;
+    }
+}
+
+h2 {
+    @font-size: 30px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
+
+h3 {
+    @font-size: 30px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
+
+h4 {
+    @font-size: 24px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
+
+h5 {
+    @font-size: 20px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
+
+h6 {
+    @font-size: 12px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
+
+p, ul, ol {
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+    margin-bottom: @baseline;
+}
+
+p{
+    a {
+       color: @blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+a, ul.unstyled a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: none;
+
+
+	&:hover {
+		text-decoration: none;
+		color: @blue;
+
+       .animate-text-color
+   }
+
+   &:active {
+
+   }
+
+   &:visited {
+
+   }
+}
+
+blockquote {
+	border: none;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    p {
+        font-size: 19px;
+        font-style: italic;
+    }
+
+    cite {
+        font-size: 19px;
+        font-style: italic;
+
+        &:before {
+            content: "\2014 \2009";
+        }
+    }
+}
+
+strong {
+	.lato-bold();
+}
+
+em {
+	.lato-italic();
+}
+
+br {
+	display:block;
+	margin-top: @base-line-height;
+}
+
+pre,
+code {
+	font-family: @mono-stack;
+}
+
+code {
+	font-size: 15px;
+}
+
+pre {
+	border: none;
+	font-size: @base-code-size;
+	background: @black;
+	color: @white;
+	padding: 20px;
+	letter-spacing: normal;
+	line-height: @base-line-height;
+
+	span {
+		color: @code-highlight-text;
+	}
+}
+
+hr {
+
+}
+
+.vr {
+	width: 2px;
+	height: 100%;
+}
+
+/* type and styles */
+::selection, ::-moz-selection {
+	//background: ; /* highlight color */
+}
+
+.meta,
+.legal,
+.date {
+    color: @medium-gray-text;
+    line-height: @base-line-height;
+    .lato-regular();
+}
+
+.date {
+	text-transform: uppercase;
+}
+
+.button {
+	color: @white;
+	text-align: center;
+	background-color: @button-color;
+	display: block;
+	padding: 6px 0;
+	.rounded;
+	.hover;
+
+	span {
+	// button text styles can go here
+}
+
+&:hover {
+  background-color: darken(@button-color, 7%);
+
+  .animate-background-color;
+}
+
+&.disabled {
+  background-color: @light-gray-background;
+}
+
+}
+
+// misc. styles
+.loading {
+	text-align: center;
+	font-size: @base-font-size;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: @medium-gray-text;
+	padding: 30px 0 20px;
+}
+
+.col-sm-pull-6{
+	position: relative;
+	right: 50%;
+}
+
+.col-sm-push-6{
+	position: relative;
+	left: 50%;
+}
+
+.col-sm-pull-5{
+	position: relative;
+	right: 41.66666666666667%;
+}
+
+.col-sm-push-5{
+	position: relative;
+	left: 41.66666666666667%;
+}
+
+.inner-page {
+    .inner-page-header {
+        background-color: @blue;
+        color: @white;
+
+        h1 {
+            color: @white;
+            padding: 25px 0 54px 15px;
+            font-size: 52px;
+            line-height: 1.1em;
+            .lato-light;
+            text-align: left;
+        }
+    } //inner page header
+
+}
+
+// color groups
+.gray {
+    background-color: @gray-background;
+}
+
+.blue {
+    background-color: @blue-background;
+}
+
+.page-title{
+    background-color: @gray-background;
+
+    h1{
+        color: @blue;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 50px 0;
+    }
+}
+
+
+.page {
+    article {
+        padding: 60px 0;
+
+        h2{
+            margin-bottom: @baseline;
+            color: @black;
+            font-size: 42px;
+            line-height: 1.1em;
+            .lato-bold;
+            text-align: left;
+        }
+
+        h3{
+            margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 1.1em;
+        }
+
+        .meta-wrap{
+            margin-bottom: @baseline;
+        }
+    }
+}
+
+//keep subheader padding minimal on macbooks 13inch and below
+@media (max-width: 1281px) {
+    .inner-page .inner-page-header h1{
+        padding: 0 0 27px 15px;
+    }
+}

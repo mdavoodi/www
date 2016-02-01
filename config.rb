@@ -47,4 +47,5 @@ end
 
 configure :development do
   set :debug_assets, true
+  sprockets.append_path '/stylesheets/less/'
 end

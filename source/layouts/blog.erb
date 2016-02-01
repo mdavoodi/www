@@ -1,38 +1,36 @@
 <% wrap_layout :layout do %>
 <section class="blog-landing article-summaries inner-page">
-  <div id="subheader" class="inner-page-header">
-    <div id="blogheader-meta" class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-sm-12">
-            <ul class="blog-categories">
-              <li class="<%= "active" if current_page.data.page_title == "Blog" %>"><a href="/blog.html" class="hbtn fill-btn small">All</a></li>
-              <% blog.tags.sort.each do |tag, articles| %>
-              <li class="<%= "active" if current_page.path.include?("#{tag}.html") %>"><a href="/blog/tags/<%= tag %>.html" class="hbtn fill-btn small"><%= tag %> (<%= articles.size %>)</a></li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="col-md-2 col-sm-12">
-            <div class="pull-right">
-              <a href="/feed.xml" class="rss hbtn fill-btn small">RSS</a>
+    <div id="subheader" class="inner-page-header">
+        <div id="blogheader-meta" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-12">
+                        <ul class="blog-categories">
+                            <li class="<%= "active" if current_page.data.page_title == "Blog" %>"><a href="/blog.html" class="hbtn fill-btn small">All</a></li>
+                            <% blog.tags.sort.each do |tag, articles| %>
+                                    <li class="<%= "active" if current_page.path.include?("#{tag}.html") %>"><a href="/blog/tags/<%= tag %>.html" class="hbtn fill-btn small"><%= tag %> (<%= articles.size %>)</a></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="pull-right">
+                            <a href="/feed.xml" class="rss hbtn fill-btn small">RSS</a>
+                        </div>
+<!--                         <div class="dropdown pull-right">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Authors<span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mitchell Hashimoto</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Armon Dadger</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jack Pearkes</a></li>
+                            </ul>
+                        </div>
+ -->                    </div>
+                </div>
             </div>
-            <!--
-            <div class="dropdown pull-right">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Authors<span class="caret"></span></button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mitchell Hashimoto</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Armon Dadger</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jack Pearkes</a></li>
-              </ul>
-            </div>
-            -->
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <%= yield %>
+    <%= yield %>
 </section>
 
 <% end %>
