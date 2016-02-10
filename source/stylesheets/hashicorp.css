@@ -224,13 +224,13 @@ h a s h i c o r p
   }
 }
 .hashicorp-icon {
-  background: url(/images/hashicorp-medium.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-medium.png");
+  background: url(/images/mohamicorp-medium.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-medium.png");
   background-size: 50px 54px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .hashicorp-icon {
-    background-image: url("/images/hashicorp-medium@2x.png");
+    background-image: url("/images/mohamicorp-mohamicorp@2x.png");
     background-size: 50px 54px;
   }
 }
@@ -1208,37 +1208,37 @@ pre span {
   text-transform: uppercase;
 }
 #header .navbar-brand.white.logo {
-  background: url(/images/hashicorp-white-logo.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-white-logo.png");
+  background: url(/images/mohamicorp-white-logo.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-white-logo.png");
   background-size: 37px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #header .navbar-brand.white.logo {
-    background-image: url("/images/hashicorp-white-logo@2x.png");
+    background-image: url("/images/mohamicorp-white-logo@2x.png");
     background-size: 37px 40px;
   }
 }
 #header .navbar-brand.black.logo {
   color: #151515;
-  background: url(/images/hashicorp-black-logo.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-black-logo.png");
+  background: url(/images/mohamicorp-black-logo.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-black-logo.png");
   background-size: 37px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #header .navbar-brand.black.logo {
-    background-image: url("/images/hashicorp-black-logo@2x.png");
+    background-image: url("/images/mohamicorp-black-logo@2x.png");
     background-size: 37px 40px;
   }
 }
 #header .navbar-brand.blue.logo {
   color: #48b4fb;
-  background: url(/images/hashicorp-blue-logo.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-blue-logo.png");
+  background: url(/images/mohamicorp-blue-logo.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-blue-logo.png");
   background-size: 37px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #header .navbar-brand.blue.logo {
-    background-image: url("/images/hashicorp-blue-logo@2x.png");
+    background-image: url("/images/mohamicorp-blue-logo@2x.png");
     background-size: 37px 40px;
   }
 }
@@ -3901,8 +3901,8 @@ body.jobs #chat p {
   height: 60px;
 }
 #timeline #points .point .body i.hashicorp {
-  background: url(/images/hashicorp-medium.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-medium.png");
+  background: url(/images/mohamicorp-medium.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-medium.png");
   background-size: 50px 54px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -4123,13 +4123,13 @@ footer h2 a.navbar-brand {
 }
 footer h2 a.navbar-brand.blue.logo {
   color: #48b4fb;
-  background: url(/images/hashicorp-blue-logo.png) 0 0 no-repeat;
-  background-image: url("/images/hashicorp-blue-logo.png");
+  background: url(/images/mohamicorp-blue-logo.png) 0 0 no-repeat;
+  background-image: url("/images/mohamicorp-blue-logo.png");
   background-size: 24px 26px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   footer h2 a.navbar-brand.blue.logo {
-    background-image: url("/images/hashicorp-blue-logo@2x.png");
+    background-image: url("/images/mohamicorp-blue-logo@2x.png");
     background-size: 24px 26px;
   }
 }
