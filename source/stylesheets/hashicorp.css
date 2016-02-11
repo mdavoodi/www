@@ -136,13 +136,13 @@ h a s h i c o r p
   }
 }
 .vagrant-icon {
-  background: url(/images/nav-vagrant.png) 0 0 no-repeat;
-  background-image: url("/images/nav-vagrant.png");
+  background: url(/images/nav-editor.png) 0 0 no-repeat;
+  background-image: url("/images/nav-editor.png");
   background-size: 44px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .vagrant-icon {
-    background-image: url("/images/nav-vagrant@2x.png");
+    background-image: url("/images/nav-editor@2x.png");
     background-size: 44px 40px;
   }
 }
@@ -1664,13 +1664,13 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vagrant {
   width: 47px;
   height: 43px;
-  background: url(/images/hero-vagrant.png) 0 0 no-repeat;
-  background-image: url("/images/hero-vagrant.png");
+  background: url(/images/hero-editor.png) 0 0 no-repeat;
+  background-image: url("/images/hero-editor.png");
   background-size: 47px 43px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.vagrant {
-    background-image: url("/images/hero-vagrant@2x.png");
+    background-image: url("/images/hero-editor@2x.png");
     background-size: 47px 43px;
   }
 }
@@ -2226,8 +2226,8 @@ div.align-center {
 }
 #products #products-nav li.vagrant a i {
   width: 44px;
-  background: url(/images/nav-vagrant.png) 0 0 no-repeat;
-  background-image: url("/images/nav-vagrant.png");
+  background: url(/images/nav-editor.png) 0 0 no-repeat;
+  background-image: url("/images/nav-editor.png");
   background-size: 44px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
