@@ -169,13 +169,13 @@ h a s h i c o r p
   }
 }
 .serf-icon {
-  background: url(/images/nav-serf.png) 0 0 no-repeat;
-  background-image: url("/images/nav-serf.png");
+  background: url(/images/nav-navigator.png) 0 0 no-repeat;
+  background-image: url("/images/nav-navigator.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .serf-icon {
-    background-image: url("/images/nav-serf@2x.png");
+    background-image: url("/images/nav-navigator@2x.png");
     background-size: 27px 40px;
   }
 }
@@ -202,13 +202,13 @@ h a s h i c o r p
   }
 }
 .packer-icon {
-  background: url(/images/nav-packer.png) 0 0 no-repeat;
-  background-image: url("/images/nav-packer.png");
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .packer-icon {
-    background-image: url("/images/nav-packer@2x.png");
+    background-image: url("/images/nav-search@2x.png");
     background-size: 27px 40px;
   }
 }
@@ -1606,13 +1606,13 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.packer {
   width: 30px;
   height: 43px;
-  background: url(/images/hero-packer.png) 0 0 no-repeat;
-  background-image: url("/images/hero-packer.png");
+  background: url(/images/hero-search@2x.png) 0 0 no-repeat;
+  background-image: url("/images/hero-search@2x.png");
   background-size: 30px 43px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.packer {
-    background-image: url("/images/hero-packer@2x.png");
+    background-image: url("/images/hero-search@2x.png");
     background-size: 30px 43px;
   }
 }
@@ -1651,13 +1651,13 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.serf {
   width: 30px;
   height: 43px;
-  background: url(/images/hero-serf.png) 0 0 no-repeat;
-  background-image: url("/images/hero-serf.png");
+  background: url(/images/hero-navigator.png) 0 0 no-repeat;
+  background-image: url("/images/hero-navigator.png");
   background-size: 30px 43px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.serf {
-    background-image: url("/images/hero-serf@2x.png");
+    background-image: url("/images/hero-navigator@2x.png");
     background-size: 30px 43px;
   }
 }
@@ -2122,25 +2122,25 @@ div.align-center {
   }
 }
 #products #products-nav li.packer a {
-  background: url(/images/nav-packer-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-packer-active.png");
+  background: url(/images/nav-search-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-search-active.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.packer a {
-    background-image: url("/images/nav-packer-active@2x.png");
+    background-image: url("/images/nav-search-active@2x.png");
     background-size: 27px 40px;
   }
 }
 #products #products-nav li.packer a i {
   width: 27px;
-  background: url(/images/nav-packer.png) 0 0 no-repeat;
-  background-image: url("/images/nav-packer.png");
+  background: url(/images/nav-search@2x.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search@2x.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.packer a i {
-    background-image: url("/images/nav-packer@2x.png");
+    background-image: url("/images/nav-search@2x.png");
     background-size: 27px 40px;
   }
 }
@@ -2191,36 +2191,36 @@ div.align-center {
   }
 }
 #products #products-nav li.serf a {
-  background: url(/images/nav-serf-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-serf-active.png");
+  background: url(/images/nav-navigator-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-navigator-active.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.serf a {
-    background-image: url("/images/nav-serf-active@2x.png");
+    background-image: url("/images/nav-navigator-active@2x.png");
     background-size: 27px 40px;
   }
 }
 #products #products-nav li.serf a i {
   width: 27px;
-  background: url(/images/nav-serf.png) 0 0 no-repeat;
-  background-image: url("/images/nav-serf.png");
+  background: url(/images/nav-navigator.png) 0 0 no-repeat;
+  background-image: url("/images/nav-navigator.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.serf a i {
-    background-image: url("/images/nav-serf@2x.png");
+    background-image: url("/images/nav-navigator@2x.png");
     background-size: 27px 40px;
   }
 }
 #products #products-nav li.vagrant a {
-  background: url(/images/nav-vagrant-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-vagrant-active.png");
+  background: url(/images/nav-editor-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-editor-active.png");
   background-size: 44px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.vagrant a {
-    background-image: url("/images/nav-vagrant-active@2x.png");
+  #products #products-nav li.editor a {
+    background-image: url("/images/nav-editor-active@2x.png");
     background-size: 44px 40px;
   }
 }
@@ -2232,7 +2232,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.vagrant a i {
-    background-image: url("/images/nav-vagrant@2x.png");
+    background-image: url("/images/nav-editor@2x.png");
     background-size: 44px 40px;
   }
 }
@@ -2262,9 +2262,6 @@ div.align-center {
 #products #products-display.vault {
   background-color: #00bfe0;
 }
-#products #products-display.atlas {
-  background-color: #48b4fb;
-}
 #products #products-display .consul .product-logo {
   background: url(/images/product-consul.png) 0 0 no-repeat;
   background-image: url("/images/product-consul.png");
@@ -2291,18 +2288,18 @@ div.align-center {
   }
 }
 #products #products-display .atlas .product-logo {
-  background: url(/images/product-atlas.png) 0 0 no-repeat;
-  background-image: url("/images/product-atlas.png");
-  background-size: 208px 202px;
+  background: url(/images/product-editor.png) 0 0 no-repeat;
+  background-image: url("/images/product-editor.png");
+  background-size: 179px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .atlas .product-logo {
-    background-image: url("/images/product-atlas@2x.png");
-    background-size: 208px 202px;
+    background-image: url("/images/product-editor@2x.png");
+    background-size: 179px 202px;
   }
 }
 #products #products-display .atlas .fill-btn {
-  color: #48b4fb;
+  color: #2f88f7;
 }
 #products #products-display .atlas .black-caret-right {
   background: url(/images/atlas-caret-right.png) 0 0 no-repeat;
@@ -2316,14 +2313,14 @@ div.align-center {
   }
 }
 #products #products-display .packer .product-logo {
-  background: url(/images/product-packer.png) 0 0 no-repeat;
-  background-image: url("/images/product-packer.png");
-  background-size: 208px 202px;
+  background: url(/images/product-navigator.png) 0 0 no-repeat;
+  background-image: url("/images/product-navigator.png");
+  background-size: 145px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .packer .product-logo {
-    background-image: url("/images/product-packer@2x.png");
-    background-size: 208px 202px;
+    background-image: url("/images/product-navigator@2x.png");
+    background-size: 145px 202px;
   }
 }
 #products #products-display .packer .fill-btn {
@@ -2416,14 +2413,14 @@ div.align-center {
   }
 }
 #products #products-display .vagrant .product-logo {
-  background: url(/images/product-vagrant.png) 0 0 no-repeat;
-  background-image: url("/images/product-vagrant.png");
-  background-size: 208px 202px;
+  background: url(/images/product-search.png) 0 0 no-repeat;
+  background-image: url("/images/product-search.png");
+  background-size: 126px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .vagrant .product-logo {
-    background-image: url("/images/product-vagrant@2x.png");
-    background-size: 208px 202px;
+    background-image: url("/images/product-search@2x.png");
+    background-size: 126px 202px;
   }
 }
 #products #products-display .vagrant .fill-btn {
