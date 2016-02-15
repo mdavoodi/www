@@ -8,16 +8,16 @@ set :images_dir, 'images'
 # or whatever.
 Time.zone = "America/Los_Angeles"
 
-# Blogging
-activate :blog do |blog|
-  blog.layout = "layouts/blog_post"
-  blog.permalink = ":title.html"
-  blog.prefix = "blog"
-  blog.tag_template = "tag_template.html"
-
-  blog.paginate = true
-  blog.per_page = 5
-end
+# # Blogging
+# activate :blog do |blog|
+#   blog.layout = "layouts/blog_post"
+#   blog.permalink = ":title.html"
+#   blog.prefix = "blog"
+#   blog.tag_template = "tag_template.html"
+#
+#   blog.paginate = true
+#   blog.per_page = 5
+# end
 
 sprockets.append_path 'files/'
 
@@ -44,6 +44,14 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+ignore 'blog.html.erb'
+ignore 'blog_landing.html.erb'
+ignore 'jobs.html.erb'
+ignore 'newsletter-thanks.erb'
+ignore 'partners.html.erb'
+ignore 'press.html.erb'
+ignore 'security.html.erb'
 
 configure :development do
   set :debug_assets, true

@@ -16,7 +16,7 @@ rvm --default use 2.2.2
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "hashicorp/precise64"
+  config.vm.box = "mohamicorp/precise64"
   config.vm.network "private_network", ip: "33.33.33.10"
   config.vm.network "forwarded_port", guest: "4567", host: "4567"
   config.vm.provision "shell", inline: $script, privileged: false

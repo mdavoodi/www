@@ -2302,13 +2302,13 @@ div.align-center {
   color: #2f88f7;
 }
 #products #products-display .atlas .black-caret-right {
-  background: url(/images/atlas-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/atlas-caret-right.png");
+  background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/vagrant-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .atlas .black-caret-right {
-    background-image: url("/images/atlas-caret-right@2x.png");
+    background-image: url("/images/vagrant-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2324,16 +2324,16 @@ div.align-center {
   }
 }
 #products #products-display .packer .fill-btn {
-  color: #1ddba3;
+  color: #dd4e58;
 }
 #products #products-display .packer .black-caret-right {
   background: url(/images/packer-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/packer-caret-right.png");
+  background-image: url("/images/serf-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .packer .black-caret-right {
-    background-image: url("/images/packer-caret-right@2x.png");
+    background-image: url("/images/serf-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2424,16 +2424,16 @@ div.align-center {
   }
 }
 #products #products-display .vagrant .fill-btn {
-  color: #2f88f7;
+  color: #1ddba3;
 }
 #products #products-display .vagrant .black-caret-right {
   background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/vagrant-caret-right.png");
+  background-image: url("/images/packer-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .vagrant .black-caret-right {
-    background-image: url("/images/vagrant-caret-right@2x.png");
+    background-image: url("/images/packer-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
