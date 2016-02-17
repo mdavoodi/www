@@ -1,6 +1,8 @@
-# HashiCorp.com
+# Mohamicorp.com
 
-This is the repository for the [main HashiCorp website](http://www.hashicorp.com).
+This is the repository for the [main Mohamicorp website](http://www.mohamicorp.com).
+It was forked off of [Hashicorps website](http://www.hashicorp.com).
+
 
 This is a [Middleman](http://middlemanapp.com) project, which builds a static
 site from these source files. The site is hosted on [Heroku](http://heroku.com)
@@ -33,7 +35,7 @@ is used to create a watcher for changes to the `.less` files.  The
 watcher re-compiles the hashicorp.css file when it detects changes in
 the .less files.
 
-Assuming you have [npm](http://npmjs.com), 
+Assuming you have [npm](http://npmjs.com),
 [node.js](http://node.js), and [Less](http://lesscss.org) installed, you can install and run Grunt
 and the watcher this way:
 
@@ -46,9 +48,9 @@ $ grunt
 ## Heroku
 
 To trigger `middleman` static builds on a `git push`, we use this
-buildpack: 
+buildpack:
 [https://github.com/hashicorp/heroku-buildpack-middleman](https://github.com/hashicorp/heroku-buildpack-middleman), in addition to the standard Ruby buildback.  Note the example below pushes your local
-branch as remote master to trigger build.  To run this on Heroku, 
+branch as remote master to trigger build.  To run this on Heroku,
 enable multiple buildpacks this way:
 
 ```
