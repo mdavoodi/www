@@ -741,7 +741,7 @@ h a s h i c o r p
 }
 .hbtn.small {
   padding: 2px 12px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .hbtn.small.outline-btn {
   line-height: 24px;
@@ -2460,10 +2460,10 @@ div.align-center {
 }
 .customers h1 {
   padding: 0 0 60px 0;
-  font-size: 60px;
+  font-size: 47px;
   color: #151515;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 700;
