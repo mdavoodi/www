@@ -47,7 +47,6 @@ end
 
 ignore 'blog.html.erb'
 ignore 'blog_landing.html.erb'
-ignore 'jobs.html.erb'
 ignore 'newsletter-thanks.erb'
 ignore 'partners.html.erb'
 ignore 'press.html.erb'

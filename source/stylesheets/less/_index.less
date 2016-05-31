@@ -258,8 +258,8 @@ div {
 
             &.packer{
                 a{
-                    background: url(/images/nav-packer-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-packer-active.png", "/images/nav-packer-active@2x.png",  27px, 40px);
+                    background: url(/images/nav-search-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-search-active.png", "/images/nav-search-active@2x.png",  27px, 40px);
 
                     i{
                         width: 27px;
@@ -307,8 +307,8 @@ div {
 
             &.vagrant{
                 a{
-                    background: url(/images/nav-vagrant-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-vagrant-active.png", "/images/nav-vagrant-active@2x.png", 44px, 40px);
+                    background: url(/images/nav-editor-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-editor-active.png", "/images/nav-editor-active@2x.png", 44px, 40px);
 
                     i{
                         width: 44px;
@@ -322,15 +322,15 @@ div {
     #products-display{
         width: 100%;
         padding: 130px 0;
-        background-color: @vagrant-color;
+        background-color: @atlas-color;
         .transition(all .3s cubic-bezier(0.250, 0.250, 0.750, 0.750));
         margin-top: -5px; //for the border-bottom;
 
         &.vagrant{
-            background-color: @vagrant-color;
+            background-color: @atlas-color;
         }
         &.packer{
-            background-color: @packer-color;
+            background-color: @vagrant-color;
         }
         &.serf{
             background-color: @serf-color;
@@ -344,9 +344,9 @@ div {
         &.vault{
             background-color: @vault-color;
         }
-        &.atlas {
-            background-color: @atlas-color;
-        }
+        // &.atlas {
+        //     background-color: @atlas-color;
+        // }
 
 
         .consul{
@@ -366,29 +366,29 @@ div {
 
         .atlas{
             .product-logo{
-                background: url(/images/product-atlas.png) 0 0 no-repeat;
-                .img-retina("/images/product-atlas.png", "/images/product-atlas@2x.png",208px, 202px);
+                background: url(/images/product-editor.png) 0 0 no-repeat;
+                .img-retina("/images/product-editor.png", "/images/product-editor@2x.png",179px, 202px);
             }
             .fill-btn{
                 color: @atlas-color;
             }
             .black-caret-right{
-                background: url(/images/atlas-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/atlas-caret-right.png", "/images/atlas-caret-right@2x.png", 6px, 9px);
+                background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/vagrant-caret-right.png", "/images/vagrant-caret-right@2x.png", 6px, 9px);
             }
         }
 
         .packer{
             .product-logo{
                 background: url(/images/product-navigator.png) 0 0 no-repeat;
-                .img-retina("/images/product-navigator.png", "/images/product-navigator@2x.png", 208px, 202px);
+                .img-retina("/images/product-navigator.png", "/images/product-navigator@2x.png", 145px, 202px);
             }
             .fill-btn{
                 color: @packer-color;
             }
             .black-caret-right{
-                background: url(/images/packer-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/packer-caret-right.png", "/images/packer-caret-right@2x.png", 6px, 9px);
+                background: url(/images/serf-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/serf-caret-right.png", "/images/serf-caret-right@2x.png", 6px, 9px);
             }
         }
 
@@ -438,15 +438,15 @@ div {
         .vagrant{
             .product-logo{
                 background: url(/images/product-search.png) 0 0 no-repeat;
-                .img-retina("/images/product-search.png", "/images/product-search@2x.png", 208px, 202px);
+                .img-retina("/images/product-search.png", "/images/product-search@2x.png", 126px, 202px);
             }
 
             .fill-btn{
                 color: @vagrant-color;
             }
             .black-caret-right{
-                background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/vagrant-caret-right.png", "/images/vagrant-caret-right@2x.png", 6px, 9px);
+                background: url(/images/packer-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/packer-caret-right.png", "/images/packer-caret-right@2x.png", 6px, 9px);
             }
         }
 
@@ -482,10 +482,10 @@ div {
 
     h1 {
         padding: 0 0 60px 0;
-        font-size: 60px;
+        font-size: 47px;
         color: @black;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         .lato-bold;
     }
 
@@ -512,8 +512,8 @@ div {
             overflow: hidden;
 
             &.cust{
-                background: url(/images/customer-sprite.png) 0 0 no-repeat;
-                .img-retina("/images/customer-sprite.png", "/images/customer-sprite@2x.png", 1130px, 128px);
+                background: url(/images/customer-sprite-m@2x.png) 0 0 no-repeat;
+                .img-retina("/images/customer-sprite-m@2x.png", "/images/customer-sprite-m@2x.png", 1130px, 128px);
             }
 
             &.c1 {
@@ -695,7 +695,7 @@ div {
 
     .customers {
         h1 {
-            font-size: 44px;
+            font-size: 35px;
             line-height: 48px;
         }
     }

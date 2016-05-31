@@ -158,13 +158,13 @@ h a s h i c o r p
   }
 }
 .atlas-icon {
-  background: url(/images/nav-atlas.png) 0 0 no-repeat;
-  background-image: url("/images/nav-atlas.png");
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
   background-size: 41px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .atlas-icon {
-    background-image: url("/images/nav-atlas@2x.png");
+    background-image: url("/images/nav-search@2x.png");
     background-size: 41px 40px;
   }
 }
@@ -230,7 +230,7 @@ h a s h i c o r p
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .hashicorp-icon {
-    background-image: url("/images/mohamicorp-mohamicorp@2x.png");
+    background-image: url("/images/mohamicorp-medium@2x.png");
     background-size: 50px 54px;
   }
 }
@@ -1677,13 +1677,13 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
   width: 47px;
   height: 43px;
-  background: url(/images/nav-atlas.png) 0 0 no-repeat;
-  background-image: url("/images/nav-atlas.png");
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
   background-size: 47px 43px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #jumbotron #jumbotron-content .jumbo-logo .hero-prod-logos .prod.atlas {
-    background-image: url("/images/nav-atlas@2x.png");
+    background-image: url("/images/nav-search@2x.png");
     background-size: 47px 43px;
   }
 }
@@ -1985,13 +1985,13 @@ div.align-center {
   background-position: 0 1px;
 }
 #products.atlas {
-  background-color: #48b4fb;
-}
-#products.vagrant {
   background-color: #2f88f7;
 }
-#products.packer {
+#products.vagrant {
   background-color: #1ddba3;
+}
+#products.packer {
+  background-color: #dd4e58;
 }
 #products.serf {
   background-color: #dd4e58;
@@ -2078,24 +2078,24 @@ div.align-center {
   overflow: hidden;
 }
 #products #products-nav li.atlas a {
-  background: url(/images/nav-atlas-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-atlas-active.png");
+  background: url(/images/nav-search-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-search-active.png");
   background-size: 41px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.atlas a {
-    background-image: url("/images/nav-atlas-active@2x.png");
+    background-image: url("/images/nav-search-active@2x.png");
     background-size: 41px 40px;
   }
 }
 #products #products-nav li.atlas a i {
-  background: url(/images/nav-atlas.png) 0 0 no-repeat;
-  background-image: url("/images/nav-atlas.png");
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
   background-size: 41px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.atlas a i {
-    background-image: url("/images/nav-atlas@2x.png");
+    background-image: url("/images/nav-search@2x.png");
     background-size: 41px 40px;
   }
 }
@@ -2134,8 +2134,8 @@ div.align-center {
 }
 #products #products-nav li.packer a i {
   width: 27px;
-  background: url(/images/nav-search@2x.png) 0 0 no-repeat;
-  background-image: url("/images/nav-search@2x.png");
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -2219,7 +2219,7 @@ div.align-center {
   background-size: 44px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.editor a {
+  #products #products-nav li.vagrant a {
     background-image: url("/images/nav-editor-active@2x.png");
     background-size: 44px 40px;
   }
@@ -2327,7 +2327,7 @@ div.align-center {
   color: #dd4e58;
 }
 #products #products-display .packer .black-caret-right {
-  background: url(/images/packer-caret-right.png) 0 0 no-repeat;
+  background: url(/images/serf-caret-right.png) 0 0 no-repeat;
   background-image: url("/images/serf-caret-right.png");
   background-size: 6px 9px;
 }
@@ -2427,7 +2427,7 @@ div.align-center {
   color: #1ddba3;
 }
 #products #products-display .vagrant .black-caret-right {
-  background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
+  background: url(/images/packer-caret-right.png) 0 0 no-repeat;
   background-image: url("/images/packer-caret-right.png");
   background-size: 6px 9px;
 }
@@ -3559,16 +3559,16 @@ body.jobs #location #map #pins .pinpoint {
   transform: rotate(-45deg);
 }
 body.jobs #location #map #pins .pinpoint.p1 {
-  top: 208px;
-  left: 470px;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-body.jobs #location #map #pins .pinpoint.p2 {
-  top: 237px;
-  left: 402px;
+  top: 220px;
+  left: 460px;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+body.jobs #location #map #pins .pinpoint.p2 {
+  top: 334px;
+  left: 1059px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 body.jobs #location #map #pins .pinpoint.bounce {
   -webkit-animation-name: bounce;
@@ -3593,15 +3593,15 @@ body.jobs #location #map #pins .pinpoint i {
 }
 body.jobs #location #map #pins .hq {
   position: absolute;
-  top: 190px;
-  left: 322px;
+  top: 225px;
+  left: 334px;
 }
 body.jobs #location #map #pins .hq .pulser {
   position: relative;
 }
 body.jobs #location #map #pins .hq .pulser .pulse {
   position: absolute;
-  top: 25px;
+  top: 13px;
   left: -43px;
   width: 112px;
   height: 48px;
@@ -3620,16 +3620,16 @@ body.jobs #location #map #pins .hq .pulser .pulse1 {
   animation: pulse1 4s linear infinite;
 }
 body.jobs #location #map #pins .hq i {
-  width: 38px;
-  height: 60px;
-  background: url(/images/hashi-pin.png) center 0 no-repeat;
-  background-image: url("/images/hashi-pin.png");
-  background-size: 38px 60px;
+  width: 29px;
+  height: 37px;
+  background: url(/images/pin-red.png) center 0 no-repeat;
+  background-image: url("/images/pin-red.png");
+  background-size: 29px 37px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   body.jobs #location #map #pins .hq i {
-    background-image: url("/images/hashi-pin@2x.png");
-    background-size: 38px 60px;
+    background-image: url("/images/pin-red@2x.png");
+    background-size: 29px 37px;
   }
 }
 body.jobs #positions {
@@ -3904,7 +3904,7 @@ body.jobs #chat p {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #timeline #points .point .body i.hashicorp {
-    background-image: url("/images/hashicorp-medium@2x.png");
+    background-image: url("/images/mohamicorp-medium@2x.png");
     background-size: 50px 54px;
   }
 }
