@@ -52,7 +52,6 @@ ignore 'partners.html.erb'
 ignore 'press.html.erb'
 ignore 'security.html.erb'
 ignore 'tag_template.erb'
-ignore 'about.html.erb'
 
 configure :development do
   set :debug_assets, true

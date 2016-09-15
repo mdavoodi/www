@@ -132,3 +132,9 @@ DEPENDENCIES
   rack-ssl-enforcer (~> 0.2.8)
   therubyracer (~> 0.12.0)
   thin (~> 1.5.0)
+
+RUBY VERSION
+   ruby 2.2.2p95
+
+BUNDLED WITH
+   1.13.1
