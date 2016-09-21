@@ -182,12 +182,12 @@ h a s h i c o r p
 .sourceeditor-icon {
   background: url(/images/nav-sourceeditor.png) 0 0 no-repeat;
   background-image: url("/images/nav-sourceeditor.png");
-  background-size: 36px 40px;
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .sourceeditor-icon {
     background-image: url("/images/nav-sourceeditor@2x.png");
-    background-size: 36px 40px;
+    background-size: 40px 40px;
   }
 }
 .cruciblehook-icon {
@@ -2113,12 +2113,12 @@ div.align-center {
 #products #products-nav li.sourceeditor a i {
   background: url(/images/nav-sourceeditor.png) 0 0 no-repeat;
   background-image: url("/images/nav-sourceeditor.png");
-  background-size: 36px 40px;
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.sourceeditor a i {
     background-image: url("/images/nav-sourceeditor@2x.png");
-    background-size: 36px 40px;
+    background-size: 40px 40px;
   }
 }
 #products #products-nav li.navigator a {
@@ -2244,6 +2244,13 @@ div.align-center {
   transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   margin-top: -5px;
 }
+#products #products-display .row-title {
+  text-align: center;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  color: #ffffff;
+}
 #products #products-display.search {
   background-color: #1ddba3;
 }
@@ -2268,12 +2275,12 @@ div.align-center {
 #products #products-display .sourceeditor .product-logo {
   background: url(/images/product-sourceeditor.png) 0 0 no-repeat;
   background-image: url("/images/product-sourceeditor.png");
-  background-size: 208px 202px;
+  background-size: 208px 208px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .sourceeditor .product-logo {
     background-image: url("/images/product-sourceeditor@2x.png");
-    background-size: 208px 202px;
+    background-size: 208px 208px;
   }
 }
 #products #products-display .sourceeditor .fill-btn {
@@ -2368,12 +2375,12 @@ div.align-center {
 #products #products-display .cruciblehook .product-logo {
   background: url(/images/product-cruciblehook.png) 0 0 no-repeat;
   background-image: url("/images/product-cruciblehook.png");
-  background-size: 208px 202px;
+  background-size: 155px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .cruciblehook .product-logo {
     background-image: url("/images/product-cruciblehook@2x.png");
-    background-size: 208px 202px;
+    background-size: 155px 202px;
   }
 }
 #products #products-display .cruciblehook .fill-btn {
