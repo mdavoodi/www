@@ -193,12 +193,12 @@ h a s h i c o r p
 .cruciblehook-icon {
   background: url(/images/nav-cruciblehook.png) 0 0 no-repeat;
   background-image: url("/images/nav-cruciblehook.png");
-  background-size: 36px 40px;
+  background-size: 31px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .cruciblehook-icon {
     background-image: url("/images/nav-cruciblehook@2x.png");
-    background-size: 36px 40px;
+    background-size: 31px 40px;
   }
 }
 .search-icon {
@@ -2170,24 +2170,24 @@ div.align-center {
 #products #products-nav li.cruciblehook a {
   background: url(/images/nav-cruciblehook-active.png) center -80px no-repeat;
   background-image: url("/images/nav-cruciblehook-active.png");
-  background-size: 36px 40px;
+  background-size: 31px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.cruciblehook a {
     background-image: url("/images/nav-cruciblehook-active@2x.png");
-    background-size: 36px 40px;
+    background-size: 31px 40px;
   }
 }
 #products #products-nav li.cruciblehook a i {
-  width: 36px;
+  width: 31px;
   background: url(/images/nav-cruciblehook.png) 0 0 no-repeat;
   background-image: url("/images/nav-cruciblehook.png");
-  background-size: 36px 40px;
+  background-size: 31px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.cruciblehook a i {
     background-image: url("/images/nav-cruciblehook@2x.png");
-    background-size: 36px 40px;
+    background-size: 31px 40px;
   }
 }
 #products #products-nav li.autowatch a {
@@ -2287,8 +2287,8 @@ div.align-center {
   color: #822ff7;
 }
 #products #products-display .sourceeditor .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/sourceeditor-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/sourceeditor-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -2312,13 +2312,13 @@ div.align-center {
   color: #428bca;
 }
 #products #products-display .editor .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/editor-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/editor-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .editor .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/editor-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2337,13 +2337,13 @@ div.align-center {
   color: #dd4e58;
 }
 #products #products-display .navigator .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/navigator-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/navigator-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .navigator .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/navigator-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2362,13 +2362,13 @@ div.align-center {
   color: #dd4e58;
 }
 #products #products-display .markdown .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/markdown-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/markdown-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .markdown .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/markdown-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2387,13 +2387,13 @@ div.align-center {
   color: #00bfe0;
 }
 #products #products-display .cruciblehook .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/cruciblehook-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/cruciblehook-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .cruciblehook .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/cruciblehook-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2412,13 +2412,13 @@ div.align-center {
   color: #428bca;
 }
 #products #products-display .autowatch .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/autowatch-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/autowatch-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .autowatch .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/autowatch-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2437,13 +2437,13 @@ div.align-center {
   color: #1ddba3;
 }
 #products #products-display .search .black-caret-right {
-  background: url(/images/black-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/black-caret-right.png");
+  background: url(/images/search-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/search-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .search .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/search-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
