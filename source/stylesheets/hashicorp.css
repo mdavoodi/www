@@ -2425,12 +2425,12 @@ div.align-center {
 #products #products-display .search .product-logo {
   background: url(/images/product-search.png) 0 0 no-repeat;
   background-image: url("/images/product-search.png");
-  background-size: 148px 202px;
+  background-size: 136px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .search .product-logo {
     background-image: url("/images/product-search@2x.png");
-    background-size: 148px 202px;
+    background-size: 136px 202px;
   }
 }
 #products #products-display .search .fill-btn {
