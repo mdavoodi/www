@@ -16,20 +16,20 @@
 							<div class="hero-logo fadein"></div>
 
 							<div class="hero-prod-logos">
-								<div class="prod p1 vagrant fadein">
-									<div class="name">Editor</div>
+								<!--<div class="prod p1 vagrant fadein">
+									<div class="name">JIRA</div>
 								</div>
 								<div class="prod p2 packer fadein">
-									<div class="name">Search</div>
+									<div class="name">Confluence</div>
 								</div>
 								<div class="prod p3 serf fadein">
-									<div class="name">Navigator</div>
+									<div class="name">Bitbucket</div>
 								</div>
-								<!-- <div class="prod p4 consul fadein">
-									<div class="name">Consul</div>
+								<div class="prod p4 consul fadein">
+									<div class="name">Source Editor</div>
 								</div>
 								<div class="prod p5 terraform fadein">
-									<div class="name">Terraform</div>
+									<div class="name">Markdown Macro</div>
 								</div>
 								<div class="prod p6 vault fadein">
 									<div class="name">Vault</div>
@@ -44,8 +44,8 @@
 					<div class="col-lg-6 col-md-5 col-sm-12 pull-left">
 						<div class="hero-headline">
 							<h1>Pushing the boundaries of productivity.</h1>
-                            <h2>Mohamicorp is an independent studio focused on enhancing Atlassian
-															products through plugins. We prioritize quality, robustness, and quick customer support.
+                <h2>Mohamicorp is an independent studio focused on enhancing Atlassian
+									products through plugins. We prioritize quality, robustness, and quick customer support.
 							</h2>
 						</div>
 					</div> <!-- col -->
@@ -72,42 +72,50 @@
 								<span>Atlas</span>
 							</a>
 						</li> -->
-						<li class="vagrant" data-prod="vagrant">
-							<a href="#vagrant">
+						<li class="editor" data-prod="editor">
+							<a href="#editor">
 								<i></i>
-								<span>Editor</span>
+								<span>Editor<br>for Bitbucket</span>
 							</a>
 						</li>
-						<li class="packer" data-prod="packer">
-							<a href="#packer">
+						<li class="search" data-prod="search">
+							<a href="#search">
 								<i></i>
-								<span>Search</span>
+								<span>Smarter Search<br>for Bitbucket</span>
 							</a>
 						</li>
-						<li class="serf" data-prod="serf">
-							<a href="#serf">
+						<li class="navigator" data-prod="navigator">
+							<a href="#navigator">
 								<i></i>
-								<span>Navigator</span>
+								<span>Code Navigator<br>for Bitbucket</span>
 							</a>
 						</li>
-						<!-- <li class="consul" data-prod="consul">
-							<a href="#consul">
+						<li class="cruciblehook" data-prod="cruciblehook">
+							<a href="#cruciblehook">
 								<i></i>
-								<span>Consul</span>
+								<span>Crucible Review Hook<br>for Bitbucket</span>
 							</a>
 						</li>
-						<li class="terraform" data-prod="terraform">
-							<a href="#terraform">
+						<li class="sourceeditor" data-prod="sourceeditor">
+							<a href="#sourceeditor">
 								<i></i>
-								<span>Terraform</span>
+								<span>Source Editor<br>for Confluence</span>
 							</a>
 						</li>
-						<li class="vault" data-prod="vault">
-							<a href="#vault">
+						<!--
+						<li class="markdown" data-prod="markdown">
+							<a href="#markdown">
 								<i></i>
-								<span>Vault</span>
+								<span>Markdown Render Macro<br>for Confluence</span>
 							</a>
-						</li> -->
+						</li>
+						<li class="autowatch" data-prod="autowatch">
+							<a href="#autowatch">
+								<i></i>
+								<span>Autowatch<br>for JIRA</span>
+							</a>
+						</li>
+						-->
 					</ul>
 				</div>
 			</div>
@@ -115,8 +123,9 @@
 	</div>
 	</div>
 
-	<div id="products-display" class="slider atlas">
-			<div class="atlas container">
+	<div id="products-display" class="slider editor">
+			<div class="editor container">
+				<div class="row-title">Editor for Bitbucket</div>
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
@@ -124,101 +133,101 @@
 					<div class="descs col-sm-6 col-sm-12">
 						<p>Editor for Bitbucket (formerly Editor for Stash) is a live editor with markdown preview, code folding, and syntax highlighting. Supports
 							 various git workflows for committing changes. </p>
-						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.plugin.editor-for-stash/server/overview" class="hbtn fill-btn white small">Explore Editor<span class="black-caret-right small"></span></a>
+						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.plugin.editor-for-stash/server/overview" class="hbtn fill-btn white small">Explore Editor for Bitbucket<span class="black-caret-right small"></span></a>
 						<a href="https://github.com/mohamicorp/editor-for-stash-issues" class="hbtn outline-btn small">Docs<span class="light-caret-right small"></span></a>
 						<a href="http://demo.mohamicorp.com/projects/EX/repos/konkourse/browse/README.md" class="hbtn outline-btn small">Demo<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-			<div class="vagrant container">
+			<div class="search container">
+				<div class="row-title">Smarter Search for Bitbucket</div>
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>Search for Bitbucket (formerly Search for Stash) is a full-text code, file and commit search service for
-							Atlassian's Bitbucket. It's powered by Elasticsearch, which can be either an internal or external service.
+						<p>Smarter Search for Bitbucket (formerly Search for Stash) is a full-text code, file and commit search service for
+							 Atlassian's Bitbucket. It's powered by Elasticsearch, which can be either an internal or external service.
 						</p>
-						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.search-for-stash/server/overview" class="hbtn fill-btn white small">Explore Search<span class="black-caret-right small"></span></a>
+						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.search-for-stash/server/overview" class="hbtn fill-btn white small">Explore Smarter Search<span class="black-caret-right small"></span></a>
 						<a href="https://github.com/mohamicorp/search-for-stash-issues" class="hbtn outline-btn small">Docs<span class="light-caret-right small"></span></a>
 						<a href="http://demo.mohamicorp.com/plugins/servlet/codesearch/search" class="hbtn outline-btn small">Demo<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-			<div class="packer container">
+			<div class="navigator container">
+				<div class="row-title">Code Navigator for Bitbucket</div>
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>
-Jump to definitions right in the browser, just like an IDE! Instantly navigate to class, variable,
- and function definitions. Supports a wide array of languages, enabled by Ctags.
+						<p>Jump to definitions right in the browser, just like an IDE! Instantly navigate to class, variable,
+ 							and function definitions. Supports a wide array of languages, enabled by Ctags.
 						</p>
-						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.plugin.codenav" class="hbtn fill-btn white small">Explore Navigator<span class="black-caret-right small"></span></a>
+						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.stash.plugin.codenav" class="hbtn fill-btn white small">Explore Code Navigator<span class="black-caret-right small"></span></a>
 						<a href="https://github.com/mohamicorp/codenav-for-bitbucket-issues" class="hbtn outline-btn small">Docs<span class="light-caret-right small"></span></a>
 						<a href="http://demo.mohamicorp.com/projects/EX/repos/konkourse/browse/account/models.py" class="hbtn outline-btn small">Demo<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="serf container">
+			<div class="cruciblehook container">
+				<div class="row-title">Crucible Review Hook for Bitbucket</div>
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>Serf is a lightweight and decentralized solution for cluster membership, failure detection, and orchestration. Serf is used as a building block for
-							highly available systems, such as Consul.</p>
-						<a href="http://serfdom.io" class="hbtn fill-btn white small">Explore Serf<span class="black-caret-right small"></span></a>
-						<a href="http://www.serfdom.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+						<p>Integrate Crucible code reviews into your pull request workflow with Crucible Review Hook for Bitbucket.
+							 Automatically create Crucible reviews and block pull request merges that haven't gone through Crucible review.</p>
+						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.bitbucket.plugin.crucible-review-hook" class="hbtn fill-btn white small">Explore Crucible Review Hook<span class="black-caret-right small"></span></a>
+						<a href="https://github.com/mohamicorp/crucible-review-hook" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-			<div class="consul container">
+			<div class="sourceeditor container">
+				<div class="row-title">Source Editor for Confluence</div>
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>
-						Consul is a distributed, highly-available, and multi-datacenter aware tool for service
-						discovery, configuration, and orchestration. In the ever-growing
-						datacenter, Consul enables rapid deployment, configuration, and
-						maintenance of service-oriented architectures.
-						</p>
-						<a href="http://consul.io" class="hbtn fill-btn white small">Explore Consul<span class="black-caret-right small"></span></a>
-						<a href="http://www.consul.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+						<p>Edit Confluence Storage Format directly in the browser using Source Editor for Confluence, available for both
+							 Confluence Cloud and Server. Supports standard code editor features, XHTML validation, and page preview.</p>
+						<a href="https://marketplace.atlassian.com/plugins/com.mohamicorp.html.source.editor.for.confluence" class="hbtn fill-btn white small">Explore Source Editor for Confluence<span class="black-caret-right small"></span></a>
+						<a href="https://mohamicorp.atlassian.net/wiki/display/DOC/Source+Editor+for+Confluence" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-			<div class="terraform container">
+			<!--
+			<div class="markdown container">
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>Terraform allows you to effortlessly combine high-level system providers with your own or with each other – from physical and virtual servers to email
-							and DNS providers. Once launched, Terraform safely and efficiently changes infrastructure as the configuration is evolved.</p>
-						<a href="http://terraform.io" class="hbtn fill-btn white small">Explore Terraform<span class="black-caret-right small"></span></a>
-						<a href="http://www.terraform.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+						<p>Apply Markdown to your Confluence pages using Markdown Render Macro for Confluence.</p>
+						<a href="https://marketplace.atlassian.com/plugins/mohamicorp-render-markdown" class="hbtn fill-btn white small">Explore Markdown Render Macro<span class="black-caret-right small"></span></a>
+						<a href="https://mohamicorp.atlassian.net/wiki/display/DOC/Markdown+Render+Macro+for+Confluence" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-
-			<div class="vault container">
+			<div class="autowatch container">
 				<div class="row">
 					<div class="logos col-sm-6 col-sm-12">
 							<i class="product-logo"></i>
 					</div>
 					<div class="descs col-sm-6 col-sm-12">
-						<p>Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing.
-							Vault handles leasing, key revocation, key rolling, and auditing.</p>
-						<a href="https://vaultproject.io" class="hbtn fill-btn white small">Explore Vault<span class="black-caret-right small"></span></a>
-						<a href="https://vaultproject.io/docs/index.html" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
+						<p>Tired of constantly searching for issues that you need to watch? Automatically watch created
+							 and updated issues based on JQL queries using Autowatch for JIRA. Supports setting autowatch
+							 rules on a per-project basis.</p>
+						<a href="TODO" class="hbtn fill-btn white small">Explore Autowatch for JIRA<span class="black-caret-right small"></span></a>
+						<a href="TODO" class="hbtn outline-btn small">Documentation<span class="light-caret-right small"></span></a>
 					</div>
 				</div>
 			</div>
-	 </div> -->
+			-->
+	 </div>
 </article>
 
 <!-- <article id="news">

@@ -135,79 +135,79 @@ h a s h i c o r p
     transform: translateY(0) rotate(0);
   }
 }
-.vagrant-icon {
+.editor-icon {
   background: url(/images/nav-editor.png) 0 0 no-repeat;
   background-image: url("/images/nav-editor.png");
-  background-size: 44px 40px;
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .vagrant-icon {
+  .editor-icon {
     background-image: url("/images/nav-editor@2x.png");
-    background-size: 44px 40px;
+    background-size: 40px 40px;
   }
 }
-.consul-icon {
-  background: url(/images/nav-consul.png) 0 0 no-repeat;
-  background-image: url("/images/nav-consul.png");
+.autowatch-icon {
+  background: url(/images/nav-autowatch.png) 0 0 no-repeat;
+  background-image: url("/images/nav-autowatch.png");
+  background-size: 40px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .autowatch-icon {
+    background-image: url("/images/nav-autowatch@2x.png");
+    background-size: 40px 40px;
+  }
+}
+.markdown-icon {
+  background: url(/images/nav-markdown.png) 0 0 no-repeat;
+  background-image: url("/images/nav-markdown.png");
   background-size: 41px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .consul-icon {
-    background-image: url("/images/nav-consul@2x.png");
+  .markdown-icon {
+    background-image: url("/images/nav-markdown@2x.png");
     background-size: 41px 40px;
   }
 }
-.atlas-icon {
-  background: url(/images/nav-search.png) 0 0 no-repeat;
-  background-image: url("/images/nav-search.png");
-  background-size: 41px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .atlas-icon {
-    background-image: url("/images/nav-search@2x.png");
-    background-size: 41px 40px;
-  }
-}
-.serf-icon {
+.navigator-icon {
   background: url(/images/nav-navigator.png) 0 0 no-repeat;
   background-image: url("/images/nav-navigator.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .serf-icon {
+  .navigator-icon {
     background-image: url("/images/nav-navigator@2x.png");
     background-size: 27px 40px;
   }
 }
-.terraform-icon {
-  background: url(/images/nav-terraform.png) 0 0 no-repeat;
-  background-image: url("/images/nav-terraform.png");
-  background-size: 36px 40px;
+.sourceeditor-icon {
+  background: url(/images/nav-sourceeditor.png) 0 0 no-repeat;
+  background-image: url("/images/nav-sourceeditor.png");
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .terraform-icon {
-    background-image: url("/images/nav-terraform@2x.png");
-    background-size: 36px 40px;
+  .sourceeditor-icon {
+    background-image: url("/images/nav-sourceeditor@2x.png");
+    background-size: 40px 40px;
   }
 }
-.vault-icon {
-  background: url(/images/nav-vault.png) 0 0 no-repeat;
-  background-image: url("/images/nav-vault.png");
-  background-size: 36px 40px;
+.cruciblehook-icon {
+  background: url(/images/nav-cruciblehook.png) 0 0 no-repeat;
+  background-image: url("/images/nav-cruciblehook.png");
+  background-size: 31px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .vault-icon {
-    background-image: url("/images/nav-vault@2x.png");
-    background-size: 36px 40px;
+  .cruciblehook-icon {
+    background-image: url("/images/nav-cruciblehook@2x.png");
+    background-size: 31px 40px;
   }
 }
-.packer-icon {
+.search-icon {
   background: url(/images/nav-search.png) 0 0 no-repeat;
   background-image: url("/images/nav-search.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .packer-icon {
+  .search-icon {
     background-image: url("/images/nav-search@2x.png");
     background-size: 27px 40px;
   }
@@ -1984,25 +1984,25 @@ div.align-center {
   background-size: 8px 13px;
   background-position: 0 1px;
 }
-#products.atlas {
-  background-color: #2f88f7;
+#products.editor {
+  background-color: #428bca;
 }
-#products.vagrant {
+#products.search {
   background-color: #1ddba3;
 }
-#products.packer {
+#products.navigator {
   background-color: #dd4e58;
 }
-#products.serf {
-  background-color: #dd4e58;
+#products.autowatch {
+  background-color: #2f88f7;
 }
-#products.consul {
-  background-color: #69499a;
-}
-#products.terraform {
+#products.sourceeditor {
   background-color: #822ff7;
 }
-#products.vault {
+#products.markdown {
+  background-color: #dd4e58;
+}
+#products.cruciblehook {
   background-color: #00bfe0;
 }
 #products #products-header {
@@ -2071,369 +2071,379 @@ div.align-center {
 }
 #products #products-nav li a i {
   display: block;
-  width: 41px;
+  width: 40px;
   height: 40px;
   margin: 0 auto;
   margin-bottom: 10px;
   overflow: hidden;
 }
-#products #products-nav li.atlas a {
-  background: url(/images/nav-search-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-search-active.png");
-  background-size: 41px 40px;
+#products #products-nav li.editor a {
+  background: url(/images/nav-editor-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-editor-active.png");
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.atlas a {
-    background-image: url("/images/nav-search-active@2x.png");
-    background-size: 41px 40px;
+  #products #products-nav li.editor a {
+    background-image: url("/images/nav-editor-active@2x.png");
+    background-size: 40px 40px;
   }
 }
-#products #products-nav li.atlas a i {
-  background: url(/images/nav-search.png) 0 0 no-repeat;
-  background-image: url("/images/nav-search.png");
-  background-size: 41px 40px;
+#products #products-nav li.editor a i {
+  background: url(/images/nav-editor.png) 0 0 no-repeat;
+  background-image: url("/images/nav-editor.png");
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.atlas a i {
-    background-image: url("/images/nav-search@2x.png");
-    background-size: 41px 40px;
+  #products #products-nav li.editor a i {
+    background-image: url("/images/nav-editor@2x.png");
+    background-size: 40px 40px;
   }
 }
-#products #products-nav li.consul a {
-  background: url(/images/nav-consul-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-consul-active.png");
-  background-size: 41px 40px;
+#products #products-nav li.sourceeditor a {
+  background: url(/images/nav-sourceeditor-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-sourceeditor-active.png");
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.consul a {
-    background-image: url("/images/nav-consul-active@2x.png");
-    background-size: 41px 40px;
+  #products #products-nav li.sourceeditor a {
+    background-image: url("/images/nav-sourceeditor-active@2x.png");
+    background-size: 40px 40px;
   }
 }
-#products #products-nav li.consul a i {
-  background: url(/images/nav-consul.png) 0 0 no-repeat;
-  background-image: url("/images/nav-consul.png");
-  background-size: 41px 40px;
+#products #products-nav li.sourceeditor a i {
+  background: url(/images/nav-sourceeditor.png) 0 0 no-repeat;
+  background-image: url("/images/nav-sourceeditor.png");
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.consul a i {
-    background-image: url("/images/nav-consul@2x.png");
-    background-size: 41px 40px;
+  #products #products-nav li.sourceeditor a i {
+    background-image: url("/images/nav-sourceeditor@2x.png");
+    background-size: 40px 40px;
   }
 }
-#products #products-nav li.packer a {
-  background: url(/images/nav-search-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-search-active.png");
-  background-size: 27px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.packer a {
-    background-image: url("/images/nav-search-active@2x.png");
-    background-size: 27px 40px;
-  }
-}
-#products #products-nav li.packer a i {
-  width: 27px;
-  background: url(/images/nav-search.png) 0 0 no-repeat;
-  background-image: url("/images/nav-search.png");
-  background-size: 27px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.packer a i {
-    background-image: url("/images/nav-search@2x.png");
-    background-size: 27px 40px;
-  }
-}
-#products #products-nav li.terraform a {
-  background: url(/images/nav-terraform-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-terraform-active.png");
-  background-size: 36px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.terraform a {
-    background-image: url("/images/nav-terraform-active@2x.png");
-    background-size: 36px 40px;
-  }
-}
-#products #products-nav li.terraform a i {
-  width: 36px;
-  background: url(/images/nav-terraform.png) 0 0 no-repeat;
-  background-image: url("/images/nav-terraform.png");
-  background-size: 36px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.terraform a i {
-    background-image: url("/images/nav-terraform@2x.png");
-    background-size: 36px 40px;
-  }
-}
-#products #products-nav li.vault a {
-  background: url(/images/nav-vault-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-vault-active.png");
-  background-size: 36px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.vault a {
-    background-image: url("/images/nav-vault-active@2x.png");
-    background-size: 36px 40px;
-  }
-}
-#products #products-nav li.vault a i {
-  width: 36px;
-  background: url(/images/nav-vault.png) 0 0 no-repeat;
-  background-image: url("/images/nav-vault.png");
-  background-size: 36px 40px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.vault a i {
-    background-image: url("/images/nav-vault@2x.png");
-    background-size: 36px 40px;
-  }
-}
-#products #products-nav li.serf a {
+#products #products-nav li.navigator a {
   background: url(/images/nav-navigator-active.png) center -80px no-repeat;
   background-image: url("/images/nav-navigator-active.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.serf a {
+  #products #products-nav li.navigator a {
     background-image: url("/images/nav-navigator-active@2x.png");
     background-size: 27px 40px;
   }
 }
-#products #products-nav li.serf a i {
+#products #products-nav li.navigator a i {
   width: 27px;
   background: url(/images/nav-navigator.png) 0 0 no-repeat;
   background-image: url("/images/nav-navigator.png");
   background-size: 27px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.serf a i {
+  #products #products-nav li.navigator a i {
     background-image: url("/images/nav-navigator@2x.png");
     background-size: 27px 40px;
   }
 }
-#products #products-nav li.vagrant a {
-  background: url(/images/nav-editor-active.png) center -80px no-repeat;
-  background-image: url("/images/nav-editor-active.png");
-  background-size: 44px 40px;
+#products #products-nav li.markdown a {
+  background: url(/images/nav-markdown-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-markdown-active.png");
+  background-size: 36px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.vagrant a {
-    background-image: url("/images/nav-editor-active@2x.png");
-    background-size: 44px 40px;
+  #products #products-nav li.markdown a {
+    background-image: url("/images/nav-markdown-active@2x.png");
+    background-size: 36px 40px;
   }
 }
-#products #products-nav li.vagrant a i {
-  width: 44px;
-  background: url(/images/nav-editor.png) 0 0 no-repeat;
-  background-image: url("/images/nav-editor.png");
-  background-size: 44px 40px;
+#products #products-nav li.markdown a i {
+  width: 36px;
+  background: url(/images/nav-markdown.png) 0 0 no-repeat;
+  background-image: url("/images/nav-markdown.png");
+  background-size: 41px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-nav li.vagrant a i {
-    background-image: url("/images/nav-editor@2x.png");
-    background-size: 44px 40px;
+  #products #products-nav li.markdown a i {
+    background-image: url("/images/nav-markdown@2x.png");
+    background-size: 41px 40px;
+  }
+}
+#products #products-nav li.cruciblehook a {
+  background: url(/images/nav-cruciblehook-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-cruciblehook-active.png");
+  background-size: 31px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.cruciblehook a {
+    background-image: url("/images/nav-cruciblehook-active@2x.png");
+    background-size: 31px 40px;
+  }
+}
+#products #products-nav li.cruciblehook a i {
+  width: 31px;
+  background: url(/images/nav-cruciblehook.png) 0 0 no-repeat;
+  background-image: url("/images/nav-cruciblehook.png");
+  background-size: 31px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.cruciblehook a i {
+    background-image: url("/images/nav-cruciblehook@2x.png");
+    background-size: 31px 40px;
+  }
+}
+#products #products-nav li.autowatch a {
+  background: url(/images/nav-autowatch-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-autowatch-active.png");
+  background-size: 27px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.autowatch a {
+    background-image: url("/images/nav-autowatch-active@2x.png");
+    background-size: 27px 40px;
+  }
+}
+#products #products-nav li.autowatch a i {
+  width: 27px;
+  background: url(/images/nav-autowatch.png) 0 0 no-repeat;
+  background-image: url("/images/nav-autowatch.png");
+  background-size: 40px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.autowatch a i {
+    background-image: url("/images/nav-autowatch@2x.png");
+    background-size: 40px 40px;
+  }
+}
+#products #products-nav li.search a {
+  background: url(/images/nav-search-active.png) center -80px no-repeat;
+  background-image: url("/images/nav-search-active.png");
+  background-size: 27px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.search a {
+    background-image: url("/images/nav-search-active@2x.png");
+    background-size: 27px 40px;
+  }
+}
+#products #products-nav li.search a i {
+  width: 27px;
+  background: url(/images/nav-search.png) 0 0 no-repeat;
+  background-image: url("/images/nav-search.png");
+  background-size: 27px 40px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #products #products-nav li.search a i {
+    background-image: url("/images/nav-search@2x.png");
+    background-size: 27px 40px;
   }
 }
 #products #products-display {
   width: 100%;
   padding: 130px 0;
-  background-color: #2f88f7;
+  background-color: #151617;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   margin-top: -5px;
 }
-#products #products-display.vagrant {
-  background-color: #2f88f7;
+#products #products-display .row-title {
+  text-align: center;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  color: #ffffff;
 }
-#products #products-display.packer {
+#products #products-display.search {
   background-color: #1ddba3;
 }
-#products #products-display.serf {
+#products #products-display.navigator {
   background-color: #dd4e58;
 }
-#products #products-display.consul {
-  background-color: #69499a;
+#products #products-display.editor {
+  background-color: #428bca;
 }
-#products #products-display.terraform {
+#products #products-display.sourceeditor {
   background-color: #822ff7;
 }
-#products #products-display.vault {
+#products #products-display.markdown {
+  background-color: #dd4e58;
+}
+#products #products-display.cruciblehook {
   background-color: #00bfe0;
 }
-#products #products-display .consul .product-logo {
-  background: url(/images/product-consul.png) 0 0 no-repeat;
-  background-image: url("/images/product-consul.png");
-  background-size: 208px 202px;
+#products #products-display.autowatch {
+  background-color: #2f88f7;
+}
+#products #products-display .sourceeditor .product-logo {
+  background: url(/images/product-sourceeditor.png) 0 0 no-repeat;
+  background-image: url("/images/product-sourceeditor.png");
+  background-size: 208px 208px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .consul .product-logo {
-    background-image: url("/images/product-consul@2x.png");
-    background-size: 208px 202px;
+  #products #products-display .sourceeditor .product-logo {
+    background-image: url("/images/product-sourceeditor@2x.png");
+    background-size: 208px 208px;
   }
 }
-#products #products-display .consul .fill-btn {
-  color: #69499a;
+#products #products-display .sourceeditor .fill-btn {
+  color: #822ff7;
 }
-#products #products-display .consul .black-caret-right {
-  background: url(/images/consul-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/consul-caret-right.png");
+#products #products-display .sourceeditor .black-caret-right {
+  background: url(/images/sourceeditor-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/sourceeditor-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .consul .black-caret-right {
-    background-image: url("/images/consul-caret-right@2x.png");
+  #products #products-display .sourceeditor .black-caret-right {
+    background-image: url("/images/black-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .atlas .product-logo {
+#products #products-display .editor .product-logo {
   background: url(/images/product-editor.png) 0 0 no-repeat;
   background-image: url("/images/product-editor.png");
   background-size: 179px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .atlas .product-logo {
+  #products #products-display .editor .product-logo {
     background-image: url("/images/product-editor@2x.png");
     background-size: 179px 202px;
   }
 }
-#products #products-display .atlas .fill-btn {
-  color: #2f88f7;
+#products #products-display .editor .fill-btn {
+  color: #428bca;
 }
-#products #products-display .atlas .black-caret-right {
-  background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/vagrant-caret-right.png");
+#products #products-display .editor .black-caret-right {
+  background: url(/images/editor-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/editor-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .atlas .black-caret-right {
-    background-image: url("/images/vagrant-caret-right@2x.png");
+  #products #products-display .editor .black-caret-right {
+    background-image: url("/images/editor-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .packer .product-logo {
+#products #products-display .navigator .product-logo {
   background: url(/images/product-navigator.png) 0 0 no-repeat;
   background-image: url("/images/product-navigator.png");
   background-size: 145px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .packer .product-logo {
+  #products #products-display .navigator .product-logo {
     background-image: url("/images/product-navigator@2x.png");
     background-size: 145px 202px;
   }
 }
-#products #products-display .packer .fill-btn {
+#products #products-display .navigator .fill-btn {
   color: #dd4e58;
 }
-#products #products-display .packer .black-caret-right {
-  background: url(/images/serf-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/serf-caret-right.png");
+#products #products-display .navigator .black-caret-right {
+  background: url(/images/navigator-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/navigator-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .packer .black-caret-right {
-    background-image: url("/images/serf-caret-right@2x.png");
+  #products #products-display .navigator .black-caret-right {
+    background-image: url("/images/navigator-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .terraform .product-logo {
-  background: url(/images/product-terraform.png) 0 0 no-repeat;
-  background-image: url("/images/product-terraform.png");
+#products #products-display .markdown .product-logo {
+  background: url(/images/product-markdown.png) 0 0 no-repeat;
+  background-image: url("/images/product-markdown.png");
   background-size: 208px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .terraform .product-logo {
-    background-image: url("/images/product-terraform@2x.png");
+  #products #products-display .markdown .product-logo {
+    background-image: url("/images/product-markdown@2x.png");
     background-size: 208px 202px;
   }
 }
-#products #products-display .terraform .fill-btn {
-  color: #822ff7;
+#products #products-display .markdown .fill-btn {
+  color: #dd4e58;
 }
-#products #products-display .terraform .black-caret-right {
-  background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/terraform-caret-right.png");
+#products #products-display .markdown .black-caret-right {
+  background: url(/images/markdown-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/markdown-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .terraform .black-caret-right {
-    background-image: url("/images/terraform-caret-right@2x.png");
+  #products #products-display .markdown .black-caret-right {
+    background-image: url("/images/markdown-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .vault .product-logo {
-  background: url(/images/product-vault.png) 0 0 no-repeat;
-  background-image: url("/images/product-vault.png");
-  background-size: 208px 202px;
+#products #products-display .cruciblehook .product-logo {
+  background: url(/images/product-cruciblehook.png) 0 0 no-repeat;
+  background-image: url("/images/product-cruciblehook.png");
+  background-size: 155px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .vault .product-logo {
-    background-image: url("/images/product-vault@2x.png");
-    background-size: 208px 202px;
+  #products #products-display .cruciblehook .product-logo {
+    background-image: url("/images/product-cruciblehook@2x.png");
+    background-size: 155px 202px;
   }
 }
-#products #products-display .vault .fill-btn {
+#products #products-display .cruciblehook .fill-btn {
   color: #00bfe0;
 }
-#products #products-display .vault .black-caret-right {
-  background: url(/images/vault-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/vault-caret-right.png");
+#products #products-display .cruciblehook .black-caret-right {
+  background: url(/images/cruciblehook-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/cruciblehook-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .vault .black-caret-right {
-    background-image: url("/images/vault-caret-right@2x.png");
+  #products #products-display .cruciblehook .black-caret-right {
+    background-image: url("/images/cruciblehook-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .serf .product-logo {
-  background: url(/images/product-serf.png) 0 0 no-repeat;
-  background-image: url("/images/product-serf.png");
+#products #products-display .autowatch .product-logo {
+  background: url(/images/product-autowatch.png) 0 0 no-repeat;
+  background-image: url("/images/product-autowatch.png");
   background-size: 208px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .serf .product-logo {
-    background-image: url("/images/product-serf@2x.png");
+  #products #products-display .autowatch .product-logo {
+    background-image: url("/images/product-autowatch@2x.png");
     background-size: 208px 202px;
   }
 }
-#products #products-display .serf .fill-btn {
-  color: #dd4e58;
+#products #products-display .autowatch .fill-btn {
+  color: #428bca;
 }
-#products #products-display .serf .black-caret-right {
-  background: url(/images/serf-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/serf-caret-right.png");
+#products #products-display .autowatch .black-caret-right {
+  background: url(/images/autowatch-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/autowatch-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .serf .black-caret-right {
-    background-image: url("/images/serf-caret-right@2x.png");
+  #products #products-display .autowatch .black-caret-right {
+    background-image: url("/images/autowatch-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
-#products #products-display .vagrant .product-logo {
+#products #products-display .search .product-logo {
   background: url(/images/product-search.png) 0 0 no-repeat;
   background-image: url("/images/product-search.png");
-  background-size: 126px 202px;
+  background-size: 136px 202px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .vagrant .product-logo {
+  #products #products-display .search .product-logo {
     background-image: url("/images/product-search@2x.png");
-    background-size: 126px 202px;
+    background-size: 136px 202px;
   }
 }
-#products #products-display .vagrant .fill-btn {
+#products #products-display .search .fill-btn {
   color: #1ddba3;
 }
-#products #products-display .vagrant .black-caret-right {
-  background: url(/images/packer-caret-right.png) 0 0 no-repeat;
-  background-image: url("/images/packer-caret-right.png");
+#products #products-display .search .black-caret-right {
+  background: url(/images/search-caret-right.png) 0 0 no-repeat;
+  background-image: url("/images/search-caret-right.png");
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  #products #products-display .vagrant .black-caret-right {
-    background-image: url("/images/packer-caret-right@2x.png");
+  #products #products-display .search .black-caret-right {
+    background-image: url("/images/search-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }

@@ -141,26 +141,26 @@ div {
 
 #products{
 
-    &.atlas{
-        background-color: @atlas-color;
+    &.editor{
+        background-color: @editor-color;
     }
-    &.vagrant{
-        background-color: @vagrant-color;
+    &.search{
+        background-color: @search-color;
     }
-    &.packer{
-        background-color: @packer-color;
+    &.navigator{
+        background-color: @navigator-color;
     }
-    &.serf{
-        background-color: @serf-color;
+    &.autowatch{
+        background-color: @autowatch-color;
     }
-    &.consul{
-        background-color: @consul-color;
+    &.sourceeditor{
+        background-color: @sourceeditor-color;
     }
-    &.terraform{
-        background-color: @terraform-color;
+    &.markdown{
+        background-color: @markdown-color;
     }
-    &.vault{
-        background-color: @vault-color;
+    &.cruciblehook{
+        background-color: @cruciblehook-color;
     }
 
     #products-header{
@@ -228,7 +228,7 @@ div {
 
                 i{
                     display: block;
-                    width: 41px;
+                    width: 40px;
                     height: 40px;
                     margin: 0 auto;
                     margin-bottom: 10px;
@@ -236,83 +236,83 @@ div {
                 }
             }
 
-            &.atlas{
-                a{
-                    background: url(/images/nav-search-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-search-active.png", "/images/nav-search-active@2x.png", 41px, 40px);
-                    i{
-                        .atlas-icon();
-                    }
-                }
-            }
-
-            &.consul{
-                a{
-                    background: url(/images/nav-consul-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-consul-active.png", "/images/nav-consul-active@2x.png", 41px, 40px);
-                    i{
-                        .consul-icon();
-                    }
-                }
-            }
-
-            &.packer{
-                a{
-                    background: url(/images/nav-search-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-search-active.png", "/images/nav-search-active@2x.png",  27px, 40px);
-
-                    i{
-                        width: 27px;
-                        .packer-icon();
-                    }
-                }
-            }
-
-            &.terraform{
-                a{
-                    background: url(/images/nav-terraform-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-terraform-active.png", "/images/nav-terraform-active@2x.png", 36px, 40px);
-
-                    i{
-                        width: 36px;
-                        .terraform-icon();
-                    }
-                }
-            }
-
-
-            &.vault{
-                a{
-                    background: url(/images/nav-vault-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-vault-active.png", "/images/nav-vault-active@2x.png", 36px, 40px);
-
-                    i{
-                        width: 36px;
-                        .vault-icon();
-                    }
-                }
-            }
-
-            &.serf{
-                a{
-                    background: url(/images/nav-navigator-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-navigator-active.png", "/images/nav-navigator-active@2x.png", 27px, 40px);
-
-                    i{
-                        width: 27px;
-                        .serf-icon();
-                    }
-                }
-            }
-
-            &.vagrant{
+            &.editor{
                 a{
                     background: url(/images/nav-editor-active.png) center -80px no-repeat;
-                    .img-retina("/images/nav-editor-active.png", "/images/nav-editor-active@2x.png", 44px, 40px);
+                    .img-retina("/images/nav-editor-active.png", "/images/nav-editor-active@2x.png", 40px, 40px);
+                    i{
+                        .editor-icon();
+                    }
+                }
+            }
+
+            &.sourceeditor{
+                a{
+                    background: url(/images/nav-sourceeditor-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-sourceeditor-active.png", "/images/nav-sourceeditor-active@2x.png", 40px, 40px);
+                    i{
+                        .sourceeditor-icon();
+                    }
+                }
+            }
+
+            &.navigator{
+                a{
+                    background: url(/images/nav-navigator-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-navigator-active.png", "/images/nav-navigator-active@2x.png",  27px, 40px);
 
                     i{
-                        width: 44px;
-                        .vagrant-icon();
+                        width: 27px;
+                        .navigator-icon();
+                    }
+                }
+            }
+
+            &.markdown{
+                a{
+                    background: url(/images/nav-markdown-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-markdown-active.png", "/images/nav-markdown-active@2x.png", 36px, 40px);
+
+                    i{
+                        width: 36px;
+                        .markdown-icon();
+                    }
+                }
+            }
+
+
+            &.cruciblehook{
+                a{
+                    background: url(/images/nav-cruciblehook-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-cruciblehook-active.png", "/images/nav-cruciblehook-active@2x.png", 31px, 40px);
+
+                    i{
+                        width: 31px;
+                        .cruciblehook-icon();
+                    }
+                }
+            }
+
+            &.autowatch{
+                a{
+                    background: url(/images/nav-autowatch-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-autowatch-active.png", "/images/nav-autowatch-active@2x.png", 27px, 40px);
+
+                    i{
+                        width: 27px;
+                        .autowatch-icon();
+                    }
+                }
+            }
+
+            &.search{
+                a{
+                    background: url(/images/nav-search-active.png) center -80px no-repeat;
+                    .img-retina("/images/nav-search-active.png", "/images/nav-search-active@2x.png", 27px, 40px);
+
+                    i{
+                        width: 27px;
+                        .search-icon();
                     }
                 }
             }
@@ -322,131 +322,139 @@ div {
     #products-display{
         width: 100%;
         padding: 130px 0;
-        background-color: @atlas-color;
+        background-color: @dark-background;
         .transition(all .3s cubic-bezier(0.250, 0.250, 0.750, 0.750));
         margin-top: -5px; //for the border-bottom;
 
-        &.vagrant{
-            background-color: @atlas-color;
+        .row-title {
+            text-align: center;
+            padding-bottom: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            font-size: 30px;
+            color: @white;
         }
-        &.packer{
-            background-color: @vagrant-color;
+
+        &.search{
+            background-color: @search-color;
         }
-        &.serf{
-            background-color: @serf-color;
+        &.navigator{
+            background-color: @navigator-color;
         }
-        &.consul{
-            background-color: @consul-color;
+        &.editor{
+            background-color: @editor-color;
         }
-        &.terraform{
-            background-color: @terraform-color;
+        &.sourceeditor{
+            background-color: @sourceeditor-color;
         }
-        &.vault{
-            background-color: @vault-color;
+        &.markdown{
+            background-color: @markdown-color;
         }
-        // &.atlas {
-        //     background-color: @atlas-color;
-        // }
+        &.cruciblehook{
+            background-color: @cruciblehook-color;
+        }
+        &.autowatch {
+            background-color: @autowatch-color;
+        }
 
 
-        .consul{
+        .sourceeditor{
             .product-logo{
-                background: url(/images/product-consul.png) 0 0 no-repeat;
-                .img-retina("/images/product-consul.png", "/images/product-consul@2x.png",208px, 202px);
+                background: url(/images/product-sourceeditor.png) 0 0 no-repeat;
+                .img-retina("/images/product-sourceeditor.png", "/images/product-sourceeditor@2x.png", 208px, 208px);
             }
             .fill-btn{
-                color: @consul-color;
+                color: @sourceeditor-color;
             }
             .black-caret-right{
-                background: url(/images/consul-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/consul-caret-right.png", "/images/consul-caret-right@2x.png", 6px, 9px);
+                background: url(/images/sourceeditor-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/sourceeditor-caret-right.png", "/images/black-caret-right@2x.png", 6px, 9px);
             }
         }
 
 
-        .atlas{
+        .editor{
             .product-logo{
                 background: url(/images/product-editor.png) 0 0 no-repeat;
-                .img-retina("/images/product-editor.png", "/images/product-editor@2x.png",179px, 202px);
+                .img-retina("/images/product-editor.png", "/images/product-editor@2x.png", 179px, 202px);
             }
             .fill-btn{
-                color: @atlas-color;
+                color: @editor-color;
             }
             .black-caret-right{
-                background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/vagrant-caret-right.png", "/images/vagrant-caret-right@2x.png", 6px, 9px);
+                background: url(/images/editor-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/editor-caret-right.png", "/images/editor-caret-right@2x.png", 6px, 9px);
             }
         }
 
-        .packer{
+        .navigator{
             .product-logo{
                 background: url(/images/product-navigator.png) 0 0 no-repeat;
                 .img-retina("/images/product-navigator.png", "/images/product-navigator@2x.png", 145px, 202px);
             }
             .fill-btn{
-                color: @packer-color;
+                color: @navigator-color;
             }
             .black-caret-right{
-                background: url(/images/serf-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/serf-caret-right.png", "/images/serf-caret-right@2x.png", 6px, 9px);
+                background: url(/images/navigator-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/navigator-caret-right.png", "/images/navigator-caret-right@2x.png", 6px, 9px);
             }
         }
 
-        .terraform{
+        .markdown{
             .product-logo{
-                background: url(/images/product-terraform.png) 0 0 no-repeat;
-                .img-retina("/images/product-terraform.png", "/images/product-terraform@2x.png", 208px, 202px);
+                background: url(/images/product-markdown.png) 0 0 no-repeat;
+                .img-retina("/images/product-markdown.png", "/images/product-markdown@2x.png", 208px, 202px);
             }
             .fill-btn{
-                color: @terraform-color;
+                color: @markdown-color;
             }
             .black-caret-right{
-                background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/terraform-caret-right.png", "/images/terraform-caret-right@2x.png", 6px, 9px);
+                background: url(/images/markdown-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/markdown-caret-right.png", "/images/markdown-caret-right@2x.png", 6px, 9px);
             }
         }
 
 
-        .vault{
+        .cruciblehook{
             .product-logo{
-                background: url(/images/product-vault.png) 0 0 no-repeat;
-                .img-retina("/images/product-vault.png", "/images/product-vault@2x.png", 208px, 202px);
+                background: url(/images/product-cruciblehook.png) 0 0 no-repeat;
+                .img-retina("/images/product-cruciblehook.png", "/images/product-cruciblehook@2x.png", 155px, 202px);
             }
             .fill-btn{
-                color: @vault-color;
+                color: @cruciblehook-color;
             }
             .black-caret-right{
-                background: url(/images/vault-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/vault-caret-right.png", "/images/vault-caret-right@2x.png", 6px, 9px);
+                background: url(/images/cruciblehook-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/cruciblehook-caret-right.png", "/images/cruciblehook-caret-right@2x.png", 6px, 9px);
             }
         }
 
-        .serf{
+        .autowatch{
             .product-logo{
-                background: url(/images/product-serf.png) 0 0 no-repeat;
-                .img-retina("/images/product-serf.png", "/images/product-serf@2x.png", 208px, 202px);
+                background: url(/images/product-autowatch.png) 0 0 no-repeat;
+                .img-retina("/images/product-autowatch.png", "/images/product-autowatch@2x.png", 208px, 202px);
             }
             .fill-btn{
-                color: @serf-color;
+                color: @editor-color;
             }
             .black-caret-right{
-                background: url(/images/serf-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/serf-caret-right.png", "/images/serf-caret-right@2x.png", 6px, 9px);
+                background: url(/images/autowatch-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/autowatch-caret-right.png", "/images/autowatch-caret-right@2x.png", 6px, 9px);
             }
         }
 
-        .vagrant{
+        .search{
             .product-logo{
                 background: url(/images/product-search.png) 0 0 no-repeat;
-                .img-retina("/images/product-search.png", "/images/product-search@2x.png", 126px, 202px);
+                .img-retina("/images/product-search.png", "/images/product-search@2x.png", 136px, 202px);
             }
 
             .fill-btn{
-                color: @vagrant-color;
+                color: @search-color;
             }
             .black-caret-right{
-                background: url(/images/packer-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/packer-caret-right.png", "/images/packer-caret-right@2x.png", 6px, 9px);
+                background: url(/images/search-caret-right.png) 0 0 no-repeat;
+                .img-retina("/images/search-caret-right.png", "/images/search-caret-right@2x.png", 6px, 9px);
             }
         }
 
