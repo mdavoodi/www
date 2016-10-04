@@ -2000,7 +2000,7 @@ div.align-center {
   background-color: #822ff7;
 }
 #products.markdown {
-  background-color: #dd4e58;
+  background-color: #fbc143;
 }
 #products.cruciblehook {
   background-color: #00bfe0;
@@ -2147,16 +2147,15 @@ div.align-center {
 #products #products-nav li.markdown a {
   background: url(/images/nav-markdown-active.png) center -80px no-repeat;
   background-image: url("/images/nav-markdown-active.png");
-  background-size: 36px 40px;
+  background-size: 40px 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.markdown a {
     background-image: url("/images/nav-markdown-active@2x.png");
-    background-size: 36px 40px;
+    background-size: 40px 40px;
   }
 }
 #products #products-nav li.markdown a i {
-  width: 36px;
   background: url(/images/nav-markdown.png) 0 0 no-repeat;
   background-image: url("/images/nav-markdown.png");
   background-size: 41px 40px;
@@ -2264,7 +2263,7 @@ div.align-center {
   background-color: #822ff7;
 }
 #products #products-display.markdown {
-  background-color: #dd4e58;
+  background-color: #fbc143;
 }
 #products #products-display.cruciblehook {
   background-color: #00bfe0;
@@ -2359,7 +2358,7 @@ div.align-center {
   }
 }
 #products #products-display .markdown .fill-btn {
-  color: #dd4e58;
+  color: #fbc143;
 }
 #products #products-display .markdown .black-caret-right {
   background: url(/images/markdown-caret-right.png) 0 0 no-repeat;
