@@ -186,7 +186,7 @@ h a s h i c o r p
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .sourceeditor-icon {
-    background-image: url("/images/nav-sourceeditor@2x.png");
+    background-image: url("/images/nav-sourceeditor.png");
     background-size: 40px 40px;
   }
 }
@@ -197,7 +197,7 @@ h a s h i c o r p
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .cruciblehook-icon {
-    background-image: url("/images/nav-cruciblehook@2x.png");
+    background-image: url("/images/nav-cruciblehook.png");
     background-size: 31px 40px;
   }
 }
@@ -2106,7 +2106,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.sourceeditor a {
-    background-image: url("/images/nav-sourceeditor-active@2x.png");
+    background-image: url("/images/nav-sourceeditor-active.png");
     background-size: 40px 40px;
   }
 }
@@ -2117,7 +2117,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.sourceeditor a i {
-    background-image: url("/images/nav-sourceeditor@2x.png");
+    background-image: url("/images/nav-sourceeditor.png");
     background-size: 40px 40px;
   }
 }
@@ -2151,7 +2151,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.markdown a {
-    background-image: url("/images/nav-markdown-active@2x.png");
+    background-image: url("/images/nav-markdown-active.png");
     background-size: 40px 40px;
   }
 }
@@ -2173,7 +2173,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.cruciblehook a {
-    background-image: url("/images/nav-cruciblehook-active@2x.png");
+    background-image: url("/images/nav-cruciblehook-active.png");
     background-size: 31px 40px;
   }
 }
@@ -2185,7 +2185,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-nav li.cruciblehook a i {
-    background-image: url("/images/nav-cruciblehook@2x.png");
+    background-image: url("/images/nav-cruciblehook.png");
     background-size: 31px 40px;
   }
 }
@@ -2278,7 +2278,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .sourceeditor .product-logo {
-    background-image: url("/images/product-sourceeditor@2x.png");
+    background-image: url("/images/product-sourceeditor.png");
     background-size: 208px 208px;
   }
 }
@@ -2292,7 +2292,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .sourceeditor .black-caret-right {
-    background-image: url("/images/black-caret-right@2x.png");
+    background-image: url("/images/sourceeditor-caret-right@2x.png");
     background-size: 6px 9px;
   }
 }
@@ -2378,7 +2378,7 @@ div.align-center {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #products #products-display .cruciblehook .product-logo {
-    background-image: url("/images/product-cruciblehook@2x.png");
+    background-image: url("/images/product-cruciblehook.png");
     background-size: 155px 202px;
   }
 }
