@@ -1,3 +1,5 @@
+![Mohamicorp](source/images/mohamicorp-black-large.png)
+
 # Mohamicorp.com
 
 This is the repository for the [main Mohamicorp website](http://www.mohamicorp.com).
