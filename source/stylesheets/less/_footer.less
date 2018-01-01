@@ -2,82 +2,54 @@
 
 footer {
     padding: 80px 0 100px;
-    background: @black;
+    background: @white;
     color: @white;
-
-    #subscribe {
-        input {
-            height: 40px;
-            border-radius: 0;
-            border: none;
-        }
-
-        button#submit-capture {
-            margin-bottom: 8px;
-            padding: 10px 20px;
-            background-color: @blue;
-            border-radius: 0;
-            border: none;
-            text-indent: -9999px;
-            white-space: nowrap;
-            background: @blue url(/images/submit-icon.png) center 10px no-repeat;
-            .img-retina("/images/submit-icon.png", "/images/submit-icon@2x.png", 21px, 18px);
-        }
-
-        p {
-            color: @off-white;
-            opacity: .8;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: 0;
-        }
-
-    }
 
     h2 {
         margin-bottom: 15px;
         font-size: 20px;
         line-height: 24px;
         color: @blue;
-        .lato-regular;
+        .barlow-regular;
         text-transform: uppercase;
         .clearfix;
+        width: 125px;
+        margin: auto;
+        padding-bottom: 20px;
         a.navbar-brand {
-            height: auto;
             margin-bottom: 0;
-            padding: 0 0 0 34px;
+            padding: 0 0 0 148px;
+            margin-left: -15px;
             font-size: 20px;
             line-height: 24px;
             color: @blue;
-            .lato-regular;
+            .barlow-regular;
             text-transform: uppercase;
             &.blue {
                 &.logo {
                     color: @blue;
-                    background: url(/images/mohamicorp-blue-logo.png) 0 0 no-repeat;
-                    .img-retina("/images/mohamicorp-blue-logo.png", "/images/mohamicorp-blue-logo@2x.png", 24px, 26px);
+                    background: url(/images/blue-logo-with-name.png) 0 0 no-repeat;
+                    .img-retina("/images/blue-logo-with-name.png", "/images/blue-logo-with-name.png", 148px, 30px);
                 }
             }
         }
     }
 
     ul {
+        width: 280px;
+        padding-left: 24px;
+        margin: auto;
         list-style-type: none;
-        padding: 0;
         li {
             text-align: left;
             line-height: 28px;
+            float: left;
+            padding-bottom: 40px;
+            padding-right: 20px;
             a {
                 font-size: 16px;
-                color: @white;
-                .lato-regular;
-                .twitter {
-                    width: 16px;
-                    height: 13px;
-                    margin-left: 6px;
-                    background: url(/images/twitter-footer.png) center center no-repeat;
-                    .img-retina("/images/twitter-footer.png", "/images/twitter-footer.png", 16px, 13px);
-                }
+                color: @black;
+                .barlow-bold;
             }
         }
     }

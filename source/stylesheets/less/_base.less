@@ -11,7 +11,7 @@ body {
     line-height: @base-line-height;
     color: @dark-text;
     background-color: @white;
-    .lato-regular();
+    .barlow-regular();
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -30,15 +30,15 @@ h6 {
     padding: 0;
     color: inherit;
     text-rendering: optimizelegibility;
-    .lato-bold();
+    .barlow-bold();
 }
 
 h1 {
     color: @black;
     @font-size: 70px;
     font-size: @font-size;
-    line-height: 80px;
     letter-spacing: 1px;
+		font-weight: 700;
 
     span {
         font-size: @headline-span-size;
@@ -136,11 +136,11 @@ blockquote {
 }
 
 strong {
-	.lato-bold();
+	.barlow-bold();
 }
 
 em {
-	.lato-italic();
+	.barlow-italic();
 }
 
 br {
@@ -190,7 +190,7 @@ hr {
 .date {
     color: @medium-gray-text;
     line-height: @base-line-height;
-    .lato-regular();
+    .barlow-regular();
 }
 
 .date {
@@ -262,7 +262,7 @@ hr {
             padding: 25px 0 54px 15px;
             font-size: 52px;
             line-height: 1.1em;
-            .lato-light;
+            .barlow-light;
             text-align: left;
         }
     } //inner page header
@@ -299,7 +299,7 @@ hr {
             color: @black;
             font-size: 42px;
             line-height: 1.1em;
-            .lato-bold;
+            .barlow-bold;
             text-align: left;
         }
 
