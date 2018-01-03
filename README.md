@@ -1,8 +1,8 @@
-![Mohamicorp](source/images/mohamicorp-black-large.png)
+![Mohami](source/images/blue-logo-with-name.png)
 
-# Mohamicorp.com
+# Mohami.io
 
-This is the repository for the [main Mohamicorp website](http://www.mohamicorp.com).
+This is the repository for the [main Mohami website](http://www.mohami.io).
 It was forked off of [Hashicorps website](http://www.hashicorp.com).
 
 
