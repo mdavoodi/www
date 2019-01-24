@@ -2183,6 +2183,18 @@ body.jobs #location #map #pins .pinpoint.p2 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
+body.jobs #location #map #pins .pinpoint.p3 {
+  top: 338px;
+  left: 460px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+body.jobs #location #map #pins .pinpoint.p4 {
+  top: 130px;
+  left: 1020px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
 body.jobs #location #map #pins .pinpoint.bounce {
   -webkit-animation-name: bounce;
   -webkit-animation-fill-mode: both;
